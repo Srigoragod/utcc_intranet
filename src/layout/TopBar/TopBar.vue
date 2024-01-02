@@ -17,6 +17,7 @@
         id="mega-menu-full"
         class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
       >
+
         <ul
           class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
@@ -42,6 +43,11 @@
 
     <div id="bg-menu-top" v-if="isShow"  >
       <div class="container mx-auto">
+        <div class="float-right cursor-pointer btn-close">
+          <el-tooltip class="item text-[16px]" effect="light" content="Close Menu" placement="left">
+            <font-awesome-icon @click="onClickCloseMenu()" :icon="['fas', 'circle-xmark']"   class="text-[20px]"/>
+          </el-tooltip>
+        </div>
         <div class="grid grid-cols-4 gap-4">
           <div>
             <Caption></Caption>
@@ -456,6 +462,10 @@ export default defineComponent({
       console.log(' test .. ', e);
     }
 
+    const onClickCloseMenu =()=>{
+      isShow.value = false
+    }
+
     return {
       menuItems,
       subMenu,
@@ -463,7 +473,8 @@ export default defineComponent({
       idActive,
       isShow,
       divMenu,
-      onClickAway
+      onClickAway,
+      onClickCloseMenu
     };
   },
 });
@@ -508,21 +519,28 @@ export default defineComponent({
 #bg-menu-top {
   background-color: $a-blue-F9FAFC;
   border-radius: 1rem;
-  padding: 2rem 0;
   border-left: 5px solid $a-blue-2E3191;
-  // box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
   z-index: 3;
   position: absolute;
-  padding: 2rem;
-  top: 77px;
+  padding: 2rem 0;
+  top: 70px;
+  min-width: 100%;
+  left: 0;
 
 }
 .menu-focus {
   width: 48px;
   height: 48px;
   background-color: #dcedff;
+}
+.btn-close{
+  color: #787878;
+  &:hover {
+    color: #005BC0;
+  }
 }
 </style>

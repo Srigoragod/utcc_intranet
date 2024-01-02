@@ -6,8 +6,8 @@
         <h6 class="block text-right pr-4">– ธีโอดอร์ รุสเวลต์ -</h6>
       </div>
     </div>
-    <div class="text-right pt-2 cursor-pointer hover:text-a-blue-0874D9">
-      <span> ร่วมเสนอ "คำคมการทำงาน แคปชั่นทํางาน"</span> 
+    <div class="flex justify-self-center float-right  items-center text-[18px] text-right pt-2 cursor-pointer hover:text-a-blue-0874D9">
+      <span class="pr-4"> ร่วมเสนอ "คำคมการทำงาน แคปชั่นทํางาน"</span> 
       <font-awesome-icon :icon="['fas', 'angle-right']" />
     </div>
   </div>

@@ -60,6 +60,7 @@
               :key="index1"
               :textName="subItem.textName"
               :textUrl="subItem.url"
+              @click-menu="handleClickMenu()"
             >
               {{ subItem }}
             </MenuItem>
@@ -431,8 +432,15 @@ export default defineComponent({
     //   ];
     // };
     // setMenu();
-
+    const resetMenu = () =>{
+      isShow.value = false;
+      idActive.value = 1;
+    }
+    const handleClickMenu = (val) =>{
+      resetMenu()
+    }
     const handleSubMenuDropdown = async (items, id) => {
+      console.log('handleSubMenuDropdown run ... ');
       idActive.value = id;
       if (id == 1 ) {
         isShow.value = false
@@ -475,7 +483,8 @@ export default defineComponent({
       isShow,
       divMenu,
       onClickAway,
-      onClickCloseMenu
+      onClickCloseMenu,
+      handleClickMenu
     };
   },
 });

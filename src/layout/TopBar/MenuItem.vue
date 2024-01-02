@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div @click="onClickMenu(textUrl)">
     <!-- <h4 class="font-bold text-a-blue-2E3191">{{item.textName}}</h4> -->
     <div  v-if="!isDark" class="flex items-center menu-item pl-4 hover:underline hover:underline-offset-1">
       <!-- <div> -->
@@ -19,14 +19,26 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue';
+export default defineComponent({
   name: "MenuItem",
   props: {
     textName: { type: String, required: true },
     textUrl: { type: String, required: true },
     isDark: { type: Boolean, required: false },
   },
-};
+  emits: ['click-menu'],
+  setup(props,ctx){
+    const onClickMenu = (url)=>{
+      // console.log('click menu .. ',url);
+      window.open(url, '_blank')
+      ctx.emit('click-menu', 'Button clicked!');
+    }
+    return{
+      onClickMenu
+    }
+  }
+});
 </script>
 
 <style lang="scss" scoped>

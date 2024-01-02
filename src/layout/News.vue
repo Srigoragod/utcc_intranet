@@ -44,7 +44,8 @@ export default {};
 
     background: url(../assets/image/bg-12.jpeg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
   .item-news {
     display: flex;

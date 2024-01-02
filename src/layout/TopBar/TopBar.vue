@@ -464,6 +464,7 @@ export default defineComponent({
 
     const onClickCloseMenu =()=>{
       isShow.value = false
+      idActive.value = 1
     }
 
     return {

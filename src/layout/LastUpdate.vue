@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="flex justify-between items-center">
-         <h4 class="font-bold text-a-blue-2E3191">ไฟล์อัพเดทล่าสุด</h4>
+         <h4 class="font-bold text-topic-name">ไฟล์อัพเดทล่าสุด</h4>
          <el-link class="text-[20px]" type="primary"><h6>ดูทั้งหมด</h6></el-link>
     </div>
  

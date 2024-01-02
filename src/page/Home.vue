@@ -12,7 +12,7 @@
             <LastUpdate class="my-2"></LastUpdate>
             <News class="my-2"></News>
             <br/>
-            <ShowFile class="my-2"></ShowFile>
+            <ShowFile :items="homeList" class="my-2"></ShowFile>
             <ScrollToTopButton ></ScrollToTopButton>
         </div>
      </template>
@@ -26,6 +26,7 @@
 import { ref, defineComponent } from "vue";
 
 import menudata from '../data/menudata.json'
+import homedata from '../data/homedata.json'
 
 import MainPage from "./MainPage.vue";
 import TopBar from "../layout/TopBar/TopBar.vue";
@@ -57,9 +58,11 @@ export default defineComponent({
   },
   setup() {
     const menuList = ref(menudata)
+    const homeList = ref(homedata)
 
     return{
-      menuList
+      menuList,
+      homeList
     }
   }
 
@@ -69,9 +72,19 @@ export default defineComponent({
 
 <style >
 .text-topic-name {
-  background: rgba(46, 49, 145, 1);
-    background: linear-gradient(81deg, rgba(46, 49, 145, 1) 0%, rgba(120, 120, 120, 1)62%);
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#0874D9),
+      color-stop(100%, #548dd9),
+      to(#548dd9)
+    );
+    background: -webkit-linear-gradient(left, #0874D9, #548dd9 100%, #548dd9 0);
+    background: linear-gradient(90deg, #0874D9, #548dd9 100%, #548dd9 0);
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
 }
 </style>

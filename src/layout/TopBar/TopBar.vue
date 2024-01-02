@@ -19,7 +19,7 @@
       >
 
         <ul
-          class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="flex flex-col p-4 md:p-0 mt-4  rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
         >
           <li v-for="(item, index) in menuItems" :key="index">
             <!-- <el-badge v-if="item.id == 4" :value="3" class="item">
@@ -49,11 +49,11 @@
           </el-tooltip>
         </div>
         <div class="grid grid-cols-4 gap-4">
-          <div>
+          <div class="">
             <Caption></Caption>
           </div>
           <!-- Menu  -->
-          <div v-for="(item, index) in divMenu" :key="index">
+          <div  v-for="(item, index) in divMenu" :key="index">
 
             <MenuItem
               v-for="(subItem, index1) in item"
@@ -519,7 +519,7 @@ export default defineComponent({
 }
 #bg-menu-top {
   background-color: $a-blue-F9FAFC;
-  border-radius: 1rem;
+  // border-radius: 1rem;
   border-left: 5px solid $a-blue-2E3191;
 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,

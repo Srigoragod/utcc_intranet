@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="font-bold text-a-blue-2E3191">การประชุมมหาวิทยาลัย</h4>
+    <h4 class="font-bold text-topic-name">การประชุมมหาวิทยาลัย</h4>
     <div class="grid grid-cols-3 gap-4">
       <div>
         <Calender></Calender>

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h4 class="font-bold text-a-blue-2E3191">เมนูที่ใช้งานบ่อย</h4>
+  <div class="py-2">
+    <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4>
     <div class="flex justify-start">
        <ButtonBlue class="mr-8" v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :icon="item.icon" :isDisable="item.isDisable"></ButtonBlue>
     </div>

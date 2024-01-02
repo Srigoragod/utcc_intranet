@@ -1,0 +1,614 @@
+<template>
+  <div>
+    <el-divider class="text-a-gray-64748b my-2" content-position="center">
+      <h4 class="text-all-file font-light leading-none pt-2">All Files</h4>
+    </el-divider>
+    <div class="grid grid-cols-2 gap-4 items-start">
+      <FileList
+        v-for="(item, index) in fileData"
+        :key="index"
+        class=""
+        :class="[item.showColumn]"
+        :topicName="item.topicName"
+        :dataList="item.itemList"
+        :isHeightFull="item.isFull"
+      ></FileList>
+    </div>
+  </div>
+</template>
+
+<script>
+import { ref, defineComponent } from "vue";
+import FileList from "../components/FileList.vue";
+export default defineComponent({
+  name: "ShowFile",
+  components: {
+    FileList,
+  },
+  setup() {
+    const fileData = ref([
+      {
+        id: 1,
+        topicName:
+          "พรบ. กฎ ประกาศ หลักเกณฑ์ และแนวปฏิบัติที่เกี่ยวข้องกับสถาบันอุดมศึกษาเอกชน",
+        icon: "",
+        showColumn: "col-span-2",
+        isFull: false,
+        itemList: [
+          {
+            key: 1,
+            url: "#",
+            icon: "file",
+            name: "พรบ.สถาบันอุดมศึกษาเอกชน",
+            description: "Update:  Latest version",
+            isDisable: true,
+          },
+          {
+            key: 2,
+            url: "#",
+            icon: "file",
+            name: "รวม กฎกระทรวง ประกาศกระทรวงศึกษาธิการ ประกาศ และมติคณะกรรมการการอุดมศึกษา ที่เกี่ยวกับหลักเกณฑ์/แนวทาง และแนวปฏิบัติที่เกี่ยวข้อง สิงหาคม 2556 - กรกฎาคม 2560",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+        ],
+      },
+      {
+        id: 2,
+        topicName: "คู่มือการติดตั้ง",
+        icon: "",
+        showColumn: "",
+        isFull: true,
+        itemList: [
+          {
+            key: 1,
+            url: "#",
+            icon: "file",
+            name: "Adobe",
+            description: "Update:  Latest version",
+            isDisable: true,
+          },
+          {
+            key: 2,
+            url: "#",
+            icon: "file",
+            name: "IP-Phone",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 3,
+            url: "#",
+            icon: "file",
+            name: "UTCC-Mobile",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 4,
+            url: "#",
+            icon: "file",
+            name: "UTCC-Wifi",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 5,
+            url: "#",
+            icon: "file",
+            name: "UTCC-SPSS",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+        ],
+      },
+      {
+        id: 3,
+        topicName: "คู่มือการใช้งานระบบ Less Paper",
+        icon: "",
+        showColumn: "",
+        isFull: true,
+        itemList: [
+          {
+            key: 1,
+            url: "#",
+            icon: "file",
+            name: "สำหรับเจ้าหน้าที่",
+            description: "Update:  Latest version",
+            isDisable: true,
+          },
+          {
+            key: 2,
+            url: "#",
+            icon: "file",
+            name: "สำหรับบุคคลทั่วไป",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 3,
+            url: "#",
+            icon: "file",
+            name: "สำหรับผู้ดูแลระบบระดับหน่วยงาน",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 4,
+            url: "#",
+            icon: "file",
+            name: "สำหรับผู้ดูแลระบบส่วนกลาง",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 5,
+            url: "#",
+            icon: "file",
+            name: "LPTouch",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+        ],
+      },
+      {
+        id: 4,
+        topicName: "กระบวนการจัดซื้อจัดจ้าง Work Flow",
+        icon: "",
+        showColumn: "",
+        isFull: true,
+        itemList: [
+          {
+            key: 1,
+            url: "#",
+            icon: "file",
+            name: "วิธีตกลงราคา",
+            description: "Update:  Latest version",
+            isDisable: true,
+          },
+          {
+            key: 2,
+            url: "#",
+            icon: "file",
+            name: "วิธีตกลงราคา เร่งด่วน",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 3,
+            url: "#",
+            icon: "file",
+            name: "<span class='text-a-blue-0874D9'>งานกรรมการ <u>ไม่เกิน</u></span> 4 แสนบาท",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 4,
+            url: "#",
+            icon: "file",
+            name: "<span class='text-a-blue-0874D9'>งานกรรมการ <u>มากกว่า</u></span> 4 แสนบาท",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 5,
+            url: "#",
+            icon: "file",
+            name: "<span class='text-a-blue-2E3191'>วิธีพิเศษ <u>ไม่เกิน</u></span> 4 แสนบาท",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 6,
+            url: "#",
+            icon: "file",
+            name: "<span class='text-a-blue-2E3191'>วิธีพิเศษ <u>มากกว่า</u></span> 4 แสนบาท",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 7,
+            url: "#",
+            icon: "file",
+            name: "วิธี e-Action",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+        ],
+      },
+      {
+        id: 5,
+        topicName: "คู่มือการใช้งานและแนวปฏิบัติแผนกยานพาหนะ",
+        icon: "",
+        showColumn: "",
+        isFull: true,
+        itemList: [
+          {
+            key: 1,
+            url: "#",
+            icon: "link",
+            name: "<span class='text-a-blue-0874D9'>ระบบจองรถยนต์ในกิจกรรมมหาวิทยาลัย</span>",
+            description: "",
+            isDisable: true,
+          },
+          {
+            key: 2,
+            url: "#",
+            icon: "file",
+            name: "แบบการขอใช้รถยนต์ในกิจกรรมมหาวิทยาลัย",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 3,
+            url: "#",
+            icon: "file",
+            name: "แนวปฎิบัติการขอใช้บริการรถยนต์มหาวิทยาลัย",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 4,
+            url: "#",
+            icon: "file",
+            name: "คู่มือการเข้าระบบจองรถออนไลน์",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 5,
+            url: "#",
+            icon: "file",
+            name: "ตารางอัตราค่าเช่ารถยนต์ของมหาวิทยาลัยหอการค้าไทย",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 6,
+            url: "#",
+            icon: "file",
+            name: "ประมาณการค่าเช่ารถจากภายนอก",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+        ],
+      },
+      {
+        id: 6,
+        topicName: " ระบบเอกสารดิจิตอล",
+        icon: "",
+        showColumn: "",
+        itemList: [
+          {
+            key: 1,
+            url: "#",
+            icon: "file",
+            name: "แนวปฏิบัติการใช้งานระบบเอกสารดิจิตอล",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 2,
+            url: "#",
+            icon: "file",
+            name: "วิธีการใช้งานโปรแกรม Cashier",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 3,
+            url: "#",
+            icon: "file",
+            name: "วิธีการแก้ไขปัญหากระดาษติด",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 4,
+            url: "#",
+            icon: "file",
+            name: "แบบฟอร์มใบเบิกกระดาษ A4",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 5,
+            url: "#",
+            icon: "file",
+            name: "แบบฟอร์มบันทึกขอเพิ่มยอดจัดสรรโควต้ากระดาษ",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+        ],
+      },
+      {
+        id: 7,
+        topicName: " การพัฒนาและดำเนินงาน KPI อาจารย์",
+        icon: "",
+        showColumn: "",
+        itemList: [
+          {
+            key: 1,
+            url: "#",
+            icon: "file",
+            name: "หลักเกณฑ์การคิดภาระงานอาจารย์",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 2,
+            url: "#",
+            icon: "file",
+            name: "ขั้นตอนการปฏิบัติงานร่วมกับองค์กรเครือข่าย (หอการค้าไทย)",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 3,
+            url: "#",
+            icon: "file",
+            name: "แบบบันทึกการปฏิบัติงานร่วมกับคณะกรรมการหอการค้า ปีการศึกษา 2562 (แบบ ปคกห.1)",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 4,
+            url: "#",
+            icon: "file",
+            name: "แบบฟอร์มใบเบิกเงินค่าตอบแทนการปฏิบัติงานนอกสถานที่ (สบม. 15)",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+        ],
+      },
+      {
+        id: 8,
+        topicName: "เกี่ยวกับพัสดุ",
+        icon: "",
+        showColumn: "col-span-2",
+        isFull: true,
+        itemList: [
+          {
+            key: 1,
+            url: "#",
+            icon: "file",
+            name: "แนวปฏิบัติ ขั้นตอน กระบวนการจัดซื้อจัดจ้าง",
+            description: "Update: 1 Sep 2023",
+            isDisable: true,
+          },
+          {
+            key: 2,
+            url: "#",
+            icon: "word",
+            name: "พ 1.001 แบบฟอร์มใบสั่งซื้อเงินสด",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 3,
+            url: "#",
+            icon: "word",
+            name: "พ 1.002 แบบฟอร์มรับสินค้าด่วน",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 4,
+            url: "#",
+            icon: "word",
+            name: "พ 1.003 แบบฟอร์มคุณลักษณะพัสดุ",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 5,
+            url: "#",
+            icon: "word",
+            name: "พ 1.004 แบบฟอร์มคุณลักษณะงานจัดจ้าง",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 6,
+            url: "#",
+            icon: "word",
+            name: "พ 1.005 แบบฟอร์มร่างขอบเขตคุณลักษณะงาน",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 7,
+            url: "#",
+            icon: "word",
+            name: "พ 1.006 แบบฟอร์มเอกสารส่วนที่ 1 คุณลักษณะ",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 8,
+            url: "#",
+            icon: "word",
+            name: "พ 1.007 แบบฟอร์มเอกสารส่วนที่ 2 ใบเสนอราคา",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 9,
+            url: "#",
+            icon: "word",
+            name: "พ 1.008 แบบฟอร์มแต่งตั้งคณะกรรมการ",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 10,
+            url: "#",
+            icon: "word",
+            name: "พ 1.009 แบบฟอร์มรับซอง (วิธีสอบราคา) , (วิธีพิเศษ)",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 11,
+            url: "#",
+            icon: "word",
+            name: "พ 1.010 แบบฟอร์มรับซอง (วิธีประกวดราคา)",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 12,
+            url: "#",
+            icon: "word",
+            name: "พ 1.011 แบบฟอร์มใบรับหลักประกันซอง (วิธีประกวดราคา) , (วิธีพิเศษกรณีเกิน 2 ล้านบาท)",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 13,
+            url: "#",
+            icon: "file",
+            name: "แนวปฏิบัติ ขั้นตอน และเงื่อนไขในการส่งคืนพัสดุ/ครุภัณฑ์",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 14,
+            url: "#",
+            icon: "link",
+            name: "<span class='text-a-blue-0874D9'>* ระบบเบิกพัสดุ (สโตร์)</span>",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 15,
+            url: "#",
+            icon: "word",
+            name: "แบบฟอร์มใบเบิกกระดาษ A4",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 16,
+            url: "#",
+            icon: "word",
+            name: "พ 2.001 แบบฟอร์มใบเบิกพัสดุ (สโตร์)",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 17,
+            url: "#",
+            icon: "word",
+            name: "พ 2.002 แบบฟอร์มใบขอยืมวัสดุ/อุปกรณ์",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 18,
+            url: "#",
+            icon: "word",
+            name: "พ 2.003 แบบฟอร์มขอเลขรหัสสินทรัพย์",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 19,
+            url: "#",
+            icon: "word",
+            name: "พ 2.004 แบบฟอร์มรายงานผลการใช้งาน",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 21,
+            url: "#",
+            icon: "word",
+            name: "พ 2.005 แบบฟอร์มใบตรวจรับงานกรรมการ",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 22,
+            url: "#",
+            icon: "word",
+            name: "พ 2.006 แบบฟอร์มใบโอนย้ายสินทรัพย์",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 23,
+            url: "#",
+            icon: "word",
+            name: "พ 2.007 แบบฟอร์มใบส่งคืนพัสดุ/ครุภัณฑ์",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 24,
+            url: "#",
+            icon: "word",
+            name: "พ 2.008 แบบฟอร์มบันทึกข้อมูลรายละเอียดสินทรัพย์",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 25,
+            url: "#",
+            icon: "word",
+            name: "พ 2.009 แบบฟอร์มใบขอเบิกครุภัณฑ์เก่าไปใช้งาน",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 26,
+            url: "#",
+            icon: "word",
+            name: "พ 2.010 แบบฟอร์มแจ้งรายการสินทรัพย์ที่ได้รับ",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 27,
+            url: "#",
+            icon: "word",
+            name: "พ 2.011 แบบฟอร์มขอเลขรหัสซ่อมสินทรัพย์",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+          {
+            key: 28,
+            url: "#",
+            icon: "word",
+            name: "พ 2.012  แบบฟอร์มใบเบิกกระดาษ A4",
+            description: "Update:  Latest version",
+            isDisable: false,
+          },
+        ],
+      },
+    ]);
+    return {
+      fileData,
+    };
+  },
+});
+</script>
+
+<style lang="scss" scoped>
+.text-all-file {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0874D9),
+    color-stop(100%, #548dd9),
+    to(#548dd9)
+  );
+  background: -webkit-linear-gradient(left, #0874D9, #548dd9 100%, #548dd9 0);
+  background: linear-gradient(90deg, #0874D9, #548dd9 100%, #548dd9 0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+</style>

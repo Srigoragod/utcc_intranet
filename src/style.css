@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'DB HeaventRounded';
+    src: url('./assets/font/DBHeaventRoundedv3.2.1.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  body {
+    font-size: 14px;
+    font-weight: 400;
+    color: #343443;
+    font-family: 'DB HeaventRounded', sans-serif;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 44px;
+  }
+  h4 {
+    font-size: 34px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  h6 {
+    font-size: 20px;
+  }
+  .subtitle-1{
+    font-size: 18px;
+  }
+  .subtitle-2{
+    font-size: 14px;
+  }
+  .body-2, .txt-caption {
+    font-size: 14px;
+  }
+  .txt-overline{
+    font-size: 12px;
+  }

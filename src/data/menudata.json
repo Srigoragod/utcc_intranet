@@ -1,0 +1,327 @@
+ [
+    {
+      "id": 1,
+      "textName": "Home",
+      "url": "home",
+      "isActive": true,
+      "items": [
+        {
+          "textName": "เมนูที่ใช้งานบ่อย",
+          "url": "",
+          "subitems": [
+            {
+              "textNameSub": "Microsoft 365",
+              "url": ""
+            },
+            {
+              "textNameSub": "เบอร์โทรภายใน",
+              "url": ""
+            },
+            {
+              "textNameSub": "Logo UTCC",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "textName": "การประชุมมหาวิทยาลัย",
+          "url": "",
+          "subitems": [
+            {
+              "textNameSub": "ปฎิทินการประชุม",
+              "url": ""
+            },
+            {
+              "textNameSub": "มติการประชุมมหาวิทยาลัย",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "textName": "Latest File",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ข่าวสารประชาสัมพันธ์ภายนอก",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName":
+            "พรบ. กฎ ประกาศ หลักเกณฑ์ และแนวปฏิบัติที่เกี่ยวข้องกับสถาบันอุดมศึกษาเอกชน",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "คู่มือการติดตั้ง",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "คู่มือการใช้งานระบบ Less Paper",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "กระบวนการจัดซื้อจัดจ้าง Work Flow",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "คู่มือการใช้งานและแนวปฏิบัติแผนกยานพาหนะ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "เกี่ยวกับงานพัสดุ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "เกี่ยวกับงานพัสดุ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบเอกสารดิจิตอล",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "การพัฒนาและดำเนินงาน KPI อาจารย์",
+          "url": "",
+          "subitems": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "textName": "Forms &Document",
+      "url": "formAndDocument",
+      "isActive": false,
+      "items": [
+        {
+          "textName": "สำนักอำนวยการ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "สำนักบริหารทรัพยากรมนุษย์",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "กองบัญชีและควบคุมงบประมาณ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "กองพัสดุและจัดการทรัพย์สิน",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "กองนิติการ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "สำนักบริการคอมพิวเตอร์",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "กองประชาสัมพันธ์",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "กองวิเทศสัมพันธ์",
+          "url": "",
+          "subitems": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "textName": "Department",
+      "url": "department",
+      "isActive": false,
+      "items": [
+        {
+          "textName": "คณะวิชา",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ฝ่ายวิจัยและบริการธุรกิจ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ฝ่ายบริหาร",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ฝ่ายวิชาการ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ฝ่ายเทคโนโลยีสารสนเทศ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ฝ่ายกิจการนักศึกษา",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ฝ่ายสื่อสารการตลาด",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ฝ่ายวิเทศสัมพันธ์",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ฝ่ายยุทธศาสตร์และกิจการพิเศษ",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "ฝ่ายอาคารและสิ่งแวดล้อม",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "สำนักงานตรวจสอบภายใน",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "สถาบันพัฒนาบัณฑิตสู่ความสำเร็จ",
+          "url": "",
+          "subitems": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "textName": "Online Service",
+      "url": "department",
+      "isActive": false,
+      "items": [
+        {
+          "textName": "ระบบฐานข้อมูลประกันคุณภาพการศึกษา",
+          "url": "http://esar.utcc/",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบสารสนเทศสืบค้นหนังสือเวียน",
+          "url": "http://center.utcc/index.php",
+          "subitems": []
+        },
+        {
+          "textName": "แบบฟอร์มบันทึกและหนังสือต่างๆ",
+          "url": "http://department.utcc.ac.th/admin/index.php/2013-03-29-02-58-19",
+          "subitems": []
+        },
+        {
+          "textName": "Less Paper",
+          "url": "https://lesspaper2.affix.co.th/utcc/app/desktop",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบบันทึกใบลา",
+          "url": "http://hr.utcc/webtime/default1.aspx",
+          "subitems": []
+        },
+        {
+          "textName": "Slip Online",
+          "url": "http://hr.utcc/webslip/WebLogin.aspx",
+          "subitems": []
+        },
+        {
+          "textName": "ใบขอซื้อออนไลน์",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "Functional Area",
+          "url": "functional.html",
+          "subitems": []
+        },
+        {
+          "textName": "การจัดทำงบประมาณ",
+          "url": "budget.html",
+          "subitems": []
+        },
+        {
+          "textName": "KPI online",
+          "url": "https://kpi.utcc.ac.th/",
+          "subitems": []
+        },
+        {
+          "textName": "Strategics online",
+          "url": "http://plan.utcc/",
+          "subitems": []
+        },
+        {
+          "textName": "งานบริหารความเสี่ยง",
+          "url": "risk.html",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบติดตามเอกสาร",
+          "url": "http://dts.utcc/index.php",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบตรวจเช็คพัสดุ",
+          "url": "http://utcc2.utcc.ac.th/posts/display.php",
+          "subitems": []
+        },
+        {
+          "textName": "ค้นหาเบอร์โทรศัพท์ภายใน",
+          "url": "http://utcc2.utcc.ac.th/utccphone/",
+          "subitems": []
+        },
+        {
+          "textName": "ขอใช้พื้นที่ IDE Center",
+          "url": "",
+          "subitems": []
+        },
+        {
+          "textName": "บันทึกข้อมูลสัญญา (กองจัดการธุรกิจ)",
+          "url": "http://demodep.utcc.ac.th/rental/index.php",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบข้อมูลคุมเงินหลักประกันสัญญา",
+          "url": "http://agreement.utcc/",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบตรวจสอบข้อมูลทรัพย์สิน",
+          "url": "http://asset.utcc/",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบกองอาคารและสิ่งแวดล้อม",
+          "url": "http://opf.utcc.ac.th/",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบจองห้องโถงจัดเลี้ยง (อาคาร 10 ชั้น 3)",
+          "url": "http://ascroom.utcc.ac.th/new",
+          "subitems": []
+        }
+      ]
+    }
+  ]

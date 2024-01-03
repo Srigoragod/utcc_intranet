@@ -1,5 +1,5 @@
 <template>
-  <button class="hover:shadow-lg" @click="onClickButton()">
+  <button class="hover:shadow-lg cursor-pointer" @click="onClickButton()">
     <font-awesome-icon v-if="icon == 'phone'" :icon="['fas', 'phone']" />
     <div class="text-content md:text-ellipsis">   {{ textButton }}</div>
     <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'arrow-right']" />

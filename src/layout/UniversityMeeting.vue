@@ -64,14 +64,14 @@ export default defineComponent({
     const buttonList = ref([
       {
         text: "ปฎิทินการประชุม.pdf",
-        url: "",
+        url: "http://center.utcc/2567/calendar.pdf",
         icon: "file",
         description: "Update: ประจำปี 2566",
         isDisable: false,
       },
       {
         text: "มติการประชุมมหาวิทยาลัย",
-        url: "",
+        url: "http://center.utcc/conclude/",
         icon: "link",
         description: "สภามหาวิทยาลัย, กอม., กบม.",
         isDisable: false,

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center container-btn-blue-download h-[100px] hover:shadow-lg">
+  <div class="flex justify-between items-center container-btn-blue-download h-[100px] hover:shadow-lg" @click="onClickButton()">
     <div class="flex items-center">
       <div class="icon-svg">
     
@@ -23,7 +23,8 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue';
+export default defineComponent({
     name: 'ButtonBlueDownload',
     props: {
     textButton: { type: String, required: true },
@@ -32,7 +33,20 @@ export default {
     description: { type: String, required: false},
     isDisable: { type: Boolean, required: false, default: false },
   },
-};
+  setup(props){
+    const onClickButton =()=>{
+      if(props.url){
+        window.open(props.url, '_blank')
+      }else {
+        console.log('page not found');
+        // page not found
+      }
+    }
+    return {
+      onClickButton
+    }
+  }
+});
 </script>
 
 <style lang="scss" scoped>

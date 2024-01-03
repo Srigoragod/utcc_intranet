@@ -7,8 +7,8 @@
       <div>
         <a href="#">
           <img
-            src="../../assets/logo/UTCC_Logo.png"
-            class="main-logo"
+            src="../../assets/logo/UTCC_SubMain2-1.png"
+            class="main-logo my-2"
             alt="UTCC Logo"
           />
         </a>

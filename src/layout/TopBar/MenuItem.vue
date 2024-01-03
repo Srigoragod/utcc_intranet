@@ -1,5 +1,5 @@
 <template>
-  <div @click="onClickMenu(textUrl)">
+  <div @click="onClickMenu()">
     <!-- <h4 class="font-bold text-a-blue-2E3191">{{item.textName}}</h4> -->
     <div  v-if="!isDark" class="flex items-center menu-item pl-4 hover:underline hover:underline-offset-1">
       <!-- <div> -->
@@ -29,10 +29,15 @@ export default defineComponent({
   },
   emits: ['click-menu'],
   setup(props,ctx){
-    const onClickMenu = (url)=>{
-      // console.log('click menu .. ',url);
-      window.open(url, '_blank')
-      ctx.emit('click-menu', 'Button clicked!');
+    const onClickMenu = () =>{
+      if(props.textUrl){
+        window.open(props.textUrl, '_blank')
+        ctx.emit('click-menu', 'Button clicked!');
+      }else {
+        console.log('page not found');
+        // page not found
+      }
+
     }
     return{
       onClickMenu

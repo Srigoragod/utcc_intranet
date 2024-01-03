@@ -1,5 +1,5 @@
 <template>
-  <button class="hover:shadow-lg">
+  <button class="hover:shadow-lg" @click="onClickButton()">
     <font-awesome-icon v-if="icon == 'phone'" :icon="['fas', 'phone']" />
     <div class="text-content md:text-ellipsis">   {{ textButton }}</div>
     <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'arrow-right']" />
@@ -7,7 +7,8 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue';
+export default defineComponent({
   name: "ButtonBlue",
   props: {
     textButton: { type: String, required: true },
@@ -15,7 +16,20 @@ export default {
     icon: { type: String, required: false },
     isDisable: { type: Boolean, required: false, default: false },
   },
-};
+  setup(props,ctx){
+    const onClickButton =()=>{
+      if(props.url){
+        window.open(props.url, '_blank')
+      }else {
+        console.log('page not found');
+        // page not found
+      }
+    }
+    return {
+      onClickButton
+    }
+  }
+});
 </script>
 
 <style lang="scss" scoped>

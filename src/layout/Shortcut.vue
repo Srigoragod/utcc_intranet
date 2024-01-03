@@ -19,19 +19,19 @@ export default defineComponent({
     const items = ref([
       {
         text:'Microsoft 365',
-        url:'',
+        url:'http://mail.office365.com',
         icon: 'link',
         isDisable: false
       },
       {
         text:'เบอร์โทรภายใน',
-        url:'',
+        url:'http://utcc2.utcc.ac.th/utccphone/',
         icon: 'phone',
         isDisable: false
       },
       {
         text:'Logo UTCC',
-        url:'',
+        url:'https://www.utcc.ac.th/logo/',
         icon: 'link',
         isDisable: false
       }

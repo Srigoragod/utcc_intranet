@@ -2,10 +2,12 @@
   <button
     class="flex w-full justify-between items-center item-file"
     :class="[
-      isDisable ? 'cursor-not-allowed disabled:opacity-50 disabled' : 'cursor-pointer hover:shadow-lg ',
+      isDisable
+        ? 'cursor-not-allowed disabled:opacity-50 disabled'
+        : 'cursor-pointer hover:shadow-lg ',
     ]"
     :disabled="isDisable"
-    @click="onClickButton()"
+    @click="onClickButton(icon,fileName)"
   >
     <div class="flex items-center">
       <div class="icon-item">
@@ -17,6 +19,11 @@
         <font-awesome-icon
           v-else-if="icon == 'word'"
           :icon="['fas', 'file-word']"
+          class="text-[28px]"
+        />
+        <font-awesome-icon
+          v-else-if="icon == 'download'"
+          :icon="['fas', 'file-arrow-down']"
           class="text-[28px]"
         />
         <font-awesome-icon v-else :icon="['fas', 'link']" class="text-[28px]" />
@@ -54,18 +61,54 @@ export default defineComponent({
     description: { type: String, required: false },
     url: { type: String, required: true },
     isDisable: { type: Boolean, required: false },
+    fileName: {type: String, required: false},
+    pathFile: {type: String, required: false}
   },
   setup(props, ctx) {
-    const onClickButton = () => {
-      if (!props.isDisable) {
-        if (props.url) {
-          window.open(props.url, "_blank");
+    const onClickButton = (icon) => {
+      if (icon !== "download") {
+        if (!props.isDisable) {
+          if (props.url) {
+            window.open(props.url, "_blank");
+          } else {
+            console.log("page not found");
+            // page not found
+          }
         } else {
-          console.log("page not found");
-          // page not found
+          return;
         }
       } else {
-        return;
+        handleDownloadPDF(icon)
+      }
+    };
+    const handleDownloadPDF = async () => {
+      try {
+        // Replace 'your-pdf-api-endpoint' with the actual API endpoint for the PDF
+        const response = await fetch("your-pdf-api-endpoint");
+
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+
+        // Replace 'your-filename.pdf' with the desired file name
+        const filename = props.fileName;
+
+        // Create a Blob from the response data
+        const blob = await response.blob();
+
+        // Create a download link
+        const link = document.createElement("a");
+        link.href = window.URL.createObjectURL(blob);
+        link.download = filename;
+
+        // Append the link to the document and trigger the click event
+        document.body.appendChild(link);
+        link.click();
+
+        // Remove the link from the document
+        document.body.removeChild(link);
+      } catch (error) {
+        console.error("Error downloading PDF:", error);
       }
     };
     return {
@@ -127,12 +170,9 @@ export default defineComponent({
         color: white;
       }
     }
-
-
   }
 
   &.disabled {
-
     .icon-item {
       color: #787878;
     }
@@ -144,19 +184,18 @@ export default defineComponent({
     }
     .btn-circle {
       background-color: white;
-    svg {
-      color: #787878;
-    }
-    &:hover {
-      .btn-circle {
-      background-color: white;
       svg {
         color: #787878;
       }
-     }
+      &:hover {
+        .btn-circle {
+          background-color: white;
+          svg {
+            color: #787878;
+          }
+        }
+      }
     }
-  }
-
   }
 }
 </style>

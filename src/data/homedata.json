@@ -285,10 +285,12 @@
           {
              "key":5,
              "url":"http://intranet.utcc/Forms/P-2013.pdf",
-             "icon":"file",
+             "icon":"download",
              "name":"แบบฟอร์มบันทึกขอเพิ่มยอดจัดสรรโควต้ากระดาษ",
              "description":"Update:  Latest version",
-             "isDisable":false
+             "isDisable": false,
+             "fileName": "P-2013.docx",
+             "pathFile": "../assets/file/P-2013.docx"
           }
        ]
     },

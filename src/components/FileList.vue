@@ -10,11 +10,11 @@
       </h4>
 
       <div v-if="!isSplit">
-            <FileItem  v-for="(item, index) in dataList" :icon="item.icon" :name="item.name" :description="item.description" :url="item.url" :isDisable="item.isDisable" :key="index"></FileItem>
+            <FileItem  v-for="(item, index) in dataList" :icon="item.icon" :name="item.name" :description="item.description" :url="item.url" :isDisable="item.isDisable" :fileName="item.fileName" :pathFile="item.pathFile" :key="index"></FileItem>
       </div> 
       <div v-else class="grid grid-cols-2 gap-4 items-stretch ...">
         <div  v-for="(data, index) in dataListX" :key="index">
-            <FileItem  v-for="(item, key) in data" :icon="item.icon" :name="item.name" :description="item.description" :url="item.url"  :isDisable="item.isDisable"  :key="key"></FileItem>
+            <FileItem  v-for="(item, key) in data" :icon="item.icon" :name="item.name" :description="item.description" :url="item.url"  :isDisable="item.isDisable" :fileName="item.fileName"  :pathFile="item.pathFile" :key="key"></FileItem>
         </div> 
         </div>
 
@@ -73,7 +73,7 @@ export default defineComponent({
 .container-file-list {
   border: 1px solid #e5f1fb;
   border-radius: 10px;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem 0;
   margin-top: 2rem;
   .text-topic-name{
     background: rgba(46, 49, 145, 1);

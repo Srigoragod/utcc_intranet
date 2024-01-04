@@ -60,7 +60,6 @@ export default defineComponent({
     }
 
     const convertToNegative =(val)=>{
-      console.log(val < 0, typeof val);
       if(val < 0){
         return Math.abs(val);
       }

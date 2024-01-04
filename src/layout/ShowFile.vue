@@ -7,8 +7,7 @@
       <FileList
         v-for="(item, index) in fileData"
         :key="index"
-        class=""
-        :class="[item.showColumn]"
+        :class="[ item.showColumn != '' ? 'col-span-2' : '']"
         :topicName="item.topicName"
         :dataList="item.itemList"
         :isHeightFull="item.isFull"

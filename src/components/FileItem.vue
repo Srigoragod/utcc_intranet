@@ -84,7 +84,7 @@ export default defineComponent({
     const handleDownloadPDF = async () => {
       try {
         // Replace 'your-pdf-api-endpoint' with the actual API endpoint for the PDF
-        const response = await fetch(props.pathFile);
+        const response = await fetch('../assets/file/P-2013.docx');
 
         if (!response.ok) {
           throw new Error("Network response was not ok");

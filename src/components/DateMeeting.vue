@@ -11,7 +11,7 @@
       <div class="div-time-location -mt-2" v-html="textDesc">
       </div>
     </div>
-    <div class="subtitle-1 day-ago w-[120px] text-right pr-4 text-a-gray-787878">{{ textDayAgo }}</div>
+    <div class="subtitle-1 day-ago w-[120px] text-right pr-4 text-a-gray-787878">{{ textDay }}</div>
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default defineComponent({
 
     const textName = ref(props.dateMeeting.name)
     const textDesc = ref(props.dateMeeting.description)
-    const textDayAgo  = ref('1 Day ago')
+    const textDay  = ref('')
 
     const initialData = () =>{
       let dateString = props.dateMeeting.date;
@@ -45,10 +45,27 @@ export default defineComponent({
       const meetingDate = new Date(dateString);
       const timeDifference = today - meetingDate;
       const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-      textDayAgo.value = `${daysAgo} Days ago`;
+    
+      let text = '';
+      if(daysAgo == 0 ){
+        text = 'today'
+      }else if (daysAgo > 1  ){
+        text = `${daysAgo == 1 ? 'day ago' : 'days ago'}`;
+      }else if ( daysAgo < 0){
+        text = `${daysAgo == -1 ? 'day to go' : 'days to go'}`;
+      }
+
+      textDay.value = `${convertToNegative(daysAgo)} ${text}`
 
     }
 
+    const convertToNegative =(val)=>{
+      console.log(val < 0, typeof val);
+      if(val < 0){
+        return Math.abs(val);
+      }
+      return val
+    }
     initialData()
 
     return{ 
@@ -57,7 +74,7 @@ export default defineComponent({
       year,
       textName,
       textDesc,
-      textDayAgo
+      textDay
     }
   }
 })

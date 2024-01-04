@@ -58,7 +58,13 @@ export default defineComponent({
   },
   setup() {
     const menuList = ref(menudata)
-    const homeList = ref(homedata)
+    const homeList = ref(null)
+
+    const initialData = () => {
+      homeList.value = homedata
+    }
+
+    initialData()
 
     return{
       menuList,

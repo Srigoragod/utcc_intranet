@@ -149,7 +149,7 @@
              "key":3,
              "url":"http://intranet.utcc/Forms/P-13.pdf",
              "icon":"file",
-             "name":"<span class='text-a-blue-0874D9'>งานกรรมการ <u>ไม่เกิน</u></span> 400.000 บาท",
+             "name":"<span >งานกรรมการ <u>ไม่เกิน</u></span> 400.000 บาท",
              "description":"Update:  Latest version",
              "isDisable":false
           },
@@ -157,7 +157,7 @@
              "key":4,
              "url":"http://intranet.utcc/Forms/P-14.pdf",
              "icon":"file",
-             "name":"<span class='text-a-blue-0874D9'>งานกรรมการ <u>มากกว่า</u></span> 400.000 บาท",
+             "name":"<span>งานกรรมการ <u>มากกว่า</u></span> 400.000 บาท",
              "description":"Update:  Latest version",
              "isDisable":false
           },
@@ -165,7 +165,7 @@
              "key":5,
              "url":"http://intranet.utcc/Forms/P-15.pdf",
              "icon":"file",
-             "name":"<span class='text-a-blue-2E3191'>วิธีพิเศษ <u>ไม่เกิน</u></span> 400.000 บาท",
+             "name":"<span>วิธีพิเศษ <u>ไม่เกิน</u></span> 400.000 บาท",
              "description":"Update:  Latest version",
              "isDisable":false
           },
@@ -173,7 +173,7 @@
              "key":6,
              "url":"#",
              "icon":"file",
-             "name":"<span class='text-a-blue-2E3191'>วิธีพิเศษ <u>มากกว่า</u></span> 400.000 บาท",
+             "name":"<span>วิธีพิเศษ <u>มากกว่า</u></span> 400.000 บาท",
              "description":"Update:  Latest version",
              "isDisable":false
           },

@@ -36,7 +36,7 @@
     <div>
       <div class="btn-circle">
         <font-awesome-icon
-          v-if="icon == 'file'"
+          v-if="icon == 'file' || icon == 'download' "
           :icon="['fas', 'download']"
           class="text-[20px]"
         />
@@ -84,7 +84,7 @@ export default defineComponent({
     const handleDownloadPDF = async () => {
       try {
         // Replace 'your-pdf-api-endpoint' with the actual API endpoint for the PDF
-        const response = await fetch("your-pdf-api-endpoint");
+        const response = await fetch(props.pathFile);
 
         if (!response.ok) {
           throw new Error("Network response was not ok");

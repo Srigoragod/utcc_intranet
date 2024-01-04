@@ -34,7 +34,7 @@ export default {
       {
         title: "Slide 1",
         description: "<h3 class='-mb-8'>Welcome To</h3><h1 >UTCC Intranet</h1>",
-        image: "http://10.7.43.166/share.cgi/Image1_0.png?ssid=0bd347539f384dfd95fb48bbb5ecaab3&fid=0bd347539f384dfd95fb48bbb5ecaab3&open=normal&ep=",
+        image: "https://www.utcc.ac.th/wp-content/uploads/2020/05/bg-14.jpeg",
       },
       {
         title: "Slide 1",
@@ -44,7 +44,7 @@ export default {
       {
         title: "Slide 1",
         description: "<h3 class='-mb-8'>มหาวิทยาลัยหอการค้าไทย </h3><h1 >UTCC มณีนพเก้า </h1>",
-        image: "http://10.7.43.166/share.cgi/Image2_0_0.png?ssid=6b9b74149dbd45f1912cdcc09671752c&fid=6b9b74149dbd45f1912cdcc09671752c&open=normal&ep=",
+        image: "https://www.utcc.ac.th/wp-content/uploads/2020/05/bg-13.jpeg",
       }
       // Add more slides as needed
     ]);

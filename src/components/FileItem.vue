@@ -1,6 +1,11 @@
 <template>
-  <div
-    class="flex justify-between items-center item-file hover:shadow-lg"
+  <button
+    class="flex w-full justify-between items-center item-file"
+    :class="[
+      isDisable ? 'cursor-not-allowed disabled:opacity-50 disabled' : 'cursor-pointer hover:shadow-lg ',
+    ]"
+    :disabled="isDisable"
+    @click="onClickButton()"
   >
     <div class="flex items-center">
       <div class="icon-item">
@@ -9,9 +14,12 @@
           :icon="['fas', 'file-pdf']"
           class="text-[28px]"
         />
-        <font-awesome-icon v-else-if="icon == 'word'" :icon="['fas', 'file-word']"  class="text-[28px]" />
+        <font-awesome-icon
+          v-else-if="icon == 'word'"
+          :icon="['fas', 'file-word']"
+          class="text-[28px]"
+        />
         <font-awesome-icon v-else :icon="['fas', 'link']" class="text-[28px]" />
-     
       </div>
       <div class="leading-none pl-4">
         <h5 v-html="name"></h5>
@@ -19,7 +27,7 @@
       </div>
     </div>
     <div>
-      <button class="btn-circle"  >
+      <div class="btn-circle">
         <font-awesome-icon
           v-if="icon == 'file'"
           :icon="['fas', 'download']"
@@ -30,9 +38,9 @@
           :icon="['fas', 'arrow-right']"
           class="text-[20px]"
         />
-      </button>
+      </div>
     </div>
-  </div>
+  </button>
 </template>
 
 <script>
@@ -42,11 +50,27 @@ export default defineComponent({
   name: "FileItem",
   props: {
     icon: { type: String, required: false },
-    name:{ type: String, required: false },
-    description:{ type: String, required: false }
+    name: { type: String, required: false },
+    description: { type: String, required: false },
+    url: { type: String, required: true },
+    isDisable: { type: Boolean, required: false },
   },
-  setup() {
-    return {};
+  setup(props, ctx) {
+    const onClickButton = () => {
+      if (!props.isDisable) {
+        if (props.url) {
+          window.open(props.url, "_blank");
+        } else {
+          console.log("page not found");
+          // page not found
+        }
+      } else {
+        return;
+      }
+    };
+    return {
+      onClickButton,
+    };
   },
 });
 </script>
@@ -56,8 +80,8 @@ export default defineComponent({
   color: #343443;
   padding: 0.75rem 2rem;
   border-radius: 10px;
-  cursor: pointer;
-  
+
+  text-align: left;
   .icon-item {
     color: #787878;
   }
@@ -73,7 +97,7 @@ export default defineComponent({
     );
   }
 
-  button {
+  .btn-circle {
     cursor: pointer;
     border-radius: 50%;
     padding: 12px 15px;
@@ -85,9 +109,10 @@ export default defineComponent({
   }
 
   &:hover {
-      // background-color: #E5F1FB;
-      // border: 1px solid #E5F1FB;
-      .icon-item {
+    // background-color: #E5F1FB;
+    // border: 1px solid #E5F1FB;
+    .icon-item {
+      transform: scale(1.25);
       color: #005bc0;
     }
     h5 {
@@ -96,12 +121,42 @@ export default defineComponent({
     .text-desc {
       color: #005bc0;
     }
-    button {
+    .btn-circle {
       background-color: #2e3191;
       svg {
         color: white;
       }
     }
+
+
+  }
+
+  &.disabled {
+
+    .icon-item {
+      color: #787878;
+    }
+    h5 {
+      color: #787878;
+    }
+    .text-desc {
+      color: #787878;
+    }
+    .btn-circle {
+      background-color: white;
+    svg {
+      color: #787878;
+    }
+    &:hover {
+      .btn-circle {
+      background-color: white;
+      svg {
+        color: #787878;
+      }
+     }
+    }
+  }
+
   }
 }
 </style>

@@ -105,7 +105,8 @@ export default defineComponent({
     }
     border: 1px solid #005BC0;
     .icon-svg {
-         color: #005BC0;
+        color: #005BC0;
+        transform: scale(1.25);
     }
     .btn-dowload {
         background-color: #005BC0;

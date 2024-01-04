@@ -35,7 +35,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../style/base.scss";
 button {
-  font-size: 24px;
+  font-size: 22px;
   color: $a-blue-005BC0;
   border-radius: 50px;
   border: 1px solid $a-blue-005BC0;
@@ -43,7 +43,7 @@ button {
 //   justify-content: start;
   align-items: center;
   min-width: auto;
-  min-height: 48px;
+  min-height: 38px;
   padding: 0 1.65rem 0 1.75rem;
 
   .text-ellipsis{

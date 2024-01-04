@@ -10,11 +10,11 @@
       </h4>
 
       <div v-if="!isSplit">
-            <FileItem  v-for="(item, index) in dataList" :icon="item.icon" :name="item.name" :description="item.description"  :key="index"></FileItem>
+            <FileItem  v-for="(item, index) in dataList" :icon="item.icon" :name="item.name" :description="item.description" :url="item.url" :isDisable="item.isDisable" :key="index"></FileItem>
       </div> 
       <div v-else class="grid grid-cols-2 gap-4 items-stretch ...">
         <div  v-for="(data, index) in dataListX" :key="index">
-            <FileItem  v-for="(item, key) in data" :icon="item.icon" :name="item.name" :description="item.description" :key="key"></FileItem>
+            <FileItem  v-for="(item, key) in data" :icon="item.icon" :name="item.name" :description="item.description" :url="item.url"  :isDisable="item.isDisable"  :key="key"></FileItem>
         </div> 
         </div>
 

@@ -8,15 +8,15 @@
        "itemList":[
           {
              "key":1,
-             "url":"#",
+             "url":"http://intranet.utcc/พรบ.pdf",
              "icon":"file",
              "name":"พรบ.สถาบันอุดมศึกษาเอกชน",
              "description":"Update:  Latest version",
-             "isDisable":true
+             "isDisable":false
           },
           {
              "key":2,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/60mua.pdf",
              "icon":"file",
              "name":"รวม กฎกระทรวง ประกาศกระทรวงศึกษาธิการ ประกาศ และมติคณะกรรมการการอุดมศึกษา ที่เกี่ยวกับหลักเกณฑ์/แนวทาง และแนวปฏิบัติที่เกี่ยวข้อง <br/> สิงหาคม 2556 - กรกฎาคม 2560",
              "description":"Update:  Latest version",
@@ -33,39 +33,39 @@
        "itemList":[
           {
              "key":1,
-             "url":"#",
+             "url":"http://intranet.utcc/Adobe.pdf",
              "icon":"file",
              "name":"Adobe",
              "description":"Update:  Latest version",
-             "isDisable":true
+             "isDisable":false
           },
           {
              "key":2,
-             "url":"#",
+             "url":"https://www.utcc.ac.th/download/ip-phone.pdf",
              "icon":"file",
              "name":"IP-Phone",
              "description":"Update:  Latest version",
-             "isDisable":false
+             "isDisable": false
           },
           {
              "key":3,
-             "url":"#",
-             "icon":"file",
+             "url":"https://www.utcc.ac.th/download/UTCC-Mobile%20for%20Win7.pdf",
+             "icon":"link",
              "name":"UTCC-Mobile",
-             "description":"Update:  Latest version",
-             "isDisable":false
+             "description":"Update:  ปิดปรับปรุงระบบชั่วคราว",
+             "isDisable":true
           },
           {
              "key":4,
-             "url":"#",
-             "icon":"file",
+             "url":"https://www.utcc.ac.th/download/UTCC-Wifi%20for%20Internet%20Explorer.pdf",
+             "icon":"link",
              "name":"UTCC-Wifi",
-             "description":"Update:  Latest version",
-             "isDisable":false
+             "description":"Update:  ปิดปรับปรุงระบบชั่วคราว",
+             "isDisable":true
           },
           {
              "key":5,
-             "url":"#",
+             "url":"http://intranet.utcc/Setup_UTCC_SPSS.pdf",
              "icon":"file",
              "name":"UTCC-SPSS",
              "description":"Update:  Latest version",
@@ -82,15 +82,15 @@
        "itemList":[
           {
              "key":1,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/LessPaperlOfficerManual%20V1.7.pdf",
              "icon":"file",
              "name":"สำหรับเจ้าหน้าที่",
              "description":"Update:  Latest version",
-             "isDisable":true
+             "isDisable":false
           },
           {
              "key":2,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/LessPaperlManual-GeneralUser-V1.7.pdf",
              "icon":"file",
              "name":"สำหรับบุคคลทั่วไป",
              "description":"Update:  Latest version",
@@ -98,7 +98,7 @@
           },
           {
              "key":3,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/LessPaperDeptAdmin-V1.7.pdf",
              "icon":"file",
              "name":"สำหรับผู้ดูแลระบบระดับหน่วยงาน",
              "description":"Update:  Latest version",
@@ -106,7 +106,7 @@
           },
           {
              "key":4,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/LessPaperCenterAdmin-V1.7.pdf",
              "icon":"file",
              "name":"สำหรับผู้ดูแลระบบส่วนกลาง",
              "description":"Update:  Latest version",
@@ -114,7 +114,7 @@
           },
           {
              "key":5,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/LPTouchManual-Manager-V1.7.pdf",
              "icon":"file",
              "name":"LPTouch",
              "description":"Update:  Latest version",
@@ -131,15 +131,15 @@
        "itemList":[
           {
              "key":1,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/P-11.pdf",
              "icon":"file",
              "name":"วิธีตกลงราคา",
              "description":"Update:  Latest version",
-             "isDisable":true
+             "isDisable":false
           },
           {
              "key":2,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/P-12.pdf",
              "icon":"file",
              "name":"วิธีตกลงราคา เร่งด่วน",
              "description":"Update:  Latest version",
@@ -147,25 +147,25 @@
           },
           {
              "key":3,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/P-13.pdf",
              "icon":"file",
-             "name":"<span class='text-a-blue-0874D9'>งานกรรมการ <u>ไม่เกิน</u></span> 4 แสนบาท",
+             "name":"<span class='text-a-blue-0874D9'>งานกรรมการ <u>ไม่เกิน</u></span> 400.000 บาท",
              "description":"Update:  Latest version",
              "isDisable":false
           },
           {
              "key":4,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/P-14.pdf",
              "icon":"file",
-             "name":"<span class='text-a-blue-0874D9'>งานกรรมการ <u>มากกว่า</u></span> 4 แสนบาท",
+             "name":"<span class='text-a-blue-0874D9'>งานกรรมการ <u>มากกว่า</u></span> 400.000 บาท",
              "description":"Update:  Latest version",
              "isDisable":false
           },
           {
              "key":5,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/P-15.pdf",
              "icon":"file",
-             "name":"<span class='text-a-blue-2E3191'>วิธีพิเศษ <u>ไม่เกิน</u></span> 4 แสนบาท",
+             "name":"<span class='text-a-blue-2E3191'>วิธีพิเศษ <u>ไม่เกิน</u></span> 400.000 บาท",
              "description":"Update:  Latest version",
              "isDisable":false
           },
@@ -173,13 +173,13 @@
              "key":6,
              "url":"#",
              "icon":"file",
-             "name":"<span class='text-a-blue-2E3191'>วิธีพิเศษ <u>มากกว่า</u></span> 4 แสนบาท",
+             "name":"<span class='text-a-blue-2E3191'>วิธีพิเศษ <u>มากกว่า</u></span> 400.000 บาท",
              "description":"Update:  Latest version",
              "isDisable":false
           },
           {
              "key":7,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/P-17.pdf",
              "icon":"file",
              "name":"วิธี e-Action",
              "description":"Update:  Latest version",
@@ -196,15 +196,15 @@
        "itemList":[
           {
              "key":1,
-             "url":"#",
+             "url":"https://reservevan.utcc.ac.th/",
              "icon":"link",
-             "name":"<span class='text-a-blue-0874D9'>ระบบจองรถยนต์ในกิจกรรมมหาวิทยาลัย</span>",
+             "name":"<span class='text-a-blue-0874D9 underline'>ระบบจองรถยนต์ในกิจกรรมมหาวิทยาลัย</span>",
              "description":"",
-             "isDisable":true
+             "isDisable":false
           },
           {
              "key":2,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/EX-Document11.pdf",
              "icon":"file",
              "name":"แบบการขอใช้รถยนต์ในกิจกรรมมหาวิทยาลัย",
              "description":"Update:  Latest version",
@@ -212,7 +212,7 @@
           },
           {
              "key":3,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/EX-Document12.pdf",
              "icon":"file",
              "name":"แนวปฎิบัติการขอใช้บริการรถยนต์มหาวิทยาลัย",
              "description":"Update:  Latest version",
@@ -220,7 +220,7 @@
           },
           {
              "key":4,
-             "url":"#",
+             "url":"http://intranet.utcc/carbooking_online.pdf",
              "icon":"file",
              "name":"คู่มือการเข้าระบบจองรถออนไลน์",
              "description":"Update:  Latest version",
@@ -228,7 +228,7 @@
           },
           {
              "key":5,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/EX-Document13.pdf",
              "icon":"file",
              "name":"ตารางอัตราค่าเช่ารถยนต์ของมหาวิทยาลัยหอการค้าไทย",
              "description":"Update:  Latest version",
@@ -236,7 +236,7 @@
           },
           {
              "key":6,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/EX-Document14.pdf",
              "icon":"file",
              "name":"ประมาณการค่าเช่ารถจากภายนอก",
              "description":"Update:  Latest version",
@@ -252,7 +252,7 @@
        "itemList":[
           {
              "key":1,
-             "url":"#",
+             "url":"http://intranet.utcc/doc_digital.pdf",
              "icon":"file",
              "name":"แนวปฏิบัติการใช้งานระบบเอกสารดิจิตอล",
              "description":"Update:  Latest version",
@@ -260,7 +260,7 @@
           },
           {
              "key":2,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/howtoprinter.pdf",
              "icon":"file",
              "name":"วิธีการใช้งานโปรแกรม Cashier",
              "description":"Update:  Latest version",
@@ -268,7 +268,7 @@
           },
           {
              "key":3,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/errorprinter.pdf",
              "icon":"file",
              "name":"วิธีการแก้ไขปัญหากระดาษติด",
              "description":"Update:  Latest version",
@@ -276,7 +276,7 @@
           },
           {
              "key":4,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/P-2012.pdf",
              "icon":"file",
              "name":"แบบฟอร์มใบเบิกกระดาษ A4",
              "description":"Update:  Latest version",
@@ -284,7 +284,7 @@
           },
           {
              "key":5,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/P-2013.pdf",
              "icon":"file",
              "name":"แบบฟอร์มบันทึกขอเพิ่มยอดจัดสรรโควต้ากระดาษ",
              "description":"Update:  Latest version",
@@ -352,7 +352,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.001 แบบฟอร์มใบสั่งซื้อเงินสด",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -360,7 +360,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.002 แบบฟอร์มรับสินค้าด่วน",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -368,7 +368,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.003 แบบฟอร์มคุณลักษณะพัสดุ",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -376,7 +376,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.004 แบบฟอร์มคุณลักษณะงานจัดจ้าง",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -384,7 +384,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.005 แบบฟอร์มร่างขอบเขตคุณลักษณะงาน",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -392,7 +392,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.006 แบบฟอร์มเอกสารส่วนที่ 1 คุณลักษณะ",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -400,7 +400,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.007 แบบฟอร์มเอกสารส่วนที่ 2 ใบเสนอราคา",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -408,7 +408,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.008 แบบฟอร์มแต่งตั้งคณะกรรมการ",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -416,7 +416,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.009 แบบฟอร์มรับซอง (วิธีสอบราคา) , (วิธีพิเศษ)",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -424,7 +424,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.010 แบบฟอร์มรับซอง (วิธีประกวดราคา)",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -432,7 +432,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 1.011 แบบฟอร์มใบรับหลักประกันซอง (วิธีประกวดราคา) , (วิธีพิเศษกรณีเกิน 2 ล้านบาท)",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -440,7 +440,7 @@
              "url":"#",
              "icon":"file",
              "name":"แนวปฏิบัติ ขั้นตอน และเงื่อนไขในการส่งคืนพัสดุ/ครุภัณฑ์",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -448,7 +448,7 @@
              "url":"#",
              "icon":"link",
              "name":"<span class='text-a-blue-0874D9'>* ระบบเบิกพัสดุ (สโตร์)</span>",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -456,7 +456,7 @@
              "url":"#",
              "icon":"word",
              "name":"แบบฟอร์มใบเบิกกระดาษ A4",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -464,7 +464,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.001 แบบฟอร์มใบเบิกพัสดุ (สโตร์)",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -472,7 +472,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.002 แบบฟอร์มใบขอยืมวัสดุ/อุปกรณ์",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -480,7 +480,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.003 แบบฟอร์มขอเลขรหัสสินทรัพย์",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -488,7 +488,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.004 แบบฟอร์มรายงานผลการใช้งาน",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -496,7 +496,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.005 แบบฟอร์มใบตรวจรับงานกรรมการ",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -504,7 +504,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.006 แบบฟอร์มใบโอนย้ายสินทรัพย์",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -512,7 +512,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.007 แบบฟอร์มใบส่งคืนพัสดุ/ครุภัณฑ์",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -520,7 +520,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.008 แบบฟอร์มบันทึกข้อมูลรายละเอียดสินทรัพย์",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -528,7 +528,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.009 แบบฟอร์มใบขอเบิกครุภัณฑ์เก่าไปใช้งาน",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -536,7 +536,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.010 แบบฟอร์มแจ้งรายการสินทรัพย์ที่ได้รับ",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -544,7 +544,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.011 แบบฟอร์มขอเลขรหัสซ่อมสินทรัพย์",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
@@ -552,7 +552,7 @@
              "url":"#",
              "icon":"word",
              "name":"พ 2.012  แบบฟอร์มใบเบิกกระดาษ A4",
-             "description":"Update:  Latest version",
+             "description":"Update: 1 Sep 2023",
              "isDisable":false
           }
        ]

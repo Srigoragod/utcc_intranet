@@ -3,10 +3,10 @@
     <h4 class="font-bold text-topic-name py-2">ข่าวสารประชาสัมพันธ์ภายนอก</h4>
     <div class="grid grid-cols-4 gap-4 items-stretch">
       <div class="item-img-news hover:cursor-not-allowed"></div>
-      <a target="_blank" href="http://center.utcc/search_result_seminar.php">
+      <a target="_blank" href="http://center.utcc/search_result_seminar.php" class="">
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
-            <img src="../assets/icon/laptop.svg" alt="" class="pl-2" />
+            <img src="../assets/icon/laptop.svg" alt="" class="pl-2 " />
             <h5>อบรม/สัมมนา</h5>
           </div>
         </div>
@@ -19,10 +19,8 @@
           </div>
         </div>
       </a>
-      <a
-        target="_blank"
-        href="http://department.utcc.ac.th/admin/index.php/2018-03-06-08-45-13"
-      >
+      <!--  href="http://department.utcc.ac.th/admin/index.php/2018-03-06-08-45-13"   target="_blank" -->
+      <span class="cursor-not-allowed opacity-50">
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
             <!-- alt=""  -->
@@ -30,7 +28,7 @@
             <h5>ข้อเสนอบริการวิชาการ และงานวิจัย</h5>
           </div>
         </div>
-      </a>
+      </span>
     </div>
   </div>
 </template>
@@ -76,6 +74,10 @@ export default {};
     &:hover {
       color: #005bc0;
       border: 1px solid #005bc0;
+      img{
+        transform: scale(1.25);
+      }
+
     }
   }
 }

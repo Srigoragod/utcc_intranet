@@ -83,7 +83,7 @@ export default defineComponent({
     font-size: 80px;
     line-height: normal;
     width: 80px;
-    margin-top: -0.75rem;
+    margin-top: -0.5rem;
   }
   .mmyyyy {
     color: #2E3191;

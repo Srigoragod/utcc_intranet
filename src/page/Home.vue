@@ -39,6 +39,7 @@ import News from '../layout/News.vue';
 import ShowFile from "../layout/ShowFile.vue";
 import Footer from "../layout/Footer/Footer.vue";
 import ScrollToTopButton from "../components/ScrollToTopButton.vue";
+import FloatingActionButton from "../components/FloatingActionButton.vue";
 
 
 export default defineComponent({
@@ -54,7 +55,8 @@ export default defineComponent({
     News,
     ShowFile,
     Footer,
-    ScrollToTopButton
+    ScrollToTopButton,
+    FloatingActionButton
   },
   setup() {
     const menuList = ref(menudata)

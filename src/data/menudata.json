@@ -93,7 +93,7 @@
     {
       "id": 2,
       "textName": "Forms &Document",
-      "url": "formAndDocument",
+      "url": "/formsdocument",
       "isActive": false,
       "items": [
         {

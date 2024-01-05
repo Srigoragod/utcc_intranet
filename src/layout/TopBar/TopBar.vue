@@ -1,28 +1,27 @@
 <template>
- <div class="bg-[#FFFFFF] drop-shadow-sm w-full fixed top-0 z-30">
-  <div :id="!isShow ? 'topBar': ''"  class="container mx-auto" >
-  <div class="topbar top-0 w-full z-10">
-    <!-- <nav class="flex mx-auto flex-no-wrap fixed top-0  w-full items-center justify-between bg-[#FFFFFF] shadow-m -->
-    <nav class="flex justify-between w-full ">
-      <div>
-        <a href="#">
-          <img
-            src="../../assets/logo/UTCC_SubMain2-1.png"
-            class="main-logo my-2"
-            alt="UTCC Logo"
-          />
-        </a>
-      </div>
-      <div
-        id="mega-menu-full"
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-      >
-
-        <ul
-          class="flex flex-col p-4 md:p-0 mt-4  rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-        >
-          <li v-for="(item, index) in menuItems" :key="index">
-            <!-- <el-badge v-if="item.id == 4" :value="3" class="item">
+  <div class="bg-[#FFFFFF] drop-shadow-sm w-full fixed top-0 z-30">
+    <div :id="!isShow ? 'topBar' : ''" class="container mx-auto">
+      <div class="topbar top-0 w-full z-10">
+        <!-- <nav class="flex mx-auto flex-no-wrap fixed top-0  w-full items-center justify-between bg-[#FFFFFF] shadow-m -->
+        <nav class="flex justify-between w-full">
+          <div>
+            <a href="#">
+              <img
+                src="../../assets/logo/UTCC_SubMain2-1.png"
+                class="main-logo my-2"
+                alt="UTCC Logo"
+              />
+            </a>
+          </div>
+          <div
+            id="mega-menu-full"
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li v-for="(item, index) in menuItems" :key="index">
+                <!-- <el-badge v-if="item.id == 4" :value="3" class="item">
             <a
               href="#"
               :class="`block ${item.id == idActive ? 'active' : ''}`"
@@ -30,54 +29,62 @@
               >{{ item.textName }}</a
             >
             </el-badge> -->
-            <a
-              href="#"
-              :class="`block ${item.id == idActive ? 'active' : ''}`"
-              @click="handleSubMenuDropdown(item.items, item.id)"
-              >{{ item.textName }}</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div id="bg-menu-top" v-if="isShow"  >
-      <div class="container mx-auto">
-        <div class="float-right cursor-pointer btn-close">
-          <el-tooltip class="item text-[16px]" effect="light" content="Close Menu" placement="left">
-            <font-awesome-icon @click="onClickCloseMenu()" :icon="['fas', 'circle-xmark']"   class="text-[20px]"/>
-          </el-tooltip>
-        </div>
-        <div class="grid grid-cols-4 gap-4">
-          <div class="">
-            <Caption></Caption>
+                <a
+                  href="#"
+                  :class="`block ${item.id == idActive ? 'active' : ''}`"
+                  @click="handleSubMenuDropdown(item)"
+                  >{{ item.textName }}</a
+                >
+              </li>
+            </ul>
           </div>
-          <!-- Menu  -->
-          <div  v-for="(item, index) in divMenu" :key="index">
+        </nav>
 
-            <MenuItem
-              v-for="(subItem, index1) in item"
-              :key="index1"
-              :textName="subItem.textName"
-              :textUrl="subItem.url"
-              @click-menu="handleClickMenu()"
-            >
-              {{ subItem }}
-            </MenuItem>
-
+        <div id="bg-menu-top" v-if="isShow">
+          <div class="container mx-auto">
+            <div class="float-right cursor-pointer btn-close">
+              <el-tooltip
+                class="item text-[16px]"
+                effect="light"
+                content="Close Menu"
+                placement="left"
+              >
+                <font-awesome-icon
+                  @click="onClickCloseMenu()"
+                  :icon="['fas', 'circle-xmark']"
+                  class="text-[20px]"
+                />
+              </el-tooltip>
+            </div>
+            <div class="grid grid-cols-4 gap-4">
+              <div class="">
+                <Caption></Caption>
+              </div>
+              <!-- Menu  -->
+              <div v-for="(item, index) in divMenu" :key="index">
+                <MenuItem
+                  v-for="(subItem, index1) in item"
+                  :key="index1"
+                  :textName="subItem.textName"
+                  :textUrl="subItem.url"
+                  @click-menu="handleClickMenu()"
+                >
+                  {{ subItem }}
+                </MenuItem>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
-</div>
 </template>
 
 <script>
-import { ref,defineComponent } from "vue";
+import { ref, defineComponent } from "vue";
 import Caption from "../../components/Caption.vue";
 import MenuItem from "./MenuItem.vue";
+import { useRouter } from "vue-router";
 
 export default defineComponent({
   name: "TopBar",
@@ -85,10 +92,11 @@ export default defineComponent({
     Caption,
     MenuItem,
   },
-  props:{
-    dataList:{ type: Array, required: false}
+  props: {
+    dataList: { type: Array, required: false },
   },
   setup(props) {
+    const router = useRouter();
     const menuItems = ref(props.dataList);
     const subMenu = ref([]);
     const idActive = ref(1);
@@ -432,30 +440,40 @@ export default defineComponent({
     //   ];
     // };
     // setMenu();
-    const resetMenu = () =>{
+    const resetMenu = () => {
       isShow.value = false;
       idActive.value = 1;
-    }
-    const handleClickMenu = (val) =>{
-      resetMenu()
-    }
-    const handleSubMenuDropdown = async (items, id) => {
-      console.log('handleSubMenuDropdown run ... ');
+    };
+    const handleClickMenu = (val) => {
+      resetMenu();
+    };
+    const handleSubMenuDropdown = async (item) => {
+      // router.push(items.url)
+      let id = item.id;
+      // if (item.url) {
+      //   router.push(item.url);
+      // }
+
+      console.log(
+        "handleSubMenuDropdown run ... ",
+        JSON.stringify(item, null, 4)
+      );
       idActive.value = id;
-      if (id == 1 ) {
-        isShow.value = false
+      if (id == 1) {
+        isShow.value = false;
+
         return;
       }
-      items.sort((a, b) => a.textName.localeCompare(b.textName, "th"));
+
+      item.items.sort((a, b) => a.textName.localeCompare(b.textName, "th"));
       //  if(items.length > 8){
-      let data = await dividedArray(items);
+      let data = await dividedArray(item.items);
       // console.log("data ....... ", data);
       divMenu.value = data;
       //  }else{
       //   divMenu.value = items
       //  }
       isShow.value = true;
-      console.log("divMenu ... run ", divMenu.value);
     };
     const dividedArray = (items) => {
       const setSize = 8;
@@ -466,14 +484,14 @@ export default defineComponent({
       return dividedArray;
     };
 
-    const onClickAway =(e)=>{
-      console.log(' test .. ', e);
-    }
+    const onClickAway = (e) => {
+      console.log(" test .. ", e);
+    };
 
-    const onClickCloseMenu =()=>{
-      isShow.value = false
-      idActive.value = 1
-    }
+    const onClickCloseMenu = () => {
+      isShow.value = false;
+      idActive.value = 1;
+    };
 
     return {
       menuItems,
@@ -484,7 +502,7 @@ export default defineComponent({
       divMenu,
       onClickAway,
       onClickCloseMenu,
-      handleClickMenu
+      handleClickMenu,
     };
   },
 });
@@ -492,10 +510,10 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
-.main-logo{
-    width: 230px;
-    height: 70px;
-  }
+.main-logo {
+  width: 230px;
+  height: 70px;
+}
 // #topBar {
 //   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 //   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
@@ -513,7 +531,7 @@ export default defineComponent({
 
       &:hover {
         color: $a-blue-005BC0;
-        background-color: rgb(241,243,244);
+        background-color: rgb(241, 243, 244);
       }
 
       &.active {
@@ -540,17 +558,16 @@ export default defineComponent({
   top: 70px;
   min-width: 100%;
   left: 0;
-
 }
 .menu-focus {
   width: 48px;
   height: 48px;
   background-color: #dcedff;
 }
-.btn-close{
+.btn-close {
   color: #787878;
   &:hover {
-    color: #005BC0;
+    color: #005bc0;
   }
 }
 </style>

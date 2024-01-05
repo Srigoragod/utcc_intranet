@@ -1,5 +1,6 @@
 <!-- ScrollToTopButton.vue -->
 <template>
+
   <button @click="scrollToTop" class="" v-if="isVisible"  id="scrollToTopButton">
     <font-awesome-icon :icon="['fas', 'chevron-up']" />
   </button>

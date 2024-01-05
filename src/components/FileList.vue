@@ -63,8 +63,8 @@ export default defineComponent({
     const dataListX = ref([]);
     const isSplit = ref(false);
     const dividedArray = (items) => {
-      //   items.sort((a, b) => a.name.localeCompare(b.name, "th"));
-      const setSize = 12;
+        items.sort((a, b) => a.name.localeCompare(b.name, "th"));
+      const setSize = 14;
       const dividedArray = [];
       for (let i = 0; i < items.length; i += setSize) {
         dividedArray.push(items.slice(i, i + setSize));
@@ -74,7 +74,7 @@ export default defineComponent({
 
     const handleArrayFile = () => {
 
-      props.dataList.filter((item) =>  console.log('...', JSON.stringify(item,null,4)));
+      // props.dataList.filter((item) =>  console.log('...', JSON.stringify(item,null,4)));
       if (props.dataList.length > 10) {
         dividedArray(props.dataList);
         isSplit.value = true;

@@ -373,27 +373,27 @@
        "isFull":true,
        "isAlert": true,
        "alertDetail": {
-         "title": "แนวปฏิบัติ ขั้นตอน กระบวนการจัดซื้อจัดจ้าง",
-         "description": "Update: 1 Sep 2023"
+         "title": "แนวปฏิบัติ ขั้นตอน กระบวนการจัดซื้อจัดจ้าง Update: 1 Sep 2023",
+         "description": ""
        },
        "name":"แนวปฏิบัติ ขั้นตอน กระบวนการจัดซื้อจัดจ้าง",
        "description":"",
        "itemList":[
-          {
-             "key":1,
-             "url":"#",
-             "icon":"alert",
-             "name":"แนวปฏิบัติ ขั้นตอน กระบวนการจัดซื้อจัดจ้าง",
-             "description":"",
-             "isDisable":false
-          },
+         {
+            "key":1,
+            "url":"http://intranet.utcc/Forms/EX-asset11.pdf",
+            "icon":"file",
+            "name":"รายการวัสดุสิ้นเปลืองที่มีให้เบิกในคลังพัสดุ (สโตร์)",
+            "description":"Update: 1 Sep 2023",
+            "isDisable": false
+         },
           {
              "key":2,
              "url":"#",
              "icon":"word",
              "name":"พ 1.001 แบบฟอร์มใบสั่งซื้อเงินสด",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":3,
@@ -401,7 +401,7 @@
              "icon":"word",
              "name":"พ 1.002 แบบฟอร์มรับสินค้าด่วน",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":4,
@@ -409,7 +409,7 @@
              "icon":"word",
              "name":"พ 1.003 แบบฟอร์มคุณลักษณะพัสดุ",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":5,
@@ -417,7 +417,7 @@
              "icon":"word",
              "name":"พ 1.004 แบบฟอร์มคุณลักษณะงานจัดจ้าง",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":6,
@@ -425,7 +425,7 @@
              "icon":"word",
              "name":"พ 1.005 แบบฟอร์มร่างขอบเขตคุณลักษณะงาน",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":7,
@@ -433,7 +433,7 @@
              "icon":"word",
              "name":"พ 1.006 แบบฟอร์มเอกสารส่วนที่ 1 คุณลักษณะ",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":8,
@@ -441,7 +441,7 @@
              "icon":"word",
              "name":"พ 1.007 แบบฟอร์มเอกสารส่วนที่ 2 ใบเสนอราคา",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":9,
@@ -449,7 +449,7 @@
              "icon":"word",
              "name":"พ 1.008 แบบฟอร์มแต่งตั้งคณะกรรมการ",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":10,
@@ -457,7 +457,7 @@
              "icon":"word",
              "name":"พ 1.009 แบบฟอร์มรับซอง (วิธีสอบราคา) , (วิธีพิเศษ)",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":11,
@@ -465,7 +465,7 @@
              "icon":"word",
              "name":"พ 1.010 แบบฟอร์มรับซอง (วิธีประกวดราคา)",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":12,
@@ -473,11 +473,11 @@
              "icon":"word",
              "name":"พ 1.011 แบบฟอร์มใบรับหลักประกันซอง (วิธีประกวดราคา) , (วิธีพิเศษกรณีเกิน 2 ล้านบาท)",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":13,
-             "url":"#",
+             "url":"http://intranet.utcc/Forms/EX-asset01.pdf",
              "icon":"file",
              "name":"แนวปฏิบัติ ขั้นตอน และเงื่อนไขในการส่งคืนพัสดุ/ครุภัณฑ์",
              "description":"Update: 1 Sep 2023",
@@ -485,7 +485,7 @@
           },
           {
              "key":14,
-             "url":"#",
+             "url":"https://reservevan.utcc.ac.th/store/",
              "icon":"link",
              "name":"<span class='text-a-blue-0874D9'>* ระบบเบิกพัสดุ (สโตร์)</span>",
              "description":"Update: 1 Sep 2023",
@@ -497,100 +497,100 @@
              "icon":"word",
              "name":"แบบฟอร์มใบเบิกกระดาษ A4",
              "description":"Update: 1 Sep 2023",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":16,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2001.pdf",
+             "icon":"file",
              "name":"พ 2.001 แบบฟอร์มใบเบิกพัสดุ (สโตร์)",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":17,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2002.pdf",
+             "icon":"file",
              "name":"พ 2.002 แบบฟอร์มใบขอยืมวัสดุ/อุปกรณ์",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":18,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2003.pdf",
+             "icon":"file",
              "name":"พ 2.003 แบบฟอร์มขอเลขรหัสสินทรัพย์",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":19,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2004.pdf",
+             "icon":"file",
              "name":"พ 2.004 แบบฟอร์มรายงานผลการใช้งาน",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":21,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2005.pdf",
+             "icon":"file",
              "name":"พ 2.005 แบบฟอร์มใบตรวจรับงานกรรมการ",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":22,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2006.pdf",
+             "icon":"file",
              "name":"พ 2.006 แบบฟอร์มใบโอนย้ายสินทรัพย์",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":23,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2007.pdf",
+             "icon":"file",
              "name":"พ 2.007 แบบฟอร์มใบส่งคืนพัสดุ/ครุภัณฑ์",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":24,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2008.pdf",
+             "icon":"file",
              "name":"พ 2.008 แบบฟอร์มบันทึกข้อมูลรายละเอียดสินทรัพย์",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":25,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2009.pdf",
+             "icon":"file",
              "name":"พ 2.009 แบบฟอร์มใบขอเบิกครุภัณฑ์เก่าไปใช้งาน",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":26,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2010.pdf",
+             "icon":"file",
              "name":"พ 2.010 แบบฟอร์มแจ้งรายการสินทรัพย์ที่ได้รับ",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":27,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2011.pdf",
+             "icon":"file",
              "name":"พ 2.011 แบบฟอร์มขอเลขรหัสซ่อมสินทรัพย์",
              "description":"Update: 1 Sep 2023",
              "isDisable":false
           },
           {
              "key":28,
-             "url":"#",
-             "icon":"word",
+             "url":"http://intranet.utcc/Forms/P-2012.pdf",
+             "icon":"file",
              "name":"พ 2.012  แบบฟอร์มใบเบิกกระดาษ A4",
              "description":"Update: 1 Sep 2023",
              "isDisable":false

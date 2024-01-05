@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[5rem] py-4"  id="dashboard-slide">
+  <div class="mt-[5rem] py-4 drop-shadow-lg"  id="dashboard-slide">
     <Splide :options="splideOptions">
       <SplideSlide v-for="(item, index) in slides" :key="index">
         <div class="bg-image mx-auto flex justify-center items-center" :style="{ backgroundImage: `url(${item.image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover' }"  >

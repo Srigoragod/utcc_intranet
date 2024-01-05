@@ -66,6 +66,9 @@ button {
   &:hover {
     background-color: $a-blue-005BC0;
     color: #fff;
+    svg {
+      transform: scale(1);
+    }
   }
 }
 </style>

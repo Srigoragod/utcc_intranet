@@ -1,5 +1,5 @@
 <template>
-  <button
+    <button
     class="flex w-full justify-between items-center item-file"
     :class="[
       isDisable
@@ -37,8 +37,8 @@
       <div class="btn-circle">
         <font-awesome-icon
           v-if="icon == 'file' || icon == 'download' "
-          :icon="['fas', 'download']"
-          class="text-[20px]"
+          :icon="['fas', 'arrow-right']"
+          class="text-[20px] transform rotate-90"
         />
         <font-awesome-icon
           v-else
@@ -84,7 +84,8 @@ export default defineComponent({
     const handleDownloadPDF = async () => {
       try {
         // Replace 'your-pdf-api-endpoint' with the actual API endpoint for the PDF
-        const response = await fetch('../assets/file/P-2013.docx');
+        console.log('pathFile ...', props.pathFile ,'file name ...', props.fileName);
+        const response = await fetch(props.pathFile);
 
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -117,8 +118,13 @@ export default defineComponent({
   },
 });
 </script>
-
+<style >
+.el-alert__title{
+  font-size: 24px;
+}
+</style>
 <style lang="scss" scoped>
+
 .item-file {
   color: #343443;
   padding: 0.75rem 2rem;

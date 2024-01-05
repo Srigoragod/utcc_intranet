@@ -9,6 +9,8 @@
         :key="index"
         :class="[ item.showColumn != '' ? 'col-span-2' : '']"
         :topicName="item.topicName"
+        :isAlert="item.isAlert"
+        :alertDetail="item.alertDetail"
         :dataList="item.itemList"
         :isHeightFull="item.isFull"
       ></FileList>

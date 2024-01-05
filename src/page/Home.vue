@@ -7,12 +7,12 @@
      <template #content>
         <div class="container mx-auto pb-20">
             <Slider></Slider>
-            <Shortcut class="my-2"></Shortcut>
-            <UniversityMeeting class="my-2"></UniversityMeeting>
-            <LastUpdate class="my-2"></LastUpdate>
-            <News class="my-2"></News>
+            <Shortcut ref="shortcut" class="my-2"></Shortcut>
+            <UniversityMeeting ref="meeting" class="my-2"></UniversityMeeting>
+            <LastUpdate ref="lastupdate" class="my-2"></LastUpdate>
+            <News ref="news" class="my-2"></News>
             <br/>
-            <ShowFile :items="homeList" class="my-2"></ShowFile>
+            <ShowFile ref="showfile" :items="homeList" class="my-2"></ShowFile>
             <ScrollToTopButton ></ScrollToTopButton>
         </div>
      </template>

@@ -1,8 +1,8 @@
 <template>
-  <div class="footer w-full bg-a-blue-0F2A43 text-white py-4">
+  <div class="footer w-full bg-a-blue-0F2A43 text-white py-4" data-aos="fade-up">
     <div class="container m-auto">
       <div class="grid grid-cols-5 gap-4">
-        <div>
+        <div >
           <a href="#">
             <img
               src="../../assets/logo/UTCC_Logo-white.png"
@@ -11,7 +11,7 @@
             />
           </a>
         </div>
-        <div class="text-white" v-for="(data, index) in dataList" :key="index">
+        <div  class="text-white" v-for="(data, index) in dataList" :key="index">
           <h6 class="text-a-gray-F8F8F8">{{ data.textName }}</h6>
           <MenuItem
               v-for="(subItem, index1) in data.items"
@@ -19,6 +19,7 @@
               :textName="subItem.textName"
               :textUrl="subItem.url"
               :isDark="true"
+              :type="subItem.type"
             >
               {{ subItem }}
             </MenuItem>
@@ -49,9 +50,8 @@ export default defineComponent({
   },
   setup(props) {
     const menuList = ref(props.dataList);
-
     return {
-      menuList,
+      menuList
     };
   },
 });

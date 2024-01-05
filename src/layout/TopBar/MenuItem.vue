@@ -1,5 +1,5 @@
 <template>
-  <div @click="onClickMenu()">
+  <div @click="onClickMenu(textUrl,type)">
     <!-- <h4 class="font-bold text-a-blue-2E3191">{{item.textName}}</h4> -->
     <div  v-if="!isDark" class="flex items-center menu-item pl-4 hover:underline hover:underline-offset-1">
       <!-- <div> -->
@@ -26,10 +26,12 @@ export default defineComponent({
     textName: { type: String, required: true },
     textUrl: { type: String, required: true },
     isDark: { type: Boolean, required: false },
+    type: { type: String, required: false },
   },
   emits: ['click-menu'],
   setup(props,ctx){
-    const onClickMenu = () =>{
+    const onClickMenu = (url,type) =>{
+     if(type == 'link'){
       if(props.textUrl){
         window.open(props.textUrl, '_blank')
         ctx.emit('click-menu', 'Button clicked!');
@@ -37,10 +39,26 @@ export default defineComponent({
         console.log('page not found');
         // page not found
       }
+     }else{
+      scrollToRef(url)
+     }
+
 
     }
+    const scrollToRef = (url) => {
+      console.log('scrollToRef ... ', props.textUrl);
+      if (url) {
+        const top = this.$refs[(url)].offsetTop;
+      window.scrollTo({
+        top: top,
+        left: 0,
+        behavior: 'smooth'
+      });
+      }
+    }
     return{
-      onClickMenu
+      onClickMenu,
+      scrollToRef
     }
   }
 });

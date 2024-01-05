@@ -2,10 +2,10 @@
   <div>
     <h4 class="font-bold text-topic-name">การประชุมมหาวิทยาลัย</h4>
     <div class="grid grid-cols-3 gap-4">
-      <div>
+      <div data-aos="fade-left">
         <Calender></Calender>
       </div>
-      <div>
+      <div data-aos="fade-right">
         <DateMeeting
           :class="[index > 0 ? 'mt-8' : '']"
           v-for="(item, index) in dateMeetingList"
@@ -13,7 +13,7 @@
           :dateMeeting="item"
         ></DateMeeting>
       </div>
-      <div>
+      <div data-aos="fade-right">
         <ButtonBlueDownload
           :class="[index > 0 ? 'mt-8' : '']"
           v-for="(item, index) in buttonList"

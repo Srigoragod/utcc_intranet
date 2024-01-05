@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-divider class="text-a-gray-64748b my-2" content-position="center">
+    <el-divider data-aos="fade-up" class="text-a-gray-64748b my-2" content-position="center">
       <h4 class="text-all-file font-light leading-none pt-2">All Files</h4>
     </el-divider>
     <div class="grid grid-cols-2 gap-4 items-start">

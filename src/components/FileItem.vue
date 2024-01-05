@@ -1,5 +1,7 @@
 <template>
     <button
+    data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"
     class="flex w-full justify-between items-center item-file"
     :class="[
       isDisable

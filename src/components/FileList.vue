@@ -2,14 +2,14 @@
   <div>
     <!-- Content -->
     <div class="container-file-list" :class="[isHeightFull ? 'h-full' : '']">
-      <h4 class="font-bold text-topic-name py-4">
+      <h4 class="font-bold text-topic-name py-4" >
         <div class="flex items-center justify-center">
           <!-- <font-awesome-icon :icon="['fas', 'sailboat']" class="pr-4" /> -->
           <span v-html="topicName"></span>
         </div>
       </h4>
-      <div v-show="isAlert" class="px-4 mb-4">
-        <el-alert :title="alertDetail.title" :description="alertDetail.description" type="info" show-icon :closable="false"> </el-alert>
+      <div v-show="isAlert" class="px-4 mb-4"  data-aos="fade-up">
+        <el-alert :title="alertDetail.title" :description="alertDetail.description" type="success" show-icon :closable="false"> </el-alert>
       </div>
       <div v-if="!isSplit">
         <FileItem

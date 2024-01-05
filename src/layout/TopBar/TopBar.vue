@@ -5,7 +5,9 @@
         <!-- <nav class="flex mx-auto flex-no-wrap fixed top-0  w-full items-center justify-between bg-[#FFFFFF] shadow-m -->
         <nav class="flex justify-between w-full">
           <div>
-            <a href="#">
+            <a href="#" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
               <img
                 src="../../assets/logo/UTCC_SubMain2-1.png"
                 class="main-logo my-2"
@@ -31,9 +33,9 @@
             </el-badge> -->
                 <a
                   href="#"
-                  :class="`block ${item.id == idActive ? 'active' : ''}`"
+                  :class="`block items-center ${item.id == idActive ? 'active' : ''}`"
                   @click="handleSubMenuDropdown(item)"
-                  >{{ item.textName }}</a
+                  >{{ item.textName }}  <font-awesome-icon v-if="index!=0" :icon="['fas', 'angle-right']" class="text-[16px] ml-4 rotate-90" /> </a
                 >
               </li>
             </ul>
@@ -57,16 +59,18 @@
               </el-tooltip>
             </div>
             <div class="grid grid-cols-4 gap-4">
-              <div class="">
+              <div class="" data-aos="flip-right">
                 <Caption></Caption>
               </div>
               <!-- Menu  -->
               <div v-for="(item, index) in divMenu" :key="index">
+                <h5 v-if="index==0" @click="handleGotoPage(menuActiveUrl)" class="ulr-link-page pl-8" v-html="menuActiveName"></h5>
                 <MenuItem
                   v-for="(subItem, index1) in item"
                   :key="index1"
                   :textName="subItem.textName"
                   :textUrl="subItem.url"
+                  :type="subItem.type"
                   @click-menu="handleClickMenu()"
                 >
                   {{ subItem }}
@@ -102,6 +106,8 @@ export default defineComponent({
     const idActive = ref(1);
     const isShow = ref(false);
     const divMenu = ref(null);
+    const menuActiveName = ref('')
+    const menuActiveUrl = ref('')
 
     // const setMenu = () => {
     //   menuItems.value = [
@@ -444,9 +450,14 @@ export default defineComponent({
       isShow.value = false;
       idActive.value = 1;
     };
-    const handleClickMenu = (val) => {
+    const handleClickMenu = () => {
       resetMenu();
     };
+    const handleGotoPage = (url) =>{
+       if(url){
+        router.push(url)
+       }
+    }
     const handleSubMenuDropdown = async (item) => {
       // router.push(items.url)
       let id = item.id;
@@ -454,16 +465,16 @@ export default defineComponent({
       //   router.push(item.url);
       // }
 
-      console.log(
-        "handleSubMenuDropdown run ... ",
-        JSON.stringify(item, null, 4)
-      );
       idActive.value = id;
       if (id == 1) {
         isShow.value = false;
 
         return;
       }
+
+      console.log('item ... ', JSON.stringify(item,null,4));
+      menuActiveName.value = item.textName
+      menuActiveUrl.value = item.url
 
       item.items.sort((a, b) => a.textName.localeCompare(b.textName, "th"));
       //  if(items.length > 8){
@@ -503,6 +514,9 @@ export default defineComponent({
       onClickAway,
       onClickCloseMenu,
       handleClickMenu,
+      menuActiveName,
+      menuActiveUrl,
+      handleGotoPage
     };
   },
 });
@@ -555,7 +569,7 @@ export default defineComponent({
   z-index: 3;
   position: absolute;
   padding: 2rem 0;
-  top: 70px;
+  top: 84px;
   min-width: 100%;
   left: 0;
 }
@@ -568,6 +582,14 @@ export default defineComponent({
   color: #787878;
   &:hover {
     color: #005bc0;
+  }
+}
+.ulr-link-page{
+  color: $a-blue-2E3191;
+  &:hover {
+        color: $a-blue-005BC0;
+        cursor: pointer;
+        text-decoration: underline;
   }
 }
 </style>

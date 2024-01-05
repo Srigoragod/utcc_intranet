@@ -39,7 +39,7 @@ export default {
       {
         title: "Slide 1",
         description: "<h3 class='-mb-8'>Share files from </h3><h1 >UTCC Intranet</h1>",
-        image: "http://10.7.43.166:8080/share.cgi/Image3_0_0.png?ssid=ad1484ba162b4ae9bb186e74ebdd515c&fid=ad1484ba162b4ae9bb186e74ebdd515c&open=normal&ep=",
+        image: "https://www.utcc.ac.th/wp-content/uploads/2020/05/bg-12.jpeg",
       },
       {
         title: "Slide 1",

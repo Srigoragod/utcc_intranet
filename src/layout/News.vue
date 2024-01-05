@@ -1,9 +1,9 @@
 <template>
-  <div class="container-news">
+  <div class="container-news" >
     <h4 class="font-bold text-topic-name py-2">ข่าวสารประชาสัมพันธ์ภายนอก</h4>
     <div class="grid grid-cols-4 gap-4 items-stretch">
-      <div class="item-img-news hover:cursor-not-allowed"></div>
-      <a target="_blank" href="http://center.utcc/search_result_seminar.php" class="">
+      <div data-aos="fade-right" class="item-img-news hover:cursor-not-allowed"></div>
+      <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_seminar.php" class="">
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
             <img src="../assets/icon/laptop.svg" alt="" class="pl-2 " />
@@ -11,7 +11,7 @@
           </div>
         </div>
       </a>
-      <a target="_blank" href="http://center.utcc/search_result_academic.php">
+      <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_academic.php">
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
             <img src="../assets/icon/calendar.svg" alt="" class="pl-2 m-auto" />
@@ -20,7 +20,7 @@
         </div>
       </a>
       <!--  href="http://department.utcc.ac.th/admin/index.php/2018-03-06-08-45-13"   target="_blank" -->
-      <span class="cursor-not-allowed opacity-50">
+      <span data-aos="fade-left" class="cursor-not-allowed opacity-50">
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
             <!-- alt=""  -->

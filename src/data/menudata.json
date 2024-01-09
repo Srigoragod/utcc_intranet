@@ -54,49 +54,49 @@
         {
           "textName":
             "พรบ. กฎ ประกาศ หลักเกณฑ์ และแนวปฏิบัติที่เกี่ยวข้อง...",
-          "url": "policyuniversity",
+          "url": "1",
           "type":"ref",
           "subitems": []
         },
         {
           "textName": "คู่มือการติดตั้ง",
-          "url": "",
+          "url": "2",
           "type":"ref",
           "subitems": []
         },
         {
           "textName": "คู่มือการใช้งานระบบ Less Paper",
-          "url": "",
+          "url": "3",
           "type":"ref",
           "subitems": []
         },
         {
           "textName": "กระบวนการจัดซื้อจัดจ้าง Work Flow",
-          "url": "",
+          "url": "4",
           "type":"ref",
           "subitems": []
         },
         {
           "textName": "คู่มือการใช้งานและแนวปฏิบัติแผนกยานพาหนะ",
-          "url": "",
+          "url": "5",
           "type":"ref",
           "subitems": []
         },
         {
           "textName": "เกี่ยวกับงานพัสดุ",
-          "url": "",
+          "url": "6",
           "type":"ref",
           "subitems": []
         },
         {
           "textName": "ระบบเอกสารดิจิตอล",
-          "url": "",
+          "url": "7",
           "type":"ref",
           "subitems": []
         },
         {
           "textName": "การพัฒนาและดำเนินงาน KPI อาจารย์",
-          "url": "",
+          "url": "8",
           "type":"ref",
           "subitems": []
         }

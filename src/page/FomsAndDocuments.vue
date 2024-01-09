@@ -1,14 +1,23 @@
 <template>
-  <h1>
-    Hello!
-  </h1>
+ <MainPage>
+  <template #topbar>
+    <TopBar></TopBar>
+  </template>
+ </MainPage>
 </template>
 
 <script>
 import {ref, defineComponent} from 'vue'
 
+// components
+import MainPage from './MainPage.vue';
+import TopBar from '../Layout/TopBar/TopBar.vue';
 export default defineComponent({
-    name:"FormsAndDocuments"
+    name:"FormsAndDocuments",
+    components: {
+      MainPage,
+      TopBar
+    }
 
 })
 </script>

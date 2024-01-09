@@ -460,6 +460,7 @@ export default defineComponent({
     }
     const handleSubMenuDropdown = async (item) => {
       // router.push(items.url)
+      isShow.value = false;
       let id = item.id;
       // if (item.url) {
       //   router.push(item.url);
@@ -468,9 +469,8 @@ export default defineComponent({
       idActive.value = id;
       if (id == 1) {
         isShow.value = false;
-
         return;
-      }
+      }else
 
       console.log('item ... ', JSON.stringify(item,null,4));
       menuActiveName.value = item.textName

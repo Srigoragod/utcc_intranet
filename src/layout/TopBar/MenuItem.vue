@@ -1,25 +1,37 @@
 <template>
-  <div @click="onClickMenu(textUrl,type)">
+  <!-- @click="onClickMenu(textUrl, type)" -->
+  <div @click="onScroll()">
     <!-- <h4 class="font-bold text-a-blue-2E3191">{{item.textName}}</h4> -->
-    <div  v-if="!isDark" class="flex items-center menu-item pl-4 hover:underline hover:underline-offset-1">
+    <div
+      v-if="!isDark"
+      class="flex items-center menu-item pl-4 hover:underline hover:underline-offset-1"
+    >
       <!-- <div> -->
-        <!-- <img
+      <!-- <img
           src="../../assets/icon/chevron-right.svg"
           width="18"
           height="18"
         /> -->
-        <!-- <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[18px]"/>
+      <!-- <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[18px]"/>
       </div> -->
       <h6 class="pl-4">{{ textName }}</h6>
     </div>
-    <div v-else class="menu-footer text-[18px] text-a-gray-64748b hover:text-white hover:underline hover:underline-offset-1" >
+
+    <div
+      v-else
+      class="menu-footer text-[18px] text-a-gray-64748b hover:text-white hover:underline hover:underline-offset-1"
+    >
+      <!-- <a href="#test" v-smooth-scroll> -->
       {{ textName }}
+      <!-- </a> -->
     </div>
   </div>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { ref, defineComponent } from "vue";
+import { useRouter } from "vue-router";
+
 export default defineComponent({
   name: "MenuItem",
   props: {
@@ -28,39 +40,65 @@ export default defineComponent({
     isDark: { type: Boolean, required: false },
     type: { type: String, required: false },
   },
-  emits: ['click-menu'],
-  setup(props,ctx){
-    const onClickMenu = (url,type) =>{
-     if(type == 'link'){
-      if(props.textUrl){
-        window.open(props.textUrl, '_blank')
-        ctx.emit('click-menu', 'Button clicked!');
-      }else {
-        console.log('page not found');
-        // page not found
+  emits: ["click-menu"],
+  setup(props, ctx) {
+    const router = useRouter();
+    const scrollToMyEl = (url) => {
+      console.log("url ... run", url);
+      // console.log('scrollToMyEl run ...', url);
+      // smoothScroll({
+      //   scrollTo: myEl.value,
+      //   hash: "#test",
+      // });
+      const sectionElement = document.getElementById("test");
+      if (sectionElement) {
+        sectionElement.scrollIntoView({
+          top: 10,
+          behavior: "smooth", // Optional: Add smooth scrolling
+        });
       }
-     }else{
-      scrollToRef(url)
-     }
+    };
+    const onClickMenu = (url, type) => {
+      if (type == "link") {
+        if (props.textUrl) {
+          window.open(props.textUrl, "_blank");
+          ctx.emit("click-menu", "Button clicked!");
+        } else {
+          console.log("page not found");
+          // page not found
+        }
+      } else {
+        console.log("run .. else");
+        router.push("/#test");
+        // window.open('#test', "_self");
+        // location.r
+        // scrollToMyEl(url);
+      }
+    };
 
-
-    }
-    const scrollToRef = (url) => {
-      console.log('scrollToRef ... ', props.textUrl);
-      if (url) {
-        const top = this.$refs[(url)].offsetTop;
-      window.scrollTo({
-        top: top,
-        left: 0,
-        behavior: 'smooth'
-      });
+    function onScroll() {
+      if (props.textUrl) {
+        console.log("onScroll ..", props.textUrl);
+        const element = document.getElementById(props.textUrl);
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+          inline: "nearest",
+        });
+        router.push(props.textUrl);
+        // if ((scrollTop + clientHeight) + 5 >= scrollHeight) {
+        //     isDisabledBtn.value = false
+        // } else {
+        //     isDisabledBtn.value = true
+        // }
       }
     }
-    return{
+
+    return {
       onClickMenu,
-      scrollToRef
-    }
-  }
+      onScroll,
+    };
+  },
 });
 </script>
 
@@ -75,7 +113,7 @@ export default defineComponent({
     background-color: $a-gray-F9FAFB;
   }
 }
-.menu-footer{
+.menu-footer {
   cursor: pointer;
 }
 </style>

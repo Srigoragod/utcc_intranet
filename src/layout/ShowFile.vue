@@ -6,6 +6,7 @@
     <div class="grid grid-cols-2 gap-4 items-start">
       <FileList
         v-for="(item, index) in fileData"
+        :id="item.id"
         :key="index"
         :class="[ item.showColumn != '' ? 'col-span-2' : '']"
         :topicName="item.topicName"

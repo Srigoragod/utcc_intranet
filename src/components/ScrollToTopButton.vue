@@ -1,6 +1,8 @@
 <!-- ScrollToTopButton.vue -->
 <template>
-
+  <button class="settingButton">
+    x
+  </button>
   <button @click="scrollToTop" class="" v-if="isVisible"  id="scrollToTopButton">
     <font-awesome-icon :icon="['fas', 'chevron-up']" />
   </button>
@@ -41,6 +43,16 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+#settingButton {
+  position: fixed;
+  bottom: 38px;
+  right: 48px;
+  border-radius: 100%;
+  // display: none;
+  background-color: red;
+  padding: 1rem 1.125rem;
+  z-index: 99999;
+}
 #scrollToTopButton {
   position: fixed;
   bottom: 48px;

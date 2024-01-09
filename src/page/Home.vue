@@ -2,7 +2,7 @@
   <MainPage>
     <template #topbar>
       <!-- <TopBar2></TopBar2> -->
-      <TopBar :dataList="menuList"></TopBar>
+      <TopBar ></TopBar>
     </template>
     <template #content>
       <div class="container mx-auto pb-20">
@@ -32,7 +32,7 @@
       </div>
     </template>
     <template #footer>
-      <Footer :dataList="menuList"></Footer>
+      <Footer ></Footer>
     </template>
   </MainPage>
 </template>
@@ -41,8 +41,8 @@
 import { useRoute } from 'vue-router'
 import { ref, defineComponent, watch } from "vue";
 
-import menudata from "../data/menudata.json";
-import homedata from "../data/homedata.json";
+// import menudata from "../data/menudata.json";
+// import homedata from "../data/homedata.json";
 
 // components
 import MainPage from "./MainPage.vue";
@@ -78,20 +78,20 @@ export default defineComponent({
     const route = useRoute()
     const pageActive = route.params.id ? route.params.id :''
 
-    const menuList = ref(menudata);
+    // const menuList = ref(menudata);
     const homeList = ref(null);
     watch(route, () => {
             console.log('route ... ', pageActive);
      })
-    const initialData = () => {
-      homeList.value = homedata;
-    };
+    // const initialData = () => {
+    //   homeList.value = homedata;
+    // };
 
-    initialData();
+    // initialData();
 
     return {
-      menuList,
-      homeList,
+      // menuList,
+      // homeList,
       pageActive
     };
   },

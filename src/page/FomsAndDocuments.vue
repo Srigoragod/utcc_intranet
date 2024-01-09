@@ -3,6 +3,9 @@
   <template #topbar>
     <TopBar></TopBar>
   </template>
+  <template>
+    
+  </template>
  </MainPage>
 </template>
 

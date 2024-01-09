@@ -90,18 +90,19 @@ import Caption from "../../components/Caption.vue";
 import MenuItem from "./MenuItem.vue";
 import { useRouter } from "vue-router";
 
+import menudata from '../../data/menudata.json'
 export default defineComponent({
   name: "TopBar",
   components: {
     Caption,
     MenuItem,
   },
-  props: {
-    dataList: { type: Array, required: false },
-  },
-  setup(props) {
+  // props: {
+  //   dataList: { type: Array, required: false },
+  // },
+  setup() {
     const router = useRouter();
-    const menuItems = ref(props.dataList);
+    const menuItems = ref(menudata);
     const subMenu = ref([]);
     const idActive = ref(1);
     const isShow = ref(false);

@@ -2,7 +2,7 @@
     {
       "id": 1,
       "textName": "Home",
-      "url": "home",
+      "url": "/",
       "isActive": true,
       "items": [
         {
@@ -104,8 +104,8 @@
     },
     {
       "id": 2,
-      "textName": "Forms &Document",
-      "url": "/formsdocument",
+      "textName": "Forms &Documents",
+      "url": "/document",
       "isActive": false,
       "items": [
         {

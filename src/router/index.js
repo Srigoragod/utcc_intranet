@@ -9,12 +9,7 @@ const router = createRouter({
             component: () => import('../Page/Home.vue')
         },
         {
-            path: '/:id' ,
-            name: 'defaultID',
-            component: () => import('../Page/Home.vue')
-        },
-        {
-            path: '/formsdocument',
+            path: '/document',
             name: 'form',
             component: () => import('../Page/FomsAndDocuments.vue')
         },

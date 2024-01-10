@@ -22,6 +22,8 @@
           :fileName="item.fileName"
           :pathFile="item.pathFile"
           :key="index"
+          :isNotHome="isNotHome"
+          :isFull="item.isFull"
         ></FileItem>
       </div>
       <div v-else class="grid grid-cols-2 gap-4 items-stretch ...">
@@ -36,6 +38,8 @@
             :fileName="item.fileName"
             :pathFile="item.pathFile"
             :key="key"
+            :isNotHome="isNotHome"
+            :isFull="item.isFull"
           ></FileItem>
         </div>
       </div>
@@ -57,7 +61,8 @@ export default defineComponent({
     dataList: { type: Array, required: true },
     isHeightFull: { type: Boolean, required: false },
     isAlert: {type: Boolean, required: false},
-    alertDetail: {type: Object, required: true}
+    alertDetail: {type: Object, required: true},
+    isNotHome:{tyep: Boolean, required: true, default: false}
   },
   setup(props) {
     const dataListX = ref([]);

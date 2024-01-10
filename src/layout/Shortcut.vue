@@ -34,6 +34,12 @@ export default defineComponent({
         url:'https://www.utcc.ac.th/logo/',
         icon: 'link',
         isDisable: false
+      },
+      {
+        text:'ระบบบันทึกใบลา',
+        url:'http://hr.utcc/webtime/default1.aspx',
+        icon: 'link',
+        isDisable: false
       }
     ])
 

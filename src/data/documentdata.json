@@ -1,9 +1,9 @@
 [
     {
        "id":1,
-       "topicName":"พรบ. กฎ ประกาศ หลักเกณฑ์ และแนวปฏิบัติที่เกี่ยวข้องกับสถาบันอุดมศึกษาเอกชน",
+       "topicName":"สำนักอำนวยการ",
        "icon":"",
-       "showColumn":"col-span-2",
+       "showColumn":"",
        "isFull":false,
        "isAlert": false,
        "alertDetail": {
@@ -13,25 +13,41 @@
        "itemList":[
           {
              "key":1,
-             "url":"http://intranet.utcc/พรบ.pdf",
+             "url":"http://intranet.utcc/Forms/document_01.pdf",
              "icon":"file",
-             "name":"พรบ.สถาบันอุดมศึกษาเอกชน",
+             "name":"คู่มือจัดเก็บเอกสาร",
              "description":"Update:  Latest version",
              "isDisable":false
           },
           {
              "key":2,
-             "url":"http://intranet.utcc/Forms/60mua.pdf",
+             "url":"https://department.utcc.ac.th/admin/index.php/2013-03-29-02-58-19",
              "icon":"file",
-             "name":"รวม กฎกระทรวง ประกาศกระทรวงศึกษาธิการ ประกาศ และมติคณะกรรมการการอุดมศึกษา ที่เกี่ยวกับหลักเกณฑ์/แนวทาง และแนวปฏิบัติที่เกี่ยวข้อง สิงหาคม 2556 - กรกฎาคม 2560",
-             "description":"Update:  Latest version",
-             "isDisable":false
-          }
+             "name":"แบบฟอร์มบันทึกและหนังสือต่างๆ",
+             "description":"",
+             "isDisable":true
+          },
+          {
+            "key":3,
+            "url":"http://www.mua.go.th/users/he-commission/doc/law/private50.pdf",
+            "icon":"file",
+            "name":"แพรบ.สถาบันอุดมศึกษาเอกชน",
+            "description":"",
+            "isDisable":true
+         },
+         {
+            "key":4,
+            "url":"http://intranet.utcc/Forms/1.5%20protect%20staff.pdf",
+            "icon":"file",
+            "name":"กฎกระทรวง ว่าด้วยการคุ้มครองการทำงาน",
+            "description":"",
+            "isDisable":false
+         }
        ]
     },
     {
        "id":2,
-       "topicName":"คู่มือการติดตั้ง",
+       "topicName":"สำนักบริหารทรัพยากรมนุษย์",
        "icon":"",
        "showColumn":"",
        "isFull":true,
@@ -42,49 +58,33 @@
        "itemList":[
           {
              "key":1,
-             "url":"http://intranet.utcc/Adobe.pdf",
+             "url":"http://intranet.utcc/Forms/Mannual-PMS-Form_2566.pdf",
              "icon":"file",
-             "name":"Adobe",
+             "name":"คู่มือชี้แจงการจัดทำแบบประเมินผลการปฏิบัติงานประจำปีการศึกษา 2566 (รอบกลางปี)",
              "description":"Update:  Latest version",
              "isDisable":false
           },
           {
              "key":2,
-             "url":"https://www.utcc.ac.th/download/ip-phone.pdf",
+             "url":"http://intranet.utcc/Forms/PMSForm-Supervisor_Midterm65_final.pdf",
              "icon":"file",
-             "name":"IP-Phone",
-             "description":"Update:  Latest version",
+             "name":"แบบประเมินผลการปฏิบัติงานกลางปีงบประมาณ 2565 (กุมภาพันธ์ 2566) ระดับหัวหน้าหน่วยงาน",
+             "description":"Update:  Feb 2023",
              "isDisable": false
           },
           {
              "key":3,
-             "url":"https://www.utcc.ac.th/download/UTCC-Mobile%20for%20Win7.pdf",
-             "icon":"link",
-             "name":"UTCC-Mobile",
-             "description":"Update:  ปิดปรับปรุงระบบชั่วคราว",
-             "isDisable":true
-          },
-          {
-             "key":4,
-             "url":"https://www.utcc.ac.th/download/UTCC-Wifi%20for%20Internet%20Explorer.pdf",
-             "icon":"link",
-             "name":"UTCC-Wifi",
-             "description":"Update:  ปิดปรับปรุงระบบชั่วคราว",
-             "isDisable":true
-          },
-          {
-             "key":5,
-             "url":"http://intranet.utcc/Setup_UTCC_SPSS.pdf",
+             "url":"http://intranet.utcc/Forms/PMSForm-Officer_rev_Midterm65_final.pdf",
              "icon":"file",
-             "name":"UTCC-SPSS",
-             "description":"Update:  Latest version",
-             "isDisable":false
+             "name":"แบบประเมินผลการปฏิบัติงานกลางปีงบประมาณ 2565 (กุมภาพันธ์ 2566) ระดับเจ้าหน้าที่",
+             "description":"Update:  Feb 2023",
+             "isDisable":true
           }
        ]
     },
     {
        "id":3,
-       "topicName":"คู่มือการใช้งานระบบ Less Paper",
+       "topicName":"กองบัญชีและควบคุมงบประมาณ",
        "icon":"",
        "showColumn":"",
        "isFull":true,
@@ -97,9 +97,9 @@
              "key":1,
              "url":"http://intranet.utcc/Forms/LessPaperlOfficerManual%20V1.7.pdf",
              "icon":"file",
-             "name":"สำหรับเจ้าหน้าที่",
+             "name":"ขั้นตอนการเบิกจ่าย",
              "description":"Update:  Latest version",
-             "isDisable":false
+             "isDisable":true
           },
           {
              "key":2,

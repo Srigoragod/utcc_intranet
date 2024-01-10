@@ -1,7 +1,7 @@
 <template>
-    <button
+  <button
     data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom"
+    data-aos-anchor-placement="bottom-bottom"
     class="flex w-full justify-between items-center item-file"
     :class="[
       isDisable
@@ -9,7 +9,7 @@
         : 'cursor-pointer hover:shadow-lg ',
     ]"
     :disabled="isDisable"
-    @click="onClickButton(icon,fileName)"
+    @click="onClickButton(icon, fileName)"
   >
     <div class="flex items-center">
       <div class="icon-item">
@@ -31,14 +31,40 @@
         <font-awesome-icon v-else :icon="['fas', 'link']" class="text-[28px]" />
       </div>
       <div class="leading-none pl-4">
-        <h5 v-html="name"></h5>
+        <span v-if="isFull">
+          <h5  v-html="name"></h5>
+        </span>
+       <span v-else>
+        <span v-if="name && name.length >= 69">
+          <el-tooltip
+            class="item-tooltip"
+            effect="dark"
+            popper-class="text-[20px]"
+            :content="name"
+            placement="top-start"
+          >
+            <h5
+              :class="handleWidthWhitespace()"
+              v-html="name"
+              :alt="name"
+            ></h5>
+          </el-tooltip>
+        </span>
+        <h5
+          v-else
+          :class="handleWidthWhitespace()"
+          v-html="name"
+        ></h5>
+
+       </span>
+
         <div class="text-desc" v-html="description"></div>
       </div>
     </div>
     <div>
       <div class="btn-circle">
         <font-awesome-icon
-          v-if="icon == 'file' || icon == 'download' "
+          v-if="icon == 'file' || icon == 'download'"
           :icon="['fas', 'arrow-right']"
           class="text-[20px] transform rotate-90"
         />
@@ -63,10 +89,13 @@ export default defineComponent({
     description: { type: String, required: false },
     url: { type: String, required: true },
     isDisable: { type: Boolean, required: false },
-    fileName: {type: String, required: false},
-    pathFile: {type: String, required: false}
+    fileName: { type: String, required: false },
+    pathFile: { type: String, required: false },
+    isNotHome:{tyep: Boolean, required: true, default: false},
+    isFull:{tyep: Boolean, required: false, default: false}
   },
   setup(props, ctx) {
+    const txtClass = ref('text-ellipsis overflow-hidden whitespace-nowrap ');
     const onClickButton = (icon) => {
       if (icon !== "download") {
         if (!props.isDisable) {
@@ -80,13 +109,18 @@ export default defineComponent({
           return;
         }
       } else {
-        handleDownloadPDF(icon)
+        handleDownloadPDF(icon);
       }
     };
     const handleDownloadPDF = async () => {
       try {
         // Replace 'your-pdf-api-endpoint' with the actual API endpoint for the PDF
-        console.log('pathFile ...', props.pathFile ,'file name ...', props.fileName);
+        console.log(
+          "pathFile ...",
+          props.pathFile,
+          "file name ...",
+          props.fileName
+        );
         const response = await fetch(props.pathFile);
 
         if (!response.ok) {
@@ -114,19 +148,29 @@ export default defineComponent({
         console.error("Error downloading PDF:", error);
       }
     };
+    const handleWidthWhitespace = ()=>{
+      return `${txtClass.value} ${props.isNotHome ? 'w-[320px]' : 'w-[550px]'}`
+
+    }
     return {
       onClickButton,
+      handleWidthWhitespace
     };
   },
 });
 </script>
-<style >
-.el-alert__title{
-  font-size: 24px;
+<style>
+.item-tooltip {
+  font-size: 2rem;
+}
+.el-popper {
+  font-size: 1rem;
+}
+.el-alert {
+  font-size: 1rem;
 }
 </style>
 <style lang="scss" scoped>
-
 .item-file {
   color: #343443;
   padding: 0.75rem 2rem;

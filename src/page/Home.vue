@@ -25,7 +25,7 @@
         </section>
         <br />
         <section >
-          <ShowFile ref="showfile" :items="homeList" class="my-2"></ShowFile>
+          <ShowFile ref="showfile" :items="homeList" class="my-2" :gridCols="'grid-cols-2'"></ShowFile>
         </section>
 
         <ScrollToTopButton></ScrollToTopButton>

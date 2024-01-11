@@ -2,10 +2,10 @@
   <button
     data-aos="fade-up"
     data-aos-anchor-placement="bottom-bottom"
-    class="flex w-full justify-between items-center item-file"
+    class="flex w-full justify-between items-center item-file "
     :class="[
       isDisable
-        ? 'cursor-not-allowed disabled:opacity-50 disabled'
+        ? 'cursor-not-allowed disabled:opacity-10 disabled'
         : 'cursor-pointer hover:shadow-lg ',
     ]"
     :disabled="isDisable"
@@ -32,31 +32,27 @@
       </div>
       <div class="leading-none pl-4">
         <span v-if="isFull">
-          <h5  v-html="name"></h5>
+          <h5 v-html="name" class=" md:text-[22px]" ></h5>
         </span>
-       <span v-else>
-        <span v-if="name && name.length >= 69">
-          <el-tooltip
-            class="item-tooltip"
-            effect="dark"
-            popper-class="text-[20px]"
-            :content="name"
-            placement="top-start"
-          >
-            <h5
-              :class="handleWidthWhitespace()"
-              v-html="name"
-              :alt="name"
-            ></h5>
-          </el-tooltip>
+        <span v-else>
+          <span v-if="name && name.length >= 69">
+            <el-tooltip
+              class="item-tooltip"
+              effect="dark"
+              popper-class="text-[20px]"
+              :content="name"
+              placement="top-start"
+            >
+              <h5
+                class=" md:text-[22px]"
+                :class="handleWidthWhitespace()"
+                v-html="name"
+                :alt="name"
+              ></h5>
+            </el-tooltip>
+          </span>
+          <h5 class=" md:text-[22px] lg:text-[24px] xl:text-[24px]" v-else :class="handleWidthWhitespace()" v-html="name"></h5>
         </span>
-        <h5
-          v-else
-          :class="handleWidthWhitespace()"
-          v-html="name"
-        ></h5>
-
-       </span>
 
         <div class="text-desc" v-html="description"></div>
       </div>
@@ -66,12 +62,11 @@
         <font-awesome-icon
           v-if="icon == 'file' || icon == 'download'"
           :icon="['fas', 'arrow-right']"
-          class="text-[20px] transform rotate-90"
+          class="transform rotate-90"
         />
         <font-awesome-icon
           v-else
           :icon="['fas', 'arrow-right']"
-          class="text-[20px]"
         />
       </div>
     </div>
@@ -91,8 +86,8 @@ export default defineComponent({
     isDisable: { type: Boolean, required: false },
     fileName: { type: String, required: false },
     pathFile: { type: String, required: false },
-    isNotHome:{tyep: Boolean, required: true, default: false},
-    isFull:{tyep: Boolean, required: false, default: false}
+    isNotHome: { tyep: Boolean, required: true, default: false },
+    isFull: { tyep: Boolean, required: false, default: false },
   },
   setup(props, ctx) {
     const txtClass = ref('text-ellipsis overflow-hidden whitespace-nowrap ');
@@ -149,12 +144,12 @@ export default defineComponent({
       }
     };
     const handleWidthWhitespace = ()=>{
-      return `${txtClass.value} ${props.isNotHome ? 'w-[320px]' : 'w-[550px]'}`
+      return `${txtClass.value} ${props.isNotHome ? 'w-[259px] ' : 'w-[550px] md:w-[459px]'}`
 
     }
     return {
       onClickButton,
-      handleWidthWhitespace
+      handleWidthWhitespace,
     };
   },
 });
@@ -172,16 +167,20 @@ export default defineComponent({
 </style>
 <style lang="scss" scoped>
 .item-file {
-  color: #343443;
+  color: #005bc0;
   padding: 0.75rem 2rem;
   border-radius: 10px;
+  opacity: 0.5;
 
   text-align: left;
   .icon-item {
-    color: #787878;
+    // color: #787878;
+    color: #005bc0;
+    font-size: 1.25rem;
   }
   .text-desc {
-    color: #787878;
+    // color: #787878;
+    color: #005bc0;
     font-size: 18px;
   }
   &:nth-child(even) {
@@ -194,8 +193,8 @@ export default defineComponent({
 
   .btn-circle {
     cursor: pointer;
-    border-radius: 50%;
-    padding: 12px 15px;
+    border-radius: 100%;
+    padding: 15px 20px;
     background-color: #f9fafb;
 
     svg {

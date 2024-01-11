@@ -13,8 +13,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faArrowRight, faPhone, faDownload, faCalendar, faLink, faList, faSailboat, faFilePdf, faFileWord, faChevronUp, faAngleRight, faCircleXmark, faFileArrowDown, faCaretDown } from '@fortawesome/free-solid-svg-icons'
-library.add(faArrowRight,faPhone,faDownload,faCalendar,faLink,faList,faSailboat,faFilePdf, faFileWord,faChevronUp,faAngleRight,faCircleXmark,faFileArrowDown,faCaretDown)
+import { faArrowRight, faPhone, faDownload, faCalendar, faLink, faList, faSailboat, faFilePdf, faFileWord, faChevronUp, faAngleRight, faCircleXmark, faFileArrowDown, faCaretDown, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
+library.add(faArrowRight,faPhone,faDownload,faCalendar,faLink,faList,faSailboat,faFilePdf, faFileWord,faChevronUp,faAngleRight,faCircleXmark,faFileArrowDown,faCaretDown,faCircleInfo)
 
 const app = createApp(App)
 

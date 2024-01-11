@@ -138,7 +138,7 @@ export default defineComponent({
         return;
       }else
 
-      console.log('item ... ', JSON.stringify(item,null,4));
+      // console.log('item ... ', JSON.stringify(item,null,4));
       menuActiveName.value = item.textName
       menuActiveUrl.value = item.url
 

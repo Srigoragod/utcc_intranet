@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <div >
     <!-- Content -->
     <div class="container-file-list" :class="[isHeightFull ? 'h-full' : '']">
-      <h4 class="font-bold text-topic-name py-4" >
-        <div class="flex items-center justify-center">
-          <!-- <font-awesome-icon :icon="['fas', 'sailboat']" class="pr-4" /> -->
-          <span v-html="topicName"></span>
+      <h4 class="font-bold text-topic-name py-4 text-base md:text-2xl lg:text-3xl " >
+        <div class="flex items-center justify-center w-full" v-html="topicName">
         </div>
       </h4>
-      <div v-show="isAlert" class="px-4 mb-4"  data-aos="fade-up">
-        <el-alert :title="alertDetail.title" :description="alertDetail.description" type="success" show-icon :closable="false"> </el-alert>
+      <div v-show="isAlert" class="text-a-blue-2E3191 px-4 mb-4 rounded border-l-4 border-blue-500  flex items-center py-2 bg-blue-100 text-base md:text-xl lg:text-1xl "  data-aos="fade-up">
+        <!-- <el-alert :title="alertDetail.title" :description="alertDetail.description" type="info" show-icon :closable="false"> </el-alert> -->
+        <font-awesome-icon :icon="['fas', 'circle-info']" class="pr-2"/>
+        <label class="" v-html="alertDetail.title"></label>
       </div>
       <div v-if="!isSplit">
         <FileItem
@@ -95,13 +95,18 @@ export default defineComponent({
   },
 });
 </script>
+<style >
+/* .el-alert__title{
+  font-size: 1.5rem;
+} */
+</style>
 
 <style lang="scss" scoped>
 .container-file-list {
   border: 1px solid #e5f1fb;
   border-radius: 10px;
   padding: 1rem 0 2rem 0;
-  margin-top: 2rem;
+  // margin-top: 2rem;
   .text-topic-name {
     background: rgba(46, 49, 145, 1);
     background: linear-gradient(

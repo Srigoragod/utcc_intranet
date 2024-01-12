@@ -1,0 +1,276 @@
+[
+   {
+      "id":9,
+      "topicName":"สำนักอำนวยการ",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://intranet.utcc/Forms/document_01.pdf",
+            "icon":"file",
+            "name":"คู่มือจัดเก็บเอกสาร",
+            "description":"Update:  Latest version",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"https://department.utcc.ac.th/admin/index.php/2013-03-29-02-58-19",
+            "icon":"file",
+            "name":"แบบฟอร์มบันทึกและหนังสือต่างๆ",
+            "description":"",
+            "isDisable":true
+         },
+         {
+           "key":3,
+           "url":"http://www.mua.go.th/users/he-commission/doc/law/private50.pdf",
+           "icon":"file",
+           "name":"แพรบ.สถาบันอุดมศึกษาเอกชน",
+           "description":"",
+           "isDisable":true
+        },
+        {
+           "key":4,
+           "url":"http://intranet.utcc/Forms/1.5%20protect%20staff.pdf",
+           "icon":"file",
+           "name":"กฎกระทรวง ว่าด้วยการคุ้มครองการทำงาน",
+           "description":"",
+           "isDisable":false
+        }
+      ]
+   },
+   {
+      "id":10,
+      "topicName":"สำนักบริหารทรัพยากรมนุษย์",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://intranet.utcc/Forms/Mannual-PMS-Form_2566.pdf",
+            "icon":"file",
+            "name":"คู่มือชี้แจงการจัดทำแบบประเมินผลการปฏิบัติงานประจำปีการศึกษา 2566 (รอบกลางปี)",
+            "description":"Update:  Latest version",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"http://intranet.utcc/Forms/PMSForm-Supervisor_Midterm65_final.pdf",
+            "icon":"file",
+            "name":"ระดับหัวหน้าหน่วยงาน: แบบประเมินผลการปฏิบัติงานกลางปีงบประมาณ 2565",
+            "description":"Update: กุมภาพันธ์ 2566",
+            "isDisable": false
+         },
+         {
+            "key":3,
+            "url":"http://intranet.utcc/Forms/PMSForm-Officer_rev_Midterm65_final.pdf",
+            "icon":"file",
+            "name":"ระดับเจ้าหน้าที่: แบบประเมินผลการปฏิบัติงานกลางปีงบประมาณ 2565",
+            "description":"Update: กุมภาพันธ์ 2566",
+            "isDisable":true
+         }
+      ]
+   },
+   {
+      "id":11,
+      "topicName":"สำนักบริการคอมพิวเตอร์",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://intranet.utcc/Forms/request_form.pdf",
+            "icon":"file",
+            "name":"แบบฟอร์มขอเครื่องคอมพิวเตอร์",
+            "description":"Update:  Feb 2023",
+            "isDisable": false
+         },
+         {
+            "key":2,
+            "url":"#",
+            "icon":"file",
+            "name":"ใบขอส่งซ่อมเครื่องคอมพิวเตอร์",
+            "description":"Update:  Feb 2023",
+            "isDisable":true
+         }
+      ]
+   },
+   {
+      "id":12,
+      "topicName":"กองประชาสัมพันธ์",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://intranet.utcc/Forms/request_form.pdf",
+            "icon":"file",
+            "name":"แบบฟอร์มขอใช้บริการ",
+            "description":"Update:  Feb 2023",
+            "isDisable": false
+         },
+         {
+            "key":2,
+            "url":"http://intranet.utcc/Forms/KM-PR-62.pdf",
+            "icon":"file",
+            "name":"การจัดการความรู้ (KM)",
+            "description":"Update:  Feb 2023",
+            "isDisable":true
+         }
+      ]
+   },
+   {
+      "id":13,
+      "topicName":"กองนิติการ",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "isAlert": true,
+      "alertDetail": {
+        "title": "แบบฟอร์มแต่งตั้งคณะกรรมการ",
+        "description": ""
+      },
+      "itemList":[
+ 
+         {
+            "key":1,
+            "url":"#",
+            "icon":"file",
+            "name":"จัดจ้างโดยวิธีพิเศษ (ฉบับลงนาม)",
+            "description":"Update:  Feb 2023",
+            "isDisable": true
+         },
+         {
+            "key":2,
+            "url":"#",
+            "icon":"file",
+            "name":"จัดซื้อโดยวิธีพิเศษ (ฉบับลงนาม)",
+            "description":"Update:  Feb 2023",
+            "isDisable":true
+         },
+         {
+            "key":4,
+            "url":"#",
+            "icon":"file",
+            "name":"ประกวดราคา (ฉบับลงนาม)",
+            "description":"Update:  Feb 2023",
+            "isDisable":true
+         },
+         {
+            "key":5,
+            "url":"#",
+            "icon":"file",
+            "name":"ประกวดราคา (ฉบับลงนาม)",
+            "description":"Update:  Feb 2023",
+            "isDisable":true
+         },
+         {
+            "key":6,
+            "url":"#",
+            "icon":"file",
+            "name":"สอบราคา (ฉบับลงนาม)",
+            "description":"Update:  Feb 2023",
+            "isDisable":true
+         },
+         {
+            "key":6,
+            "url":"#",
+            "icon":"link",
+            "name":"e-auction (ฉบับพิจารณา TOR และราคา)",
+            "description":"Update:  Latest version",
+            "isDisable":true
+         }
+      ]
+   },
+   {
+      "id":14,
+      "topicName":"กองวิเทศสัมพันธ์",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "isAlert": true,
+      "alertDetail": {
+        "title": "กิจกรรมความร่วมมือระหว่างมหาวิทยาลัยหอการค้าไทยและสถาบันต่างประเทศ",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://intranet.utcc/Forms/for_mou1.pdf",
+            "icon":"file",
+            "name":"กิจกรรมความร่วมมือ (รายทวีป)",
+            "description":"Update:  Feb 2023",
+            "isDisable": false
+         },
+         {
+            "key":2,
+            "url":"http://intranet.utcc/Forms/for_mou2.pdf",
+            "icon":"file",
+            "name":"กิจกรรมความร่วมมือ (รายประเทศ)",
+            "description":"Update:  Feb 2023",
+            "isDisable":true
+         },
+         {
+            "key":3,
+            "url":"http://intranet.utcc/Forms/for_mou3.pdf",
+            "icon":"file",
+            "name":"กิจกรรมความร่วมมือ (รายคณะ)",
+            "description":"Update:  Feb 2023",
+            "isDisable":true
+         },
+         {
+            "key":4,
+            "url":"#",
+            "icon":"file",
+            "name":"แบบฟอร์มรายงานความคืบหน้า (MOU)",
+            "description":"Update:  Feb 2023",
+            "isDisable":true
+         }
+      ]
+   },
+   {
+      "id":15,
+      "topicName":"ฝ่ายวิเทศสัมพันธ์",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"#",
+            "icon":"file",
+            "name":"กองวิเทศสัมพันธ์",
+            "description":"Update:  Feb 2023",
+            "isDisable": true
+         }
+      ]
+   }
+ ]

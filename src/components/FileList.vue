@@ -6,7 +6,7 @@
         <div class="flex items-center justify-center w-full" v-html="topicName">
         </div>
       </h4>
-      <div v-show="isAlert" class="text-a-blue-2E3191 px-4 mb-4 rounded border-l-4 border-blue-500  flex items-center py-2 bg-blue-100 text-base md:text-xl lg:text-1xl "  data-aos="fade-up">
+      <div v-if="isAlert && alertDetail.title" class="text-a-blue-2E3191 px-4 mb-4 rounded border-l-4 border-blue-500  flex items-center py-2 bg-blue-100 text-base md:text-xl lg:text-1xl "  data-aos="fade-up">
         <!-- <el-alert :title="alertDetail.title" :description="alertDetail.description" type="info" show-icon :closable="false"> </el-alert> -->
         <font-awesome-icon :icon="['fas', 'circle-info']" class="pr-2"/>
         <label class="" v-html="alertDetail.title"></label>
@@ -80,7 +80,7 @@ export default defineComponent({
     const handleArrayFile = () => {
 
       // props.dataList.filter((item) =>  console.log('...', JSON.stringify(item,null,4)));
-      if (props.dataList.length > 10) {
+      if (props.dataList && props.dataList.length > 10) {
         dividedArray(props.dataList);
         isSplit.value = true;
       } else {

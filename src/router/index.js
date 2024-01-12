@@ -10,9 +10,18 @@ const router = createRouter({
         },
         {
             path: '/document',
-            name: 'form',
+        name: '',
             component: () => import('../Page/FomsAndDocuments.vue')
         },
+        {
+            path: '/department',
+            name: 'department',
+            component: () => import('../Page/Department.vue')
+        },
+        {
+            path: '/:catchAll(.*)',
+            component: () => import('../page/Static/NotFound.vue'),
+        }
     ]
 })
 

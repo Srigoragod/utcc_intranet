@@ -144,7 +144,7 @@ export default defineComponent({
       }
     };
     const handleWidthWhitespace = ()=>{
-      return `${txtClass.value} ${props.isNotHome ? 'w-[259px] ' : 'w-[550px] md:w-[459px]'}`
+      return `${txtClass.value} ${props.isNotHome ? 'w-[259px] ' : 'md:w-[250px]  '}`
 
     }
     return {

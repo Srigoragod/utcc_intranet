@@ -2,30 +2,17 @@
   <div class="py-32">
     <el-divider
       data-aos="fade-up"
-      class="text-a-gray-64748b"
+      class="text-a-gray-64748b mb-4"
       content-position="center"
     >
       <h4 class="text-all-file font-light leading-none py-2">
       {{ topicName}}
       </h4>
     </el-divider>
-    <!-- <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-      <div class="grid gap-4"  v-for="(fileData, index) in fileData" :key="index">
-        <FileList
-        v-for="(item, x) in fileData"
-        :id="item.id"
-        :keyP="x"
-        :class="[ item.showColumn != '' ? 'col-span-2' : '']"
-        :topicName="item.topicName"
-        :isAlert="item.isAlert"
-        :alertDetail="item.alertDetail"
-        :dataList="item.itemList"
-        :isHeightFull="item.isFull"
-        :isNotHome="isNotHome"
-      ></FileList>
-      </div>
-    </div> -->
-    <div class="gap-4 space-y-3 lg:gap-8 sm:columns-1 lg:columns-3 xl:columns-3 py-4">
+    <br/>
+
+    <!-- <div class="gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3 [&>div:not(:first-child)]:mt-8 lg:[&>div:not(:first-child)]:mt-8 xl:[&>div:not(:first-child)]:mt-8"> -->
+    <div class="gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3" v-if="fileData && fileData.length > 0">
       <FileList
         v-for="(item, index) in fileData"
         :id="item.id"
@@ -47,7 +34,6 @@ import { useRoute } from "vue-router";
 import { ref, defineComponent } from "vue";
 
 // data
-import homedata from "../data/homedata.json";
 import documentdata from "../data/documentdata.json";
 // components
 import FileList from "../components/FileList.vue";
@@ -57,7 +43,7 @@ export default defineComponent({
   props: {
     items: { type: Array, require: true },
     gridCols: { type: String, require: true, default: "grid-cols-2" },
-    topicName: { type: String, require: true, default: "All Files" },
+    topicName: { type: String, require: false, default: "All Files" },
   },
   components: {
     FileList,
@@ -67,19 +53,20 @@ export default defineComponent({
     const fileData = ref(null);
     const isNotHome = ref(true);
     const topicName = ref("All Files");
-    const initialData = async () => {
-      topicName.value = props.topicName;
-      if (route.name == "form") {
+    const initialData =  () => {
+        topicName.value = props.topicName;
         fileData.value = documentdata;
-      } else {
-        fileData.value = homedata;
+        fileData.value.sort((a, b) => {
+        a.topicName.localeCompare(b.topicName, "th");
+        const topicComparison = a.topicName.localeCompare(b.topicName, "th");
+        return topicComparison !== 0 ? topicComparison : a.length - b.length;
+      });
+      
         isNotHome.value = false;
-      }
+      
+        // dividedArray()
 
-      let items = await dividedArray();
-      fileData.value = items;
 
-      // console.log(JSON.stringify(items,null,4));
     };
 
     const dividedArray = () => {
@@ -94,6 +81,10 @@ export default defineComponent({
       for (let i = 0; i < items.length; i += setSize) {
         dividedArray.push(items.slice(i, i + setSize));
       }
+
+      fileData.value = dividedArray;
+
+      console.log(route.name,'...',JSON.stringify(fileData.value,null,4));
       return dividedArray;
     };
 

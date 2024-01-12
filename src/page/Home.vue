@@ -28,6 +28,10 @@
           <ShowFile ref="showfile" :items="homeList" class="my-2" :gridCols="'grid-cols-2'"></ShowFile>
         </section>
 
+        <!-- <section >
+          <ShowFlexMasonry  :topicName="'Forms &Documents'"></ShowFlexMasonry>
+        </section> -->
+
         <ScrollToTopButton></ScrollToTopButton>
       </div>
     </template>
@@ -41,8 +45,10 @@
 import { useRoute } from 'vue-router'
 import { ref, defineComponent, watch } from "vue";
 
+// data
 // import menudata from "../data/menudata.json";
 // import homedata from "../data/homedata.json";
+import documentdata from '../data/documentdata.json'
 
 // components
 import MainPage from "./MainPage.vue";
@@ -54,6 +60,7 @@ import UniversityMeeting from "../layout/UniversityMeeting.vue";
 import LastUpdate from "../layout/LastUpdate.vue";
 import News from "../layout/News.vue";
 import ShowFile from "../layout/ShowFile.vue";
+// import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
 import Footer from "../layout/Footer/Footer.vue";
 import ScrollToTopButton from "../components/ScrollToTopButton.vue";
 import FloatingActionButton from "../components/FloatingActionButton.vue";
@@ -72,7 +79,8 @@ export default defineComponent({
     ShowFile,
     Footer,
     ScrollToTopButton,
-    FloatingActionButton,
+    FloatingActionButton
+    // ShowFlexMasonry
   },
   setup() {
     const route = useRoute()
@@ -80,19 +88,22 @@ export default defineComponent({
 
     // const menuList = ref(menudata);
     const homeList = ref(null);
+    const documentList = ref(null)
     watch(route, () => {
             console.log('route ... ', pageActive);
      })
-    // const initialData = () => {
-    //   homeList.value = homedata;
-    // };
+    const initialData = () => {
+      // homeList.value = homedata;
+      documentList.value = documentdata
+    };
 
-    // initialData();
+    initialData();
 
     return {
       // menuList,
-      // homeList,
-      pageActive
+      homeList,
+      pageActive,
+      documentList
     };
   },
 });

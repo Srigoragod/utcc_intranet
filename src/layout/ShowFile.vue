@@ -3,6 +3,7 @@
     <el-divider data-aos="fade-up" class="text-a-gray-64748b " content-position="center">
       <h4 class="text-all-file font-light leading-none pt-2">{{ topicName }}</h4>
     </el-divider>
+    <br/>
     <div class="grid gap-4 items-start" :class="[gridCols]"  >
       <FileList
         v-for="(item, index) in fileData"

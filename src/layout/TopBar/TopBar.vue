@@ -123,6 +123,7 @@ export default defineComponent({
        }else{
         router.push('/')
        }
+       isShow.value = false;
     }
     const handleSubMenuDropdown = async (item) => {
       // router.push(items.url)

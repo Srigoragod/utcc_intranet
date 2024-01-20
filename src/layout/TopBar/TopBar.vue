@@ -118,6 +118,12 @@ export default defineComponent({
       resetMenu();
     };
     const handleGotoPage = (url) =>{
+      dataLayer.push({
+            event: 'click_top_menu',
+            event_category: 'top_menu',
+            event_action: 'click_menu',
+            event_name: 'Home_Logo'
+        });
        if(url){
         router.push(url)
        }else{

@@ -33,7 +33,7 @@
             </el-badge> -->
                 <a
                   href="#"
-                  :class="`block items-center ${item.id == idActive ? 'active' : ''}`"
+                  :class="`block items-center menu-t ${item.id == idActive ? 'active' : ''}`"
                   @click="handleSubMenuDropdown(item)"
                   >{{ item.textName }}  <font-awesome-icon v-if="index!=0" :icon="['fas', 'angle-right']" class="text-[16px] ml-4 rotate-90" /> </a
                 >

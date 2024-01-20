@@ -5,7 +5,7 @@
         <!-- <nav class="flex mx-auto flex-no-wrap fixed top-0  w-full items-center justify-between bg-[#FFFFFF] shadow-m -->
         <nav class="flex justify-between w-full">
           <div>
-            <a href="" data-aos="fade-right"
+            <a href="" class="menu-t-logo" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" @click="handleGotoPage()">
               <img

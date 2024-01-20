@@ -1,7 +1,7 @@
 [
    {
-      "id":9,
-      "topicName":"สำนักอำนวยการ",
+      "id":1,
+      "topicName":"คณะวิชา",
       "icon":"",
       "showColumn":"",
       "isFull":false,
@@ -13,41 +13,129 @@
       "itemList":[
          {
             "key":1,
-            "url":"http://intranet.utcc/Forms/document_01.pdf",
-            "icon":"file",
-            "name":"คู่มือจัดเก็บเอกสาร",
-            "description":"Update:  Latest version",
+            "url":"https://ubs.utcc.ac.th/",
+            "icon":"school",
+            "name":"คณะบริหารธุรกิจ",
+            "description":"School of Business",
             "isDisable":false
          },
          {
             "key":2,
-            "url":"https://department.utcc.ac.th/admin/index.php/2013-03-29-02-58-19",
-            "icon":"file",
-            "name":"แบบฟอร์มบันทึกและหนังสือต่างๆ",
-            "description":"",
-            "isDisable":true
+            "url":"https://www.utcc.ac.th/faculty/",
+            "icon":"school",
+            "name":"คณะบัญชี",
+            "description":"School of Accountancy",
+            "isDisable":false
          },
          {
            "key":3,
-           "url":"http://www.mua.go.th/users/he-commission/doc/law/private50.pdf",
-           "icon":"file",
-           "name":"แพรบ.สถาบันอุดมศึกษาเอกชน",
-           "description":"",
-           "isDisable":true
+           "url":"https://economics.utcc.ac.th/",
+           "icon":"school",
+           "name":"คณะเศรษฐศาสตร์",
+           "description":"School of Economics",
+           "isDisable":false
         },
         {
            "key":4,
-           "url":"http://intranet.utcc/Forms/1.5%20protect%20staff.pdf",
-           "icon":"file",
-           "name":"กฎกระทรวง ว่าด้วยการคุ้มครองการทำงาน",
-           "description":"",
+           "url":"https://humanities.utcc.ac.th/",
+           "icon":"school",
+           "name":"คณะมนุษยศาสตร์",
+           "description":"School of Humanities",
            "isDisable":false
-        }
+        },
+        {
+         "key":5,
+         "url":"https://science.utcc.ac.th/",
+         "icon":"school",
+         "name":"คณะวิทยาศาสตร์และเทคโนโลยี",
+         "description":"School of Science",
+         "isDisable":false
+         },
+         {
+            "key":6,
+            "url":"https://commarts.utcc.ac.th/",
+            "icon":"school",
+            "name":"คณะนิเทศศาสตร์",
+            "description":"School of Communication Arts",
+            "isDisable":false
+         },
+         {
+            "key":7,
+            "url":"https://eng.utcc.ac.th/",
+            "icon":"school",
+            "name":"คณะวิศวกรรมศาสตร์",
+            "description":"School of Engineering",
+            "isDisable":false
+         },
+         {
+            "key":8,
+            "url":"https://law.utcc.ac.th/",
+            "icon":"school",
+            "name":"คณะนิติศาสตร์",
+            "description":"School of Law",
+            "isDisable":false
+         },
+         {
+            "key":9,
+            "url":"https://tourism.utcc.ac.th/",
+            "icon":"school",
+            "name":"คณะการท่องเที่ยวและอุตสาหกรรมบริการ",
+            "description":"School of Tourism and Services",
+            "isDisable":false
+         },
+         {
+            "key":10,
+            "url":"https://ece.utcc.ac.th/",
+            "icon":"school",
+            "name":"คณะการศึกษาปฐมวัย",
+            "description":"School of Early Childhood Education",
+            "isDisable":false
+         },
+         {
+            "key":11,
+            "url":"https://digitalart.utcc.ac.th/",
+            "icon":"school",
+            "name":"คณะศิลปะและการออกแบบดิจิทัล",
+            "description":"School of Digital Arts Design",
+            "isDisable":false
+         },
+         {
+            "key":12,
+            "url":"https://ism.utcc.ac.th/",
+            "icon":"school",
+            "name":"วิทยาลัยนานาชาติเพื่อการจัดการ",
+            "description":"International School of Management",
+            "isDisable":false
+         },
+         {
+            "key":13,
+            "url":"https://ce.utcc.ac.th/",
+            "icon":"school",
+            "name":"วิทยาลัยผู้ประกอบการ",
+            "description":"",
+            "isDisable":false
+         },
+         {
+            "key":14,
+            "url":"https://gs.utcc.ac.th/",
+            "icon":"school",
+            "name":"บัณฑิตวิทยาลัย",
+            "description":"Graduate School",
+            "isDisable":false
+         },
+         {
+            "key":14,
+            "url":"https://www.utcconline.com/",
+            "icon":"school",
+            "name":"คณะวิทยพัฒน์",
+            "description":"Extension School",
+            "isDisable":false
+         }
       ]
    },
    {
-      "id":10,
-      "topicName":"สำนักบริหารทรัพยากรมนุษย์",
+      "id":2,
+      "topicName":"ฝ่ายวิจัยและบริการธุรกิจ",
       "icon":"",
       "showColumn":"",
       "isFull": false,
@@ -58,206 +146,259 @@
       "itemList":[
          {
             "key":1,
-            "url":"http://intranet.utcc/Forms/Mannual-PMS-Form_2566.pdf",
-            "icon":"file",
-            "name":"คู่มือชี้แจงการจัดทำแบบประเมินผลการปฏิบัติงานประจำปีการศึกษา 2566 (รอบกลางปี)",
-            "description":"Update:  Latest version",
+            "url":"https://department.utcc.ac.th/asc/",
+            "icon":"link",
+            "name":"ศูนย์บริการวิชาการ",
+            "description":"",
             "isDisable":false
          },
          {
             "key":2,
             "url":"http://intranet.utcc/Forms/PMSForm-Supervisor_Midterm65_final.pdf",
-            "icon":"file",
-            "name":"ระดับหัวหน้าหน่วยงาน: แบบประเมินผลการปฏิบัติงานกลางปีงบประมาณ 2565",
-            "description":"Update: กุมภาพันธ์ 2566",
+            "icon":"link",
+            "name":"สถาบันยุทธศาสตร์การค้า",
+            "description":"",
             "isDisable": false
          },
          {
             "key":3,
-            "url":"http://intranet.utcc/Forms/PMSForm-Officer_rev_Midterm65_final.pdf",
-            "icon":"file",
-            "name":"ระดับเจ้าหน้าที่: แบบประเมินผลการปฏิบัติงานกลางปีงบประมาณ 2565",
-            "description":"Update: กุมภาพันธ์ 2566",
-            "isDisable":true
-         }
-      ]
-   },
-   {
-      "id":11,
-      "topicName":"สำนักบริการคอมพิวเตอร์",
-      "icon":"",
-      "showColumn":"",
-      "isFull": false,
-      "isAlert": false,
-      "alertDetail": {
-        "title": "",
-        "description": ""
-      },
-      "itemList":[
-         {
-            "key":1,
-            "url":"http://intranet.utcc/Forms/request_form.pdf",
-            "icon":"file",
-            "name":"แบบฟอร์มขอเครื่องคอมพิวเตอร์",
-            "description":"Update:  Feb 2023",
-            "isDisable": false
+            "url":"https://riped.utcc.ac.th/",
+            "icon":"link",
+            "name":"สถาบันวิจัยเพื่อการประเมินและการออกแบบนโยบาย",
+            "description":"",
+            "isDisable":false
          },
          {
-            "key":2,
-            "url":"#",
-            "icon":"file",
-            "name":"ใบขอส่งซ่อมเครื่องคอมพิวเตอร์",
-            "description":"Update:  Feb 2023",
-            "isDisable":true
-         }
-      ]
-   },
-   {
-      "id":12,
-      "topicName":"กองประชาสัมพันธ์",
-      "icon":"",
-      "showColumn":"",
-      "isFull": false,
-      "isAlert": false,
-      "alertDetail": {
-        "title": "",
-        "description": ""
-      },
-      "itemList":[
-         {
-            "key":1,
-            "url":"http://intranet.utcc/Forms/request_form.pdf",
-            "icon":"file",
-            "name":"แบบฟอร์มขอใช้บริการ",
-            "description":"Update:  Feb 2023",
-            "isDisable": false
+            "key":4,
+            "url":"http://logistics.utcc.ac.th/",
+            "icon":"link",
+            "name":"สถาบันวิจัยและพัฒนาโลจิสติกส์",
+            "description":"",
+            "isDisable":false
          },
          {
-            "key":2,
-            "url":"http://intranet.utcc/Forms/KM-PR-62.pdf",
-            "icon":"file",
-            "name":"การจัดการความรู้ (KM)",
-            "description":"Update:  Feb 2023",
-            "isDisable":true
-         }
-      ]
-   },
-   {
-      "id":13,
-      "topicName":"กองนิติการ",
-      "icon":"",
-      "showColumn":"",
-      "isFull": false,
-      "isAlert": true,
-      "alertDetail": {
-        "title": "แบบฟอร์มแต่งตั้งคณะกรรมการ",
-        "description": ""
-      },
-      "itemList":[
- 
+            "key":5,
+            "url":"https://cebf.utcc.ac.th/",
+            "icon":"link",
+            "name":"ศูนย์พยากรณ์เศรษฐกิจและธุรกิจ",
+            "description":"",
+            "isDisable":false
+         },
          {
-            "key":1,
+            "key":6,
+            "url":"http://www.citsonline.utcc.ac.th/",
+            "icon":"link",
+            "name":"ศูนย์ศึกษาการค้าระหว่างประเทศ",
+            "description":"",
+            "isDisable":false
+         },
+         {
+            "key":7,
             "url":"#",
-            "icon":"file",
-            "name":"จัดจ้างโดยวิธีพิเศษ (ฉบับลงนาม)",
-            "description":"Update:  Feb 2023",
+            "icon":"link",
+            "name":"ศูนย์ธุรกิจครอบครัว",
+            "description":"",
             "isDisable": true
          },
          {
-            "key":2,
+            "key":8,
+            "url":"http://smecenter.utcc.ac.th",
+            "icon":"link",
+            "name":"ศูนย์เอสเอ็มอี",
+            "description":"",
+            "isDisable": true
+         },
+         {
+            "key":9,
             "url":"#",
-            "icon":"file",
-            "name":"จัดซื้อโดยวิธีพิเศษ (ฉบับลงนาม)",
-            "description":"Update:  Feb 2023",
+            "icon":"link",
+            "name":"ศูนย์ศึกษาและวิจัยตราสินค้า",
+            "description":"",
+            "isDisable": true
+         },
+         {
+            "key":10,
+            "url":"#",
+            "icon":"link",
+            "name":"ศูนย์ศึกษาสื่อและการสื่อสารอาเซียน",
+            "description":"",
+            "isDisable": true
+         },
+         {
+            "key":11,
+            "url":"#",
+            "icon":"link",
+            "name":"ศูนย์ศึกษาการค้าอาเซียนและลาตินอเมริกา",
+            "description":"",
+            "isDisable": true
+         },
+         {
+            "key":12,
+            "url":"#",
+            "icon":"link",
+            "name":"IDE Center",
+            "description":"",
+            "isDisable": true
+         }
+      ]
+   },
+   {
+      "id":3,
+      "topicName":"ฝ่ายบริหาร",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"",
+            "icon":"link",
+            "name":"สำนักอำนวยการ",
+            "description":"",
+            "isDisable":true
+         },
+         {
+            "key":2,
+            "url":"https://department.utcc.ac.th/hr/",
+            "icon":"link",
+            "name":"สำนักบริหารทรัพยากรมนุษย์",
+            "description":"",
+            "isDisable": false
+         },
+         {
+            "key":3,
+            "url":"#",
+            "icon":"link",
+            "name":"กองบัญชีและควบคุมงบประมาณ",
+            "description":"",
             "isDisable":true
          },
          {
             "key":4,
             "url":"#",
-            "icon":"file",
-            "name":"ประกวดราคา (ฉบับลงนาม)",
-            "description":"Update:  Feb 2023",
+            "icon":"link",
+            "name":"กองการเงิน",
+            "description":"",
             "isDisable":true
          },
          {
             "key":5,
             "url":"#",
-            "icon":"file",
-            "name":"ประกวดราคา (ฉบับลงนาม)",
-            "description":"Update:  Feb 2023",
-            "isDisable":true
-         },
-         {
-            "key":6,
-            "url":"#",
-            "icon":"file",
-            "name":"สอบราคา (ฉบับลงนาม)",
-            "description":"Update:  Feb 2023",
-            "isDisable":true
-         },
-         {
-            "key":6,
-            "url":"#",
             "icon":"link",
-            "name":"e-auction (ฉบับพิจารณา TOR และราคา)",
-            "description":"Update:  Latest version",
+            "name":"กองพัสดุและจัดการทรัพย์สิน",
+            "description":"",
             "isDisable":true
+         },
+         {
+            "key":6,
+            "url":"https://department.utcc.ac.th/legal/",
+            "icon":"link",
+            "name":"กองนิติการ",
+            "description":"",
+            "isDisable":false
          }
       ]
    },
    {
-      "id":14,
-      "topicName":"กองวิเทศสัมพันธ์",
+      "id":4,
+      "topicName":"ฝ่ายวิชาการ",
       "icon":"",
       "showColumn":"",
       "isFull": false,
-      "isAlert": true,
       "alertDetail": {
-        "title": "กิจกรรมความร่วมมือระหว่างมหาวิทยาลัยหอการค้าไทยและสถาบันต่างประเทศ",
+        "title": "",
         "description": ""
       },
       "itemList":[
          {
             "key":1,
-            "url":"http://intranet.utcc/Forms/for_mou1.pdf",
-            "icon":"file",
-            "name":"กิจกรรมความร่วมมือ (รายทวีป)",
-            "description":"Update:  Feb 2023",
+            "url":"https://registrar.utcc.ac.th/",
+            "icon":"link",
+            "name":"สำนักทะเบียนและประมวลผล",
+            "description":"",
             "isDisable": false
          },
          {
             "key":2,
-            "url":"http://intranet.utcc/Forms/for_mou2.pdf",
-            "icon":"file",
-            "name":"กิจกรรมความร่วมมือ (รายประเทศ)",
-            "description":"Update:  Feb 2023",
-            "isDisable":true
+            "url":"https://department.utcc.ac.th/cooperative/",
+            "icon":"link",
+            "name":"กองวิชาการ (สหกิจศึกษา)",
+            "description":"",
+            "isDisable": false
          },
          {
             "key":3,
-            "url":"http://intranet.utcc/Forms/for_mou3.pdf",
-            "icon":"file",
-            "name":"กิจกรรมความร่วมมือ (รายคณะ)",
-            "description":"Update:  Feb 2023",
-            "isDisable":true
+            "url":"https://department.utcc.ac.th/academic-division/",
+            "icon":"link",
+            "name":"กองวิชาการ",
+            "description":"",
+            "isDisable":false
          },
          {
             "key":4,
+            "url":"https://department.utcc.ac.th/qa/",
+            "icon":"link",
+            "name":"กองประกันคุณภาพการศึกษา",
+            "description":"",
+            "isDisable":false
+         },
+         {
+            "key":5,
             "url":"#",
-            "icon":"file",
-            "name":"แบบฟอร์มรายงานความคืบหน้า (MOU)",
-            "description":"Update:  Feb 2023",
+            "icon":"link",
+            "name":"กองส่งเสริมงานวิจัย",
+            "description":"",
             "isDisable":true
          }
       ]
    },
    {
-      "id":15,
-      "topicName":"ฝ่ายวิเทศสัมพันธ์",
+      "id":5,
+      "topicName":"ฝ่ายเทคโนโลยีสารสนเทศ",
       "icon":"",
       "showColumn":"",
       "isFull": false,
-      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://department.utcc.ac.th/ocs/",
+            "icon":"link",
+            "name":"สำนักบริการคอมพิวเตอร์",
+            "description":"",
+            "isDisable": false
+         },
+         {
+            "key":1,
+            "url":"#",
+            "icon":"link",
+            "name":"ศูนย์ความเป็นเลิศทางการสอน",
+            "description":"",
+            "isDisable": true
+         },
+         {
+            "key":3,
+            "url":"https://library.utcc.ac.th/",
+            "icon":"link",
+            "name":"สำนักหอสมุดกลาง",
+            "description":"",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id":6,
+      "topicName":"ฝ่ายกิจการนักศึกษา",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
       "alertDetail": {
         "title": "",
         "description": ""
@@ -266,10 +407,142 @@
          {
             "key":1,
             "url":"#",
-            "icon":"file",
-            "name":"กองวิเทศสัมพันธ์",
-            "description":"Update:  Feb 2023",
+            "icon":"link",
+            "name":"กองกิจกรรมนักศึกษา",
+            "description":"",
             "isDisable": true
+         },
+         {
+            "key":2,
+            "url":"#",
+            "icon":"link",
+            "name":"กองสวัสดิการนักศึกษา",
+            "description":"",
+            "isDisable": true
+         },
+         {
+            "key":3,
+            "url":"#",
+            "icon":"link",
+            "name":"กองแนะแนวและศิษย์เก่าสัมพันธ์",
+            "description":"",
+            "isDisable":true
+         },
+         {
+            "key":4,
+            "url":"#",
+            "icon":"link",
+            "name":"กองส่งเสริมศิลปและวัฒนธรรมไทย",
+            "description":"",
+            "isDisable":true
+         },
+         {
+            "key":5,
+            "url":"https://athleticoffice.wordpress.com/",
+            "icon":"link",
+            "name":"กองการกีฬา",
+            "description":"",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id":7,
+      "topicName":"ฝ่ายสื่อสารการตลาด",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"#",
+            "icon":"link",
+            "name":"กองประชาสัมพันธ์",
+            "description":"",
+            "isDisable": true
+         },
+         {
+            "key":2,
+            "url":"#",
+            "icon":"link",
+            "name":"กองส่งเสริมการรับนักศึกษา",
+            "description":"",
+            "isDisable": true
+         }
+      ]
+   },
+   {
+      "id":8,
+      "topicName":"ฝ่ายวิเทศสัมพันธ์",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"#",
+            "icon":"link",
+            "name":"กองวิเทศสัมพันธ์",
+            "description":"",
+            "isDisable": true
+         }
+      ]
+   },
+   {
+      "id":9,
+      "topicName":"ฝ่ายอาคารและสิ่งแวดล้อม",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://intranet.utcc/ccd/",
+            "icon":"link",
+            "name":"ฝ่ายอาคารและสิ่งแวดล้อม",
+            "description":"",
+            "isDisable": false
+         },
+         {
+            "key":2,
+            "url":"http://intranet.utcc/ccd/",
+            "icon":"link",
+            "name":"ฝ่ายอาคารและสิ่งแวดล้อม",
+            "description":"",
+            "isDisable": true
+         }
+      ]
+   },
+   {
+      "id":9,
+      "topicName":"สำนักงานตรวจสอบภายใน",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://department.utcc.ac.th/audit/",
+            "icon":"link",
+            "name":"สำนักงานตรวจสอบภายใน",
+            "description":"",
+            "isDisable": false
          }
       ]
    }

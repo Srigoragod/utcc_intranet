@@ -62,7 +62,8 @@ export default defineComponent({
     isHeightFull: { type: Boolean, required: false },
     isAlert: {type: Boolean, required: false},
     alertDetail: {type: Object, required: true},
-    isNotHome:{tyep: Boolean, required: true, default: false}
+    isNotHome:{tyep: Boolean, required: true, default: false},
+    isSplit:{tyep: Boolean, required: false, default: false}
   },
   setup(props) {
     const dataListX = ref([]);
@@ -80,7 +81,7 @@ export default defineComponent({
     const handleArrayFile = () => {
 
       // props.dataList.filter((item) =>  console.log('...', JSON.stringify(item,null,4)));
-      if (props.dataList && props.dataList.length > 10) {
+      if (props.isSplit) {
         dividedArray(props.dataList);
         isSplit.value = true;
       } else {

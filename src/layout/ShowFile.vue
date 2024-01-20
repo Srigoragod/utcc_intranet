@@ -17,6 +17,7 @@
         :dataList="item.itemList"
         :isHeightFull="item.isFull"
         :isNotHome="isNotHome"
+        :isSplit="item.isSplit"
       ></FileList>
     </div>
     <!-- <div class="grid grid-cols-3 auto-cols-[minmax(0,_2fr)] gap-4">

@@ -379,6 +379,7 @@
        },
        "name":"แนวปฏิบัติ ขั้นตอน กระบวนการจัดซื้อจัดจ้าง",
        "description":"",
+       "isSplit": true,
        "itemList":[
          {
             "key":1,

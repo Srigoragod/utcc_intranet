@@ -10,13 +10,18 @@ const router = createRouter({
         },
         {
             path: '/document',
-        name: '',
+            name: 'formdocument',
             component: () => import('../Page/FomsAndDocuments.vue')
         },
         {
             path: '/department',
             name: 'department',
             component: () => import('../Page/Department.vue')
+        },
+        {
+            path: '/service',
+            name: 'service',
+            component: () => import('../Page/Service.vue')
         },
         {
             path: '/:catchAll(.*)',

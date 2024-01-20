@@ -221,7 +221,7 @@
     {
       "id": 4,
       "textName": "Online Service",
-      "url": "department",
+      "url": "service",
       "isActive": false,
       "items": [
         {
@@ -345,7 +345,7 @@
           "subitems": []
         },
         {
-          "textName": "ระบบจองห้องโถงจัดเลี้ยง (อาคาร 10 ชั้น 3)",
+          "textName": "ระบบจองห้องโถงจัดเลี้ยง (อาคาร10 ชั้น3)",
           "url": "http://ascroom.utcc.ac.th/new",
           "type":"link",
           "subitems": []

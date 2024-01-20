@@ -17,8 +17,10 @@
 </template>
 
 <script>
-import { ref, defineComponent } from "vue";
-
+import { ref, defineComponent, watch } from "vue";
+import { useRoute } from "vue-router";
+// data
+import documentdata from "../data/documentdata.json";
 // components
 import MainPage from "./MainPage.vue";
 import TopBar from "../Layout/TopBar/TopBar.vue";
@@ -35,6 +37,20 @@ export default defineComponent({
     ShowFlexMasonry,
     Footer,
     ScrollToTopButton,
+  },
+  setup() {
+    const route = useRoute();
+    const activeMenu = ref("");
+    const setActiveMenu = () => {
+      console.log(JSON.stringify(route,null,4));
+      activeMenu.value = route.name;
+      console.log("activeMenu ... ", activeMenu.value);
+    };
+
+    watch(route, () => {
+      console.log("rote ..", route.name);
+    });
+    setActiveMenu();
   },
 });
 </script>

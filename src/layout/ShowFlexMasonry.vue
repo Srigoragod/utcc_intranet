@@ -35,6 +35,7 @@ import { ref, defineComponent } from "vue";
 
 // data
 import documentdata from "../data/documentdata.json";
+import departmentdata from "../data/departmentdata.json"
 // components
 import FileList from "../components/FileList.vue";
 
@@ -55,7 +56,12 @@ export default defineComponent({
     const topicName = ref("All Files");
     const initialData =  () => {
         topicName.value = props.topicName;
-        fileData.value = documentdata;
+        if(route.name == 'formdocument'){
+          fileData.value = documentdata;
+        }else if (route.name == 'department'){
+          fileData.value = departmentdata
+        }
+     
         fileData.value.sort((a, b) => {
         a.topicName.localeCompare(b.topicName, "th");
         const topicComparison = a.topicName.localeCompare(b.topicName, "th");

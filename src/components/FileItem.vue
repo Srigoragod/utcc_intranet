@@ -11,7 +11,7 @@
     :disabled="isDisable"
     @click="onClickButton(icon, fileName)"
   >
-    <div class="flex items-center">
+    <div class="flex items-center w-full">
       <div class="icon-item">
         <font-awesome-icon
           v-if="icon == 'file'"
@@ -28,6 +28,7 @@
           :icon="['fas', 'file-arrow-down']"
           class="text-[28px]"
         />
+        <font-awesome-icon v-else-if="icon == 'school'" :icon="['fas', 'graduation-cap']" class="text-[28px]" />
         <font-awesome-icon v-else :icon="['fas', 'link']" class="text-[28px]" />
       </div>
       <div class="leading-none pl-4">

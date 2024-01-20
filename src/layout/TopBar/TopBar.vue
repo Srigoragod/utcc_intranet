@@ -129,12 +129,14 @@ export default defineComponent({
       // router.push(items.url)
 
       // window.dataLayer = window.dataLayer || [];
-      //   dataLayer.push({
-      //       event: 'click_top_menu',
-      //       event_category: 'top_menu',
-      //       event_action: 'click_menu',
-      //       event_name: item.textName
-      //   });
+        dataLayer.push({
+            event: 'click_top_menu',
+            event_category: 'top_menu',
+            event_action: 'click_menu',
+            event_name: item.textName
+        });
+
+       console.log('run ... add dataLayer');
 
       isShow.value = false;
       let id = item.id;

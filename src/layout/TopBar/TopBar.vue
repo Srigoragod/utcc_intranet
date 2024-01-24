@@ -20,7 +20,7 @@
             class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           >
             <ul
-              class="flex flex-col p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+              class="flex flex-col py-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
             >
               <li v-for="(item, index) in menuItems" :key="index">
                 <!-- <el-badge v-if="item.id == 4" :value="3" class="item">
@@ -35,7 +35,7 @@
                   href="#"
                   :class="`block items-center menu-t ${item.id == idActive ? 'active' : ''}`"
                   @click="handleSubMenuDropdown(item)"
-                  >{{ item.textName }}  <font-awesome-icon v-if="index!=0" :icon="['fas', 'angle-right']" class="text-[16px] ml-4 rotate-90" /> </a
+                  >{{ item.textName }}  <font-awesome-icon v-if="index!=0" :icon="['fas', 'angle-right']" class="text-[16px] ml-2 rotate-90" /> </a
                 >
               </li>
             </ul>

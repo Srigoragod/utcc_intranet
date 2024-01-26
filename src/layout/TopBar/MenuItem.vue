@@ -4,7 +4,7 @@
     <!-- <h4 class="font-bold text-a-blue-2E3191">{{item.textName}}</h4> -->
     <div
       v-if="!isDark"
-      class="flex items-center menu-item pl-4 hover:underline hover:underline-offset-1"
+      class="flex items-center menu-item hover:underline hover:underline-offset-1"
     >
       <!-- <div> -->
       <!-- <img
@@ -14,7 +14,7 @@
         /> -->
       <!-- <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[18px]"/>
       </div> -->
-      <h6 class="pl-4">{{ textName }}</h6>
+      <a class="flex items-center text-a-blue-2E3191  hover:text-a-blue-005BC0  px-2  text-xl"> <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[10px] pr-1"/> {{ textName }}</a>
     </div>
 
     <div

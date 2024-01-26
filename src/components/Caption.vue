@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <div class="overlay-container">
+  <div class="w-[18rem]">
+    <div class="overlay-container w-5/6">
       <div class="centered text-white p-2">
         <h4 class="pt-20 px-2">คนที่ไม่เคยทำผิด คือคนที่ไม่เคยทำอะไรเลย</h4>
         <h6 class="block text-right pr-4">– ธีโอดอร์ รุสเวลต์ -</h6>
       </div>
     </div>
     <div class="flex justify-self-center float-right  items-center text-[18px] text-right pt-2 cursor-pointer hover:text-a-blue-0874D9">
-      <span class="pr-2 hover:underline hover:underline-offset-1"> คลิกเสนอ "คำคมการทำงาน แคปชั่นทํางาน"</span> 
-      <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[16px]" />
+      <span class="pr-2 hover:underline hover:underline-offset-1"> คลิกเสนอ "แคปชั่นทํางาน"</span> 
+      <font-awesome-icon :icon="['fas', 'arrow-right']" class="text-[14px]" />
     </div>
   </div>
 </template>

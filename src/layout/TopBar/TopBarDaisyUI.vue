@@ -1,8 +1,8 @@
 <template>
   <div class="glass w-full fixed top-0 z-30 pb-2">
-  <div class="navbar container mx-auto">
-    <div class="navbar-start">
-      <!-- <div class="dropdown">
+    <div class="navbar container mx-auto">
+      <div class="navbar-start">
+        <!-- <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
@@ -19,33 +19,67 @@
       </ul>
     </div> -->
 
-      <a href="" class="btn btn-ghost text-xl" @click="handleGotoPage()">
-        <img
-          src="../../assets/logo/UTCC_SubMain2-1.png"
-          class="main-logo"
-          alt="UTCC Logo"
-        />
-      </a>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li></li>
-        <li v-for="(item, index) in menuItems" :key="index">
-          <details >
-            <summary
-              class="text-[22px]  text-a-blue-2E3191 hover:text-a-blue-005BC0 rounded-full  bg-white bg-opacity-30 mx-1"
-            >
-              {{ item.textName }}
-            </summary>
-          </details>
-        </li>
-      </ul>
-    </div>
-    <div class="navbar-end">
-    <SearchModal></SearchModal>
+        <a href="" class="btn btn-ghost text-xl" @click="handleGotoPage()">
+          <img
+            src="../../assets/logo/UTCC_SubMain2-1.png"
+            class="main-logo"
+            alt="UTCC Logo"
+          />
+        </a>
+      </div>
+      <div class="navbar-center ">
+        
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li v-for="(item, index) in menuItems" :key="index">
+            <details @click="onClickDialog(item)">
+              <summary
+                class="text-[22px] text-a-blue-2E3191 hover:text-a-blue-005BC0 rounded-full bg-white bg-opacity-30 mx-1"
+              >
+                {{ item.textName }}
+              </summary>
+              <!-- <ul class="text-[20px] bg-base-100">
+                <li   v-for="(subItem, x) in item.items" :key="x"><a class="link-primary text-a-blue-2E3191 hover:text-a-blue-005BC0">{{ subItem.textName }}</a></li>
+              </ul> -->
+            </details>
+          </li>
+        </ul>
+        <SearchModal></SearchModal>
+      </div>
+
+
+      <!-- Dialog -->
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box w-11/12 max-w-3xl">
+          <div class="flex justify-between">
+              <!-- Menu  -->
+              <div class="py-4" v-for="(item, index) in divMenu" :key="index">
+                <MenuItem
+                  v-for="(subItem, index1) in item"
+                  :key="index1"
+                  :textName="subItem.textName"
+                  :textUrl="subItem.url"
+                  :type="subItem.type"
+                  @click-menu="handleClickMenu()"
+                >
+                </MenuItem>
+              </div>
+              <div class="pl-2">
+                <Caption></Caption>
+              </div>
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn btn-sm text-[20px]">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <!-- End Dialog -->
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -61,7 +95,7 @@ export default defineComponent({
   components: {
     Caption,
     MenuItem,
-    SearchModal
+    SearchModal,
   },
   // props: {
   //   dataList: { type: Array, required: false },
@@ -75,6 +109,11 @@ export default defineComponent({
     const divMenu = ref(null);
     const menuActiveName = ref("");
     const menuActiveUrl = ref("");
+
+    const isShowDialog = ref(false);
+    const isLarge = ref(false)
+
+    const topicName = ref("");
 
     const resetMenu = () => {
       isShow.value = false;
@@ -112,41 +151,40 @@ export default defineComponent({
 
       isShow.value = false;
       let id = item.id;
-      if (item.url) {
-        router.push(item.url);
-      }
+      // if (item.url) {
+      //   router.push(item.url);
+      // }
 
       idActive.value = id;
-      if (id == 1) {
-        isShow.value = false;
-        return;
-      }
+   
 
       // console.log('item ... ', JSON.stringify(item,null,4));
-      else menuActiveName.value = item.textName;
+      menuActiveName.value = item.textName;
       menuActiveUrl.value = item.url;
 
       item.items.sort((a, b) => a.textName.localeCompare(b.textName, "th"));
-      //  if(items.length > 8){
+
       let data = await dividedArray(item.items);
-      // console.log("data ....... ", data);
-      divMenu.value = data;
-      //  }else{
-      //   divMenu.value = items
-      //  }
-      isShow.value = true;
+      divMenu.value =  data;
+      // isShow.value = true;
     };
     const dividedArray = (items) => {
-      const setSize = 8;
+      const setSize = 12;
       const dividedArray = [];
       for (let i = 0; i < items.length; i += setSize) {
         dividedArray.push(items.slice(i, i + setSize));
       }
+      if(dividedArray.length > 12){
+         isLarge.value = true
+      }
       return dividedArray;
     };
 
-    const onClickAway = (e) => {
-      console.log(" test .. ", e);
+    const onClickDialog = (item) => {
+      topicName.value = item.textName;
+      handleSubMenuDropdown(item)
+      document.getElementById("my_modal_1").showModal();
+      console.log(" test .. ", JSON.stringify(item, 4, null));
     };
 
     const onClickCloseMenu = () => {
@@ -161,12 +199,15 @@ export default defineComponent({
       idActive,
       isShow,
       divMenu,
-      onClickAway,
+      onClickDialog,
       onClickCloseMenu,
       handleClickMenu,
       menuActiveName,
       menuActiveUrl,
       handleGotoPage,
+      isShowDialog,
+      topicName,
+      isLarge
     };
   },
 });
@@ -174,6 +215,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
+
 .main-logo {
   width: 185px;
   height: 60px;

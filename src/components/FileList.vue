@@ -1,12 +1,12 @@
 <template>
   <div >
     <!-- Content -->
-    <div class="container-file-list" :class="[isHeightFull ? 'h-full' : '']">
+    <div class="container-file-list" :class="[isHeightFull ? 'h-full' : '']" data-aos="fade-up">
       <h4 class="font-bold text-topic-name py-4 text-base md:text-2xl lg:text-3xl " >
         <div class="flex items-center justify-center w-full" v-html="topicName">
         </div>
       </h4>
-      <div v-if="isAlert && alertDetail.title" class="text-a-blue-2E3191 px-4 mb-4 rounded border-l-4 border-blue-500  flex items-center py-2 bg-blue-100 text-base md:text-xl lg:text-1xl "  data-aos="fade-up">
+      <div v-if="isAlert && alertDetail.title" class="text-a-blue-2E3191 px-4 mb-4 rounded border-l-4 border-blue-500  flex items-center py-2 bg-blue-100 text-base md:text-xl lg:text-1xl "  >
         <!-- <el-alert :title="alertDetail.title" :description="alertDetail.description" type="info" show-icon :closable="false"> </el-alert> -->
         <font-awesome-icon :icon="['fas', 'circle-info']" class="pr-2"/>
         <label class="" v-html="alertDetail.title"></label>

@@ -1,6 +1,6 @@
 <template>
   <div class="py-2 relative" :class="[isNotHome ? 'mt-24' :'']">
-    <el-divider data-aos="fade-up" class="text-a-gray-64748b " content-position="center">
+    <el-divider class="text-a-gray-64748b " content-position="center">
       <h4 class="text-all-file font-light leading-none pt-2">{{ topicName }}</h4>
     </el-divider>
     <br/>

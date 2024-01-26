@@ -1,7 +1,7 @@
 <template>
   <div class="bg-section">
     <div class="container mx-auto">
-      <h4 class="font-bold">คณะ</h4>
+      <h4 class="text-topic-name font-bold">คณะ</h4>
     </div>
 
   </div>

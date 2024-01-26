@@ -27,10 +27,7 @@
           />
         </a>
       </div>
-      <div class="navbar-center ">
-        
-      </div>
-      <div class="navbar-end hidden lg:flex">
+      <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
           <li v-for="(item, index) in menuItems" :key="index">
             <details @click="onClickDialog(item)">
@@ -45,15 +42,24 @@
             </details>
           </li>
         </ul>
+      </div>
+      <div class="navbar-end hidden lg:flex">
         <SearchModal></SearchModal>
       </div>
 
-
       <!-- Dialog -->
       <dialog id="my_modal_1" class="modal">
-        <div class="modal-box w-11/12 max-w-3xl">
+        <div class="modal-box w-11/12" :class="[isLarge ? 'max-w-5xl' : 'max-w-2xl']">
           <div class="flex justify-between">
-              <!-- Menu  -->
+            <!-- Menu  -->
+            <div class="w-full">
+              <div class="flex justify-between items-center py-2">
+              <h5 class="text-all-file font-light leading-none block">
+                {{ topicName }}
+              </h5>
+              <div class="badge badge-accent opacity-50 float-right mr-4">A-Z</div>
+            </div>
+              <div class="flex">
               <div class="py-4" v-for="(item, index) in divMenu" :key="index">
                 <MenuItem
                   v-for="(subItem, index1) in item"
@@ -65,9 +71,14 @@
                 >
                 </MenuItem>
               </div>
-              <div class="pl-2">
-                <Caption></Caption>
-              </div>
+            </div>
+            </div>
+            <div class="pl-8 border-l">
+              <h5 class="text-all-file font-light leading-none py-2">
+                แคปชั่นทำงาน
+              </h5>
+              <Caption></Caption>
+            </div>
           </div>
           <div class="modal-action">
             <form method="dialog">
@@ -111,7 +122,7 @@ export default defineComponent({
     const menuActiveUrl = ref("");
 
     const isShowDialog = ref(false);
-    const isLarge = ref(false)
+    const isLarge = ref(false);
 
     const topicName = ref("");
 
@@ -156,7 +167,6 @@ export default defineComponent({
       // }
 
       idActive.value = id;
-   
 
       // console.log('item ... ', JSON.stringify(item,null,4));
       menuActiveName.value = item.textName;
@@ -165,24 +175,26 @@ export default defineComponent({
       item.items.sort((a, b) => a.textName.localeCompare(b.textName, "th"));
 
       let data = await dividedArray(item.items);
-      divMenu.value =  data;
+      divMenu.value = data;
       // isShow.value = true;
     };
     const dividedArray = (items) => {
-      const setSize = 12;
+      const setSize = 10;
       const dividedArray = [];
       for (let i = 0; i < items.length; i += setSize) {
         dividedArray.push(items.slice(i, i + setSize));
       }
-      if(dividedArray.length > 12){
-         isLarge.value = true
+      if (dividedArray.length > 1) {
+        isLarge.value = true;
+      }else{
+        isLarge.value = false;
       }
       return dividedArray;
     };
 
     const onClickDialog = (item) => {
       topicName.value = item.textName;
-      handleSubMenuDropdown(item)
+      handleSubMenuDropdown(item);
       document.getElementById("my_modal_1").showModal();
       console.log(" test .. ", JSON.stringify(item, 4, null));
     };
@@ -207,7 +219,7 @@ export default defineComponent({
       handleGotoPage,
       isShowDialog,
       topicName,
-      isLarge
+      isLarge,
     };
   },
 });

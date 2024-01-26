@@ -9,7 +9,7 @@
         <div class="text-button text-ellipsis overflow-hidden">
           <h4 class="text-ellipsis overflow-hidden sm:text-lg md:text-0xl lg:text-1qxl xl:text-3xl 2xl:text-4xl md:truncate md:w-[205px] lg:w-full ">{{ textButton }}</h4>
         </div>
-        <div class="text-desc -mt-2" v-html="description"></div>
+        <div class="text-[18px] mt-1" v-html="description"></div>
       </div>
     </div>
     <div class="btn-dowload">

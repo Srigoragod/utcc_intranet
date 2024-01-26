@@ -13,9 +13,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faArrowRight, faPhone, faDownload, faCalendar, faLink, faList, faSailboat, faFilePdf, faFileWord, faChevronUp, faAngleRight, faCircleXmark, faFileArrowDown, faCaretDown, faCircleInfo, faGraduationCap, faGlobe, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faPhone, faDownload, faCalendar, faLink, faList, faSailboat, faFilePdf, faFileWord, faChevronUp, faAngleRight, faCircleXmark, faFileArrowDown, faCaretDown, faCircleInfo, faGraduationCap, faGlobe, faMagnifyingGlass, faClockRotateLeft, faHashtag, faXmark, faStar } from '@fortawesome/free-solid-svg-icons'
 import { faWindows} from '@fortawesome/free-brands-svg-icons'
-library.add(faArrowRight,faPhone,faDownload,faCalendar,faLink,faList,faSailboat,faFilePdf, faFileWord,faChevronUp,faAngleRight,faCircleXmark,faFileArrowDown,faCaretDown,faCircleInfo,faGraduationCap,faGlobe,faMagnifyingGlass,faWindows)
+library.add(faArrowRight,faPhone,faDownload,faCalendar,faLink,faList,faSailboat,faFilePdf, faFileWord,faChevronUp,faAngleRight,faCircleXmark,faFileArrowDown,faCaretDown,faCircleInfo,faGraduationCap,faGlobe,faMagnifyingGlass,faWindows, faClockRotateLeft,faHashtag,faXmark,faStar)
 
 const app = createApp(App)
 

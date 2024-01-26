@@ -63,8 +63,8 @@ export default defineComponent({
     padding-top: 0.75rem;
 
     svg {
-      height: 64px;
-      width: 64px;
+      height: 52px;
+      width: 52px;
     }
   }
   .button-content {

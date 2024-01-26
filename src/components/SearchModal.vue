@@ -46,7 +46,7 @@
             </div>
           </div>
           <div >
-            <SeacrchItemList :items="filteredData"></SeacrchItemList>
+            <SeacrchItemList :items="filteredData" :result="totalResult" :total="totalData"></SeacrchItemList>
             <!-- <div>
               <div>
                 
@@ -86,6 +86,8 @@ export default defineComponent({
     const filterOnlineService = ref(null);
     const fullscreenLoading = ref(false)
     const filteredData = ref(null)
+    const totalData = ref(0)
+    const totalResult = ref(0)
 
     const resetFormSearch =()=>{
       keyword.value = null
@@ -99,6 +101,7 @@ export default defineComponent({
     const handleKeyPress = (event) => {
       if (event.key === "Enter" || keyword.value) {
         filteredData.value = filterByTopicOrName(keyword.value.trim());
+        totalResult.value = filteredData.value ? filteredData.value.length : 0 
       }
     };
     const filterByTopicOrName = (searchTerm) => {
@@ -122,6 +125,8 @@ export default defineComponent({
         documentdata,
         departmentdata
       );
+     
+   
       const newArray = new Array();
       await Promise.all(
         concatenatedArray.value.map((item) => {
@@ -148,6 +153,7 @@ export default defineComponent({
       ).then(() => {
         concatenatedArray.value = newArray
         // console.log(concatenatedArray.value);
+        totalData.value = concatenatedArray.value ?  concatenatedArray.value.length : 0
         fullscreenLoading.value = false
       });
     };
@@ -157,7 +163,9 @@ export default defineComponent({
       clickSearch,
       handleKeyPress,
       keyword,
-      filteredData
+      filteredData,
+      totalData,
+      totalResult
     };
   },
 });

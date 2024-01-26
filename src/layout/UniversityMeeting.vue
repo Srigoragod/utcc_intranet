@@ -2,10 +2,10 @@
   <div>
     <h4 class="font-bold text-topic-name">การประชุมมหาวิทยาลัย</h4>
     <div class="grid grid-cols-3 gap-4">
-      <div data-aos="fade-left">
-        <Calender></Calender>
+      <div >
+        <Calender class="rounded-lg"></Calender>
       </div>
-      <div data-aos="fade-right">
+      <div>
         <DateMeeting
           :class="[index > 0 ? 'mt-8' : '']"
           v-for="(item, index) in dateMeetingList"
@@ -13,7 +13,7 @@
           :dateMeeting="item"
         ></DateMeeting>
       </div>
-      <div data-aos="fade-right">
+      <div >
         <ButtonBlueDownload
           :class="[index > 0 ? 'mt-8' : '']"
           v-for="(item, index) in buttonList"
@@ -53,7 +53,7 @@ export default defineComponent({
       },
       {
         id: 2,
-        date: "12/19/2023",
+        date: "02/19/2024",
         name: "คณะกรรมการอำนวยการฯ",
         description:
           "<div>เวลา 09:00 - 12:00 น.</div><div>ณ หอประชุมสภาฯ อาคาร 24</div>",

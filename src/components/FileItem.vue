@@ -1,12 +1,10 @@
 <template>
   <button
-    data-aos="fade-up"
-    data-aos-anchor-placement="bottom-bottom"
-    class="flex w-full justify-between items-center item-file "
+    class="flex w-full justify-between items-center item-file cursor-pointer hover:shadow-lg"
     :class="[
       isDisable
-        ? 'cursor-not-allowed disabled:opacity-10 disabled'
-        : 'cursor-pointer hover:shadow-lg ',
+        ? 'cursor-not-allowed disabled:opacity-60 disabled'
+        : '',
     ]"
     :disabled="isDisable"
     @click="onClickButton(icon, fileName)"
@@ -63,10 +61,11 @@
         <font-awesome-icon
           v-if="icon == 'file' || icon == 'download'"
           :icon="['fas', 'arrow-right']"
-          class="transform rotate-90"
+          class="transform rotate-90 text-lg"
         />
         <font-awesome-icon
           v-else
+          class="text-lg"
           :icon="['fas', 'arrow-right']"
         />
       </div>
@@ -171,7 +170,7 @@ export default defineComponent({
   color: #005bc0;
   padding: 0.75rem 2rem;
   border-radius: 10px;
-  opacity: 0.5;
+  // opacity: 0.5;
 
   text-align: left;
   .icon-item {

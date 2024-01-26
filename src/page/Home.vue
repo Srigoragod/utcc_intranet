@@ -1,30 +1,37 @@
 <template>
   <MainPage>
     <template #topbar>
-      <!-- <TopBar2></TopBar2> -->
-      <TopBar ></TopBar>
+      <!-- <TopBar  ></TopBar> -->
+      <TopBarDaisyUI></TopBarDaisyUI>
     </template>
     <template #content>
-      <div class="container mx-auto pb-20">
-        <Slider></Slider>
-
-        <section id="shortcut" :class="pageActive == 'shortcut' ? 'bg-blue-100' : ''">
-          <Shortcut id="test" class="my-2"></Shortcut>
-        </section>
-
-        <section id="meeting">
+      <div class="pb-20">
+        <div class="bg-hero">
+          <Slider class="container mx-auto "></Slider>
+        </div>
+          <section id="shortcut" class="container mx-auto" :class="[pageActive == 'shortcut' ? 'bg-blue-100' : '']">
+            <Shortcut id="test" ></Shortcut>
+          </section>
+  
+        <section id="meeting" class="container mx-auto">
           <UniversityMeeting ref="meeting" class="my-2"></UniversityMeeting>
         </section>
 
-        <section id="lastupdate">
+        <section id="lastupdate" class="container mx-auto">
           <LastUpdate ref="lastupdate" class="my-2"></LastUpdate>
         </section>
 
-        <section id="news">
+        <section id="news" class="container mx-auto">
           <News ref="news" class="my-2"></News>
         </section>
+
         <br />
-        <section >
+
+        <section id="faculty">
+          <FacultyAll></FacultyAll>
+        </section>
+
+        <section id="show_file" class="container mx-auto" >
           <ShowFile ref="showfile" :items="homeList" class="my-2" :gridCols="'grid-cols-2'"></ShowFile>
         </section>
 
@@ -52,13 +59,14 @@ import documentdata from '../data/documentdata.json'
 
 // components
 import MainPage from "./MainPage.vue";
-import TopBar from "../layout/TopBar/TopBar.vue";
-// import TopBar2 from "../layout/TopBar/TopBar2.vue";
+// import TopBar from "../layout/TopBar/TopBar.vue";
+import TopBarDaisyUI from '../layout/TopBar/TopBarDaisyUI.vue';
 import Slider from "../components/Slider.vue";
 import Shortcut from "../layout/Shortcut.vue";
 import UniversityMeeting from "../layout/UniversityMeeting.vue";
 import LastUpdate from "../layout/LastUpdate.vue";
 import News from "../layout/News.vue";
+import FacultyAll from '../layout/FacultyAll.vue';
 import ShowFile from "../layout/ShowFile.vue";
 // import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
 import Footer from "../layout/Footer/Footer.vue";
@@ -69,13 +77,14 @@ export default defineComponent({
   name: "Home",
   components: {
     MainPage,
-    TopBar,
-    // TopBar2,
+    // TopBar,
+    TopBarDaisyUI,
     Slider,
     Shortcut,
     UniversityMeeting,
     LastUpdate,
     News,
+    FacultyAll,
     ShowFile,
     Footer,
     ScrollToTopButton,
@@ -100,7 +109,7 @@ export default defineComponent({
     initialData();
 
     return {
-      // menuList,
+    // menuList,
       homeList,
       pageActive,
       documentList
@@ -110,6 +119,13 @@ export default defineComponent({
 </script>
 
 <style>
+.bg-hero {
+    background: url('../assets/image/bg-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 0;
+}
 .text-topic-name {
   background: -webkit-gradient(
     linear,

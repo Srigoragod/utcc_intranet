@@ -2,13 +2,12 @@
   <div class="flex justify-between items-center container-btn-blue-download h-[100px] hover:shadow-lg" @click="onClickButton()">
     <div class="flex items-center">
       <div class="icon-svg">
-    
-        <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" />
-        <font-awesome-icon v-else :icon="['fas', 'calendar']" />
+        <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" class="text-4xl"/>
+        <font-awesome-icon v-else :icon="['fas', 'calendar']" class="text-4xl" />
       </div>
       <div class="button-content w-full pl-4">
         <div class="text-button text-ellipsis overflow-hidden">
-          <h4 class="text-ellipsis overflow-hidden md:text-[24px] lg:text-[34px] md:truncate md:w-[205px] lg:w-full ">{{ textButton }}</h4>
+          <h4 class="text-ellipsis overflow-hidden sm:text-lg md:text-0xl lg:text-1qxl xl:text-3xl 2xl:text-4xl md:truncate md:w-[205px] lg:w-full ">{{ textButton }}</h4>
         </div>
         <div class="text-desc -mt-2" v-html="description"></div>
       </div>
@@ -16,7 +15,7 @@
     <div class="btn-dowload">
         
         <!-- <i  class="el-icon-download"></i> -->
-      <font-awesome-icon v-if="icon== 'file'"  :icon="['fas', 'download']" />
+      <font-awesome-icon class="text-xl" v-if="icon== 'file'"  :icon="['fas', 'download']" />
       <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'arrow-right']" />
     </div>
   </div>
@@ -64,8 +63,8 @@ export default defineComponent({
     padding-top: 0.75rem;
 
     svg {
-      height: 53px;
-      width: 53px;
+      height: 64px;
+      width: 64px;
     }
   }
   .button-content {
@@ -92,8 +91,8 @@ export default defineComponent({
     border-bottom-right-radius: 10px;
 
     svg {
-      height: 32px;
-      width: 32px;
+      height: 24px;
+      width: 24px;
       color: #005BC0;
     }
   }

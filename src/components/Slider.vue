@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[5rem] py-4 drop-shadow-lg"  id="dashboard-slide">
+  <div class="mt-14 py-8 "  id="dashboard-slide">
     <Splide :options="splideOptions">
       <SplideSlide v-for="(item, index) in slides" :key="index">
         <div class="bg-image mx-auto flex justify-center items-center" :style="{ backgroundImage: `url(${item.image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover' }"  >
@@ -81,7 +81,7 @@ export default {
 <style lang="scss" >
 #dashboard-slide {
 .splide__pagination {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     li  {
         // background: blue;
         width: 16px;
@@ -100,7 +100,7 @@ export default {
         &.is-active {
             width: 8px;
             height: 8px;
-            background-color: #2E3191;
+            background-color: #ffffff;
         }
 
     }

@@ -1,17 +1,17 @@
 <template>
-  <div :class="`flex items-stretch container-date ${dateMeeting.isActive ? 'active' : '' }`">
-    <div class="div-date w-[80px]">
-      <div class="dd"><h1>{{ date }}</h1></div>
-      <div class="mmyyyy">{{ `${monthShort} ${year}` }}</div>
+  <div :class="`flex items-start container-date ${dateMeeting.isActive ? 'active' : '' }`">
+    <div class="div-date w-[80px] ">
+      <div class="dd mb-2"><label class="text-[70px] sm:text-[50px] md:text-[60px] lg:text-[70px]">{{ date }}</label></div>
+      <div class="mmyyyy ">{{ `${monthShort} ${currentYear}` }}</div>
     </div>
-    <div class="div-desc pl-4 w-full">
+    <div class="div-desc pl-4 pt-1 w-full">
       <div class="title items-start -mt-2">
-        <h4 class="text-ellipsis overflow-hidden md:text-[24px] lg:text-[34px] md:truncate md:w-[205px] lg:w-full">{{textName}}</h4>
+        <h4 class="text-ellipsis overflow-hidden sm:text-lg md:text-0xl lg:text-1qxl xl:text-3xl 2xl:text-4xl  md:truncate w-full sm:w-[100px]  md:w-[150px] lg:w-full xl:w-full 2xl:w-full ">{{textName}}</h4>
       </div>
       <div class="div-time-location -mt-2" v-html="textDesc">
       </div>
     </div>
-    <div class="subtitle-1 day-ago w-[120px] text-right pr-4 text-a-gray-787878">{{ textDay }}</div>
+    <div class="text-sm day-ago pt-1 text-right text-a-gray-787878 w-[120px]">{{ textDay }}</div>
   </div>
 </template>
 
@@ -28,7 +28,8 @@ export default defineComponent({
 
     const date = ref('1')
     const monthShort = ref('Jan')
-    const year = ref('2023')
+    // const year = ref('2023')
+    const currentYear = new Date().getFullYear();
 
     const textName = ref(props.dateMeeting.name)
     const textDesc = ref(props.dateMeeting.description)
@@ -36,7 +37,7 @@ export default defineComponent({
 
     const initialData = () =>{
       let dateString = props.dateMeeting.date;
-      const [month, day, year] = dateString.split('/');
+      const [month, day, currentYear] = dateString.split('/');
       date.value = day
       let indexMonth = parseInt(month);
       monthShort.value = monthArray.value[ indexMonth-1];
@@ -70,7 +71,7 @@ export default defineComponent({
     return{ 
       date,
       monthShort,
-      year,
+      currentYear,
       textName,
       textDesc,
       textDay
@@ -96,7 +97,6 @@ export default defineComponent({
   border-radius: 10px;
   .dd {
     color: #2E3191;
-    font-size: 80px;
     line-height: normal;
     width: 80px;
     margin-top: -0.5rem;
@@ -104,7 +104,6 @@ export default defineComponent({
   .mmyyyy {
     color: #2E3191;
     margin-top: -28px;
-    padding-left: 8px;
     width: 80px;
   }
 

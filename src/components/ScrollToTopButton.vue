@@ -3,9 +3,10 @@
   <!-- <button class="settingButton">
     x
   </button> -->
-  <button @click="scrollToTop" class="" v-if="isVisible"  id="scrollToTopButton">
-    <font-awesome-icon :icon="['fas', 'chevron-up']" />
+  <button @click="scrollToTop" class="rounded-full" v-if="isVisible"  id="scrollToTopButton">
+    <font-awesome-icon class="text-[1.2em]"  :icon="['fas', 'chevron-up']" />
   </button>
+
 
 </template>
 
@@ -47,7 +48,6 @@ export default defineComponent({
   position: fixed;
   bottom: 38px;
   right: 48px;
-  border-radius: 100%;
   // display: none;
   background-color: red;
   padding: 1rem 1.125rem;
@@ -57,10 +57,12 @@ export default defineComponent({
   position: fixed;
   bottom: 48px;
   right: 48px;
-  border-radius: 100%;
+  height: 3em;
+  width: 3em;
+  padding: 0;
   // display: none;
   background-color: #0874D9;
-  padding: 1rem 1.125rem;
+  // padding: 1rem 1.125rem;
 
   svg {
     color: #fff;

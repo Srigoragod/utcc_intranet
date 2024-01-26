@@ -27,6 +27,15 @@ export default {
 
     },
   },
-  plugins: [],
+  daisyui:{
+      themes:[
+        {
+          mytheme:{
+            "primary":"#2E3191"
+          }
+        }
+      ]
+  },
+  plugins: [require("daisyui")],
 }
 

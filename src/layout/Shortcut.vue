@@ -3,6 +3,7 @@
     <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4>
     <div class="flex justify-start" data-aos="fade-right">
        <ButtonBlue class="mr-8"  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :icon="item.icon" :isDisable="item.isDisable"></ButtonBlue>
+       <ButtonPrimaryOutline></ButtonPrimaryOutline>
     </div>
   </div>
 </template>
@@ -10,10 +11,12 @@
 <script>
 import { ref,defineComponent  } from "vue";
 import ButtonBlue from '../components/ButtonBlue.vue';
+import ButtonPrimaryOutline from "../components/ButtonPrimaryOutline.vue";
 export default defineComponent({
   name: "Shortcut",
   components: {
-    ButtonBlue
+    ButtonBlue,
+    ButtonPrimaryOutline
   },
   setup() {
     const items = ref([

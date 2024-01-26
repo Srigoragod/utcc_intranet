@@ -1,8 +1,7 @@
 <template>
-  <div class="bg-[#FFFFFF] drop-shadow-sm w-full fixed top-0 z-30">
+  <div class="bg-[#FFFFFF] drop-shadow-sm w-full fixed top-0 z-30"> 
     <div :id="!isShow ? 'topBar' : ''" class="container mx-auto">
       <div class="topbar top-0 w-full z-10">
-        <!-- <nav class="flex mx-auto flex-no-wrap fixed top-0  w-full items-center justify-between bg-[#FFFFFF] shadow-m -->
         <nav class="flex justify-between w-full">
           <div>
             <a href="" class="menu-t-logo" data-aos="fade-right"
@@ -20,7 +19,7 @@
             class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           >
             <ul
-              class="flex flex-col py-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+              class="flex flex-col py-4 md:p-0 mt-4 rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
             >
               <li v-for="(item, index) in menuItems" :key="index">
                 <!-- <el-badge v-if="item.id == 4" :value="3" class="item">
@@ -39,6 +38,7 @@
                 >
               </li>
             </ul>
+        
           </div>
         </nav>
 
@@ -209,8 +209,8 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../../style/base.scss";
 .main-logo {
-  width: 230px;
-  height: 70px;
+  width: 185px;
+  height: 60px;
 }
 // #topBar {
 //   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
@@ -223,7 +223,7 @@ export default defineComponent({
     a {
       font-size: 20px;
       color: $a-blue-2E3191;
-      padding: 0 2rem;
+      padding: 0 0.75rem;
       border-radius: 25px;
       background-color: $a-gray-F9FAFB;
 

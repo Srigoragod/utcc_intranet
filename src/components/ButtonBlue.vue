@@ -54,8 +54,8 @@ button {
   }
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     fill: $a-blue-005BC0;
     margin: 0 0.5rem 0 0.5rem;
     path {

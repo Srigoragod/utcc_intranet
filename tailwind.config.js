@@ -31,7 +31,7 @@ export default {
       themes:[
         {
           mytheme:{
-            "primary":"#2E3191"
+            "primary":"#005BC0"
           }
         }
       ]

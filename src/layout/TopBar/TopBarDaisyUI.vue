@@ -49,17 +49,17 @@
 
       <!-- Dialog -->
       <dialog id="my_modal_1" class="modal">
-        <div class="modal-box w-11/12" :class="[isLarge ? 'max-w-5xl' : 'max-w-2xl']">
+        <div class="modal-box w-11/12" :class="[isLarge ? 'max-w-6xl' : 'max-w-2xl']">
           <div class="flex justify-between">
             <!-- Menu  -->
             <div class="w-full">
               <div class="flex justify-between items-center py-2">
-              <h5 class="text-all-file font-light leading-none block">
+              <h4 class="text-all-file font-light leading-none block">
                 {{ topicName }}
-              </h5>
+              </h4>
               <div class="badge badge-accent opacity-50 float-right mr-4">A-Z</div>
             </div>
-              <div class="flex">
+              <div class="flex gap-4">
               <div class="py-4" v-for="(item, index) in divMenu" :key="index">
                 <MenuItem
                   v-for="(subItem, index1) in item"
@@ -67,6 +67,7 @@
                   :textName="subItem.textName"
                   :textUrl="subItem.url"
                   :type="subItem.type"
+                  class="text-2xl">
                   @click-menu="handleClickMenu()"
                 >
                 </MenuItem>
@@ -182,7 +183,7 @@ export default defineComponent({
       // isShow.value = true;
     };
     const dividedArray = (items) => {
-      const setSize = 10;
+      const setSize = 8;
       const dividedArray = [];
       for (let i = 0; i < items.length; i += setSize) {
         dividedArray.push(items.slice(i, i + setSize));

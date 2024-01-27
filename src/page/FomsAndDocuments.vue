@@ -27,7 +27,7 @@ import TopBar from "../Layout/TopBar/TopBar.vue";
 // import ShowFile from '../Layout/ShowFile.vue';
 import ShowFlexMasonry from "../layout/ShowFlexMasonry.vue";
 import Footer from "../layout/Footer/Footer.vue";
-import ScrollToTopButton from "../components/ScrollToTopButton.vue";
+import ScrollToTopButton from "../components/Button/ScrollToTopButton.vue";
 export default defineComponent({
   name: "FormsAndDocuments",
   components: {

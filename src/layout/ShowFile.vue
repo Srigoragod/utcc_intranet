@@ -47,7 +47,7 @@ import { ref, defineComponent } from "vue";
 import homedata from '../data/homedata.json'
 import documentdata from '../data/documentdata.json'
 // components
-import FileList from "../components/FileList.vue";
+import FileList from "../components/File/FileList.vue";
 
 export default defineComponent({
   name: "ShowFile",

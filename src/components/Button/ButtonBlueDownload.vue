@@ -13,7 +13,6 @@
       </div>
     </div>
     <div class="btn-dowload">
-        
         <!-- <i  class="el-icon-download"></i> -->
       <font-awesome-icon class="text-xl" v-if="icon== 'file'"  :icon="['fas', 'download']" />
       <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'arrow-right']" />

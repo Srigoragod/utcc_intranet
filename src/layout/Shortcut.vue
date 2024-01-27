@@ -11,7 +11,7 @@
 <script>
 import { ref,defineComponent  } from "vue";
 // import ButtonBlue from '../components/ButtonBlue.vue';
-import ButtonPrimaryOutline from "../components/ButtonPrimaryOutline.vue";
+import ButtonPrimaryOutline from "../components/Button/ButtonPrimaryOutline.vue";
 export default defineComponent({
   name: "Shortcut",
   components: {

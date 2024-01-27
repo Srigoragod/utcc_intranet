@@ -1,6 +1,6 @@
 <template>
   <div class="w-[18rem]">
-    <div class="overlay-container w-5/6">
+    <div class="overlay-container w-5/6 ">
       <div class="centered text-white p-2">
         <h4 class="pt-20 px-2">คนที่ไม่เคยทำผิด คือคนที่ไม่เคยทำอะไรเลย</h4>
         <h6 class="block text-right pr-4">– ธีโอดอร์ รุสเวลต์ -</h6>
@@ -18,7 +18,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@import "../style/base.scss";
+@import "../../style/base.scss";
 .overlay-container {
   border-radius: 20px;
   position: relative;

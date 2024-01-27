@@ -61,7 +61,7 @@ import documentdata from '../data/documentdata.json'
 import MainPage from "./MainPage.vue";
 // import TopBar from "../layout/TopBar/TopBar.vue";
 import TopBarDaisyUI from '../layout/TopBar/TopBarDaisyUI.vue';
-import Slider from "../components/Slider.vue";
+import Slider from "../components/SliderWidget/Slider.vue";
 import Shortcut from "../layout/Shortcut.vue";
 import UniversityMeeting from "../layout/UniversityMeeting.vue";
 import LastUpdate from "../layout/LastUpdate.vue";
@@ -70,8 +70,8 @@ import FacultyAll from '../layout/FacultyAll.vue';
 import ShowFile from "../layout/ShowFile.vue";
 // import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
 import Footer from "../layout/Footer/Footer.vue";
-import ScrollToTopButton from "../components/ScrollToTopButton.vue";
-import FloatingActionButton from "../components/FloatingActionButton.vue";
+import ScrollToTopButton from "../components/Button/ScrollToTopButton.vue";
+import FloatingActionButton from "../components/Button/FloatingActionButton.vue";
 
 export default defineComponent({
   name: "Home",

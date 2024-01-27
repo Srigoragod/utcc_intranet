@@ -31,9 +31,9 @@
 
 <script>
 import { ref, defineComponent } from "vue";
-import Calender from "../components/Calender.vue";
-import DateMeeting from "../components/DateMeeting.vue";
-import ButtonBlueDownload from "../components/ButtonBlueDownload.vue";
+import Calender from "../components/Optional/Calender.vue";
+import DateMeeting from "../components/DateWidget/DateMeeting.vue";
+import ButtonBlueDownload from "../components/Button/ButtonBlueDownload.vue";
 export default defineComponent({
   name: "UniversityMeeting",
   components: {

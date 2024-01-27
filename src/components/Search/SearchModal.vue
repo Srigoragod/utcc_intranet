@@ -4,7 +4,7 @@
     <div class="flex justify-between" @click="clickSearch()">
       <input
         type="text"
-        placeholder="Quick search..."
+        placeholder="Search ..."
         class="text-input input-sm w-screen max-w-xs text-xl rounded-full bg-opacity-40"
       />
       <button
@@ -26,7 +26,7 @@
                 type="text"
                 v-model="keyword"
                 @keyup="handleKeyPress"
-                placeholder="Quick search..."
+                placeholder="Search ..."
                 class="text-input border input-sm w-screen max-w-xl text-xl rounded-full bg-opacity-40 mx-2"
               />
               <button
@@ -46,10 +46,9 @@
             </div>
           </div>
           <div >
-            <SeacrchItemList :items="filteredData" :result="totalResult" :total="totalData"></SeacrchItemList>
+            <SeacrchItemList v-if="isResult" :items="filteredData" :result="totalResult" :total="totalData"></SeacrchItemList>
             <!-- <div>
               <div>
-                
               </div>
             </div>
             <h6 class="py-2 text-a-gray-787878">ผลการค้นหา ...</h6>
@@ -67,13 +66,14 @@
 import { ref, defineComponent } from "vue";
 
 //data
-import homedata from "../data/homedata.json";
-import documentdata from "../data/documentdata.json";
-import departmentdata from "../data/departmentdata.json";
-import menudata from "../data/menudata.json";
+import homedata from "../../data/homedata.json";
+import documentdata from "../../data/documentdata.json";
+import departmentdata from "../../data/documentdata.json";
+import menudata from "../../data/menudata.json";
 
 // component
-import SeacrchItemList from "../components/SearchItemList.vue";
+import SeacrchItemList from "../Search/SearchItemList.vue";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export default defineComponent({
   name: "SearchModal",
@@ -88,10 +88,12 @@ export default defineComponent({
     const filteredData = ref(null)
     const totalData = ref(0)
     const totalResult = ref(0)
+    const isResult = ref(false)
 
     const resetFormSearch =()=>{
       keyword.value = null
       filteredData.value = null
+      isResult.value = false
     }
 
     const clickSearch = () => {
@@ -101,7 +103,8 @@ export default defineComponent({
     const handleKeyPress = (event) => {
       if (event.key === "Enter" || keyword.value) {
         filteredData.value = filterByTopicOrName(keyword.value.trim());
-        totalResult.value = filteredData.value ? filteredData.value.length : 0 
+        totalResult.value = filteredData.value ? filteredData.value.length : 0
+        isResult.value = true
       }
     };
     const filterByTopicOrName = (searchTerm) => {
@@ -125,8 +128,7 @@ export default defineComponent({
         documentdata,
         departmentdata
       );
-     
-   
+
       const newArray = new Array();
       await Promise.all(
         concatenatedArray.value.map((item) => {
@@ -165,7 +167,8 @@ export default defineComponent({
       keyword,
       filteredData,
       totalData,
-      totalResult
+      totalResult,
+      isResult
     };
   },
 });

@@ -35,12 +35,12 @@ import { ref, defineComponent } from "vue";
 // components
 import MainPage from "./MainPage.vue";
 import TopBar from "../Layout/TopBar/TopBar.vue";
-import ButtonBlueService from "../components/ButtonBlueService.vue";
+import ButtonBlueService from "../components/Button/ButtonBlueService.vue";
 //data
 import menudata from '../data/menudata.json'
 
 import Footer from "../layout/Footer/Footer.vue";
-import ScrollToTopButton from "../components/ScrollToTopButton.vue";
+import ScrollToTopButton from "../components/Button/ScrollToTopButton.vue";
 export default defineComponent({
   name: "FormsAndDocuments",
   components: {

@@ -82,7 +82,6 @@
           </div>
           <div class="modal-action">
             <form method="dialog">
-              <!-- if there is a button in form, it will close the modal -->
               <button class="btn btn-sm text-[20px]">Close</button>
             </form>
           </div>
@@ -95,12 +94,16 @@
 
 <script>
 import { ref, defineComponent } from "vue";
-import Caption from "../../components/Caption.vue";
-import SearchModal from "../../components/SearchModal.vue";
-import MenuItem from "./MenuItem.vue";
 import { useRouter } from "vue-router";
 
+//data
 import menudata from "../../data/menudata.json";
+
+//components
+import Caption from "../../components/Optional/Caption.vue";
+import SearchModal from "../../components/Search/SearchModal.vue";
+import MenuItem from "./MenuItem.vue";
+
 export default defineComponent({
   name: "TopBar",
   components: {

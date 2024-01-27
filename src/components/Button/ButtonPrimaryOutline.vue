@@ -42,7 +42,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../style/base.scss";
+@import "../../style/base.scss";
 button {
   font-size: 22px;
   color: $a-blue-005BC0;

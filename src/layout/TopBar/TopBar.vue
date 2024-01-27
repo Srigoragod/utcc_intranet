@@ -86,7 +86,7 @@
 
 <script>
 import { ref, defineComponent } from "vue";
-import Caption from "../../components/Caption.vue";
+import Caption from "../../components/Optional/caption.vue";
 import MenuItem from "./MenuItem.vue";
 import { useRouter } from "vue-router";
 
@@ -101,7 +101,7 @@ export default defineComponent({
   //   dataList: { type: Array, required: false },
   // },
   setup() {
-    const router = useRouter();
+    const router = useRouter(); 
     const menuItems = ref(menudata);
     const subMenu = ref([]);
     const idActive = ref(1);

@@ -30,7 +30,7 @@
               />
               <button
                 @click="handleKeyPress(keyword)"
-                class="btn btn-sm btn-circle btn-primary "
+                class="btn btn-sm btn-circle btn-primary"
               >
                 <font-awesome-icon
                   class="text-base"
@@ -51,18 +51,22 @@
           <div>
             <SearchResultList
               v-if="isResult"
-              :items="filteredData"
+              :items="resultList"
               @click-result="clickResutSearch"
               :result="totalResult"
               :total="totalData"
             ></SearchResultList>
             <SearchRecent
-              v-if="!isResult && recentSearches.length >0"
+              v-if="!isResult && recentSearches.length > 0"
               :items="recentSearches"
               @remove-recent="removeRecentSearch"
               @add-favorite="addFavorite"
             ></SearchRecent>
-            <SearchFavorite     v-if="!isResult && favoriteSearches.length >0" :items="favoriteSearches" @remove-favorite="removeFavoriteSearch"></SearchFavorite>
+            <SearchFavorite
+              v-if="!isResult && favoriteSearches.length > 0"
+              :items="favoriteSearches"
+              @remove-favorite="removeFavoriteSearch"
+            ></SearchFavorite>
           </div>
         </div>
         <div class="px-4 pt-8 mx-auto text-right text-base text-gray-400">
@@ -95,14 +99,14 @@ export default defineComponent({
   components: {
     SearchResultList,
     SearchRecent,
-    SearchFavorite
+    SearchFavorite,
   },
   setup() {
     const keyword = ref(null);
     const concatenatedArray = ref(null);
     const filterOnlineService = ref(null);
     const fullscreenLoading = ref(false);
-    const filteredData = ref(null);
+    const resultList = ref();
     const totalData = ref(0);
     const totalResult = ref(0);
     const isResult = ref(false);
@@ -119,7 +123,7 @@ export default defineComponent({
     1;
     const resetFormSearch = () => {
       keyword.value = null;
-      filteredData.value = null;
+      resultList.value = null;
       isResult.value = false;
     };
 
@@ -132,15 +136,24 @@ export default defineComponent({
         isResult.value = false;
       }
       if (event.key === "Enter" || keyword.value) {
-        filteredData.value = filterByTopicOrName(keyword.value.trim());
-        totalResult.value = filteredData.value ? filteredData.value.length : 0;
+        let data = filterByTopicOrName(keyword.value.trim());
+        const uniqueNames = new Set();
+        const uniqueData = data.filter((item) => {
+          if (!uniqueNames.has(item.name)) {
+            uniqueNames.add(item.name);
+            return true;
+          }
+          return false;
+        });
+
+        resultList.value = uniqueData;
+        totalResult.value = resultList.value ? resultList.value.length : 0;
         isResult.value = true;
       }
     };
     const filterByTopicOrName = (searchTerm) => {
       const searchTermLower = searchTerm.toLowerCase();
       return concatenatedArray.value.filter((item) => {
-        const nameLower = item.name ? item.name.toLowerCase() : "";
         return item.name.toLowerCase().includes(searchTermLower);
       });
     };
@@ -163,21 +176,33 @@ export default defineComponent({
       await Promise.all(
         concatenatedArray.value.map((item) => {
           newArray.push({
+            topicName: item.topicName ? item.topicName : "",
             url: item.id,
             name: item.topicName ? item.topicName : item.textName,
+            isDisable: item.isDisable,
+            isTopicName: item.topicName ? true : false,
           });
+
           if (item.itemList) {
             item.itemList.map((data) => {
               newArray.push({
+                topicName: item.topicName ? item.topicName : "",
                 url: data.url,
                 name: data.name ? data.name : "",
+                isDisable: data.isDisable,
+                isTopicName: false,
               });
             });
-          } else if (item.items) {
+          }
+
+          if (item.items) {
             item.items.map((data) => {
               newArray.push({
+                topicName: item.textName ? item.textName : "",
                 url: data.url,
                 name: data.textName ? data.textName : "",
+                isDisable: data.isDisable,
+                isTopicName: false,
               });
             });
           }
@@ -187,7 +212,6 @@ export default defineComponent({
           obj.uuid = Util.generateUuid();
         });
         concatenatedArray.value = newArray;
-        // console.log(concatenatedArray.value);
         totalData.value = concatenatedArray.value
           ? concatenatedArray.value.length
           : 0;
@@ -224,12 +248,12 @@ export default defineComponent({
         recentSearches.value.splice(index, 1);
       }
       localStorage.setItem(
-          keyRecent.value,
-          JSON.stringify(recentSearches.value)
-        );
+        keyRecent.value,
+        JSON.stringify(recentSearches.value)
+      );
     };
 
-    const addFavorite =(newObj)=>{
+    const addFavorite = (newObj) => {
       const index = favoriteSearches.value.indexOf(newObj);
       if (index !== -1) {
         favoriteSearches.value.splice(index, 1);
@@ -240,13 +264,13 @@ export default defineComponent({
         if (favoriteSearches.value.length > 24) {
           favoriteSearches.value.pop();
         }
-        removeRecentSearch(newObj)
+        removeRecentSearch(newObj);
         localStorage.setItem(
           keyFavorite.value,
           JSON.stringify(favoriteSearches.value)
         );
       }
-    }
+    };
 
     const removeFavoriteSearch = (obj) => {
       const index = favoriteSearches.value.indexOf(obj);
@@ -255,8 +279,8 @@ export default defineComponent({
       }
       localStorage.setItem(
         keyFavorite.value,
-          JSON.stringify(favoriteSearches.value)
-        );
+        JSON.stringify(favoriteSearches.value)
+      );
     };
 
     return {
@@ -264,7 +288,7 @@ export default defineComponent({
       clickSearch,
       handleKeyPress,
       keyword,
-      filteredData,
+      resultList,
       totalData,
       totalResult,
       isResult,
@@ -273,7 +297,7 @@ export default defineComponent({
       removeRecentSearch,
       addFavorite,
       favoriteSearches,
-      removeFavoriteSearch
+      removeFavoriteSearch,
     };
   },
 });

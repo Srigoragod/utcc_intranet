@@ -199,7 +199,6 @@ export default defineComponent({
       topicName.value = item.textName;
       handleSubMenuDropdown(item);
       document.getElementById("my_modal_1").showModal();
-      console.log(" test .. ", JSON.stringify(item, 4, null));
     };
 
     const onClickCloseMenu = () => {

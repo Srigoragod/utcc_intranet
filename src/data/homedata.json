@@ -10,6 +10,7 @@
          "title": "",
          "description": ""
        },
+      "isDisable":false,
        "itemList":[
           {
              "key":1,
@@ -40,6 +41,7 @@
          "title": "",
          "description": ""
        },
+       "isDisable":false,
        "itemList":[
           {
              "key":1,
@@ -93,6 +95,7 @@
          "title": "",
          "description": ""
        },
+       "isDisable":false,
        "itemList":[
           {
              "key":1,
@@ -146,6 +149,7 @@
          "title": "",
          "description": ""
        },
+       "isDisable":false,
        "itemList":[
           {
              "key":1,
@@ -215,6 +219,7 @@
          "title": "",
          "description": ""
        },
+       "isDisable":false,
        "itemList":[
           {
              "key":1,
@@ -275,6 +280,7 @@
          "title": "",
          "description": ""
        },
+       "isDisable":false,
        "itemList":[
           {
              "key":1,
@@ -329,6 +335,7 @@
          "title": "",
          "description": ""
        },
+       "isDisable":false,
        "itemList":[
           {
              "key":1,
@@ -380,6 +387,7 @@
        "name":"แนวปฏิบัติ ขั้นตอน กระบวนการจัดซื้อจัดจ้าง",
        "description":"",
        "isSplit": true,
+       "isDisable":false,
        "itemList":[
          {
             "key":1,

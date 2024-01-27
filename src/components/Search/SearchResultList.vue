@@ -24,10 +24,11 @@
           v-for="(item, index) in items"
           :key="index"
           @click="clickItem(item)"
-          class="flex justify-between items-center w-full py-1 border-b text-a-blue-2E3191 hover:text-a-blue-005BC0 cursor-pointer"
+          class="flex justify-between items-center w-full py-1 border-b  hover:text-a-blue-005BC0 cursor-pointer"
         >
-          <div class="">
-            <h5 class="py-2 px-6" v-html="item.name"></h5>
+          <div class="py-2 px-6">
+            <span class="text-[18px]" v-if="!item.isTopicName" v-html="item.topicName"> </span> 
+            <h5 class="text-a-blue-2E3191" v-html="item.name"></h5>
           </div>
           <div>
             <div class="py-2 pr-4 flex items-center">

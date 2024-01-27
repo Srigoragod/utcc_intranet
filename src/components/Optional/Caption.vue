@@ -14,7 +14,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "CaptionForWork",
+  setup(props) {
+    
+    return{
+
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -24,9 +32,9 @@ export default {};
   position: relative;
   min-width: 100%;
   min-height: 280px;
-  background-image: url("../assets/image/bg-24.jpeg");
+  background-image: url("../../assets/image/bg-12.jpeg");
   background-size: cover;
-  background-position: left;
+  background-position: center;
   overflow: hidden;
 
   &::before {
@@ -37,7 +45,7 @@ export default {};
     bottom: 0;
     left: 0;
     background-color: $a-blue-2E3191;
-    opacity: 0.8;
+    opacity: 0.5;
   }
 }
 .centered {

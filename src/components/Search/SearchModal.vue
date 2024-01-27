@@ -1,6 +1,5 @@
 <template>
-  <div  v-loading.fullscreen.lock="fullscreenLoading">
-    
+  <div v-loading.fullscreen.lock="fullscreenLoading">
     <div class="flex justify-between" @click="clickSearch()">
       <input
         type="text"
@@ -18,7 +17,7 @@
     </div>
     <!-- Dialog -->
     <dialog id="search_modal" class="modal ghost">
-      <div class="modal-box w-11/12 max-w-3xl ">
+      <div class="modal-box w-11/12 max-w-3xl">
         <div class="content-search">
           <div class="top-bar flex justify-between items-center">
             <div class="flex justify-start items-center">
@@ -30,8 +29,8 @@
                 class="text-input border input-sm w-screen max-w-xl text-xl rounded-full bg-opacity-40 mx-2"
               />
               <button
-              @click="handleKeyPress(keyword)"
-                class="btn btn-sm btn-circle btn-outline opacity-50 hover:opacity-100"
+                @click="handleKeyPress(keyword)"
+                class="btn btn-sm btn-circle btn-primary "
               >
                 <font-awesome-icon
                   class="text-base"
@@ -39,22 +38,35 @@
                 />
               </button>
             </div>
-            <div class="modal-action mt-0 ">
+            <div class="modal-action mt-0">
               <form method="dialog">
-                <button class="btn btn-sm text-[20px] opacity-50 hover:opacity-100">ESC</button>
+                <button
+                  class="btn btn-sm text-[20px] opacity-50 hover:opacity-100"
+                >
+                  ESC
+                </button>
               </form>
             </div>
           </div>
-          <div >
-            <SearchResultList v-if="isResult" :items="filteredData" :result="totalResult" :total="totalData"></SearchResultList>
-            <!-- <div>
-              <div>
-              </div>
-            </div>
-            <h6 class="py-2 text-a-gray-787878">ผลการค้นหา ...</h6>
-            <h6 class="py-2 text-a-gray-787878">ใช้งานล่าสุด ...</h6>
-            <h6 class="py-2 text-a-gray-787878">รายการโปรด ...</h6> -->
+          <div>
+            <SearchResultList
+              v-if="isResult"
+              :items="filteredData"
+              @click-result="clickResutSearch"
+              :result="totalResult"
+              :total="totalData"
+            ></SearchResultList>
+            <SearchRecent
+              v-if="!isResult && recentSearches.length >0"
+              :items="recentSearches"
+              @remove-recent="removeRecentSearch"
+              @add-favorite="addFavorite"
+            ></SearchRecent>
+            <SearchFavorite     v-if="!isResult && favoriteSearches.length >0" :items="favoriteSearches" @remove-favorite="removeFavoriteSearch"></SearchFavorite>
           </div>
+        </div>
+        <div class="px-4 pt-8 mx-auto text-right text-base text-gray-400">
+          Search by Web Developer UTCC
         </div>
       </div>
     </dialog>
@@ -65,6 +77,8 @@
 <script>
 import { ref, defineComponent } from "vue";
 
+//helper
+import Util from "../../helper/Utility";
 //data
 import homedata from "../../data/homedata.json";
 import documentdata from "../../data/documentdata.json";
@@ -73,38 +87,54 @@ import menudata from "../../data/menudata.json";
 
 // component
 import SearchResultList from "./SearchResultList.vue";
-import { faL } from "@fortawesome/free-solid-svg-icons";
+import SearchRecent from "./SearchRecent.vue";
+import SearchFavorite from "./SearchFavorite.vue";
 
 export default defineComponent({
   name: "SearchModal",
-  components:{
-    SearchResultList
+  components: {
+    SearchResultList,
+    SearchRecent,
+    SearchFavorite
   },
   setup() {
     const keyword = ref(null);
     const concatenatedArray = ref(null);
     const filterOnlineService = ref(null);
-    const fullscreenLoading = ref(false)
-    const filteredData = ref(null)
-    const totalData = ref(0)
-    const totalResult = ref(0)
-    const isResult = ref(false)
+    const fullscreenLoading = ref(false);
+    const filteredData = ref(null);
+    const totalData = ref(0);
+    const totalResult = ref(0);
+    const isResult = ref(false);
+    const isKeySearch = ref(false);
+    const keyRecent = ref("recent_searches_utccintranet");
+    const recentSearches = ref(
+      JSON.parse(localStorage.getItem(keyRecent.value)) || []
+    );
+    const keyFavorite = ref("favorite_searches_utccintranet");
+    const favoriteSearches = ref(
+      JSON.parse(localStorage.getItem(keyFavorite.value)) || []
+    );
 
-    const resetFormSearch =()=>{
-      keyword.value = null
-      filteredData.value = null
-      isResult.value = false
-    }
+    1;
+    const resetFormSearch = () => {
+      keyword.value = null;
+      filteredData.value = null;
+      isResult.value = false;
+    };
 
     const clickSearch = () => {
-      resetFormSearch()
+      resetFormSearch();
       document.getElementById("search_modal").showModal();
     };
     const handleKeyPress = (event) => {
+      if (keyword.value == "") {
+        isResult.value = false;
+      }
       if (event.key === "Enter" || keyword.value) {
         filteredData.value = filterByTopicOrName(keyword.value.trim());
-        totalResult.value = filteredData.value ? filteredData.value.length : 0
-        isResult.value = true
+        totalResult.value = filteredData.value ? filteredData.value.length : 0;
+        isResult.value = true;
       }
     };
     const filterByTopicOrName = (searchTerm) => {
@@ -119,10 +149,10 @@ export default defineComponent({
       filterOnlineService.value = await menudata.filter(
         (item) => item.url == "service"
       );
-      initDataForSearch()
+      initDataForSearch();
     };
     const initDataForSearch = async () => {
-      fullscreenLoading.value = true
+      fullscreenLoading.value = true;
       concatenatedArray.value = filterOnlineService.value.concat(
         homedata,
         documentdata,
@@ -143,7 +173,7 @@ export default defineComponent({
                 name: data.name ? data.name : "",
               });
             });
-          }else if(item.items){
+          } else if (item.items) {
             item.items.map((data) => {
               newArray.push({
                 url: data.url,
@@ -153,13 +183,82 @@ export default defineComponent({
           }
         })
       ).then(() => {
-        concatenatedArray.value = newArray
+        newArray.forEach((obj) => {
+          obj.uuid = Util.generateUuid();
+        });
+        concatenatedArray.value = newArray;
         // console.log(concatenatedArray.value);
-        totalData.value = concatenatedArray.value ?  concatenatedArray.value.length : 0
-        fullscreenLoading.value = false
+        totalData.value = concatenatedArray.value
+          ? concatenatedArray.value.length
+          : 0;
+        fullscreenLoading.value = false;
       });
     };
     handleOnlineService();
+    const clickResutSearch = (val) => {
+      addRecentSearch(val);
+    };
+
+    const addRecentSearch = (newObj) => {
+      const index = recentSearches.value.indexOf(newObj);
+      if (index !== -1) {
+        recentSearches.value.splice(index, 1);
+      }
+      if (!Util.checkDuplicateUuid(recentSearches.value, newObj)) {
+        recentSearches.value.unshift(newObj);
+        recentSearches.value = [...new Set(recentSearches.value)];
+        if (recentSearches.value.length > 4) {
+          recentSearches.value.pop();
+        }
+        localStorage.setItem(
+          keyRecent.value,
+          JSON.stringify(recentSearches.value)
+        );
+      }
+      document.getElementById("search_modal").close();
+    };
+
+    const removeRecentSearch = (obj) => {
+      const index = recentSearches.value.indexOf(obj);
+      if (index !== -1) {
+        recentSearches.value.splice(index, 1);
+      }
+      localStorage.setItem(
+          keyRecent.value,
+          JSON.stringify(recentSearches.value)
+        );
+    };
+
+    const addFavorite =(newObj)=>{
+      const index = favoriteSearches.value.indexOf(newObj);
+      if (index !== -1) {
+        favoriteSearches.value.splice(index, 1);
+      }
+      if (!Util.checkDuplicateUuid(favoriteSearches.value, newObj)) {
+        favoriteSearches.value.unshift(newObj);
+        favoriteSearches.value = [...new Set(favoriteSearches.value)];
+        if (favoriteSearches.value.length > 24) {
+          favoriteSearches.value.pop();
+        }
+        removeRecentSearch(newObj)
+        localStorage.setItem(
+          keyFavorite.value,
+          JSON.stringify(favoriteSearches.value)
+        );
+      }
+    }
+
+    const removeFavoriteSearch = (obj) => {
+      const index = favoriteSearches.value.indexOf(obj);
+      if (index !== -1) {
+        favoriteSearches.value.splice(index, 1);
+      }
+      localStorage.setItem(
+        keyFavorite.value,
+          JSON.stringify(favoriteSearches.value)
+        );
+    };
+
     return {
       fullscreenLoading,
       clickSearch,
@@ -168,7 +267,13 @@ export default defineComponent({
       filteredData,
       totalData,
       totalResult,
-      isResult
+      isResult,
+      clickResutSearch,
+      recentSearches,
+      removeRecentSearch,
+      addFavorite,
+      favoriteSearches,
+      removeFavoriteSearch
     };
   },
 });

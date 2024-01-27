@@ -46,7 +46,7 @@
             </div>
           </div>
           <div >
-            <SeacrchItemList v-if="isResult" :items="filteredData" :result="totalResult" :total="totalData"></SeacrchItemList>
+            <SearchResultList v-if="isResult" :items="filteredData" :result="totalResult" :total="totalData"></SearchResultList>
             <!-- <div>
               <div>
               </div>
@@ -72,13 +72,13 @@ import departmentdata from "../../data/documentdata.json";
 import menudata from "../../data/menudata.json";
 
 // component
-import SeacrchItemList from "../Search/SearchItemList.vue";
+import SearchResultList from "./SearchResultList.vue";
 import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export default defineComponent({
   name: "SearchModal",
   components:{
-    SeacrchItemList
+    SearchResultList
   },
   setup() {
     const keyword = ref(null);

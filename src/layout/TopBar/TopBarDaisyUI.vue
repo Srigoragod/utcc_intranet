@@ -78,12 +78,12 @@
               <h5 class="text-all-file font-light leading-none py-2">
                 แคปชั่นทำงาน
               </h5>
-              <Caption></Caption>
+              <Caption :title="randomItemCaption.caption_title" :owner="randomItemCaption.caption_owner"></Caption>
             </div>
           </div>
           <div class="modal-action">
             <form method="dialog">
-              <button class="btn btn-sm text-[20px]">Close</button>
+              <button class="btn btn-sm text-[20px]" @click="onClickCloseMenu()">Close</button>
             </form>
           </div>
         </div>
@@ -99,6 +99,7 @@ import { useRouter } from "vue-router";
 
 //data
 import menudata from "../../data/menudata.json";
+import captiondata from "../../data/captiondata.json"
 
 //components
 import Caption from "../../components/Optional/Caption.vue";
@@ -116,6 +117,13 @@ export default defineComponent({
   //   dataList: { type: Array, required: false },
   // },
   setup() {
+    const captionList = ref(captiondata)
+    const randomItemCaption = ref({
+      id: null,
+      caption_title: null,
+      caption_owner: null
+    })
+
     const router = useRouter();
     const menuItems = ref(menudata);
     const subMenu = ref([]);
@@ -129,6 +137,11 @@ export default defineComponent({
     const isLarge = ref(false);
 
     const topicName = ref("");
+
+    const randomCaption = () => {
+      const randomIndex = Math.floor(Math.random() * captionList.value.length);
+      return captionList.value[randomIndex];
+    };
 
     const resetMenu = () => {
       isShow.value = false;
@@ -162,9 +175,9 @@ export default defineComponent({
         event_name: item.textName,
       });
 
-      console.log("run ... add dataLayer");
-
-      isShow.value = false;
+      randomItemCaption.value = randomCaption()
+      console.log( JSON.stringify(randomItemCaption.value,null,4));
+      // isShow.value = false;
       let id = item.id;
       // if (item.url) {
       //   router.push(item.url);
@@ -180,7 +193,7 @@ export default defineComponent({
 
       let data = await dividedArray(item.items);
       divMenu.value = data;
-      // isShow.value = true;
+
     };
     const dividedArray = (items) => {
       const setSize = 8;
@@ -203,8 +216,8 @@ export default defineComponent({
     };
 
     const onClickCloseMenu = () => {
+      // location.reload()
       isShow.value = false;
-      idActive.value = 1;
     };
 
     return {
@@ -223,6 +236,7 @@ export default defineComponent({
       isShowDialog,
       topicName,
       isLarge,
+      randomItemCaption
     };
   },
 });

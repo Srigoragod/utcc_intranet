@@ -2,8 +2,8 @@
   <div class="w-[18rem]">
     <div class="overlay-container w-5/6">
       <div class="centered text-white p-2 w-full">
-        <h4 class="block pt-20 px-2" v-html="captionMsg"></h4>
-        <h6 class="block text-right p-4 " v-html="captionOwner"></h6>
+        <h4 class="block pt-20 px-2" v-html="title"></h4>
+        <h6 class="block p-4 text-right" v-html="owner"></h6>
       </div>
     </div>
     <div
@@ -18,31 +18,18 @@
 </template>
 
 <script>
-import { ref, defineComponent, onMounted } from "vue";
-//data
-import captiondata from "../../data/captiondata.json";
+import { ref, defineComponent } from "vue";
+
 export default defineComponent({
   name: "CaptionForWork",
+  props: {
+    title: { type: String, required: false, default: ''},
+    owner: { type: String, required: false, default: '' }
+  },
   setup(props) {
-    const data = ref(captiondata);
-    const captionMsg = ref("");
-    const captionOwner = ref("");
-
-    const randomCaption = () => {
-      const randomIndex = Math.floor(Math.random() * data.value.length);
- 
-      const randomCaption = data.value[randomIndex];
-
-      captionMsg.value = randomCaption.caption_title;
-      captionOwner.value = randomCaption.caption_owner
-    };
-    onMounted(() => {
-     randomCaption(); 
-    });
-    randomCaption(); 
+    const item = ref(props.items)
     return {
-      captionMsg,
-      captionOwner,
+      item
     };
   },
 });

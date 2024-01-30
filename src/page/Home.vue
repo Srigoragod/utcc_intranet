@@ -125,6 +125,7 @@ export default defineComponent({
     background-size: cover;
     background-position: center;
     padding: 1rem 0;
+    width: 100%;
 }
 .text-topic-name {
   background: -webkit-gradient(

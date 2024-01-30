@@ -21,7 +21,8 @@ export default {
            "a-gray-787878": "#787878",
            "a-gray-F8F8F8": "#F8F8F8",
            "a-gray-64748b": "#64748b",
-           "a-gray-8b8d94": "#8b8d94"
+           "a-gray-8b8d94": "#8b8d94",
+           "a-gray-efeff4":"#efeff4"
 
       },
 

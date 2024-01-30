@@ -1,7 +1,8 @@
 <template>
   <div>
     <div
-      class="flex justify-between items-center text-a-blue-0874D9 bg-a-blue-ecf8ff mt-4 px-6 rounded-md"
+       v-if="result > 0"
+      class="flex justify-between items-center text-a-blue-0874D9 bg-a-blue-E5F1FB mt-4 px-6 rounded-md"
     >
       <!-- <font-awesome-icon :icon="['fas', 'clock-rotate-left']" /> -->
       <div class="flex items-center">
@@ -11,7 +12,7 @@
         />
         <h5 class="py-2">Result</h5>
       </div>
-      <div v-if="result > 0" class="text-[18px] opacity-60">
+      <div  class="text-[18px] opacity-60">
         {{ `${result} จาก ${total} รายการ` }}
       </div>
     </div>
@@ -24,7 +25,7 @@
           v-for="(item, index) in items"
           :key="index"
           @click="clickItem(item)"
-          class="flex justify-between items-center w-full py-1 border-b  hover:text-a-blue-005BC0 cursor-pointer"
+          class="flex justify-between items-center w-full border-b  hover:text-a-blue-005BC0 cursor-pointer"
         >
           <div class="py-2 px-6">
             <span class="text-[18px]" v-if="!item.isTopicName" v-html="item.topicName"> </span>
@@ -48,9 +49,17 @@
       </div>
       <div
          v-else
-        class="bg-a-gray-F8F8F8 text-a-gray-8b8d94 rounded-lg mx-auto text-[20px] py-8 flex justify-center mt-2"
+        class="text-a-gray-8b8d94  mx-auto text-[20px] bg-white "
       >
-        No Data
+          <div class="grid justify-items-stretch">
+            <div class="justify-self-center">
+            <img src="../../assets/image/NoData-searchModal.png" class="w-[230px] justify-self-auto " alt="No Data"/>
+            <div class="text-center -mt-8">
+            <h3 class="text-a-gray-787878  mb-0 w-full"> SORRY!</h3>
+            <h6 class="text-a-gray-8b8d94 text-[24px] -mt-4 w-full">Your Search Not Found</h6>
+            </div>
+            </div>
+          </div>
       </div>
     </div>
     <!-- End item search  -->

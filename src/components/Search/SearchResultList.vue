@@ -35,12 +35,9 @@
             <div class="py-2 pr-4 flex items-center">
               <div class="pr-1">
                 <button
-                  class="btn btn-circle btn-sm border-0 opacity-20 hover:opacity-100"
+                  class="btn btn-circle btn-sm border-0 opacity-10 hover:opacity-100"
                 >
-                  <font-awesome-icon
-                    class="text-[18px]"
-                    :icon="['fas', 'arrow-right']"
-                  />
+                <font-awesome-icon :icon="['far', 'circle-xmark']" />
                 </button>
               </div>
             </div>
@@ -55,7 +52,7 @@
             <div class="justify-self-center">
             <img src="../../assets/image/NoData-searchModal.png" class="w-[230px] justify-self-auto " alt="No Data"/>
             <div class="text-center -mt-8">
-            <h3 class="text-a-gray-787878  mb-0 w-full"> SORRY!</h3>
+            <h3 class="text-a-gray-787878  mb-0 w-full opacity-70"> Sorry ... </h3>
             <h6 class="text-a-gray-8b8d94 text-[24px] -mt-4 w-full">Your Search Not Found</h6>
             </div>
             </div>

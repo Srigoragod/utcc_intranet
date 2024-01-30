@@ -29,12 +29,12 @@
                 class="text-input border input-sm w-screen max-w-xl text-xl rounded-full bg-opacity-40 mx-2"
               />
               <button
-                @click="handleKeyPress(keyword)"
-                class="btn btn-sm btn-circle btn-primary"
+                @click="resetFormSearch()"
+                class="btn btn-sm btn-circle btn-primary opacity-20 hover:opacity-100"
               >
                 <font-awesome-icon
                   class="text-base"
-                  :icon="['fas', 'magnifying-glass']"
+                  :icon="['fas', 'xmark']"
                 />
               </button>
             </div>
@@ -50,6 +50,7 @@
           </div>
           <div>
             <SearchResultList
+              v-loading="isLoading"
               v-if="isResult"
               :items="resultList"
               @click-result="clickResutSearch"
@@ -102,6 +103,7 @@ export default defineComponent({
     SearchFavorite,
   },
   setup() {
+    const isLoading = ref(true)
     const keyword = ref(null);
     const concatenatedArray = ref(null);
     const filterOnlineService = ref(null);
@@ -120,7 +122,6 @@ export default defineComponent({
       JSON.parse(localStorage.getItem(keyFavorite.value)) || []
     );
 
-    1;
     const resetFormSearch = () => {
       keyword.value = null;
       resultList.value = null;
@@ -133,7 +134,8 @@ export default defineComponent({
     };
     const handleKeyPress = (event) => {
       if (keyword.value == "") {
-        isResult.value = false;
+         isLoading.value = true;
+         isResult.value = false;
       }
       if (event.key === "Enter" || keyword.value) {
         let data = filterByTopicOrName(keyword.value.trim());
@@ -149,6 +151,10 @@ export default defineComponent({
         resultList.value = uniqueData;
         totalResult.value = resultList.value ? resultList.value.length : 0;
         isResult.value = true;
+        setTimeout(() => {
+          isLoading.value = false
+        });
+     
       }
     };
     const filterByTopicOrName = (searchTerm) => {
@@ -298,6 +304,8 @@ export default defineComponent({
       addFavorite,
       favoriteSearches,
       removeFavoriteSearch,
+      isLoading,
+      resetFormSearch
     };
   },
 });

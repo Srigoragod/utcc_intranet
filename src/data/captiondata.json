@@ -17,31 +17,91 @@
     {
         "id": 3,
         "caption_title": "ชีวิตต้องสู้เพราะกู้ไว้เยอะ!",
-        "caption_owner": "- wongnai.com"
+        "caption_owner": "..."
     },
     {
         "id": 4,
         "caption_title": "ถ้าคุณรู้สึกว่า “เหนื่อย” นั่นแสดงว่า คุณยังสู้อยู่",
-        "caption_owner": "- wongnai.com"
+        "caption_owner": "..."
     },
     {
         "id": 5,
         "caption_title": "งานการไม่ตั้งใจทำ วัน ๆ นั่งจำแต่คำคม",
-        "caption_owner": "- wongnai.com"
+        "caption_owner": "..."
     },
     {
         "id": 6,
         "caption_title": "ยังหายใจอยู่ ก็สู้ต่อไป อย่าพึ่งท้อถอยต่อการทำงาน",
-        "caption_owner": "- wongnai.com"
+        "caption_owner": "..."
     },
     {
         "id": 7,
         "caption_title": "แสงของวันใหม่มาพร้อมกับโอกาสใหม่ ๆ เสมอ",
-        "caption_owner": "- wongnai.com"
+        "caption_owner": "..."
     },
     {
-        "id": 8,
-        "caption_title": "เป็นคนมีค่า..ค่าน้ำ ค่าไฟ ค่าบัตรเครดิต",
-        "caption_owner": "- wongnai.com"
+        "id": 9,
+        "caption_title": "ถ้าคุณโชคดีที่ได้เกิดมา <span class='text-a-blue-0874D9'> \"แตกต่าง\"</span> อย่าได้เปลี่ยนแปลงมัน ",
+        "caption_owner": "Taylor Swift <br/><small>American singer-songwriter</small>"
+    },
+    {
+        "id": 10,
+        "caption_title": "\"เมื่อฉันใช้เหตุผลมากๆ <span class='text-a-blue-0874D9'>และไม่เชื่อ... ในสัญชาตญาณตัวเอง  </span> นั้นแหละตอนที่ฉันเริ่มเจอปัญหา",
+        "caption_owner": "Angelina Jolie <br/><small>American actress and filmmaker</small>\""
+    },
+    {
+        "id": 11,
+        "caption_title": " <span class='text-a-blue-0874D9'>ผมไม่เสียใจ แม้สิ่งที่ผมทำจะล้มเหลวก็ตาม</span> แต่ผมจะเสียใจถ้าผมไม่ได้ลงมือทำ",
+        "caption_owner": "Jeffrey Preston Bezos <br/><small>ผู้ก่อตั้ง AMAZON</small>"
+    },
+    {
+        "id": 12,
+        "caption_title": "ไม่มีอะไรคือเรื่องล้มเหลวเพราะทุกความล้มเหลว <span class='text-a-blue-0874D9'>คือการเปลี่ยนแปลงของชีวิตเท่านั้นเอง</span>",
+        "caption_owner": "Oprah Winfrey <br/><small>American host and television producer</small>"
+    },
+    {
+        "id": 13,
+        "caption_title": "บางคนมองเห็นสิ่งที่เป็นไปได้ บางคนลงมือทำให้มันเป็นไปได้",
+        "caption_owner": "Steve Job <br/><small>Former CEO of Apple</small>"
+    },
+    {
+        "id": 14,
+        "caption_title": "\"เราจะสบายใจกับผู้ที่เห็นด้วยกันเราแต่เราจะเติบโตขึ้นมากจากผู้ที่ไม่เห็นด้วยกับเรา\"",
+        "caption_owner": "Bill Gates <br/><small>Former CEO of Microsoft</span>"
+    },
+    {
+        "id": 15,
+        "caption_title": "\"การลงทุนที่สำคัญที่สุดที่คุณทำได้คือ การลงทุนในตัวคุณเอง\"",
+        "caption_owner": "Warren Buffett <br/><small>Chairperson of Berkshire Hathaway</span>"
+    },
+    {
+        "id": 16,
+        "caption_title": "อย่าทำตัวเป็นน้ำที่เต็มแก้ว \"จงเรียนรู้จากทีมของคุณ\"",
+        "caption_owner": "Mark Zuckerberg <br/><small>CEO of Facebook</span>"
+    },
+    {
+        "id": 17,
+        "caption_title": "\"เมื่อมีโอกาสและมีงานทำ ควรเต็มใจทำโดยไม่จำเป็นต้องตั้งข้อแม้\"",
+        "caption_owner": "พระราชดำรัสในหลวงรัชกาลที่ ๙ "
+    },
+    {
+        "id": 18,
+        "caption_title": "อย่ายอมแพ้ วันนี้แม้จะหนัก พรุ่งนี้อาจจะเป็นวันที่เลวร้ายที่สุด แต่วันมะรืนฟ้าย่อมสดใส",
+        "caption_owner": "Jack Ma <br/><small>Chinese business magnate and investor</span>"
+    },
+    {
+        "id": 19,
+        "caption_title": "จงตั้งใจเพื่อจะเป็น <span class='text-a-blue-0874D9'>\"ผู้เรียนรู้ทุกอย่าง\"</span> ไม่ใช่ <span class='text-a-blue-0874D9'>\"ผู้ที่รู้ไปหมดทุกอย่าง\"</span> ",
+        "caption_owner": "Elon Musk <br/><small>CEO of Tesla Motors</small>"
+    },
+    {
+        "id": 20,
+        "caption_title": "\"ความล้มเหลวคือบทเรียนที่ดีที่สุด\"",
+        "caption_owner": "Bill Gates <br/><small>Former CEO of Microsoft</span>"
+    },
+    {
+        "id": 21,
+        "caption_title": "\"<span class='text-a-blue-0874D9'>ชีวิต</span> ไม่มีวันสมบูรณ์หากปราศจากความ <span class='text-a-blue-0874D9'>ท้าทาย</span>\"",
+        "caption_owner": "Bill Gates <br/><small>Former CEO of Microsoft</span>"
     }
 ]

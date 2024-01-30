@@ -14,7 +14,7 @@
         /> -->
       <!-- <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[18px]"/>
       </div> -->
-      <a class="flex items-center text-a-blue-2E3191  hover:text-a-blue-005BC0  px-2  "> <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[10px] pr-1"/> {{ textName }}</a>
+      <a class="flex items-center text-a-blue-2E3191  hover:text-a-blue-005BC0  px-2"> <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[10px] pr-1"/> {{ textName }}</a>
     </div>
 
     <div

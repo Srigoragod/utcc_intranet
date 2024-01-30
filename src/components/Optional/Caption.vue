@@ -1,9 +1,9 @@
 <template>
   <div class="w-[18rem]">
     <div class="overlay-container w-5/6">
-      <div class="centered text-white p-2 w-full">
-        <h4 class="block pt-20 px-2" v-html="title"></h4>
-        <h6 class="block p-4 text-right" v-html="owner"></h6>
+      <div class="centered text-white text-center p-2 w-full">
+        <h4 class="block pt-16 px-2" v-html="title"></h4>
+        <h6 class="block p-4 " v-html="owner"></h6>
       </div>
     </div>
     <div

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-section">
+  <div class="bg-section bg-fixed">
     <div class="container mx-auto py-20">
       <h4 class="text-topic-name font-bold my-4">คณะ</h4>
       <div class="grid grid-cols-4 gap-4">
@@ -197,6 +197,7 @@ export default defineComponent({
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 </style>

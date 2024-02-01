@@ -4,7 +4,7 @@
       <input
         type="text"
         placeholder="Search ..."
-        class="text-input input-sm w-screen max-w-xs text-xl rounded-full bg-opacity-40"
+        class="text-input input-sm text-xl rounded-full bg-opacity-40"
       />
       <button
         class="ml-2 btn btn-sm btn-ghost btn-circle bg-white bg-opacity-30 hover:bg-opacity-100"
@@ -26,7 +26,7 @@
                 v-model="keyword"
                 @keyup="handleKeyPress"
                 placeholder="Search ..."
-                class="text-input border input-sm w-screen max-w-xl text-xl rounded-full bg-opacity-40 mx-2"
+                class="text-input border input-sm  text-xl rounded-full bg-opacity-40 mx-2"
               />
               <button
                 @click="resetFormSearch()"

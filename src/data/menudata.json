@@ -267,18 +267,6 @@
           "subitems": []
         },
         {
-          "textName": "Functional Area",
-          "url": "functional.html",
-          "type":"link",
-          "subitems": []
-        },
-        {
-          "textName": "การจัดทำงบประมาณ",
-          "url": "budget.html",
-          "type":"link",
-          "subitems": []
-        },
-        {
           "textName": "KPI online",
           "url": "https://kpi.utcc.ac.th/",
           "type":"link",
@@ -287,12 +275,6 @@
         {
           "textName": "Strategics online",
           "url": "http://plan.utcc/",
-          "type":"link",
-          "subitems": []
-        },
-        {
-          "textName": "งานบริหารความเสี่ยง",
-          "url": "risk.html",
           "type":"link",
           "subitems": []
         },
@@ -349,7 +331,40 @@
           "url": "http://ascroom.utcc.ac.th/new",
           "type":"link",
           "subitems": []
+        },
+        {
+          "textName": "ระบบจองประชุมสำนักอำนวยการ",
+          "url": "http://roomsys.utcc/",
+          "type":"link",
+          "subitems": []
+        },
+        {
+          "textName": "ระบบจองห้อง HYFLEX",
+          "url": "https://hyflex.utcc.ac.th/",
+          "type":"link",
+          "subitems": []
         }
       ]
+    },
+    {
+      "id": 5,
+      "textName": "Risk",
+      "url": "risk",
+      "isActive": false,
+      "items": []
+    },
+    {
+      "id": 6,
+      "textName": "Bubget",
+      "url": "risk",
+      "isActive": false,
+      "items": []
+    },
+    {
+      "id": 6,
+      "textName": "Functional Area",
+      "url": "risk",
+      "isActive": false,
+      "items": []
     }
   ]

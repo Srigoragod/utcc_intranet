@@ -60,20 +60,19 @@ export default defineComponent({
     const topicName = ref("All Files");
     const initialData =  () => {
         topicName.value = props.topicName;
-        if(route.name == 'formdocument'){
+        if(route.name == 'formdocument' || props.dataName =='formdocument'){
           fileData.value = documentdata;
         }else if (route.name == 'department' || props.dataName == 'department'){
           fileData.value = departmentdata
         }
-     
+
         fileData.value.sort((a, b) => {
         a.topicName.localeCompare(b.topicName, "th");
         const topicComparison = a.topicName.localeCompare(b.topicName, "th");
         return topicComparison !== 0 ? topicComparison : a.length - b.length;
       });
-      
+
         isNotHome.value = false;
-      
         // dividedArray()
 
 

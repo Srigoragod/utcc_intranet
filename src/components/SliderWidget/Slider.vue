@@ -64,7 +64,7 @@ export default {
 
 <style lang="scss" scoped> 
 .bg-image{
-    min-height: 320px;
+    min-height: 380px;
     width: 100%;
     border-radius: 30px;
     // Default Bg Image

@@ -1,19 +1,14 @@
 <template>
-  <div class="footer w-full bg-a-blue-0F2A43 text-white py-4 " >
+  <div class=" w-full bg-footer text-white py-8 " >
     <div class="container m-auto">
-      <div class="grid grid-cols-5 gap-4">
+      <div class="grid gap-4 items-start">
         <div >
-          <a href="#">
-            <img
-              src="../../assets/logo/UTCC_Logo-white.png"
-              class="main-logo"
-              alt="UTCC Logo White"
-            />
-          </a>
+         
         </div>
+        <div class="grid grid-cols-4 gap-4 items-start col-span-2 ">
         <div  class="text-white" v-for="(data, index) in menuList" :key="index">
           <h6 class="text-a-gray-F8F8F8">{{ data.textName }}</h6>
-          <MenuItem
+<MenuItem
               v-for="(subItem, index1) in data.items"
               :key="index1"
               :textName="subItem.textName"
@@ -25,11 +20,20 @@
             </MenuItem>
         </div>
       </div>
-      <div class="text-center text-a-gray-64748b">
-        <h6>
+      </div>
+
+      <div  class=" text-a-gray-64748b mt-4 flex justify-center pt-8">
+        <div class="text-base text-center">
+          <a href="#">
+            <img
+              src="../../assets/logo/UTCC_Logo-white.png"
+              class="main-logo ml-10"
+              alt="UTCC Logo White"
+            />
+          </a>
           จัดทำโดย สำนักบริการคอมพิวเตอร์ มหาวิทยาลัยหอการค้าไทย <br />
           © 2023 - UTCC All Right Reserved
-        </h6>
+        </div>
       </div>
     </div>
   </div>
@@ -60,7 +64,16 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .main-logo {
-  width: 230px;
-  height: 70px;
+  width: 200px;
+  height: 65px;
 }
+
+.bg-footer {
+    background: url('../../assets/image/bg-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 </style>

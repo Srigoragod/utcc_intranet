@@ -1,8 +1,8 @@
 <template>
   <div class="glass w-full fixed top-0 z-30 pb-2">
-    <div class="navbar container mx-auto">
+    <div class="navbar container mx-auto items-center">
       <div class="navbar-start">
-        <div class="dropdown">
+        <!-- <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
@@ -17,11 +17,11 @@
         </li>
         <li><a>Item 3</a></li>
       </ul>
-    </div>
+    </div> -->
 
         <a href="" class="btn btn-ghost text-xl" @click="handleGotoPage()">
           <img
-            src="../../assets/logo/UTCC_SubMain2-1.png"
+            src="../../assets/logo/UTCC_Logo.png"
             class="main-logo"
             alt="UTCC Logo"
           />
@@ -67,7 +67,7 @@
                   :textName="subItem.textName"
                   :textUrl="subItem.url"
                   :type="subItem.type"
-                  class="text-2xl">
+                  class="text-xl">
                   @click-menu="handleClickMenu()"
                 >
                 </MenuItem>

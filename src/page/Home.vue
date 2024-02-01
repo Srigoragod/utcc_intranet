@@ -33,9 +33,9 @@
           <FacultyAll></FacultyAll>
         </section>
 
-        <!-- <section >
-          <ShowFlexMasonry  :topicName="'Forms &Documents'"></ShowFlexMasonry>
-        </section> -->
+        <section class="container mx-auto py-20" >
+          <ShowFlexMasonry  :topicName="'Department'" :dataName="'department'"></ShowFlexMasonry>
+        </section>
 
 
         <ScrollToTopButton></ScrollToTopButton>
@@ -71,7 +71,7 @@ import ShowFile from "../layout/ShowFile.vue";
 import Footer from "../layout/Footer/Footer.vue";
 import ScrollToTopButton from "../components/Button/ScrollToTopButton.vue";
 import FloatingActionButton from "../components/Button/FloatingActionButton.vue";
-
+import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
 export default defineComponent({
   name: "Home",
   components: {
@@ -87,8 +87,8 @@ export default defineComponent({
     ShowFile,
     Footer,
     ScrollToTopButton,
-    FloatingActionButton
-    // ShowFlexMasonry
+    FloatingActionButton,
+    ShowFlexMasonry
   },
   setup() {
     const route = useRoute()

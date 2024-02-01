@@ -199,7 +199,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .bg-section {
-    background: url('../assets/image/bg-for-faculty.png');
+    background: url('../assets/image/bg-white-fac.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

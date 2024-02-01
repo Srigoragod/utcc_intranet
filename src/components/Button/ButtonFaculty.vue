@@ -1,7 +1,7 @@
 <template>
   <div
     @click="onClick(item.url)"
-    class="flex justify-self-start w-full bg-white bg-opacity-50 drop-shadow p-4 rounded-xl items-center cursor-pointer hover:drop-shadow-xl hover:text-a-blue-005BC0 hover:bg-opacity-80"
+    class="flex justify-self-start w-full bg-white bg-opacity-70 drop-shadow p-4 rounded-xl items-center cursor-pointer hover:drop-shadow-xl hover:text-a-blue-005BC0 hover:bg-opacity-80"
   >
     <div
       class="icon-faculty h-16 w-16 bg-white rounded-full flex items-center justify-center p-4"

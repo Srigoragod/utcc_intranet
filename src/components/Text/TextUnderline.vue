@@ -33,7 +33,7 @@ export default {
     position: absolute;
     height: 40%;
     width: 100%;
-    background: linear-gradient(90deg, #0874D9, #548dd9 100%, #548dd9 0);
+    background: linear-gradient(90deg, #0874D9, #93C5FD 100%, #DAE9FE 0);
     opacity: 0.3;
     bottom: 0;
     left: 0;

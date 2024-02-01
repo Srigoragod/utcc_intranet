@@ -37,6 +37,10 @@
           <ShowFlexMasonry  :topicName="'Department'" :dataName="'department'"></ShowFlexMasonry>
         </section>
 
+        <section class="container mx-auto py-20" >
+   <DividerRisk></DividerRisk>
+        </section>
+
 
         <ScrollToTopButton></ScrollToTopButton>
       </div>
@@ -72,6 +76,9 @@ import Footer from "../layout/Footer/Footer.vue";
 import ScrollToTopButton from "../components/Button/ScrollToTopButton.vue";
 import FloatingActionButton from "../components/Button/FloatingActionButton.vue";
 import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
+import DividerRisk from '../layout/DividerRisk.vue';
+
+
 export default defineComponent({
   name: "Home",
   components: {
@@ -88,7 +95,8 @@ export default defineComponent({
     Footer,
     ScrollToTopButton,
     FloatingActionButton,
-    ShowFlexMasonry
+    ShowFlexMasonry,
+    DividerRisk
   },
   setup() {
     const route = useRoute()

@@ -1,14 +1,16 @@
 <template>
-  <div class=" w-full bg-footer text-white py-8 " >
+  <div class="w-full bg-footer text-white pt-8">
     <div class="container m-auto">
       <div class="grid gap-4 items-start">
-        <div >
-         
-        </div>
-        <div class="grid grid-cols-4 gap-4 items-start col-span-2 ">
-        <div  class="text-white" v-for="(data, index) in menuList" :key="index">
-          <h6 class="text-a-gray-F8F8F8">{{ data.textName }}</h6>
-<MenuItem
+        <div></div>
+        <div class="grid grid-cols-4 gap-4 items-start col-span-2">
+          <div
+            class="text-white"
+            v-for="(data, index) in menuList"
+            :key="index"
+          >
+            <h6 class="text-a-gray-F8F8F8">{{ data.textName }}</h6>
+            <MenuItem
               v-for="(subItem, index1) in data.items"
               :key="index1"
               :textName="subItem.textName"
@@ -18,11 +20,11 @@
             >
               {{ subItem }}
             </MenuItem>
+          </div>
         </div>
       </div>
-      </div>
-
-      <div  class=" text-a-gray-64748b mt-4 flex justify-center pt-8">
+    </div>
+    <div class="text-a-gray-64748b bg-a-blue-0F2A43 mt-4 flex justify-center py-4">
         <div class="text-base text-center">
           <a href="#">
             <img
@@ -35,7 +37,6 @@
           © 2023 - UTCC All Right Reserved
         </div>
       </div>
-    </div>
   </div>
 </template>
 
@@ -56,7 +57,7 @@ export default defineComponent({
   setup() {
     const menuList = ref(menudata);
     return {
-      menuList
+      menuList,
     };
   },
 });
@@ -69,11 +70,10 @@ export default defineComponent({
 }
 
 .bg-footer {
-    background: url('../../assets/image/bg-footer.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background: url("../../assets/image/bg-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-
 </style>

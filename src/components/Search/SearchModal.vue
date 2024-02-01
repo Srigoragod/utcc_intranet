@@ -3,8 +3,8 @@
     <div class="flex justify-between" @click="clickSearch()">
       <input
         type="text"
-        placeholder="Search ..."
-        class="text-input input-sm text-xl rounded-full bg-opacity-40"
+        placeholder="Search "
+        class="text-input input-sm text-xl rounded-full border border-slate-300 hover:border-indigo-300"
       />
       <button
         class="ml-2 btn btn-sm btn-ghost btn-circle bg-white bg-opacity-30 hover:bg-opacity-100"

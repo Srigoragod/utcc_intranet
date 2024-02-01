@@ -28,20 +28,7 @@
         </a>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li v-for="(item, index) in menuItems" :key="index">
-            <details @click="onClickDialog(item)">
-              <summary
-                class="text-[22px] text-a-blue-2E3191 hover:text-a-blue-005BC0 rounded-full bg-white bg-opacity-30 mx-1"
-              >
-                {{ item.textName }}
-              </summary>
-              <!-- <ul class="text-[20px] bg-base-100">
-                <li   v-for="(subItem, x) in item.items" :key="x"><a class="link-primary text-a-blue-2E3191 hover:text-a-blue-005BC0">{{ subItem.textName }}</a></li>
-              </ul> -->
-            </details>
-          </li>
-        </ul>
+        <label  v-for="(item, index) in menuItems" :key="index" @click="onClickDialog(item)" class="text-xl text-a-blue-2E3191 hover:text-a-blue-005BC0 mx-3 cursor-pointer"> {{ item.textName }}</label>
       </div>
       <div class="navbar-end hidden lg:flex">
         <SearchModal></SearchModal>

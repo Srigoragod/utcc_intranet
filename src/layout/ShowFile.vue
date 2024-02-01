@@ -1,8 +1,7 @@
 <template>
   <div class="py-2 relative" :class="[isNotHome ? 'mt-24' :'']">
-    <el-divider class="text-a-gray-64748b " content-position="center">
-      <h4 class="text-all-file font-light leading-none pt-2">{{ topicName }}</h4>
-    </el-divider>
+
+    <TextUnderline class="mt-8" :text="'เอกสารทั้งหมด'"  :desc="''"></TextUnderline>
     <br/>
     <div class="grid gap-4 items-start" :class="[gridCols]"  >
       <FileList
@@ -48,6 +47,7 @@ import homedata from '../data/homedata.json'
 import documentdata from '../data/documentdata.json'
 // components
 import FileList from "../components/File/FileList.vue";
+import TextUnderline from "../components/Text/TextUnderline.vue";
 
 export default defineComponent({
   name: "ShowFile",
@@ -57,7 +57,8 @@ export default defineComponent({
     topicName:  { type: String, require: true,  default: 'All Files' }
   },
   components: {
-    FileList
+    FileList,
+    TextUnderline
   },
   setup(props) {
     const route = useRoute()

@@ -1,7 +1,8 @@
 <template>
-    <div>
-    <div class="flex justify-between items-center">
-         <h4 class="font-bold text-topic-name">ไฟล์อัพเดทล่าสุด</h4>
+    <div class="mt-8">
+    <div class="flex justify-between items-start">
+         <!-- <h4 class="font-bold text-topic-name">ไฟล์อัพเดทล่าสุด</h4> -->
+         <TextUnderline :text="'อัพเดทล่าสุด'" :desc="'รายการเอกสารที่มีการอัพเดทล่าสุดทั้งหมด'"></TextUnderline>
          <el-link class="text-[20px]" type="primary"><h6>ดูทั้งหมด</h6></el-link>
     </div>
  
@@ -14,7 +15,12 @@
 </template>
 
 <script>
+import TextUnderline from '../components/Text/TextUnderline.vue';
 export default {
+    name: "LastUpdate",
+    components:{
+        TextUnderline
+    }
 
 }
 </script>

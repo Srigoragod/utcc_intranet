@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h4 class="font-bold text-topic-name">การประชุมมหาวิทยาลัย</h4>
+    <!-- <h4 class="font-bold text-topic-name">การประชุมมหาวิทยาลัย</h4> -->
+    <TextUnderline class="mt-8 mb-4" :text="'ประชุมมหาวิทยาลัย'"></TextUnderline>
     <div class="grid grid-cols-3 gap-4">
       <div >
         <Calender class="rounded-lg"></Calender>
@@ -34,12 +35,15 @@ import { ref, defineComponent } from "vue";
 import Calender from "../components/Optional/Calender.vue";
 import DateMeeting from "../components/DateWidget/DateMeeting.vue";
 import ButtonBlueDownload from "../components/Button/ButtonBlueDownload.vue";
+import TextUnderline from "../components/Text/TextUnderline.vue";
+
 export default defineComponent({
   name: "UniversityMeeting",
   components: {
     DateMeeting,
     Calender,
     ButtonBlueDownload,
+    TextUnderline
   },
   setup() {
     const dateMeetingList = ref([

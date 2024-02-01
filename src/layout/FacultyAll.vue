@@ -1,12 +1,16 @@
 <template>
   <div class="bg-section bg-fixed">
     <div class="container mx-auto py-20">
-      <h4 class="text-topic-name font-bold my-4">คณะ</h4>
+      <!-- <h4 class="text-topic-name font-bold my-4">คณะ</h4> -->
+      <TextUnderline :text="'คณะ'" :desc="'เว็บไซต์คณะทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>
       <div class="grid grid-cols-4 gap-4">
         <ButtonFaculty :item="item" v-for="(item,index) in sortListSchool" :key="index" ></ButtonFaculty>
       </div>
 
-      <h4 class="text-topic-name font-bold my-4">วิทยาลัย</h4>
+      <br/>
+
+      <TextUnderline class="mt-8" :text="'วิทยาลัย'" :desc="'เว็บไซต์วิทยาลัยทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>
+
       <div class="grid grid-cols-4 gap-4">
         <ButtonFaculty :item="item" v-for="(item,index) in sortListCollege" :key="index" ></ButtonFaculty>
       </div>
@@ -18,11 +22,13 @@
 <script>
 import {ref, defineComponent} from "vue"
 import ButtonFaculty from '../components/Button/ButtonFaculty.vue';
+import TextUnderline from "../components/Text/TextUnderline.vue";
 
 export default defineComponent({
   name: "FacultyAll",
   components: {
-    ButtonFaculty
+    ButtonFaculty,
+    TextUnderline
   },
   setup(props) {
     const schoolItem = [{
@@ -150,7 +156,7 @@ export default defineComponent({
             "url":"https://tcism.utcc.ac.th/",
             "icon":"tcism",
             "name":"นานาชาติไทยจีนเพื่อการจัดการ",
-            "description":"泰国商会大学泰-中国际管理学院",
+            "description":"Thai Chinese International School of Management",
             "isDisable":false,
             "color":"text-a-tcism-d19a3b"
          },

@@ -25,19 +25,18 @@
           <News ref="news" class="my-2"></News>
         </section>
 
-        <br />
+        <section id="show_file" class="container mx-auto my-12" >
+          <ShowFile ref="showfile" :items="homeList" class="my-2" :gridCols="'grid-cols-2'"></ShowFile>
+        </section>
 
         <section id="faculty">
           <FacultyAll></FacultyAll>
         </section>
 
-        <section id="show_file" class="container mx-auto" >
-          <ShowFile ref="showfile" :items="homeList" class="my-2" :gridCols="'grid-cols-2'"></ShowFile>
-        </section>
-
         <!-- <section >
           <ShowFlexMasonry  :topicName="'Forms &Documents'"></ShowFlexMasonry>
         </section> -->
+
 
         <ScrollToTopButton></ScrollToTopButton>
       </div>

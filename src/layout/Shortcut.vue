@@ -1,9 +1,10 @@
 <template>
   <div class="py-2">
-    <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4>
+    <!-- <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4> -->
+    <TextUnderline class="my-8" :text="'เมนูที่ใช้งานบ่อย'"></TextUnderline>
     <div class="flex justify-start" data-aos="fade-right">
        <!-- <ButtonBlue class="mr-8"  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :icon="item.icon" :isDisable="item.isDisable"></ButtonBlue> -->
-       <ButtonPrimaryOutline class="mr-4"  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :typeIcon="item.typeIcon" :icon="item.icon" :position="item.position" :isDisable="item.isDisable"></ButtonPrimaryOutline>
+       <ButtonPrimaryOutline class="mr-4 my-4"  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :typeIcon="item.typeIcon" :icon="item.icon" :position="item.position" :isDisable="item.isDisable"></ButtonPrimaryOutline>
     </div>
   </div>
 </template>
@@ -12,11 +13,14 @@
 import { ref,defineComponent  } from "vue";
 // import ButtonBlue from '../components/ButtonBlue.vue';
 import ButtonPrimaryOutline from "../components/Button/ButtonPrimaryOutline.vue";
+import TextUnderline from "../components/Text/TextUnderline.vue";
+
 export default defineComponent({
   name: "Shortcut",
   components: {
     // ButtonBlue,
-    ButtonPrimaryOutline
+    ButtonPrimaryOutline,
+    TextUnderline
   },
   setup() {
     const items = ref([

@@ -3,7 +3,7 @@
 
     <TextUnderline class="mt-8" :text="'เอกสารทั้งหมด'"  :desc="''"></TextUnderline>
     <br/>
-    <div class="grid gap-4 items-start" :class="[gridCols]"  >
+    <div class="grid gap-4 items-start sm:grid-cols-1" :class="[gridCols]"  >
       <FileList
         v-for="(item, index) in fileData"
         :id="item.id"

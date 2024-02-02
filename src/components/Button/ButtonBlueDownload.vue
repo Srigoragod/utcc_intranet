@@ -7,7 +7,7 @@
       </div>
       <div class="button-content w-full pl-4">
         <div class="text-button text-ellipsis overflow-hidden">
-          <h4 class="text-ellipsis overflow-hidden sm:text-lg md:text-0xl lg:text-1qxl xl:text-3xl 2xl:text-4xl md:truncate md:w-[205px] lg:w-full ">{{ textButton }}</h4>
+          <h4 class="text-ellipsis overflow-hidden whitespace-nowrap">{{ textButton }}</h4>
         </div>
         <div class="text-[18px] mt-1" v-html="description"></div>
       </div>
@@ -49,10 +49,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "../../style/base.scss";
 .container-btn-blue-download {
-
-//   color: #005BC0;
-  color: #787878;
+  color: #005BC0;
+  // color: #787878;
   border-radius: 10px;
   border: 1px solid #E5F1FB;
   cursor: pointer;
@@ -65,19 +65,32 @@ export default defineComponent({
     svg {
       height: 52px;
       width: 52px;
+      @include mobile {
+      height: 38px;
+      width: 38px;
+      margin-right: 4px;
+     }
     }
+ 
   }
   .button-content {
     width: 100%;
 
     h4{
-        // color: #005BC0;
-        color: #787878;
+        color: #005BC0;
+        // color: #787878;
     }
 
     .text-button {
         color: #787878;
         font-size: 1rem;
+        h4{
+          @include mobile {
+          font-size: 28px;
+          width: 200px;
+        }
+        }
+      
     }
   }
 

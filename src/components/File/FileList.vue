@@ -2,7 +2,7 @@
   <div >
     <!-- Content -->
     <div class="container-file-list" :class="[isHeightFull ? 'h-full' : '']" data-aos="fade-up">
-      <h4 class="font-bold text-topic-name py-4 text-base md:text-2xl lg:text-3xl " >
+      <h4 class="font-bold text-topic-name py-4" >
         <div class="flex items-center justify-center w-full" v-html="topicName">
         </div>
       </h4>
@@ -103,6 +103,8 @@ export default defineComponent({
 </style>
 
 <style lang="scss" scoped>
+
+@import "../../style/base.scss";
 .container-file-list {
   border: 1px solid #e5f1fb;
   border-radius: 10px;
@@ -117,6 +119,15 @@ export default defineComponent({
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+ 
+    @include mobile {
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+    margin: 0 1.5rem;
   }
+  }
+
 }
 </style>

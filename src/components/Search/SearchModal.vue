@@ -1,16 +1,20 @@
 <template>
   <div v-loading.fullscreen.lock="fullscreenLoading">
-    <div class="flex justify-between" @click="clickSearch()">
+    <div class="flex justify-between items-center rounded-full border border-slate-300 hover:border-indigo-300 px-4 bg-white" @click="clickSearch()">
+      <font-awesome-icon
+          class="text-base"
+          :icon="['fas', 'magnifying-glass']"
+        />
       <input
         type="text"
         placeholder="Search "
-        class="hidden lg:flex text-input input-sm text-xl rounded-full border border-slate-300 hover:border-indigo-300"
+        class="text-input input-sm text-xl w-full"
       />
       <button
-        class="ml-2  btn lg:btn-sm btn-ghost lg:btn-circle bg-white lg:bg-opacity-30 hover:bg-opacity-100"
+        class="ml-2  btn lg:btn-sm btn-ghost lg:btn-circle bg-white lg:hidden lg:bg-opacity-30 hover:bg-opacity-100"
       >
-        <font-awesome-icon
-          class="text-xl text-a-blue-2E3191 hover:text-a-blue-005BC0"
+      <font-awesome-icon
+          class="text-xl"
           :icon="['fas', 'magnifying-glass']"
         />
       </button>

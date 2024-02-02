@@ -1,7 +1,8 @@
 <template>
+
+<slot name="topbar"></slot>
   <div class="relative">
     <div class="main-page">
-      <slot name="topbar"></slot>
       <slot name="content"></slot>
       <slot name="footer"></slot>
     </div>

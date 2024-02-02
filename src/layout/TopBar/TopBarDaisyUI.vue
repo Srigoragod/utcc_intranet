@@ -1,127 +1,91 @@
 <template>
-    <div class="glass w-full sm:hidden md:fixed lg:fixed xl:fixed 2xl:fixed top-0 z-30 pb-2">
-      <div class="navbar container mx-auto items-center">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
-            </ul>
-          </div>
-
-          <a
-            href=""
-            class="text-xl"
-            @click="handleGotoPage()"
-          >
-            <img
-              src="../../assets/logo/UTCC_Logo.png"
-              class="main-logo ml-4 w-[120px] h-[55px] sm:w-[120px] md:w-[185px]"
-              alt="UTCC Logo"
-            />
-          </a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <label
-            v-for="(item, index) in menuItems"
-            :key="index"
-            @click="onClickDialog(item)"
-            class="text-xl text-a-blue-2E3191 hover:text-a-blue-005BC0 mx-3 cursor-pointer"
-          >
-            {{ item.textName }}</label
-          >
-        </div>
-        <div class="navbar-end">
-          <SearchModal></SearchModal>
-        </div>
-
-        <!-- Dialog -->
-        <dialog id="my_modal_1" class="modal">
-          <div
-            class="modal-box w-11/12"
-            :class="[isLarge ? 'max-w-6xl' : 'max-w-2xl']"
-          >
-            <div class="flex justify-between">
-              <!-- Menu  -->
-              <div class="w-full">
-                <div class="flex justify-between items-center py-2">
-                  <h4 class="text-all-file font-light leading-none block">
-                    {{ topicName }}
-                  </h4>
-                  <div class="badge badge-accent opacity-50 float-right mr-4">
-                    A-Z
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <div
-                    class="py-4"
-                    v-for="(item, index) in divMenu"
-                    :key="index"
-                  >
-                    <MenuItem
-                      v-for="(subItem, index1) in item"
-                      :key="index1"
-                      :textName="subItem.textName"
-                      :textUrl="subItem.url"
-                      :type="subItem.type"
-                      class="text-xl"
-                    >
-                      @click-menu="handleClickMenu()" >
-                    </MenuItem>
-                  </div>
-                </div>
-              </div>
-              <div class="pl-8 border-l">
-                <h5 class="text-all-file font-light leading-none py-2">
-                  แคปชั่นทำงาน
-                </h5>
-                <Caption
-                  :title="randomItemCaption.caption_title"
-                  :owner="randomItemCaption.caption_owner"
-                ></Caption>
-              </div>
-            </div>
-            <div class="modal-action">
-              <form method="dialog">
-                <button
-                  class="btn btn-sm text-[20px]"
-                  @click="onClickCloseMenu()"
-                >
-                  Close
-                </button>
-              </form>
-            </div>
-          </div>
-        </dialog>
-        <!-- End Dialog -->
-      </div>
+  <div>
+    <div class="topbar-Mobile">
     </div>
+    <div id="topbar2" class="glass w-full fixed top-0 z-30 pb-2">
+    <div class="navbar container mx-auto items-center">
+      <div class="navbar-start">
+        <a href="" class="text-xl" @click="handleGotoPage()">
+          <img
+            src="../../assets/logo/UTCC_Logo.png"
+            class="main-logo ml-4 w-[120px] h-[50px] sm:w-[120px] md:w-[185px]"
+            alt="UTCC Logo"
+          />
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <label
+          v-for="(item, index) in menuItems"
+          :key="index"
+          @click="onClickDialog(item)"
+          class="text-xl text-a-blue-2E3191 hover:text-a-blue-005BC0 mx-3 cursor-pointer"
+        >
+          {{ item.textName }}</label
+        >
+      </div>
+      <div class="navbar-end">
+        <SearchModal></SearchModal>
+      </div>
+
+      <!-- Dialog -->
+      <dialog id="my_modal_1" class="modal">
+        <div
+          class="modal-box w-11/12"
+          :class="[isLarge ? 'max-w-6xl' : 'max-w-2xl']"
+        >
+          <div class="flex justify-between">
+            <!-- Menu  -->
+            <div class="w-full">
+              <div class="flex justify-between items-center py-2">
+                <h4 class="text-all-file font-light leading-none block">
+                  {{ topicName }}
+                </h4>
+                <div class="badge badge-accent opacity-50 float-right mr-4">
+                  A-Z
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="py-4" v-for="(item, index) in divMenu" :key="index">
+                  <MenuItem
+                    v-for="(subItem, index1) in item"
+                    :key="index1"
+                    :textName="subItem.textName"
+                    :textUrl="subItem.url"
+                    :type="subItem.type"
+                    class="text-xl"
+                  >
+                    @click-menu="handleClickMenu()" >
+                  </MenuItem>
+                </div>
+              </div>
+            </div>
+            <div class="pl-8 border-l">
+              <h5 class="text-all-file font-light leading-none py-2">
+                แคปชั่นทำงาน
+              </h5>
+              <Caption
+                :title="randomItemCaption.caption_title"
+                :owner="randomItemCaption.caption_owner"
+              ></Caption>
+            </div>
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <button
+                class="btn btn-sm text-[20px]"
+                @click="onClickCloseMenu()"
+              >
+                Close
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <!-- End Dialog -->
+    </div>
+  </div>
+  </div>
+
 </template>
 
 <script>
@@ -274,6 +238,15 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
+
+#topbar2 {
+  @include mini-mobile {
+    // display: none;
+  }
+  @include mobile {
+    // display: none;
+  }
+}
 
 #mega-menu-full {
   li {

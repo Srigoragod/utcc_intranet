@@ -1,5 +1,5 @@
 <template>
-  <div class="container-news px-4 md:px-0 lg:px-0 xl:px-0 2xl:px-0" >
+  <div class="container-news px-0 sm:px-4 " >
     <div class="py-2">
       <TextUnderline class="mt-8" :text="'ข่าวสาร'" :desc="'ข่าวสารประชาสัมพันธ์ภายนอก ระบบสารสนเทศสืบค้นหนังสือเวียน'" ></TextUnderline>
     </div>

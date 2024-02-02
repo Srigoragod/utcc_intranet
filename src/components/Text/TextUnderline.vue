@@ -1,8 +1,8 @@
 <template>
-  <div class="mb-4">
-    <span class="text sm:text-[20px] md:text-[32px] lg:text-[40px] text-3xl font-bold px-0 sm:px-4 md:px-4 lg:px-4 mb-4">{{ text }}</span>
+  <div class="container-textunderline mb-4 px-4">
+    <span class="text sm:text-[20px] md:text-[32px] lg:text-[40px] text-3xl font-bold mb-4">{{ text }}</span>
     <br />
-    <p class="mt-4 text-[22px] text-a-gray-64748b" v-html="desc"> </p>
+    <p class="text-desc  text-[22px] text-a-gray-64748b" v-html="desc"> </p>
   </div>
 </template>
 
@@ -17,11 +17,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../style/base.scss";
+.container-textunderline{
+   @include mobile{
+    text-align: center;
+   }
+
+   .text-desc {
+    @include mobile {
+      font-size: 18px;
+      margin-top: 0;
+    }
+   }
+}
 .text {
   position: relative;
   z-index: 1;
-  line-height: 10px;
+  line-height: normal;
   color: #2E3191;
+
 //   background: linear-gradient(90deg, #0874D9, #548dd9 100%, #548dd9 0);
 //     -webkit-background-clip: text;
 //     background-clip: text;

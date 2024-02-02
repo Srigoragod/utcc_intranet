@@ -1,17 +1,17 @@
 <template>
   <div :class="`flex items-start container-date ${dateMeeting.isActive ? 'active' : '' }`">
-    <div class="div-date w-[80px] ">
-      <div class="dd mb-2"><label class="text-[70px] sm:text-[50px] md:text-[60px] lg:text-[70px]">{{ date }}</label></div>
+    <div class="div-date w-[80px] h-full ">
+      <div class="dd mb-2"><h1>{{ date }}</h1></div>
       <div class="mmyyyy ">{{ `${monthShort} ${currentYear}` }}</div>
     </div>
     <div class="div-desc pl-4 pt-1 w-full">
       <div class="title items-start -mt-2">
-        <h4 class="text-ellipsis overflow-hidden sm:text-lg md:text-0xl lg:text-1qxl xl:text-3xl 2xl:text-4xl  md:truncate w-full sm:w-[100px]  md:w-[150px] lg:w-full xl:w-full 2xl:w-full ">{{textName}}</h4>
+        <h4 class="text-ellipsis overflow-hidden text-name">{{textName}}</h4>
       </div>
       <div class="div-time-location -mt-2" v-html="textDesc">
       </div>
     </div>
-    <div class="text-sm day-ago pt-1 text-right text-a-gray-787878 w-[120px]">{{ textDay }}</div>
+    <div class="text-base day-ago pt-1 text-right text-a-gray-787878 w-[120px]">{{ textDay }}</div>
   </div>
 </template>
 
@@ -81,6 +81,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "../../style/base.scss";
 .container-date {
   height: 100px;
   border-radius: 20px;
@@ -114,13 +115,31 @@ export default defineComponent({
   text-overflow: ellipsis; 
   }
 
+  h1{
+    @include mobile{
+      font-size: 62px;
+      line-height: normal;
+    }
+  }
+
 
 }
 
+.div-desc {
+  h4{
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+}
 .div-time-location {
     font-size: 1rem;
     line-height: normal;
-    margin-top: 0.125rem
+    margin-top: 0.125rem;
+    @include mobile{
+      font-size: 1.125rem;
+    }
   }
 &.active{
     background: linear-gradient(180deg, #f8f8f8 0%, #eff5f9 46.35%, #e5f1fb 100%);

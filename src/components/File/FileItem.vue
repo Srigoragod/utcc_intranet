@@ -31,7 +31,7 @@
       </div>
       <div class="leading-none pl-4">
         <span v-if="isFull">
-          <h5 v-html="name" class=" md:text-[22px]" ></h5>
+          <h5 v-html="name" class="file-name md:text-[22px]" ></h5>
         </span>
         <span v-else>
           <span v-if="name && name.length >= 69">
@@ -50,7 +50,7 @@
               ></h5>
             </el-tooltip>
           </span>
-          <h5 class=" md:text-[22px] lg:text-[24px] xl:text-[24px]" v-else :class="handleWidthWhitespace()" v-html="name"></h5>
+          <h5 class="file-name md:text-[22px] lg:text-[24px] xl:text-[24px]" v-else :class="handleWidthWhitespace()" v-html="name"></h5>
         </span>
 
         <div class="text-desc" v-html="description"></div>
@@ -166,6 +166,7 @@ export default defineComponent({
 }
 </style>
 <style lang="scss" scoped>
+@import "../../style/base.scss";
 .item-file {
   color: #005bc0;
   padding: 0.75rem 2rem;
@@ -177,6 +178,15 @@ export default defineComponent({
     // color: #787878;
     color: #005bc0;
     font-size: 1.25rem;
+  }
+  .file-name {
+    @include mobile{
+      font-size: 1.5rem;
+      width: 250px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
   }
   .text-desc {
     // color: #787878;

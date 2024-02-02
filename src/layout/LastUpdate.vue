@@ -1,9 +1,9 @@
 <template>
     <div class="mt-8">
-    <div class="flex justify-between items-start">
+    <div class="text-title">
          <!-- <h4 class="font-bold text-topic-name">ไฟล์อัพเดทล่าสุด</h4> -->
          <TextUnderline :text="'อัพเดทล่าสุด'" :desc="'รายการเอกสารที่มีการอัพเดทล่าสุดทั้งหมด'"></TextUnderline>
-         <el-link class="text-[20px]" type="primary"><h6>ดูทั้งหมด</h6></el-link>
+         <el-link class="btn-all text-[20px] block sm:hidden" type="primary"><h6>ดูทั้งหมด</h6></el-link>
     </div>
  
     <div class="pt-2">
@@ -25,7 +25,22 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import "../style/base.scss";
+
+.text-title {
+    display:  flex;
+    justify-content: space-between;
+    align-items: start;
+    @include mobile {
+        justify-content: center;
+    }
+}
+.btn-all {
+    @include mobile {
+        display: none;
+    }
+}
 .noData {
     background-color: #f8f8f8;
     border-radius: 10px;

@@ -1,10 +1,11 @@
 <template>
-  <div class="mt-14 py-8 w-full"  id="dashboard-slide">
+  <div class="mt-14 py-8 px-0 w-full "  id="dashboard-slide">
     <Splide :options="splideOptions">
       <SplideSlide v-for="(item, index) in slides" :key="index">
-        <div class="bg-image mx-auto flex justify-center items-center" :style="{ backgroundImage: `url(${item.image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover' }"  >
+        <div class="bg-image mx-auto" :style="{ backgroundImage: `url(${item.image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover' }"  >
           <!-- <el-image :src="item.image"> </el-image> -->
-          <div class="z-10" v-html="item.description"></div>
+          <h3 class="smallTop block" v-html="item.smallTop"></h3>
+          <h2 class="text-description block -mt-8" v-html="item.description"></h2>
         </div>
       </SplideSlide>
     </Splide>
@@ -33,17 +34,20 @@ export default {
     const slides = ref([
       {
         title: "Slide 1",
-        description: "<h3 class='-mb-8'>Welcome To</h3><h1 >UTCC Intranet</h1>",
+        "smallTop":"Welcome To",
+        description: "UTCC Intranet",
         image: "https://www.utcc.ac.th/wp-content/uploads/2020/05/bg-14.jpeg",
       },
       {
         title: "Slide 1",
-        description: "<h3 class='-mb-8'>Share files from </h3><h1 >UTCC Intranet</h1>",
+        "smallTop":"Share files from ",
+        description: "UTCC Intranet New Version 2024",
         image: "https://www.utcc.ac.th/wp-content/uploads/2020/05/bg-12.jpeg",
       },
       {
         title: "Slide 1",
-        description: "<h3 class='-mb-8'>มหาวิทยาลัยหอการค้าไทย </h3><h1 >UTCC มณีนพเก้า </h1>",
+        "smallTop":"มหาวิทยาลัยหอการค้าไทย",
+        description: "Top University in Trade & Services in ASEAN ",
         image: "https://www.utcc.ac.th/wp-content/uploads/2020/05/bg-13.jpeg",
       }
       // Add more slides as needed
@@ -63,6 +67,32 @@ export default {
 </script>
 
 <style lang="scss" scoped> 
+  @import "../../style/base.scss";
+
+  .smallTop{
+        padding-top: 2rem;
+        margin-bottom: 1rem;
+    @include mobile {
+        padding-top: 7rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+       }
+  }
+
+  .text-description{
+      @include mobile {
+        font-size: 40px;
+        padding: 0 3rem;
+        line-height: -1;
+       }
+  }
+
+  #dashboard-slide {
+    @include mobile {
+     margin-top: 0;
+     padding:0;
+    }
+  }
 .bg-image{
     min-height: 380px;
     width: 100%;
@@ -75,10 +105,15 @@ export default {
     text-align: center;
     color: #fff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5rem 0;
+    @include mobile {
+      border-radius: 0;
+      padding: 0;
+    }
+
 
 }
-</style>
-<style lang="scss" >
+
 #dashboard-slide {
 .splide__pagination {
     margin-top: 1rem;
@@ -103,6 +138,9 @@ export default {
             background-color: #ffffff;
         }
 
+    }
+    @include mobile {
+      margin-top: -3rem;
     }
 }
 }

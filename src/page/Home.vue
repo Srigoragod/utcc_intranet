@@ -125,7 +125,9 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../style/base.scss";
+
 .bg-hero {
     background: url('../assets/image/bg-hero.png');
     background-repeat: no-repeat;
@@ -133,21 +135,11 @@ export default defineComponent({
     background-position: center;
     padding: 1rem 0;
     width: 100%;
+
+    @include mobile {
+       padding: 0;
+    }
 }
-.text-topic-name {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#0874d9),
-    color-stop(100%, #548dd9),
-    to(#548dd9)
-  );
-  background: -webkit-linear-gradient(left, #0874d9, #548dd9 100%, #548dd9 0);
-  background: linear-gradient(90deg, #0874d9, #548dd9 100%, #548dd9 0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
+
+
 </style>

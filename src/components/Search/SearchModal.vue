@@ -4,13 +4,13 @@
       <input
         type="text"
         placeholder="Search "
-        class="text-input input-sm text-xl rounded-full border border-slate-300 hover:border-indigo-300"
+        class="hidden lg:flex text-input input-sm text-xl rounded-full border border-slate-300 hover:border-indigo-300"
       />
       <button
-        class="ml-2 btn btn-sm btn-ghost btn-circle bg-white bg-opacity-30 hover:bg-opacity-100"
+        class="ml-2  btn lg:btn-sm btn-ghost lg:btn-circle bg-white lg:bg-opacity-30 hover:bg-opacity-100"
       >
         <font-awesome-icon
-          class="text-base text-a-blue-2E3191 hover:text-a-blue-005BC0"
+          class="text-xl text-a-blue-2E3191 hover:text-a-blue-005BC0"
           :icon="['fas', 'magnifying-glass']"
         />
       </button>

@@ -2,21 +2,19 @@
   <div>
     <!-- <h4 class="font-bold text-topic-name">การประชุมมหาวิทยาลัย</h4> -->
     <TextUnderline class="mt-8 mb-4" :text="'ประชุมมหาวิทยาลัย'"></TextUnderline>
-    <div class="grid grid-cols-3 gap-4">
-      <div >
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+      <div class=" min-[340px]:hidden sm:hidden md:block lg:block ">
         <Calender class="rounded-lg"></Calender>
       </div>
-      <div>
+      <div class="grid gap-4 pr-4">
         <DateMeeting
-          :class="[index > 0 ? 'mt-8' : '']"
           v-for="(item, index) in dateMeetingList"
           :key="index"
           :dateMeeting="item"
         ></DateMeeting>
       </div>
-      <div >
+      <div class="grid gap-4 pl-4" >
         <ButtonBlueDownload
-          :class="[index > 0 ? 'mt-8' : '']"
           v-for="(item, index) in buttonList"
           :key="index"
           :textButton="item.text"

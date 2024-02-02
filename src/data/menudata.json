@@ -348,14 +348,7 @@
     },
     {
       "id": 5,
-      "textName": "Risk",
-      "url": "risk",
-      "isActive": false,
-      "items": []
-    },
-    {
-      "id": 6,
-      "textName": "Bubget",
+      "textName": "Risk &Bubget",
       "url": "risk",
       "isActive": false,
       "items": []

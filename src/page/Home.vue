@@ -14,7 +14,7 @@
           </section>
   
         <section id="meeting" class="container mx-auto">
-          <UniversityMeeting ref="meeting" class="my-2"></UniversityMeeting>
+          <UniversityMeeting ref="meeting" ></UniversityMeeting>
         </section>
 
         <section id="lastupdate" class="container mx-auto">
@@ -38,7 +38,7 @@
         </section>
 
         <section class="container mx-auto py-20" >
-   <DividerRisk></DividerRisk>
+          <DividerRisk></DividerRisk>
         </section>
 
 

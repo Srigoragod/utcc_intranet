@@ -2,8 +2,8 @@
   <div class="flex justify-between items-center container-btn-blue-download h-[100px] hover:shadow-lg" @click="onClickButton()">
     <div class="flex items-center">
       <div class="icon-svg">
-        <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" class="text-4xl"/>
-        <font-awesome-icon v-else :icon="['fas', 'calendar']" class="text-4xl" />
+        <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" class="sm:text-base text-4xl"/>
+        <font-awesome-icon v-else :icon="['fas', 'calendar']" class="sm:text-base text-4xl" />
       </div>
       <div class="button-content w-full pl-4">
         <div class="text-button text-ellipsis overflow-hidden">
@@ -30,6 +30,7 @@ export default defineComponent({
     icon: { type: String, required: false },
     description: { type: String, required: false},
     isDisable: { type: Boolean, required: false, default: false },
+    class:{ type: String, required: false }
   },
   setup(props){
     const onClickButton =()=>{

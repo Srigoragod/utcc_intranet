@@ -41,8 +41,8 @@ export default {
       {
         title: "Slide 1",
         "smallTop":"Share files from ",
-        description: "UTCC Intranet New Version 2024",
-        image: "https://www.utcc.ac.th/wp-content/uploads/2020/05/bg-12.jpeg",
+        description: "UTCC Intranet of Staff",
+        image: "https://www.utcc.ac.th/wp-content/uploads/2024/02/UTCC-BG-Bl24.jpg",
       },
       {
         title: "Slide 1",
@@ -75,15 +75,15 @@ export default {
     @include mobile {
         padding-top: 7rem;
         margin-bottom: 2rem;
-        font-size: 2rem;
+        font-size: 1.75rem;
        }
   }
 
   .text-description{
       @include mobile {
-        font-size: 40px;
+        font-size: 38px;
         padding: 0 3rem;
-        line-height: -1;
+        line-height: normal;
        }
   }
 

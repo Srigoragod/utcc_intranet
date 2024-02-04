@@ -1,20 +1,20 @@
 <template>
   <div v-loading.fullscreen.lock="fullscreenLoading">
-    <div class="flex justify-between items-center rounded-full border border-slate-300 hover:border-indigo-300 px-4 bg-white" @click="clickSearch()">
+    <div class="flex justify-between items-center rounded-full lg:border border-slate-300 hover:border-indigo-300 lg:px-4 bg-white" @click="clickSearch()">
       <font-awesome-icon
-          class="text-base"
+          class="text-base is-desktop"
           :icon="['fas', 'magnifying-glass']"
         />
       <input
         type="text"
         placeholder="Search "
-        class="text-input input-sm text-xl w-full"
+        class="text-input input-sm text-xl w-full is-desktop"
       />
       <button
         class="ml-2  btn lg:btn-sm btn-ghost lg:btn-circle bg-white lg:hidden lg:bg-opacity-30 hover:bg-opacity-100"
       >
       <font-awesome-icon
-          class="text-xl"
+          class="text-2xl text-a-blue-005BC0"
           :icon="['fas', 'magnifying-glass']"
         />
       </button>
@@ -30,7 +30,7 @@
                 v-model="keyword"
                 @keyup="handleKeyPress"
                 placeholder="Search ..."
-                class="text-input border input-sm  text-xl rounded-full bg-opacity-40 mx-2"
+                class="text-input border input-sm  w-[35rem] rounded-full bg-opacity-40 mx-2"
               />
               <button
                 @click="resetFormSearch()"
@@ -315,4 +315,11 @@ export default defineComponent({
 });
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@import "../../style/base.scss";
+.is-desktop{
+  @include mobile {
+    display: none;
+  }
+}
+</style>

@@ -3,12 +3,11 @@
 
     <TextUnderline class="mt-8" :text="'เอกสารทั้งหมด'"  :desc="''"></TextUnderline>
     <br/>
-    <div class="grid gap-4 items-start sm:grid-cols-1" :class="[gridCols]"  >
+    <div id="showFile" class="grid gap-4 items-start" :class="[gridCols]"  >
       <FileList
         v-for="(item, index) in fileData"
         :id="item.id"
         :key="index"
-
         :class="[ item.showColumn != '' ? 'col-span-2' : '']"
         :topicName="item.topicName"
         :isAlert="item.isAlert"
@@ -84,7 +83,15 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss" >
+<style lang="scss"  scoped>
+@import "../style/base.scss";
+
+#showFile {
+  @include mobile {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    display: table-column;
+  }
+}
 .text-all-file {
   background: -webkit-gradient(
     linear,

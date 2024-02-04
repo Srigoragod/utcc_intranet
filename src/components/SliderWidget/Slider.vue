@@ -4,8 +4,8 @@
       <SplideSlide v-for="(item, index) in slides" :key="index">
         <div class="bg-image mx-auto" :style="{ backgroundImage: `url(${item.image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover' }"  >
           <!-- <el-image :src="item.image"> </el-image> -->
-          <h3 class="smallTop block" v-html="item.smallTop"></h3>
-          <h2 class="text-description block -mt-8" v-html="item.description"></h2>
+          <h4 class="smallTop" v-html="item.smallTop"></h4>
+          <h2 class="text-description w-full" v-html="item.description"></h2>
         </div>
       </SplideSlide>
     </Splide>
@@ -24,9 +24,9 @@ export default {
   setup() {
     const imagePath =  ref('@/assets/image/Slider/Image1.png')
     const splideOptions = ref({
-      type: "loop",
+      type: "fade",
       perPage: 1,
-      arrows: true,
+      arrows: false,
       pagination: true,
       autoplay: true,
     });
@@ -42,13 +42,13 @@ export default {
         title: "Slide 1",
         "smallTop":"Share files from ",
         description: "UTCC Intranet of Staff",
-        image: "https://www.utcc.ac.th/wp-content/uploads/2024/02/UTCC-BG-Bl24.jpg",
+        image: "https://www.utcc.ac.th/wp-content/uploads/2020/05/bg-12.jpeg",
       },
       {
         title: "Slide 1",
         "smallTop":"มหาวิทยาลัยหอการค้าไทย",
-        description: "Top University in Trade & Services in ASEAN ",
-        image: "https://www.utcc.ac.th/wp-content/uploads/2020/05/bg-13.jpeg",
+        description: "เด็กหัวการค้า UTCC",
+        image: "https://www.utcc.ac.th/wp-content/uploads/2024/02/UTCC-BG-Bl24.jpg",
       }
       // Add more slides as needed
     ]);
@@ -70,20 +70,21 @@ export default {
   @import "../../style/base.scss";
 
   .smallTop{
-        padding-top: 2rem;
-        margin-bottom: 1rem;
+        padding-top: 4rem;
+        margin-bottom: 1.75rem;
     @include mobile {
-        padding-top: 7rem;
-        margin-bottom: 2rem;
+        padding-top: 5rem;
+        margin-bottom: 1.5rem;
         font-size: 1.75rem;
+        margin: 0 2rem;
        }
   }
 
   .text-description{
       @include mobile {
-        font-size: 38px;
-        padding: 0 3rem;
-        line-height: normal;
+        padding: 0 4rem;
+        line-height: 1;
+        font-size: 55px;
        }
   }
 
@@ -109,6 +110,8 @@ export default {
     @include mobile {
       border-radius: 0;
       padding: 0;
+      border-radius: 1.5rem;
+      min-height: 300px;
     }
 
 
@@ -116,7 +119,7 @@ export default {
 
 #dashboard-slide {
 .splide__pagination {
-    margin-top: 1rem;
+
     li  {
         // background: blue;
         width: 16px;
@@ -139,9 +142,12 @@ export default {
         }
 
     }
-    @include mobile {
-      margin-top: -3rem;
-    }
+
 }
+}
+</style>
+<style>
+.splide__pagination{
+  bottom: -2.5em;
 }
 </style>

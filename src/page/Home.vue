@@ -37,9 +37,9 @@
           <ShowFlexMasonry  :topicName="'Department'" :dataName="'department'"></ShowFlexMasonry>
         </section>
 
-        <section class="container mx-auto py-20" >
+        <!-- <section class="container mx-auto py-20" >
           <DividerRisk></DividerRisk>
-        </section>
+        </section> -->
 
 
         <ScrollToTopButton></ScrollToTopButton>
@@ -76,7 +76,7 @@ import Footer from "../layout/Footer/Footer.vue";
 import ScrollToTopButton from "../components/Button/ScrollToTopButton.vue";
 import FloatingActionButton from "../components/Button/FloatingActionButton.vue";
 import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
-import DividerRisk from '../layout/DividerRisk.vue';
+// import DividerRisk from '../layout/DividerRisk.vue';
 
 
 export default defineComponent({
@@ -96,7 +96,7 @@ export default defineComponent({
     ScrollToTopButton,
     FloatingActionButton,
     ShowFlexMasonry,
-    DividerRisk
+    // DividerRisk
   },
   setup() {
     const route = useRoute()
@@ -138,6 +138,7 @@ export default defineComponent({
 
     @include mobile {
        padding: 0;
+       background-image: none;
     }
 }
 

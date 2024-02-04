@@ -3,7 +3,7 @@
     <div class="container mx-auto py-20">
       <!-- <h4 class="text-topic-name font-bold my-4">คณะ</h4> -->
       <TextUnderline :text="'คณะ'" :desc="'เว็บไซต์คณะทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>
-      <div class="grid grid-cols-4 gap-4">
+      <div  class="grid grid-cols-4 gap-4 showFaculty">
         <ButtonFaculty :item="item" v-for="(item,index) in sortListSchool" :key="index" ></ButtonFaculty>
       </div>
 
@@ -11,7 +11,7 @@
 
       <TextUnderline class="mt-8" :text="'วิทยาลัย'" :desc="'เว็บไซต์วิทยาลัยทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>
 
-      <div class="grid grid-cols-4 gap-4">
+      <div class="grid grid-cols-4 gap-4 showFaculty">
         <ButtonFaculty :item="item" v-for="(item,index) in sortListCollege" :key="index" ></ButtonFaculty>
       </div>
     </div>
@@ -198,6 +198,12 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "../style/base.scss";
+.showFaculty {
+   @include mobile {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+}
 .bg-section {
     background: url('../assets/image/bg-white-fac.png');
     background-repeat: no-repeat;

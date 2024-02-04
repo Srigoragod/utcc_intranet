@@ -10,14 +10,11 @@
         placeholder="Search "
         class="text-input input-sm text-xl w-full is-desktop"
       />
-      <button
-        class="ml-2  btn lg:btn-sm btn-ghost lg:btn-circle bg-white lg:hidden lg:bg-opacity-30 hover:bg-opacity-100"
-      >
+
       <font-awesome-icon
-          class="text-2xl text-a-blue-005BC0"
+          class="text-2xl text-a-blue-005BC0 is-mobile lg;hidden"
           :icon="['fas', 'magnifying-glass']"
         />
-      </button>
     </div>
     <!-- Dialog -->
     <dialog id="search_modal" class="modal ghost">

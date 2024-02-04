@@ -11,11 +11,15 @@
         class="text-input input-sm text-xl w-full is-desktop"
       />
 
-      <font-awesome-icon
-          class="text-2xl text-a-blue-005BC0 is-mobile lg;hidden"
-          :icon="['fas', 'magnifying-glass']"
-        />
+
     </div>
+    <span class="px-4" @click="clickSearch()">
+      <font-awesome-icon
+    class="text-2xl text-a-blue-005BC0 is-mobile lg:hidden"
+    :icon="['fas', 'magnifying-glass']"
+  />
+    </span>
+
     <!-- Dialog -->
     <dialog id="search_modal" class="modal ghost">
       <div class="modal-box w-11/12 max-w-3xl">

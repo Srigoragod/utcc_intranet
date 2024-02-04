@@ -10,8 +10,8 @@
 export default {
     name:"TextUnderLine",
     props: {
-        text: {type: Text, require: true},
-        desc:  {type: Text, require: false},
+        text: {type: String, require: false},
+        desc:  {type: String, require: false},
     }
 };
 </script>
@@ -20,7 +20,7 @@ export default {
 @import "../../style/base.scss";
 .container-textunderline{
    @include mobile{
-    text-align: center;
+    // text-align: center;
    }
 
    .text-desc {

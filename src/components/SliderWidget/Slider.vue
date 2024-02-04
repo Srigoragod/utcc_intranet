@@ -73,9 +73,9 @@ export default {
         padding-top: 4rem;
         margin-bottom: 1.75rem;
     @include mobile {
-        padding-top: 5rem;
+        padding-top: 1.75rem;
         margin-bottom: 1.5rem;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         margin: 0 2rem;
        }
   }
@@ -84,7 +84,7 @@ export default {
       @include mobile {
         padding: 0 4rem;
         line-height: 1;
-        font-size: 55px;
+        font-size: 3.25rem;
        }
   }
 
@@ -111,7 +111,7 @@ export default {
       border-radius: 0;
       padding: 0;
       border-radius: 1.5rem;
-      min-height: 300px;
+      min-height: 200px;
     }
 
 

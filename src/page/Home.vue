@@ -41,8 +41,7 @@
           <DividerRisk></DividerRisk>
         </section> -->
 
-
-        <ScrollToTopButton></ScrollToTopButton>
+        <ScrollToTopButton class="is-desktop"></ScrollToTopButton>
       </div>
     </template>
     <template #footer>
@@ -128,6 +127,11 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../style/base.scss";
 
+.is-desktop {
+  @include mobile {
+    display: none;
+  }
+}
 .bg-hero {
     background: url('../assets/image/bg-hero.png');
     background-repeat: no-repeat;

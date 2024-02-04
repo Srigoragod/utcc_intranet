@@ -2,7 +2,7 @@
   <div class="py-2 sm:px-4">
     <!-- <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4> -->
     <TextUnderline class="my-8" :text="'เมนูที่ใช้งานบ่อย'"></TextUnderline>
-    <div class="grid grid-cols-2 px-4 sm:px-4 md:px-6 lg:px-0 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 " data-aos="fade-right">
+    <div class="show-menu" >
        <!-- <ButtonBlue class="mr-8"  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :icon="item.icon" :isDisable="item.isDisable"></ButtonBlue> -->
        <ButtonPrimaryOutline  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :typeIcon="item.typeIcon" :icon="item.icon" :position="item.position" :isDisable="item.isDisable" :classCustom="item.class" ></ButtonPrimaryOutline>
     </div>
@@ -67,6 +67,19 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../style/base.scss";
+
+.show-menu {
+  @include mobile{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    display: grid;
+  }
+  @include min-desktop{
+    display: flex;
+    gap: 1rem;
+  }
+
+}
 
 </style>

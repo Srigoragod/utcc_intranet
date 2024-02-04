@@ -2,9 +2,9 @@
   <div>
   <button :class="classCustom" class="is-desktop btn btn-xs md:btn-sm lg:btn-sm xl:btn-sm  btn-outline btn-primary rounded-full py-3 px-1 sm:px-2 md:px-4 lg:px6  text-[22px] sm:text-base md:text-base">
     <div class="flex items-center">
-     <font-awesome-icon v-if="position == 'left'" class="text-sm md:text-[18px] lg:text-[18px]" :icon="[`${typeIcon}`, `${icon}`]" />
+     <font-awesome-icon  class="text-sm md:text-[18px] lg:text-[18px]" :icon="[`${typeIcon}`, `${icon}`]" />
      <div class="text-[22px] sm:text-lg md:text-lg lg:text-xl md:text-ellipsis">   {{ textButton }}</div>
-     <font-awesome-icon v-if="position == 'right'" class="text-sm md:text-[18px] lg:text-[18px]" :icon="[`${typeIcon}`, `${icon}`]" />
+     <!-- <font-awesome-icon v-if="position == 'right'" class="text-sm md:text-[18px] lg:text-[18px]" :icon="[`${typeIcon}`, `${icon}`]" /> -->
     </div>
   </button>
   <div class="is-mobile btn-blue grid justify-items-center">

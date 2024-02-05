@@ -24,7 +24,7 @@ export default {
   setup() {
     const imagePath =  ref('@/assets/image/Slider/Image1.png')
     const splideOptions = ref({
-      type: "fade",
+      type: "loop",
       perPage: 1,
       arrows: false,
       pagination: true,

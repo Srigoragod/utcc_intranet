@@ -1,5 +1,6 @@
 <template>
-  <div :class="`flex items-start container-date ${dateMeeting.isActive ? 'active' : '' }`">
+  <div>
+    <div class="is-desktop" :class="`flex items-start container-date ${dateMeeting.isActive ? 'active' : '' }`">
     <div class="div-date w-[80px] h-full ">
       <div class="dd mb-2"><h1>{{ date }}</h1></div>
       <div class="mmyyyy ">{{ `${monthShort} ${currentYear}` }}</div>
@@ -13,6 +14,25 @@
     </div>
     <div class="text-base day-ago pt-1 text-right text-a-gray-787878 w-[120px]">{{ textDay }}</div>
   </div>
+  <div class="is-mobile">
+    <div class="container-date-mobile">
+      <div class="div-date">
+      <div class="text-date">{{ date }}</div>
+      <div class="mmyyyy text-mmyyyy">{{ `${monthShort} ${currentYear}` }}</div>
+    </div>
+    <div class="textday-mobile">
+      {{ textDay }}
+    </div>
+    </div>
+    <div class="div-desc-mobile">
+      <div class="text-name-mobile">{{textName}}</div>
+      <div class="div-time-location-mobile" v-html="textDesc">
+      </div>
+    </div>
+
+  </div>
+  </div>
+
 </template>
 
 <script>
@@ -46,7 +66,7 @@ export default defineComponent({
       const meetingDate = new Date(dateString);
       const timeDifference = today - meetingDate;
       const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    
+
       let text = '';
       if(daysAgo == 0 ){
         text = 'today'
@@ -68,7 +88,7 @@ export default defineComponent({
     }
     initialData()
 
-    return{ 
+    return{
       date,
       monthShort,
       currentYear,
@@ -82,6 +102,73 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
+
+.is-desktop {
+  @include mobile {
+    display: none;
+  }
+}
+.is-mobile {
+  background: linear-gradient(180deg, #f8f8f8 0%, #eff5f9 46.35%, #e5f1fb 100%);
+  line-height: normal;
+  padding: 0.25rem 0.375rem;
+  border-radius: 10px;
+  border: 1px solid $a-blue-E5F1FB;
+  width: 100%;
+  height: 100%;
+  @include mobile {
+
+  .container-date-mobile{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+    padding:0.125rem;
+    .div-date {
+      background-color: $a-blue-2E3191;
+      width: 3.25rem;
+      height: fit-content;
+      color: #fff;
+      position: relative;
+      align-items: start;
+      padding: 0 0.375rem;
+      display: grid;
+      border: 0.5rem;
+      border-radius: 0.375rem;
+      .text-date {
+      font-size: 2.75rem ;
+      line-height: normal;
+      height: 2.75rem;
+      width: 3rem;
+      margin-top: -0.5rem;
+    }
+    .text-mmyyyy {
+      margin-top: -0.375rem;
+    }
+
+    }
+    .textday-mobile{
+      line-height: 1;
+    }
+  }
+  .div-desc-mobile{
+    .text-name-mobile{
+      font-size: 1.25rem;
+      font-weight: bold;
+      line-height: 1;
+      padding-top: 0.5rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 160px;
+    }
+  }
+
+
+  }
+  @include min-desktop {
+    display: none;
+  }
+}
 .container-date {
   height: 100px;
   border-radius: 20px;
@@ -109,10 +196,10 @@ export default defineComponent({
   }
 
   .text-ellipsis{
-  white-space: nowrap; 
-  width: 50px; 
+  white-space: nowrap;
+  width: 50px;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   }
 
   h1{

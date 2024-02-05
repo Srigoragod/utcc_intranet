@@ -6,9 +6,9 @@
          <el-link class="btn-all text-[20px] block sm:hidden" type="primary"><h6>ดูทั้งหมด</h6></el-link>
     </div>
  
-    <div class="pt-2">
+    <div class="px-4">
         <div class="noData w-full h-[40px]">
-            <p class="text-a-gray-787878 text-center "><h6>No Data</h6></p>
+            <p class="text-a-gray-787878 text-center pt-1">No Data</p>
         </div>
     </div>
     </div>
@@ -29,12 +29,12 @@ export default {
 @import "../style/base.scss";
 
 .text-title {
-    display:  flex;
-    justify-content: space-between;
-    align-items: start;
-    @include mobile {
-        justify-content: center;
-    }
+    // display:  flex;
+    // justify-content: space-between;
+
+    // @include mobile {
+    //     justify-content: center;
+    // }
 }
 .btn-all {
     @include mobile {

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-textunderline mb-4 px-4">
+  <div class="container-textunderline mb-4 sm:mb-0 px-4">
     <span class="text sm:text-[20px] md:text-[32px] lg:text-[40px] text-3xl font-bold mb-4">{{ text }}</span>
     <br />
     <p class="text-desc  text-[22px] text-a-gray-64748b" v-html="desc"> </p>

@@ -1,5 +1,6 @@
 <template>
-  <div class="flex justify-between items-center container-btn-blue-download h-[100px] hover:shadow-lg" @click="onClickButton()">
+ <div>
+  <div class="is-desktop flex justify-between items-center container-btn-blue-download h-[100px] hover:shadow-lg" @click="onClickButton()">
     <div class="flex items-center">
       <div class="icon-svg">
         <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" class="sm:text-base text-4xl"/>
@@ -18,6 +19,19 @@
       <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'arrow-right']" />
     </div>
   </div>
+  <div class="is-mobile container-btn-blue-download h-full">
+    <div class="icon-svg-mobile">
+        <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" class="text-4xl"/>
+        <font-awesome-icon v-else :icon="['fas', 'calendar']" class="text-4xl" />
+    </div>
+    <div class="button-content-mobile w-full">
+        <div class="text-button-mobile">
+          <label>{{ textButton }}</label>
+        </div>
+        <div v-html="description"></div>
+    </div>
+  </div>
+ </div>
 </template>
 
 <script>
@@ -50,6 +64,42 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
+
+.is-desktop {
+  @include mobile {
+    display: none;
+  }
+}
+.is-mobile {
+  padding: 1rem  0.375rem;
+  justify-content: center;
+  display: grid;
+
+  &.container-btn-blue-download{
+    display: grid;
+    justify-content: center;
+  }
+  .icon-svg-mobile{
+    display: grid;
+    // justify-content: center;
+  }
+  .text-button-mobile{
+    font-size: 1.25rem;
+    line-height: 1;
+    padding-top: 0.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+    lable{
+      padding-top: 0.75rem;
+    }
+  }
+
+  @include min-desktop{
+    display: none;
+  }
+}
 .container-btn-blue-download {
   color: #005BC0;
   // color: #787878;
@@ -90,7 +140,6 @@ export default defineComponent({
           width: 200px;
         }
         }
-      
     }
   }
 

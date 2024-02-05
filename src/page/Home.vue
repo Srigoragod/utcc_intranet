@@ -26,7 +26,7 @@
         </section>
 
         <section id="show_file" class="container mx-auto my-12" >
-          <ShowFile ref="showfile" :items="homeList" class="my-2" :gridCols="'grid-cols-2'"></ShowFile>
+          <ShowFile ref="showfile" :items="homeList" :gridCols="'grid-cols-2'"></ShowFile>
         </section>
 
         <section id="faculty">

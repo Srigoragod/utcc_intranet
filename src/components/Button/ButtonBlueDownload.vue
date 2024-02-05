@@ -28,7 +28,7 @@
         <div class="text-button-mobile">
           <label>{{ textButton }}</label>
         </div>
-        <div v-html="description"></div>
+        <div class="text-desc" v-html="description"></div>
     </div>
   </div>
  </div>
@@ -64,42 +64,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
-
-.is-desktop {
-  @include mobile {
-    display: none;
-  }
-}
-.is-mobile {
-  padding: 1rem  0.375rem;
-  justify-content: center;
-  display: grid;
-
-  &.container-btn-blue-download{
-    display: grid;
-    justify-content: center;
-  }
-  .icon-svg-mobile{
-    display: grid;
-    // justify-content: center;
-  }
-  .text-button-mobile{
-    font-size: 1.25rem;
-    line-height: 1;
-    padding-top: 0.75rem;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 150px;
-    lable{
-      padding-top: 0.75rem;
-    }
-  }
-
-  @include min-desktop{
-    display: none;
-  }
-}
 .container-btn-blue-download {
   color: #005BC0;
   // color: #787878;
@@ -179,4 +143,48 @@ export default defineComponent({
 
   }
 }
+.is-desktop {
+  @include mobile {
+    display: none;
+  }
+}
+.is-mobile {
+  @include mobile{
+    &.container-btn-blue-download{
+    display: grid;
+    justify-content: center;
+   }
+   .text-desc {
+    font-size: 1rem;
+    color: $a-gray-343443;
+    opacity: 0.5;
+   }
+  }
+  @include min-desktop{
+    display: none;
+  }
+  padding: 1rem  0.375rem;
+  justify-content: center;
+  display: grid;
+
+
+  .icon-svg-mobile{
+    display: grid;
+    // justify-content: center;
+  }
+  .text-button-mobile{
+    font-size: 1.25rem;
+    line-height: 1;
+    padding-top: 0.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+    lable{
+      padding-top: 0.75rem;
+    }
+  }
+
+}
+
 </style>

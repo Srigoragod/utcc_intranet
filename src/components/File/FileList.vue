@@ -2,7 +2,7 @@
   <div >
     <!-- Content -->
     <div class="container-file-list" :class="[isHeightFull ? 'h-full' : '']" data-aos="fade-up">
-      <h4 class="font-bold text-topic-name py-4" >
+      <h4 class="text-topic-name py-4" >
         <div class="flex items-center justify-center w-full" v-html="topicName">
         </div>
       </h4>
@@ -26,7 +26,7 @@
           :isFull="item.isFull"
         ></FileItem>
       </div>
-      <div v-else class="grid grid-cols-2 gap-4 items-stretch ...">
+      <div v-else class="is-mobile grid grid-cols-2 gap-4 items-stretch">
         <div v-for="(data, index) in dataListX" :key="index">
           <FileItem
             v-for="(item, key) in data"
@@ -108,8 +108,13 @@ export default defineComponent({
 .container-file-list {
   border: 1px solid #e5f1fb;
   border-radius: 10px;
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0;
   // margin-top: 2rem;
+  .is-mobile {
+     @include mobile {
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+     }
+  }
   .text-topic-name {
     background: rgba(46, 49, 145, 1);
     background: linear-gradient(
@@ -120,13 +125,13 @@ export default defineComponent({
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
- 
     @include mobile {
-    font-size: 24px;
+    font-size: 1.25rem;
     line-height: normal;
     text-align: center;
-    margin: 0 1.5rem;
-  }
+     margin: 0 .5rem;
+   }
+
   }
 
 }

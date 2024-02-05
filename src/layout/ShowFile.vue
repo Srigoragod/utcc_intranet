@@ -1,14 +1,29 @@
 <template>
   <div class="py-2 relative" :class="[isNotHome ? 'mt-24' :'']">
 
-    <TextUnderline class="mt-8" :text="'เอกสารทั้งหมด'"  :desc="''"></TextUnderline>
+    <TextUnderline class="" :text="'เอกสารทั้งหมด'"  :desc="''"></TextUnderline>
     <br/>
-    <div id="showFile" class="grid gap-4 items-start" :class="[gridCols]"  >
+    <div class="is-desktop grid gap-4 items-start" :class="[gridCols]"  >
       <FileList
         v-for="(item, index) in fileData"
         :id="item.id"
         :key="index"
         :class="[ item.showColumn != '' ? 'col-span-2' : '']"
+        :topicName="item.topicName"
+        :isAlert="item.isAlert"
+        :alertDetail="item.alertDetail"
+        :dataList="item.itemList"
+        :isHeightFull="item.isFull"
+        :isNotHome="isNotHome"
+        :isSplit="item.isSplit"
+      ></FileList>
+    </div>
+    <div class="is-mobile grid gap-4 grid-cols-1 px-4"   >
+      <FileList
+        v-for="(item, index) in fileData"
+        :id="item.id"
+        :key="index"
+        :class="''"
         :topicName="item.topicName"
         :isAlert="item.isAlert"
         :alertDetail="item.alertDetail"
@@ -86,10 +101,14 @@ export default defineComponent({
 <style lang="scss"  scoped>
 @import "../style/base.scss";
 
-#showFile {
+.is-desktop {
   @include mobile {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    display: table-column;
+    display: none;
+  }
+}
+.is-mobile {
+  @include min-desktop {
+    display: none;
   }
 }
 .text-all-file {

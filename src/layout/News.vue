@@ -3,14 +3,14 @@
     <div class="py-2">
       <TextUnderline class="mt-8" :text="'ข่าวสาร'" :desc="'ข่าวสารประชาสัมพันธ์ภายนอก ระบบสารสนเทศสืบค้นหนังสือเวียน'" ></TextUnderline>
     </div>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4  gap-4 items-stretch">
+    <div class="is-mobile grid grid-cols-4 gap-4">
       <div data-aos="fade-right" class="item-img-news hover:cursor-not-allowed"></div>
       <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_seminar.php" class="">
         <div class="item-news px-8 static hover:shadow-lg">
           <div class="centered-div">
             <img src="../assets/icon/laptop.svg" alt="" class="pl-2 mx-auto" />
-            <h5 class="text-xl sm:text-2xl xl:text-3xl mt-2 text-a-blue-005BC0">อบรม/สัมมนา</h5>
-            <p class="text-[18px] leading-none ">หมวดเอกสารที่เกี่ยวช้องกับการอบรม /สัมมนา</p>
+            <h5 class="text-title ">อบรม/สัมมนา</h5>
+            <p class="text-desc ">หมวดเอกสารที่เกี่ยวช้องกับการอบรม /สัมมนา</p>
           </div>
         </div>
       </a>
@@ -18,8 +18,8 @@
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
             <img src="../assets/icon/calendar.svg" alt="" class="pl-2 mx-auto" />
-            <h5 class="text-xl sm:text-2xl xl:text-3xl mt-2 text-a-blue-005BC0">ประชุมวิชาการ /เสนอผลงานวิชาการ</h5>
-            <p class="text-[18px] leading-none ">หมวดเอกสารประชุมวิชาการ / เสนอผลงานทางวิชาการ</p>
+            <h5 class="text-title">ประชุมวิชาการ /เสนอผลงานวิชาการ</h5>
+            <p class="text-desc ">หมวดเอกสารประชุมวิชาการ / เสนอผลงานทางวิชาการ</p>
           </div>
         </div>
       </a>
@@ -29,8 +29,8 @@
           <div class="centered-div">
             <!-- alt=""  -->
             <img src="../assets/icon/3News.svg" class="pl-2 w-[70px] m-auto" />
-            <h5 class="text-xl sm:text-2xl xl:text-3xl mt-2 text-a-blue-005BC0">ข้อเสนอบริการวิชาการ และงานวิจัย</h5>
-            <p class="text-[18px] leading-none ">ขออภัย เว็บไซต์อยู๋ในระหว่างปรับปรุง</p>
+            <h5 class="text-title">ข้อเสนอบริการวิชาการ และงานวิจัย</h5>
+            <p class="text-desc ">ขออภัย เว็บไซต์อยู๋ในระหว่างปรับปรุง</p>
           </div>
         </div>
       </span>
@@ -49,8 +49,48 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/base.scss";
+
+.is-mobile {
+  padding: 0 1rem;
+  @include mobile {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    .item-news {
+      padding: 0.125rem;
+      height: auto;
+      img {
+        height: 2rem;
+        padding: 0;
+      }
+    }
+    .text-title {
+      font-size: 1.125rem;
+      line-height: 1;
+      height: 3rem;
+      color: $a-blue-005BC0;
+      margin-bottom: 0.5rem;
+    }
+    .text-desc{
+      font-size: 1rem;
+      line-height: 1;
+      display: none;
+    }
+  }
+}
 .container-news {
   cursor: pointer;
+
+  @include min-desktop{
+    .text-title {
+    color: $a-blue-005BC0;
+    font-size: 2rem;
+  }
+  .text-desc {
+    font-size: 1.125rem;
+  }
+  }
+
   .item-img-news {
     width: 100%;
     height: 210px;
@@ -63,6 +103,10 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include mobile {
+     display: none;
+
+    }
   }
   .item-news {
     display: flex;
@@ -73,9 +117,14 @@ export default {
     border: 1px solid #e5f1fb;
     border-radius: 20px;
 
+    @include mobile {
+      height: auto;
+      padding: .5rem 0;
+    }
     .centered-div {
       text-align: center;
       img {
+        margin-top: 0.5rem;
         margin-bottom: 0.5rem;
       }
       h5 {

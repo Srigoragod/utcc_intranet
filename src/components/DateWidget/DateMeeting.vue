@@ -148,7 +148,9 @@ export default defineComponent({
     }
     .textday-mobile{
       line-height: 1;
+      font-size: 1.125rem;
     }
+
   }
   .div-desc-mobile{
     .text-name-mobile{
@@ -160,6 +162,9 @@ export default defineComponent({
       text-overflow: ellipsis;
       overflow: hidden;
       width: 160px;
+    }
+    .div-time-location-mobile{
+      font-size: 1rem;
     }
   }
 

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex w-full justify-between items-center item-file cursor-pointer hover:shadow-lg"
+    class="flex justify-between items-center item-file cursor-pointer hover:shadow-lg"
     :class="[
       isDisable
         ? 'cursor-not-allowed disabled:opacity-60 disabled'
@@ -172,16 +172,31 @@ export default defineComponent({
   padding: 0.75rem 2rem;
   border-radius: 10px;
   // opacity: 0.5;
-
   text-align: left;
+  width: 100%;
+
+  @include mobile {
+    padding: 1rem;
+    span{
+      h5 {
+      font-size: 1.125rem !important;
+      width: 259px;
+      }
+    }
+  }
   .icon-item {
     // color: #787878;
     color: #005bc0;
     font-size: 1.25rem;
+    svg {
+      @include mobile {
+        font-size: 1.5rem;
+      }
+    }
   }
   .file-name {
     @include mobile{
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       width: 250px;
       overflow: hidden;
       white-space: nowrap;
@@ -204,11 +219,15 @@ export default defineComponent({
   .btn-circle {
     cursor: pointer;
     border-radius: 100%;
-    padding: 15px 20px;
+    padding: 15px;
     background-color: #f9fafb;
 
     svg {
       color: #0874d9;
+    }
+    @include mobile {
+      display: grid;
+      align-items: center;
     }
   }
 

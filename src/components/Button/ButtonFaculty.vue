@@ -1,7 +1,8 @@
 <template>
+<div>
   <div
     @click="onClick(item.url)"
-    class="flex justify-self-start w-full bg-white bg-opacity-70 drop-shadow p-4 rounded-xl items-center cursor-pointer hover:drop-shadow-xl hover:text-a-blue-005BC0 hover:bg-opacity-80"
+    class="is-desktop flex justify-self-start w-full bg-white bg-opacity-70 drop-shadow p-4 rounded-xl items-center cursor-pointer hover:drop-shadow-xl hover:text-a-blue-005BC0 hover:bg-opacity-80"
   >
     <div
       class="icon-faculty h-16 w-16 bg-white rounded-full flex items-center justify-center p-4"
@@ -19,6 +20,21 @@
       </p>
     </div>
   </div>
+  <div class="is-mobile grid justify-items-center">
+
+      <div
+      class="icon-faculty h-10 w-10 bg-white rounded-full flex items-center justify-center p-2 drop-shadow-md"
+    >
+      <span class="uppercase font-black text-2xl" :class="[`${item.color}`]">{{
+        item.icon
+      }}</span>
+    </div>
+    <p class="text-name text-center text-lg"> {{ item.name }}</p>
+    <p class="text-xs leading-none text-center opacity-50"> {{ item.description }}</p>
+
+  </div>
+</div>
+
 </template>
 
 <script>
@@ -53,4 +69,35 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@import "../../style/base.scss";
+.is-desktop {
+  @include mobile {
+    display: none;
+  }
+}
+
+.is-mobile {
+  @include mobile {
+    .icon-faculty{
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      max-height: 48px;
+      max-width: 48px;
+    }
+    .text-name {
+      width: 84px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 1rem;
+      line-height: normal;
+      padding-top: 0.25rem;
+      color: $a-blue-005BC0;
+    }
+  }
+  @include min-desktop {
+    display: none;
+  }
+}
+</style>

@@ -24,7 +24,7 @@
         <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" class="text-4xl"/>
         <font-awesome-icon v-else :icon="['fas', 'calendar']" class="text-4xl" />
     </div>
-    <div class="button-content-mobile w-full">
+    <div class="button-content-mobile w-full relative justify-items-center">
         <div class="text-button-mobile">
           <label>{{ textButton }}</label>
         </div>
@@ -75,6 +75,8 @@ export default defineComponent({
     min-height: 80px;
     padding-left: 1rem;
     padding-top: 0.75rem;
+    max-height: 48px;
+    max-width: 48px;
 
     svg {
       height: 52px;
@@ -152,7 +154,7 @@ export default defineComponent({
   @include mobile{
     &.container-btn-blue-download{
     display: grid;
-    justify-content: center;
+    justify-items: center;
    }
    .text-desc {
     font-size: 1rem;
@@ -179,10 +181,14 @@ export default defineComponent({
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 150px;
+    width: 100%;
     lable{
       padding-top: 0.75rem;
     }
+  }
+  .text-desc{
+    width: 100%;
+    text-align: center;
   }
 
 }

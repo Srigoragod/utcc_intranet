@@ -11,7 +11,7 @@
 
       <TextUnderline class="mt-8" :text="'วิทยาลัย'" :desc="'เว็บไซต์วิทยาลัยทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>
 
-      <div class="grid grid-cols-4 gap-4 showFaculty">
+      <div class="grid grid-cols-4 gap-2 showFaculty">
         <ButtonFaculty :item="item" v-for="(item,index) in sortListCollege" :key="index" ></ButtonFaculty>
       </div>
     </div>
@@ -201,7 +201,10 @@ export default defineComponent({
 @import "../style/base.scss";
 .showFaculty {
    @include mobile {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      justify-items: center;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.5rem;
+      padding: 1rem;
    }
 }
 .bg-section {

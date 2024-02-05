@@ -45,7 +45,7 @@
       </div>
     </template>
     <template #footer>
-      <Footer ></Footer>
+      <Footer class="is-mobile" ></Footer>
     </template>
   </MainPage>
 </template>
@@ -130,6 +130,11 @@ export default defineComponent({
 .is-desktop {
   @include mobile {
     display: none;
+  }
+}
+.is-mobile{
+  @include mobile {
+    display:  none;
   }
 }
 .bg-hero {

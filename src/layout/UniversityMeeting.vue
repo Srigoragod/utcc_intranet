@@ -6,14 +6,14 @@
       <div class=" min-[340px]:hidden sm:hidden md:block lg:block ">
         <Calender class="rounded-lg"></Calender>
       </div>
-      <div class="grid gap-4">
+      <div class="grid gap-4 custom-grid">
         <DateMeeting
           v-for="(item, index) in dateMeetingList"
           :key="index"
           :dateMeeting="item"
         ></DateMeeting>
       </div>
-      <div class="grid gap-4" >
+      <div class="grid gap-4 custom-grid" >
         <ButtonBlueDownload
           v-for="(item, index) in buttonList"
           :key="index"
@@ -93,7 +93,13 @@ export default defineComponent({
 @import "../style/base.scss";
 .is-mobile{
   @include mobile {
+  grid-template-columns: repeat(1, minmax(0, 1fr));  
   padding: 0 1rem;
-}
+ }
+ .custom-grid{
+   @include mobile{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+ }
 }
 </style>

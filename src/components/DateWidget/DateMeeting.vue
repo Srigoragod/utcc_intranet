@@ -162,7 +162,7 @@ export default defineComponent({
       text-overflow: ellipsis;
       overflow: hidden;
       width: 160px;
-    }
+          }
     .div-time-location-mobile{
       font-size: 1rem;
     }

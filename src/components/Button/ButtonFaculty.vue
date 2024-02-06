@@ -20,7 +20,7 @@
       </p>
     </div>
   </div>
-  <div class="is-mobile grid justify-items-center">
+  <div   @click="onClick(item.url)" class="is-mobile grid justify-items-center">
 
       <div
       class="icon-faculty h-10 w-10 bg-white rounded-full flex items-center justify-center p-2 drop-shadow-md"

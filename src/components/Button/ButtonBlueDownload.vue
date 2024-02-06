@@ -3,8 +3,8 @@
   <div class="is-desktop flex justify-between items-center container-btn-blue-download h-[100px] hover:shadow-lg" @click="onClickButton()">
     <div class="flex items-center">
       <div class="icon-svg">
-        <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" class="sm:text-base text-4xl"/>
-        <font-awesome-icon v-else :icon="['fas', 'calendar']" class="sm:text-base text-4xl" />
+        <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" class="sm:text-base text-3xl"/>
+        <font-awesome-icon v-else :icon="['fas', 'calendar']" class="sm:text-base text-3xl" />
       </div>
       <div class="button-content w-full pl-4">
         <div class="text-button text-ellipsis overflow-hidden">
@@ -75,12 +75,16 @@ export default defineComponent({
     min-height: 80px;
     padding-left: 1rem;
     padding-top: 0.75rem;
-    max-height: 48px;
-    max-width: 48px;
+    @include mobile {
+      max-height: 48px;
+      max-width: 48px;
+
+    }
 
     svg {
       height: 52px;
       width: 52px;
+      margin-right: 1rem;
       @include mobile {
       height: 38px;
       width: 38px;

@@ -1,7 +1,6 @@
 <template>
   <div class="py-2 relative" :class="[isNotHome ? 'mt-24' :'']">
-
-    <TextUnderline class="" :text="'เอกสารทั้งหมด'"  :desc="''"></TextUnderline>
+    <TextUnderline class="" :text="'เอกสาร'"  :desc="''"></TextUnderline>
     <br/>
     <div class="is-desktop grid gap-4 items-start" :class="[gridCols]"  >
       <FileList
@@ -19,36 +18,16 @@
       ></FileList>
     </div>
     <div class="is-mobile grid gap-4 grid-cols-1 px-4"   >
-      <FileList
+      <FileListMobile
         v-for="(item, index) in fileData"
         :id="item.id"
         :key="index"
-        :class="''"
         :topicName="item.topicName"
-        :isAlert="item.isAlert"
-        :alertDetail="item.alertDetail"
         :dataList="item.itemList"
-        :isHeightFull="item.isFull"
-        :isNotHome="isNotHome"
-        :isSplit="item.isSplit"
-      ></FileList>
-    </div>
-    <!-- <div class="grid grid-cols-3 auto-cols-[minmax(0,_2fr)] gap-4">
-      <FileList
-        v-for="(item, index) in fileData"
-        :id="item.id"
-        :key="index"
-        class="grow"
-        :class="[ item.showColumn != '' ? '' : '']"
-        :topicName="item.topicName"
-        :isAlert="item.isAlert"
-        :alertDetail="item.alertDetail"
-        :dataList="item.itemList"
-        :isHeightFull="item.isFull"
-        :isNotHome="isNotHome"
-      ></FileList>
-    </div> -->
+      >
 
+      </FileListMobile>
+    </div>
   </div>
 </template>
 
@@ -61,6 +40,8 @@ import homedata from '../data/homedata.json'
 import documentdata from '../data/documentdata.json'
 // components
 import FileList from "../components/File/FileList.vue";
+import FileListMobile from "../components/File/FileListMobile.vue";
+
 import TextUnderline from "../components/Text/TextUnderline.vue";
 
 export default defineComponent({
@@ -72,6 +53,7 @@ export default defineComponent({
   },
   components: {
     FileList,
+    FileListMobile,
     TextUnderline
   },
   setup(props) {

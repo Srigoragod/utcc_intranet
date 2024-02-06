@@ -32,7 +32,6 @@ export default {
 }
 .text {
   position: relative;
-  z-index: 1;
   line-height: normal;
   color: #2E3191;
 

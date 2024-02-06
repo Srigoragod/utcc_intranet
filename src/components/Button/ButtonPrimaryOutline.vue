@@ -60,6 +60,12 @@ export default defineComponent({
     display: none;
 
   }
+  @include min-tablet {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
   @include mobile {
    text-align: center;
    .icon-svg {

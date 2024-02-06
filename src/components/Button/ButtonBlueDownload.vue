@@ -78,7 +78,10 @@ export default defineComponent({
     @include mobile {
       max-height: 48px;
       max-width: 48px;
-
+    }
+    @include tablet {
+      padding-left: 0.25rem;
+      padding-top: 0;
     }
 
     svg {
@@ -86,6 +89,11 @@ export default defineComponent({
       width: 52px;
       margin-right: 1rem;
       @include mobile {
+      height: 28px;
+      width: 28px;
+      margin-right: 4px;
+     }
+     @include tablet {
       height: 38px;
       width: 38px;
       margin-right: 4px;
@@ -101,14 +109,21 @@ export default defineComponent({
         // color: #787878;
     }
 
+    @include tablet {
+      padding: 0;
+    }
     .text-button {
         color: #787878;
         font-size: 1rem;
         h4{
           @include mobile {
-          font-size: 28px;
-          width: 200px;
-        }
+            font-size: 28px;
+            width: 200px;
+          }
+          @include tablet{
+            font-size: 28px;
+            width: 180px;
+          }
         }
     }
   }
@@ -165,6 +180,9 @@ export default defineComponent({
     color: $a-gray-343443;
     opacity: 0.5;
    }
+  }
+  @include tablet {
+    display: none;
   }
   @include min-desktop{
     display: none;

@@ -103,12 +103,26 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../../style/base.scss";
 
+.text-name{
+  @include tablet {
+      font-size: 1.5rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 160px;
+  }
+
+}
+
 .is-desktop {
   @include mobile {
     display: none;
   }
 }
 .is-mobile {
+  @include tablet {
+    display: none;
+  }
   background: linear-gradient(180deg, #f8f8f8 0%, #eff5f9 46.35%, #e5f1fb 100%);
   line-height: normal;
   padding: 0.25rem 0.375rem;

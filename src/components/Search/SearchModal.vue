@@ -1,6 +1,6 @@
 <template>
-  <div v-loading.fullscreen.lock="fullscreenLoading">
-    <div class="flex justify-between items-center rounded-full lg:border border-slate-300 hover:border-indigo-300 lg:px-4 bg-white" @click="clickSearch()">
+  <div >
+    <div class="flex justify-between items-center rounded-full lg:border border-slate-300 hover:border-indigo-300 lg:px-4 bg-white" @click="clickSearch()" >
       <font-awesome-icon
           class="text-base is-desktop"
           :icon="['fas', 'magnifying-glass']"
@@ -9,6 +9,7 @@
         type="text"
         placeholder="Search "
         class="text-input input-sm text-xl w-full is-desktop"
+ 
       />
 
 
@@ -134,7 +135,8 @@ export default defineComponent({
     };
 
     const clickSearch = () => {
-      resetFormSearch();
+      console.log('@click="clickSearch()" .....');
+      // resetFormSearch();
       document.getElementById("search_modal").showModal();
     };
     const handleKeyPress = (event) => {

@@ -2,7 +2,7 @@
   <div class="py-2 sm:px-4">
     <!-- <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4> -->
     <TextUnderline class="my-8" :text="'เมนูที่ใช้งานบ่อย'"></TextUnderline>
-    <div class="show-menu" >
+    <div class="show-menu " >
        <!-- <ButtonBlue class="mr-8"  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :icon="item.icon" :isDisable="item.isDisable"></ButtonBlue> -->
        <ButtonPrimaryOutline  v-for="(item,index) in items" :key="index" :textButton="item.text" @click="clikShortCut(item.url)" :url="item.url" :typeIcon="item.typeIcon" :icon="item.icon" :position="item.position" :isDisable="item.isDisable" :classCustom="item.class" ></ButtonPrimaryOutline>
     </div>
@@ -48,14 +48,6 @@ export default defineComponent({
         icon: 'link',
         isDisable: false,
         position: 'right'
-      },
-      {
-        text:'ระบบบันทึกใบลา',
-        url:'http://hr.utcc/webtime/default1.aspx',
-        typeIcon: 'fas',
-        icon: 'link',
-        isDisable: false,
-        position: 'right'
       }
     ])
 
@@ -79,6 +71,17 @@ export default defineComponent({
   @include mobile{
     grid-template-columns: repeat(4, minmax(0, 1fr));
     display: grid;
+  }
+  @include min-tablet {
+    padding-top: .5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  @include tablet {
+    padding-top: .5rem;
+    display: flex;
+    gap: 1rem;
+  
   }
   @include min-desktop{
     display: flex;

@@ -86,7 +86,7 @@ export default defineComponent({
     isDisable: { type: Boolean, required: false },
     fileName: { type: String, required: false },
     pathFile: { type: String, required: false },
-    isNotHome: { tyep: Boolean, required: true, default: false },
+    isNotHome: { tyep: Boolean, required: false, default: false },
     isFull: { tyep: Boolean, required: false, default: false },
   },
   setup(props, ctx) {

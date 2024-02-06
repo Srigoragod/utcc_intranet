@@ -48,6 +48,6 @@ export default {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 98%;
+    width: 95%;
 }
 </style>

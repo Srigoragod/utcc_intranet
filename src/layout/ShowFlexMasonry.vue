@@ -13,7 +13,7 @@
     <br/>
 
     <!-- <div class="gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3 [&>div:not(:first-child)]:mt-8 lg:[&>div:not(:first-child)]:mt-8 xl:[&>div:not(:first-child)]:mt-8"> -->
-    <div class="gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3" v-if="fileData && fileData.length > 0">
+    <div class="is-desktop gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3" v-if="fileData && fileData.length > 0">
       <FileList
         v-for="(item, index) in fileData"
         :id="item.id"
@@ -27,6 +27,18 @@
         :isNotHome="isNotHome"
       ></FileList>
     </div>
+    <div class="is-mobile grid gap-4 px-4">
+      <FileListMobile
+        v-for="(item, index) in fileData"
+        :id="item.id"
+        :key="index"
+        :topicName="item.topicName"
+        :dataList="item.itemList"
+      >
+
+      </FileListMobile>
+
+    </div>
   </div>
 </template>
 
@@ -39,6 +51,7 @@ import documentdata from "../data/documentdata.json";
 import departmentdata from "../data/departmentdata.json"
 // components
 import FileList from "../components/File/FileList.vue";
+import FileListMobile from "../components/File/FileListMobile.vue";
 import TextUnderline from "../components/Text/TextUnderline.vue";
 
 export default defineComponent({
@@ -51,7 +64,8 @@ export default defineComponent({
   },
   components: {
     FileList,
-    TextUnderline
+    TextUnderline,
+    FileListMobile
   },
   setup(props) {
     const route = useRoute();
@@ -108,6 +122,17 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+@import "../style/base.scss";
+.is-desktop {
+  @include mobile{
+    display: none;
+  }
+}
+.is-mobile{
+  @include min-desktop{
+    display: none;
+  }
+}
 .text-all-file {
   background: -webkit-gradient(
     linear,

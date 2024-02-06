@@ -48,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div id="topbar2" class="glass w-full fixed top-0 z-30 pb-2 is-desktop">
+    <div id="topbar2" class="glass w-full fixed top-0 z-30 pb-2 items-center is-desktop">
       <div class="navbar container mx-auto items-center">
         <div class="navbar-start">
           <a href="" class="text-xl" @click="handleGotoPage()">
@@ -69,7 +69,7 @@
             {{ item.textName }}</label
           >
         </div>
-        <div class="navbar-end">
+        <div class="navbar-end pt-6">
           <SearchModal></SearchModal>
         </div>
 

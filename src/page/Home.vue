@@ -33,7 +33,11 @@
           <FacultyAll></FacultyAll>
         </section>
 
-        <section class="container mx-auto py-20" >
+        <section class="container mx-auto py-4 lg:py-20" >
+          <ShowFlexMasonry  :topicName="'Forms &Document'" :dataName="'formdocument'"></ShowFlexMasonry>
+        </section>
+
+        <section class="container mx-auto py-4 lg:py-20" >
           <ShowFlexMasonry  :topicName="'Department'" :dataName="'department'"></ShowFlexMasonry>
         </section>
 
@@ -41,7 +45,8 @@
           <DividerRisk></DividerRisk>
         </section> -->
 
-        <ScrollToTopButton class="is-desktop"></ScrollToTopButton>
+        <MenuMobile></MenuMobile>
+        <ScrollToTopButton ></ScrollToTopButton>
       </div>
     </template>
     <template #footer>
@@ -76,6 +81,7 @@ import ScrollToTopButton from "../components/Button/ScrollToTopButton.vue";
 import FloatingActionButton from "../components/Button/FloatingActionButton.vue";
 import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
 // import DividerRisk from '../layout/DividerRisk.vue';
+import MenuMobile from '../components/Menu/MenuMobile.vue';
 
 
 export default defineComponent({
@@ -95,7 +101,8 @@ export default defineComponent({
     ScrollToTopButton,
     FloatingActionButton,
     ShowFlexMasonry,
-    // DividerRisk
+    // DividerRisk,
+    MenuMobile
   },
   setup() {
     const route = useRoute()

@@ -179,7 +179,7 @@ export default defineComponent({
     padding: 1rem;
     span{
       h5 {
-      font-size: 1.125rem !important;
+      font-size: 1.5rem !important;
       width: 259px;
       }
     }
@@ -196,7 +196,7 @@ export default defineComponent({
   }
   .file-name {
     @include mobile{
-      font-size: 1.25rem;
+      font-size: 1.75rem;
       width: 250px;
       overflow: hidden;
       white-space: nowrap;

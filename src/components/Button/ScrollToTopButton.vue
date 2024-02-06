@@ -44,6 +44,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "../../style/base.scss";
 #settingButton {
   position: fixed;
   bottom: 38px;
@@ -72,5 +73,9 @@ export default defineComponent({
     background-color: #2E3191;
   }
   /* Add additional styling as needed */
+  @include mobile {
+    bottom: 5.5rem;
+    right: 1rem;
+  }
 }
 </style>

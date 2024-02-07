@@ -50,7 +50,7 @@
       </div>
     </template>
     <template #footer>
-      <Footer class="is-mobile" ></Footer>
+      <Footer  ></Footer>
     </template>
   </MainPage>
 </template>
@@ -134,16 +134,6 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../style/base.scss";
 
-.is-desktop {
-  @include mobile {
-    display: none;
-  }
-}
-.is-mobile{
-  @include mobile {
-    display:  none;
-  }
-}
 .bg-hero {
     background: url('../assets/image/bg-hero.png');
     background-repeat: no-repeat;

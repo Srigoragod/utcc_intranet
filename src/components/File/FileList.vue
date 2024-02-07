@@ -26,7 +26,7 @@
           :isFull="item.isFull"
         ></FileItem>
       </div>
-      <div v-else class="is-mobile grid grid-cols-2 gap-4 items-stretch">
+      <div v-else class="grid grid-cols-2 gap-4 items-stretch">
         <div v-for="(data, index) in dataListX" :key="index">
           <FileItem
             v-for="(item, key) in data"

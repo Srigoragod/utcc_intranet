@@ -17,6 +17,15 @@ export default {
 
 }
 </script>
+<style>
+  .el-calendar__title{
+    font-size: 1.25rem !important;
+    color: #2E3191;
+  }
+  .el-calendar__body {
+    padding: 20px 20px 0 20px !important;
+  }
+</style>
 
 <style lang="scss" scoped>
 #calendar {

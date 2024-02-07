@@ -2,7 +2,7 @@
   <div class="py-2 relative" :class="[isNotHome ? 'mt-24' :'']">
     <TextUnderline class="" :text="'เอกสาร'"  :desc="''"></TextUnderline>
     <br/>
-    <div class="is-desktop grid gap-4 items-start" :class="[gridCols]"  >
+    <div class="is-desktop grid gap-4 items-center" :class="[gridCols]"  >
       <FileList
         v-for="(item, index) in fileData"
         :id="item.id"
@@ -84,6 +84,7 @@ export default defineComponent({
 @import "../style/base.scss";
 
 .is-desktop {
+  padding: 0 1rem;
   @include mobile {
     display: none;
   }

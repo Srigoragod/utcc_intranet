@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2 sm:px-4">
+  <div class="py-2 sm:px-4 md:px-0">
     <!-- <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4> -->
     <TextUnderline class="my-8" :text="'เมนูที่ใช้งานบ่อย'"></TextUnderline>
     <div class="show-menu " >
@@ -78,14 +78,15 @@ export default defineComponent({
     gap: 1rem;
   }
   @include tablet {
-    padding-top: .5rem;
-    display: flex;
+    padding-top: 1.5rem;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    display: grid;
     gap: 1rem;
-  
   }
   @include min-desktop{
     display: flex;
     gap: 1rem;
+    padding:  1rem;
   }
 
 }

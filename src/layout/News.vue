@@ -1,10 +1,41 @@
 <template>
-  <div class="container-news px-0 sm:px-4 " >
+  <div class="container-news " >
     <div class="py-2">
       <TextUnderline class="mt-8" :text="'ข่าวสาร'" :desc="'ข่าวสารประชาสัมพันธ์ภายนอก ระบบสารสนเทศสืบค้นหนังสือเวียน'" ></TextUnderline>
     </div>
-    <div class="is-mobile grid grid-cols-4 gap-4">
+    <div class="is-desktop grid grid-cols-4 gap-4">
       <div data-aos="fade-right" class="item-img-news hover:cursor-not-allowed"></div>
+      <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_seminar.php" class="">
+        <div class="item-news px-8 static hover:shadow-lg">
+          <div class="centered-div">
+            <img src="../assets/icon/laptop.svg" alt="" class="pl-2 mx-auto" />
+            <h5 class="text-title ">อบรม/สัมมนา</h5>
+            <p class="text-desc ">หมวดเอกสารที่เกี่ยวช้องกับการอบรม /สัมมนา</p>
+          </div>
+        </div>
+      </a>
+      <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_academic.php">
+        <div class="item-news static hover:shadow-lg">
+          <div class="centered-div">
+            <img src="../assets/icon/calendar.svg" alt="" class="pl-2 mx-auto" />
+            <h5 class="text-title">ประชุมวิชาการ /เสนอผลงานวิชาการ</h5>
+            <p class="text-desc ">หมวดเอกสารประชุมวิชาการ / เสนอผลงานทางวิชาการ</p>
+          </div>
+        </div>
+      </a>
+      <!--  href="http://department.utcc.ac.th/admin/index.php/2018-03-06-08-45-13"   target="_blank" -->
+      <span data-aos="fade-left" class="cursor-not-allowed opacity-50">
+        <div class="item-news static hover:shadow-lg">
+          <div class="centered-div">
+            <!-- alt=""  -->
+            <img src="../assets/icon/3News.svg" class="pl-2 w-[70px] m-auto" />
+            <h5 class="text-title">ข้อเสนอบริการวิชาการ และงานวิจัย</h5>
+            <p class="text-desc ">ขออภัย เว็บไซต์อยู๋ในระหว่างปรับปรุง</p>
+          </div>
+        </div>
+      </span>
+    </div>
+    <div class="is-mobile grid grid-cols-4 gap-4">
       <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_seminar.php" class="">
         <div class="item-news px-8 static hover:shadow-lg">
           <div class="centered-div">

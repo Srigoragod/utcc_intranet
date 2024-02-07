@@ -10,7 +10,7 @@
             :key="index"
           >
             <h6 class="text-a-gray-F8F8F8">{{ data.textName }}</h6>
-            <MenuItem
+            <!-- <MenuItem
               v-for="(subItem, index1) in data.items"
               :key="index1"
               :textName="subItem.textName"
@@ -19,7 +19,7 @@
               :type="subItem.type"
             >
               {{ subItem }}
-            </MenuItem>
+            </MenuItem> -->
           </div>
         </div>
       </div>
@@ -42,14 +42,14 @@
 
 <script>
 import { ref, defineComponent } from "vue";
-import MenuItem from "../TopBar/MenuItem.vue";
+// import MenuItem from "../TopBar/MenuItem.vue";
 // import axios from "axios";
 
 import menudata from "../../data/menudata.json";
 export default defineComponent({
   name: "Footer",
   components: {
-    MenuItem,
+    // MenuItem,
   },
   // props: {
   //   dataList: { type: Array, required: false },

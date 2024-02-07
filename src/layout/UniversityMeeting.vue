@@ -1,8 +1,7 @@
 <template>
   <div >
-    <!-- <h4 class="font-bold text-topic-name">การประชุมมหาวิทยาลัย</h4> -->
     <TextUnderline class="mt-4 lg:mt-8 mb-4" :text="'ประชุมมหาวิทยาลัย'"></TextUnderline>
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 is-mobile">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
       <div class=" min-[340px]:hidden sm:hidden md:block lg:block ">
         <Calender class="rounded-lg"></Calender>
       </div>

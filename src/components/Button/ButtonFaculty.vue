@@ -15,7 +15,7 @@
       <h5>
         {{ item.name }}
       </h5>
-      <p class="text-lg">
+      <p class="text-lg text-desc">
         {{ item.description }}
       </p>
     </div>
@@ -72,6 +72,13 @@ export default {
 <style lang="scss" scoped>
 @import "../../style/base.scss";
 .is-desktop {
+  .text-desc {
+    font-size: 1.125rem;
+    line-height: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
   @include mobile {
     display: none;
   }

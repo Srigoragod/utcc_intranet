@@ -8,7 +8,7 @@
  
     <div class="px-4">
         <div class="noData w-full h-[40px]">
-            <p class="text-a-gray-787878 text-center pt-1">No Data</p>
+            <p class="text-a-gray-787878 text-center pt-1 text-lg">No Data</p>
         </div>
     </div>
     </div>
@@ -29,12 +29,8 @@ export default {
 @import "../style/base.scss";
 
 .text-title {
-    // display:  flex;
-    // justify-content: space-between;
-
-    // @include mobile {
-    //     justify-content: center;
-    // }
+    display:  flex;
+    justify-content: space-between;
 }
 .btn-all {
     @include mobile {

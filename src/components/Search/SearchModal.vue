@@ -325,4 +325,9 @@ export default defineComponent({
     display: none;
   }
 }
+.text-input {
+  @include tablet {
+    font-size: 1.75rem;
+  }
+}
 </style>

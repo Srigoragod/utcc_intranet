@@ -114,6 +114,10 @@ export default defineComponent({
 
 }
 
+.div-desc{
+  padding-left: .5rem;
+}
+
 .is-desktop {
   @include mobile {
     display: none;
@@ -194,6 +198,10 @@ export default defineComponent({
   padding: 0.5rem 1rem ;
   background-color: #F8F8F8;
 
+  @include tablet {
+    padding: 0 0.5rem 0 0;
+  }
+
 .div-date {
   font-size: 18px;
   width: 80px;
@@ -226,6 +234,10 @@ export default defineComponent({
       font-size: 62px;
       line-height: normal;
     }
+    @include tablet {
+      font-size: 58px;
+      padding-top: .75rem;
+    }
   }
 
 
@@ -236,6 +248,11 @@ export default defineComponent({
     @include mobile {
       font-size: 24px;
     }
+  }
+
+  @include tablet {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
   }
 
 }

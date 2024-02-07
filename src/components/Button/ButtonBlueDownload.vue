@@ -130,7 +130,7 @@ export default defineComponent({
 
   .btn-dowload {
     min-height: 100px;
-    min-width: 100px;
+    min-width: 80px;
     background-color: #E5F1FB;
     text-align: center;
     padding-top: 2.25rem;
@@ -155,6 +155,7 @@ export default defineComponent({
         transform: scale(1.25);
     }
     .btn-dowload {
+
         background-color: #005BC0;
         svg{
             color: #fff;

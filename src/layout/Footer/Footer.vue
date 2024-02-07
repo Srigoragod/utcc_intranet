@@ -1,30 +1,6 @@
 <template>
-  <div class="w-full bg-footer text-white pt-8">
-    <div class="container m-auto">
-      <div class="grid gap-4 items-start">
-        <div></div>
-        <div class="grid grid-cols-4 gap-4 items-start col-span-2">
-          <div
-            class="text-white"
-            v-for="(data, index) in menuList"
-            :key="index"
-          >
-            <h6 class="text-a-gray-F8F8F8">{{ data.textName }}</h6>
-            <!-- <MenuItem
-              v-for="(subItem, index1) in data.items"
-              :key="index1"
-              :textName="subItem.textName"
-              :textUrl="subItem.url"
-              :isDark="true"
-              :type="subItem.type"
-            >
-              {{ subItem }}
-            </MenuItem> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-a-gray-64748b bg-a-blue-0F2A43 mt-4 flex justify-center py-4">
+  <div>
+    <div class="text-a-gray-64748b bg-footer mt-4 flex justify-center py-4">
         <div class="text-base text-center">
           <a href="#">
             <img

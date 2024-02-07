@@ -71,17 +71,46 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
+
 .is-desktop {
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+
+    @include min-desktop{
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  }
   .text-desc {
     font-size: 1.125rem;
     line-height: 1;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    width: 150px;
+
+    @include min-desktop{
+      width: 100%;
+    }
   }
   @include mobile {
     display: none;
   }
+
+
+  .icon-name{
+    @include tablet{
+     padding-left: 0.5rem;
+     padding-right: 0.5rem;
+    }
+  }
+
+
 }
 
 .is-mobile {
@@ -102,6 +131,9 @@ export default {
       padding-top: 0.25rem;
       color: $a-blue-005BC0;
     }
+  }
+  @include tablet {
+    display: none;
   }
   @include min-desktop {
     display: none;

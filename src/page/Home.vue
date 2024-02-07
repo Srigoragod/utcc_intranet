@@ -17,7 +17,7 @@
           <UniversityMeeting ref="meeting" ></UniversityMeeting>
         </section>
 
-        <section id="lastupdate" class="container mx-auto">
+        <section id="lastupdate" class="container mx-auto hidden">
           <LastUpdate ref="lastupdate" class="my-2"></LastUpdate>
         </section>
 

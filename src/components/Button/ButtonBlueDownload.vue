@@ -81,7 +81,8 @@ export default defineComponent({
     }
     @include tablet {
       padding-left: 0.25rem;
-      padding-top: 0;
+      padding-top: 1.25rem;
+       margin: 1rem;
     }
 
     svg {

@@ -1,6 +1,6 @@
 <template>
   <div class="py-2 relative" :class="[isNotHome ? 'mt-24' :'']">
-    <TextUnderline class="" :text="'เอกสาร'"  :desc="''"></TextUnderline>
+    <TextUnderline class="" :text="'Forms &Documents'"  :desc="''"></TextUnderline>
     <br/>
     <div class="is-desktop grid gap-4 items-center" :class="[gridCols]"  >
       <FileList
@@ -17,7 +17,7 @@
         :isSplit="item.isSplit"
       ></FileList>
     </div>
-    <div class="is-mobile grid gap-4 grid-cols-1 px-4"   >
+    <div class="is-mobile  grid gap-4 grid-cols-1 px-4 md:hidden">
       <FileListMobile
         v-for="(item, index) in fileData"
         :id="item.id"

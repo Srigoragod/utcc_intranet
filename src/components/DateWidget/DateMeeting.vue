@@ -103,12 +103,16 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../../style/base.scss";
 
+
 .text-name{
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 2rem;
+  // width: 160px;
   @include tablet {
-      font-size: 1.5rem;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
+      font-size: 1.75rem;
       width: 160px;
   }
 
@@ -200,6 +204,10 @@ export default defineComponent({
 
   @include tablet {
     padding: 0 0.5rem 0 0;
+  }
+  @include max-tablet{
+    // background-color: lime;
+    width: 90%;
   }
 
 .div-date {

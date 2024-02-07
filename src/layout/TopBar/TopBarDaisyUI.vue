@@ -64,7 +64,7 @@
             v-for="(item, index) in menuItems"
             :key="index"
             @click="onClickDialog(item)"
-            class="text-xl text-a-blue-2E3191 hover:text-a-blue-005BC0 mx-3 cursor-pointer"
+            class="menu-text text-a-blue-2E3191 hover:text-a-blue-005BC0 mx-3 cursor-pointer"
           >
             {{ item.textName }}</label
           >
@@ -288,9 +288,20 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../../style/base.scss";
 
+.menu-text {
+  font-size: 1.25rem;
+  @include tablet{
+    font-size: 1.125rem;
+  }
+}
+
 .main-logo {
   width: calc(40% - 0px);
   height: auto;
+  @include tablet {
+    width: 150px;
+    margin-left: 0;
+  }
 }
 // #topbar2 {
 //   width: 100%;

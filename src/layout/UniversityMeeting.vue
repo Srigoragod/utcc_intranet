@@ -1,11 +1,11 @@
 <template>
   <div >
     <TextUnderline class="mt-4 lg:mt-8 mb-4" :text="'ประชุมมหาวิทยาลัย'"></TextUnderline>
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-      <div class=" min-[340px]:hidden sm:hidden md:block lg:block ">
+    <div class="grid grid-cols-3 gap-4 container-meeting">
+      <div class="div-calender">
         <Calender class="rounded-lg"></Calender>
       </div>
-      <div class="grid gap-4 custom-grid">
+      <div class="grid gap-4 custom-grid ">
         <DateMeeting
           v-for="(item, index) in dateMeetingList"
           :key="index"
@@ -90,18 +90,37 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../style/base.scss";
-.is-mobile{
-  @include mobile {
-  grid-template-columns: repeat(1, minmax(0, 1fr));  
-  padding: 0 1rem;
- }
-  .custom-grid{
+.div-calender{
+  display: none;
+  @include min-desktop {
+    display: block;
+  }
+}
+
+
+.container-meeting{
+  padding: 1rem;
+  @include min-tablet{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  @include max-tablet{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @include tablet {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  }
+}
+.custom-grid{
+   padding: 0 1rem;
    @include mobile{
+    padding: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
    }
    @include tablet {
+    padding: 0;
     grid-template-columns: repeat(1, minmax(0, 1fr));
    }
+
  }
-}
 </style>

@@ -70,8 +70,9 @@ export default {
   @import "../../style/base.scss";
 
   .smallTop{
-        padding-top: 4rem;
-        margin-bottom: 1.75rem;
+        font-size:  2.25rem;
+        padding-top: 2rem;
+        margin-bottom: -1rem;
     @include mobile {
         padding-top: 1.75rem;
         margin-bottom: 1.5rem;

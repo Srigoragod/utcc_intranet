@@ -84,6 +84,9 @@ export default {
 
 .is-mobile {
   padding: 0 1rem;
+  @include tablet{
+    display: none;
+  }
   @include mobile {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.5rem;
@@ -111,6 +114,10 @@ export default {
 }
 .container-news {
   cursor: pointer;
+
+  @include min-desktop{
+    padding: 0 1rem;
+  }
 
   @include min-desktop{
     .text-title {

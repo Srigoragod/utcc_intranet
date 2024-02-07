@@ -2,8 +2,8 @@
   <div>
   <button :class="classCustom" class="is-desktop btn btn-xs">
     <div class="flex items-center">
-     <font-awesome-icon  class="text-sm md:text-[18px] lg:text-[18px]" :icon="[`${typeIcon}`, `${icon}`]" />
-     <div class="text-[22px] sm:text-lg md:text-lg lg:text-xl md:text-ellipsis">   {{ textButton }}</div>
+     <font-awesome-icon  class="text-sm md:text-[18px] lg:text-xl" :icon="[`${typeIcon}`, `${icon}`]" />
+     <div class="text-[22px] sm:text-lg md:text-lg lg:text-2xl md:text-ellipsis">   {{ textButton }}</div>
      <!-- <font-awesome-icon v-if="position == 'right'" class="text-sm md:text-[18px] lg:text-[18px]" :icon="[`${typeIcon}`, `${icon}`]" /> -->
     </div>
   </button>

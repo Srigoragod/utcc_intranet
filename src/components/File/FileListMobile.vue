@@ -39,15 +39,30 @@ export default {
 
 </script>
 
+
 <style lang="scss">
+@import "../../style/base.scss";
 .collapse-title{
     font-size: 1.5rem;
     line-height: normal;
-}
-.custom-overflow{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     width: 95%;
 }
+// .custom-overflow{
+//     white-space: nowrap;
+//     text-overflow: ellipsis;
+//     overflow: hidden;
+//     width: 90%;
+//     @include mini-mobile {
+//       width: 330px;
+//       color: red;
+//     }
+//     @include mobile {
+//       .collapse-title {
+
+// }
+//     }
+
+// }
+
+
 </style>

@@ -1,18 +1,8 @@
 <template>
   <div class="">
-    <!-- <el-divider
-      data-aos="fade-up"
-      class="text-a-gray-64748b mb-4"
-      content-position="center"
-    >
-      <h4 class="text-all-file font-light leading-none py-2">
-      {{ topicName}}
-      </h4>
-    </el-divider> -->
+
     <TextUnderline :text="topicName"></TextUnderline>
     <br/>
-
-    <!-- <div class="gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3 [&>div:not(:first-child)]:mt-8 lg:[&>div:not(:first-child)]:mt-8 xl:[&>div:not(:first-child)]:mt-8"> -->
     <div class="is-desktop gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3" v-if="fileData && fileData.length > 0">
       <FileList
         v-for="(item, index) in fileData"

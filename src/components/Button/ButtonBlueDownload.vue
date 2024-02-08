@@ -183,7 +183,7 @@ export default defineComponent({
     opacity: 0.5;
    }
   }
-  @include tablet {
+@include tablet {
     display: none;
   }
   @include min-desktop{

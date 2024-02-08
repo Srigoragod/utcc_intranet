@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-a-gray-64748b bg-footer mt-4 flex justify-center py-4">
+    <div class="text-a-gray-64748b bg-footer mt-4 flex justify-center py-4 footer" >
         <div class="text-base text-center">
           <a href="#">
             <img
@@ -40,6 +40,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+
 .main-logo {
   width: 200px;
   height: 65px;

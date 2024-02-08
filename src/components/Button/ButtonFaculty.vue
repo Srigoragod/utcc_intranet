@@ -98,9 +98,7 @@ export default {
       width: 100%;
     }
   }
-  @include mobile {
-    display: none;
-  }
+
 
 
   .icon-name{

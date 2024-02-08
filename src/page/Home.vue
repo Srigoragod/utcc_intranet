@@ -1,4 +1,4 @@
-<template>
+DateMeeting<template>
   <MainPage >
     <template #topbar>
       <!-- <TopBar  ></TopBar> -->
@@ -46,11 +46,11 @@
         </section> -->
 
         <MenuMobile></MenuMobile>
-        <ScrollToTopButton ></ScrollToTopButton>
+        <ScrollToTopButton class="hidden md:block "></ScrollToTopButton>
       </div>
     </template>
     <template #footer>
-      <Footer  ></Footer>
+      <Footer id="footer" ></Footer>
     </template>
   </MainPage>
 </template>
@@ -133,6 +133,20 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../style/base.scss";
+
+#footer {
+  @include mini-mobile{
+    display: none
+  }
+
+  @include mobile{
+    display: none;
+  }
+
+  @include tablet{
+    display: none;
+  }
+}
 
 .bg-hero {
     background: url('../assets/image/bg-hero.png');

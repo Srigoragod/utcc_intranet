@@ -1,7 +1,7 @@
 <template>
   <div >
     <TextUnderline class="mt-4 lg:mt-8 mb-4" :text="'ประชุมมหาวิทยาลัย'"></TextUnderline>
-    <div class="grid grid-cols-3 gap-4 container-meeting">
+    <div class="grid  gap-4 container-meeting">
       <div class="div-calender">
         <Calender class="rounded-lg"></Calender>
       </div>
@@ -109,6 +109,12 @@ export default defineComponent({
   @include tablet {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
+  }
+  @include mobile{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  @include mini-mobile{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 .custom-grid{

@@ -1,8 +1,5 @@
 <!-- ScrollToTopButton.vue -->
 <template>
-  <!-- <button class="settingButton">
-    x
-  </button> -->
   <button @click="scrollToTop" class="rounded-full" v-if="isVisible"  id="scrollToTopButton">
     <font-awesome-icon class="text-[1.2em]"  :icon="['fas', 'chevron-up']" />
   </button>
@@ -73,9 +70,15 @@ export default defineComponent({
     background-color: #2E3191;
   }
   /* Add additional styling as needed */
+  @include mini-mobile{
+    display: none;
+  }
   @include mobile {
     bottom: 5.5rem;
     right: 1rem;
+  }
+  @include tablet{
+    display: none;
   }
 }
 </style>

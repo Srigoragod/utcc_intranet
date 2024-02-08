@@ -14,7 +14,6 @@
           :fileName="item.fileName"
           :pathFile="item.pathFile"
           :key="index"
-          :isNotHome="isNotHome"
           :isFull="item.isFull"
         ></FileItem>
   </div>

@@ -94,6 +94,7 @@ export default defineComponent({
     display: none;
   }
 }
+
 .text-all-file {
   background: -webkit-gradient(
     linear,

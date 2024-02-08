@@ -128,7 +128,7 @@ export default defineComponent({
   }
 }
 .is-mobile {
-  @include tablet {
+@include tablet {
     display: none;
   }
   background: linear-gradient(180deg, #f8f8f8 0%, #eff5f9 46.35%, #e5f1fb 100%);
@@ -138,7 +138,7 @@ export default defineComponent({
   border: 1px solid $a-blue-E5F1FB;
   width: 100%;
   height: 100%;
-  @include mobile {
+@include mobile {
 
   .container-date-mobile{
     display: flex;

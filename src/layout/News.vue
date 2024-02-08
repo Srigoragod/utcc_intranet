@@ -4,7 +4,7 @@
       <TextUnderline class="mt-8" :text="'ข่าวสาร'" :desc="'ข่าวสารประชาสัมพันธ์ภายนอก ระบบสารสนเทศสืบค้นหนังสือเวียน'" ></TextUnderline>
     </div>
     <div class="is-desktop grid grid-cols-4 gap-4">
-      <div data-aos="fade-right" class="item-img-news hover:cursor-not-allowed"></div>
+      <div data-aos="fade-right" class="item-img-news hover:cursor-not-allowed sm:hidden"></div>
       <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_seminar.php" class="">
         <div class="item-news px-8 static hover:shadow-lg">
           <div class="centered-div">

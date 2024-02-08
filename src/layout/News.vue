@@ -81,6 +81,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/base.scss";
+.is-desktop{
+  @include mobile {
+    display: none;
+  }
+}
 
 .is-mobile {
   padding: 0 1rem;

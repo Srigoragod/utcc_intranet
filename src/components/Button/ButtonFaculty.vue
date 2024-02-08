@@ -73,6 +73,9 @@ export default {
 @import "../../style/base.scss";
 
 .is-desktop {
+  @include mobile {
+      display: none;
+  }
   @include med-tablet{
        display: none;
     }

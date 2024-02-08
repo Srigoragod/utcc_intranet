@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div class="flex justify-between items-center rounded-full lg:border border-slate-300 hover:border-indigo-300 lg:px-4 bg-white" @click="clickSearch()" >
+    <div class="flex justify-between items-center rounded-full lg:border border-slate-300 hover:border-indigo-300 px-4 bg-white" @click="clickSearch()" >
       <font-awesome-icon
           class="text-base is-desktop"
           :icon="['fas', 'magnifying-glass']"
@@ -14,7 +14,7 @@
 
 
     </div>
-    <span class="px-4" @click="clickSearch()">
+    <span class="px-4 md:hidden" @click="clickSearch()">
       <font-awesome-icon
     class="text-2xl text-a-blue-005BC0 is-mobile lg:hidden"
     :icon="['fas', 'magnifying-glass']"

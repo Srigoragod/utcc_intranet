@@ -1,7 +1,7 @@
 <template>
   <div >
     <!-- Content -->
-    <div class="container-file-list" :class="[isHeightFull ? 'h-full' : '']" data-aos="fade-up">
+    <div class="container-file-list bg-white" :class="[isHeightFull ? 'h-full' : '']" data-aos="fade-up">
       <h4 class="text-topic-name py-4" >
         <div class="flex items-center justify-center w-full" v-html="topicName">
         </div>

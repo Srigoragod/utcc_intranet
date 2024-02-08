@@ -111,18 +111,19 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../style/base.scss";
-.is-desktop {
-  @include mobile{
-    display: none;
-  }
-}
 .is-mobile{
   @include min-desktop{
     display: none;
   }
 }
+.is-desktop {
+  @include tablet {
+    display: none;
+   }
+}
+
 .text-all-file {
   background: -webkit-gradient(
     linear,

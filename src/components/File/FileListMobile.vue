@@ -39,7 +39,7 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../../style/base.scss";
 .collapse-title{
     font-size: 1.5rem;

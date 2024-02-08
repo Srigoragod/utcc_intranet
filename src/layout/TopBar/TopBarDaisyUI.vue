@@ -49,7 +49,7 @@
       </div>
     </div>
     <div id="topbar2" class="glass w-full fixed top-0 z-30 pb-2 items-center">
-      <div class="navbar container mx-auto items-center">
+      <div class="navbar container lg:mx-auto items-center">
         <div class="navbar-start">
           <a href="" class="text-xl" @click="handleGotoPage()">
             <img

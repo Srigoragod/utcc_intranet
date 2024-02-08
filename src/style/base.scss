@@ -24,6 +24,7 @@ $topbar-height: 56px;
 $max-width-mini-mobile: 320px;
 $max-width-mobile: 575px;
 $min-width-tablet: 576px;
+$med-width-tablet: 768px;
 $max-width-tablet: 1200px;
 $min-width-desktop: 1201px;
 
@@ -37,6 +38,10 @@ $min-width-desktop: 1201px;
 
 @mixin min-tablet {
     @media (min-width: $min-width-tablet) { @content; }
+};
+
+@mixin med-tablet {
+    @media (min-width: $med-width-tablet ) { @content; }
 };
 
 @mixin max-tablet {

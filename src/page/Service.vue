@@ -68,7 +68,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .text-all-file {
   background: -webkit-gradient(
     linear,

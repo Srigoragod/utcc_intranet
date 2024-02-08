@@ -2,7 +2,7 @@
   <div class="py-2 relative" :class="[isNotHome ? 'mt-24' :'']">
     <TextUnderline class="" :text="'Forms &Documents'"  :desc="''"></TextUnderline>
     <br/>
-    <div class="is-desktop grid gap-4 items-center" :class="[gridCols]"  >
+    <div class="is-desktop grid gap-4 items-start" :class="[gridCols]"  >
       <FileList
         v-for="(item, index) in fileData"
         :id="item.id"
@@ -17,7 +17,7 @@
         :isSplit="item.isSplit"
       ></FileList>
     </div>
-    <div class="is-mobile  grid gap-4 grid-cols-1 px-4 md:hidden">
+    <div class="is-mobile  grid gap-4 grid-cols-1 px-4 ">
       <FileListMobile
         v-for="(item, index) in fileData"
         :id="item.id"
@@ -82,18 +82,18 @@ export default defineComponent({
 
 <style lang="scss"  scoped>
 @import "../style/base.scss";
-
-.is-desktop {
-  padding: 0 1rem;
-  @include mobile {
-    display: none;
-  }
-}
 .is-mobile {
   @include min-desktop {
     display: none;
   }
 }
+.is-desktop {
+  padding: 0 1rem;
+   @include tablet {
+    display: none;
+   }
+}
+
 
 .text-all-file {
   background: -webkit-gradient(

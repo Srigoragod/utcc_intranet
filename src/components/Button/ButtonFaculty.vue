@@ -73,6 +73,9 @@ export default {
 @import "../../style/base.scss";
 
 .is-desktop {
+  @include med-tablet{
+       display: none;
+    }
   h5 {
     font-size: 1.25rem;
     line-height: 1;
@@ -85,6 +88,7 @@ export default {
       font-size: 1.5rem;
       width: 100%;
     }
+
   }
   .text-desc {
     font-size: 1.125rem;
@@ -130,9 +134,7 @@ export default {
       color: $a-blue-005BC0;
     }
   }
-  @include tablet {
-    display: none;
-  }
+
   @include min-desktop {
     display: none;
   }

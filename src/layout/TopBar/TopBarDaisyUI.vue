@@ -1,53 +1,6 @@
 <template>
   <div>
-    <div class="is-mobile">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8 text-a-blue-005BC0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-            <li
-            v-for="(item, index) in menuItems"
-            :key="index"
-            @click="onClickDialog(item)"
-            class=" text-a-blue-2E3191 hover:text-a-blue-005BC0 mx-3 cursor-pointer text-2xl"
-          >
-            {{ item.textName }}</li>
-            </ul>
-          </div>
-        </div>
-        <div class="navbar-center">
-          <a href="" class="text-xl" @click="handleGotoPage()">
-            <img
-              src="../../assets/logo/UTCC_Logo.png"
-              class="main-logo-mobile w-[130px]"
-              alt="UTCC Logo"
-            />
-          </a>
-        </div>
-        <div class="navbar-end">
-           <SearchModal></SearchModal>
-        </div>
-      </div>
-    </div>
+
     <div id="topbar2" class="glass w-full fixed top-0 z-30 pb-2 items-center">
       <div class="navbar container lg:mx-auto items-center">
         <div class="navbar-start">
@@ -69,7 +22,7 @@
             {{ item.textName }}</label
           >
         </div>
-        <div class="navbar-end pt-6">
+        <div class="navbar-end ">
           <SearchModal></SearchModal>
         </div>
 

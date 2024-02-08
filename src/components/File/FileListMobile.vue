@@ -1,5 +1,5 @@
 <template>
-<div tabindex="0" class="collapse collapse-arrow border border-a-blue-E5F1FB bg-base-200">
+<div tabindex="0" class="collapse collapse-arrow border border-a-blue-E5F1FB bg-white">
   <div class="collapse-title text-a-gray-343443 custom-overflow">
     {{topicName}}
   </div>

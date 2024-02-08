@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-section bg-fixed">
+  <div class="bg-section lg:bg-fixed">
     <div class="container mx-auto py-20">
       <!-- <h4 class="text-topic-name font-bold my-4">คณะ</h4> -->
       <TextUnderline :text="'คณะ'" :desc="'เว็บไซต์คณะทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>

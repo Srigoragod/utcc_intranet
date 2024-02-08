@@ -1,13 +1,6 @@
 <template>
   <div>
-  <button :class="classCustom" class="is-desktop btn btn-xs">
-    <div class="flex items-center">
-     <font-awesome-icon  class="text-sm md:text-[18px] lg:text-xl" :icon="[`${typeIcon}`, `${icon}`]" />
-     <div class="text-[22px] sm:text-lg md:text-lg lg:text-2xl md:text-ellipsis">   {{ textButton }}</div>
-     <!-- <font-awesome-icon v-if="position == 'right'" class="text-sm md:text-[18px] lg:text-[18px]" :icon="[`${typeIcon}`, `${icon}`]" /> -->
-    </div>
-  </button>
-  <div class="is-mobile is-tablet btn-blue grid justify-items-center cursor-pointer">
+  <div class="btn-blue grid justify-items-center cursor-pointer">
     <font-awesome-icon class="text-2xl icon-svg" :icon="[`${typeIcon}`, `${icon}`]" />
     <div class="text-base text-btn block">   {{ textButton }}</div>
   </div>
@@ -50,24 +43,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
-.is-desktop{
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-    display: none;
-  }
-}
-.is-mobile {
-  @include min-desktop  {
-    display: none;
 
-  }
+.btn-blue{
 
-  @include mobile {
-   text-align: center;
-   .icon-svg {
-    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  .icon-svg {
+
     color: $a-blue-005BC0;
     border: 1px solid $a-blue-005BC0;
     padding: .75rem;
@@ -76,65 +56,123 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     margin-bottom: 0.5rem;
-   }
-   .text-btn {
-    color: $a-blue-005BC0;
-   }
-
-  }
-
-  @include tablet {
-    text-align: center;
-   .icon-svg {
-    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-    color: $a-blue-005BC0;
-    border: 1px solid $a-blue-005BC0;
-    padding: .75rem;
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5rem;
-   }
-   .text-btn {
-    color: $a-blue-005BC0;
-   }
-
-  }
-  }
-
-button {
-  color: $a-blue-005BC0;
-  border-radius: 50px;
-  border: 1px solid $a-blue-005BC0;
-  display: flex;
-//   justify-content: start;
-  align-items: center;
-  min-width: auto;
-  min-height: 38px;
-  padding: 0 1.65rem 0 1.75rem;
-
-  .text-ellipsis{
-  white-space: nowrap; 
-  width: 50px; 
-  overflow: hidden;
-  text-overflow: ellipsis; 
-  }
-
-  svg {
-    fill: $a-blue-005BC0;
-    margin: 0 0.5rem 0 0.5rem;
-    path {
-      fill: $a-blue-005BC0;
+    @include min-desktop {
+      padding: 1.25rem;
+      font-size: 1.75rem;
     }
-  }
+   }
+   .text-btn {
+    color: $a-blue-005BC0;
+   }
 
   &:hover {
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+    .icon-svg {
     background-color: $a-blue-005BC0;
     color: #fff;
     svg {
       transform: scale(1);
     }
+
   }
+  .text-btn {
+      transform: scale(1.25);
+   }
+  }
+  @include mobile {
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  }
+  @include tablet {
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  }
+
 }
+
+// .is-desktop{
+//   @include mobile {
+//     display: none;
+//   }
+//   @include tablet {
+//     display: none;
+//   }
+// }
+// .is-mobile {
+//   @include min-desktop  {
+//     display: none;
+
+//   }
+
+//   @include mobile {
+//    text-align: center;
+//    .icon-svg {
+//     filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+//     color: $a-blue-005BC0;
+//     border: 1px solid $a-blue-005BC0;
+//     padding: .75rem;
+//     border-radius: 0.5rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 0.5rem;
+//    }
+//    .text-btn {
+//     color: $a-blue-005BC0;
+//    }
+
+//   }
+
+//   @include tablet {
+//     text-align: center;
+//    .icon-svg {
+//     filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+//     color: $a-blue-005BC0;
+//     border: 1px solid $a-blue-005BC0;
+//     padding: .75rem;
+//     border-radius: 0.5rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 0.5rem;
+//    }
+//    .text-btn {
+//     color: $a-blue-005BC0;
+//    }
+
+//   }
+//   }
+
+// button {
+//   color: $a-blue-005BC0;
+//   border-radius: 50px;
+//   border: 1px solid $a-blue-005BC0;
+//   display: flex;
+// //   justify-content: start;
+//   align-items: center;
+//   min-width: auto;
+//   min-height: 38px;
+//   padding: 0 1.65rem 0 1.75rem;
+
+//   .text-ellipsis{
+//   white-space: nowrap; 
+//   width: 50px; 
+//   overflow: hidden;
+//   text-overflow: ellipsis; 
+//   }
+
+//   svg {
+//     fill: $a-blue-005BC0;
+//     margin: 0 0.5rem 0 0.5rem;
+//     path {
+//       fill: $a-blue-005BC0;
+//     }
+//   }
+
+//   &:hover {
+//     background-color: $a-blue-005BC0;
+//     color: #fff;
+//     svg {
+//       transform: scale(1);
+//     }
+//   }
+// }
 </style>

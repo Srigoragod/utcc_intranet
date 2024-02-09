@@ -82,8 +82,7 @@ export default defineComponent({
   padding: 2rem 1rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: start;
- 
+  // justify-content: start;
   @include mobile{
     padding: 1rem 1rem;
   }

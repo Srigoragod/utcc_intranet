@@ -94,12 +94,10 @@ export default {
     background-size: cover;
     background-position: center;
 
-    // @include mobile {
-    //  display: none;
+    @include mobile {
+     order: 4;
 
-    // }
-
- 
+    }
   }
   .item-news {
     display: flex;

@@ -122,6 +122,9 @@ export default defineComponent({
   @include tablet {
     display: none;
    }
+   @include mobile {
+    display: none;
+   }
 }
 
 .text-all-file {

@@ -76,9 +76,7 @@ export default {
   @include mobile {
       display: none;
   }
-  @include med-tablet{
-       display: none;
-    }
+
   h5 {
     font-size: 1.25rem;
     line-height: 1;

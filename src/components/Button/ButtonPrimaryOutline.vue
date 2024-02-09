@@ -63,6 +63,7 @@ export default defineComponent({
    }
    .text-btn {
     color: $a-blue-005BC0;
+    font-size: 1.25rem;
    }
 
   &:hover {

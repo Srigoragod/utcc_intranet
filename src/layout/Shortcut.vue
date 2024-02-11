@@ -7,14 +7,12 @@
       <ButtonPrimaryOutline
         v-for="(item, index) in items"
         :key="index"
-        :textButton="item.text"
         @click="clikShortCut(item.url)"
+        :textButton="item.text"
         :url="item.url"
         :typeIcon="item.typeIcon"
         :icon="item.icon"
-        :position="item.position"
         :isDisable="item.isDisable"
-        :classCustom="item.class"
       ></ButtonPrimaryOutline>
     </div>
   </div>
@@ -41,8 +39,6 @@ export default defineComponent({
         typeIcon: "fab",
         icon: "windows",
         isDisable: false,
-        position: "left",
-        class: "sm:hidden",
       },
       {
         text: "เบอร์โทรภายใน",
@@ -50,7 +46,6 @@ export default defineComponent({
         typeIcon: "fas",
         icon: "phone",
         isDisable: false,
-        position: "left",
       },
       {
         text: "Logo UTCC",
@@ -58,7 +53,6 @@ export default defineComponent({
         typeIcon: "fas",
         icon: "link",
         isDisable: false,
-        position: "right",
       }
     ]);
 

@@ -228,121 +228,141 @@
           "textName": "ระบบฐานข้อมูลประกันคุณภาพการศึกษา",
           "url": "http://esar.utcc/",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "graduation-cap"
         },
         {
           "textName": "ระบบสารสนเทศสืบค้นหนังสือเวียน",
           "url": "http://center.utcc/index.php",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "magnifying-glass-chart"
         },
         {
           "textName": "แบบฟอร์มบันทึกและหนังสือต่างๆ",
           "url": "http://department.utcc.ac.th/admin/index.php/2013-03-29-02-58-19",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "file-lines"
         },
         {
           "textName": "Less Paper",
           "url": "https://lesspaper2.affix.co.th/utcc/app/desktop",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "signature"
         },
         {
           "textName": "ระบบบันทึกใบลา",
           "url": "http://hr.utcc/webtime/default1.aspx",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "person-running"
         },
         {
           "textName": "Slip Online",
           "url": "http://hr.utcc/webslip/WebLogin.aspx",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "baht-sign"
         },
         {
           "textName": "ใบขอซื้อออนไลน์",
           "url": "",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "file-invoice-dollar"
         },
         {
           "textName": "KPI online",
           "url": "https://kpi.utcc.ac.th/",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "ranking-star"
         },
         {
           "textName": "Strategics online",
           "url": "http://plan.utcc/",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "chess-knight"
         },
         {
           "textName": "ระบบติดตามเอกสาร",
           "url": "http://dts.utcc/index.php",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "tags"
         },
         {
           "textName": "ระบบตรวจเช็คพัสดุ",
           "url": "http://utcc2.utcc.ac.th/posts/display.php",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "box"
         },
         {
           "textName": "ค้นหาเบอร์โทรศัพท์ภายใน",
           "url": "http://utcc2.utcc.ac.th/utccphone/",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "phone"
         },
         {
           "textName": "ขอใช้พื้นที่ IDE Center",
           "url": "",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "house-lock"
         },
         {
           "textName": "บันทึกข้อมูลสัญญา (กองจัดการธุรกิจ)",
           "url": "http://demodep.utcc.ac.th/rental/index.php",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "scale-balanced"
         },
         {
           "textName": "ระบบข้อมูลคุมเงินหลักประกันสัญญา",
           "url": "http://agreement.utcc/",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "sack-dollar"
         },
         {
           "textName": "ระบบตรวจสอบข้อมูลทรัพย์สิน",
           "url": "http://asset.utcc/",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "hand-holding-dollar"
         },
         {
           "textName": "ระบบกองอาคารและสิ่งแวดล้อม",
           "url": "http://opf.utcc.ac.th/",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "house"
         },
         {
           "textName": "ระบบจองห้องโถงจัดเลี้ยง (อาคาร10 ชั้น3)",
           "url": "http://ascroom.utcc.ac.th/new",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "champagne-glasses"
         },
         {
           "textName": "ระบบจองประชุมสำนักอำนวยการ",
           "url": "http://roomsys.utcc/",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "calendar-days"
         },
         {
           "textName": "ระบบจองห้อง HYFLEX",
           "url": "https://hyflex.utcc.ac.th/",
           "type":"link",
-          "subitems": []
+          "typeIcon": "fas",
+          "icon": "chalkboard-teacher"
         }
       ]
     },

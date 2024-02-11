@@ -17,8 +17,12 @@ DateMeeting<template>
           <UniversityMeeting ref="meeting" ></UniversityMeeting>
         </section>
 
-        <section id="lastupdate" class="container mx-auto hidden">
+        <section id="lastupdate" class="container mx-auto ">
           <LastUpdate ref="lastupdate" class="my-2"></LastUpdate>
+        </section>
+
+        <section id="onlineservice" class="container mx-auto ">
+          <OnlineService ref="onlineservice" class="my-2"></OnlineService>
         </section>
 
         <section id="news" class="container mx-auto">
@@ -82,6 +86,7 @@ import FloatingActionButton from "../components/Button/FloatingActionButton.vue"
 import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
 // import DividerRisk from '../layout/DividerRisk.vue';
 import MenuMobile from '../components/Menu/MenuMobile.vue';
+import OnlineService from '../layout/OnlineService.vue';
 
 
 export default defineComponent({
@@ -102,7 +107,8 @@ export default defineComponent({
     FloatingActionButton,
     ShowFlexMasonry,
     // DividerRisk,
-    MenuMobile
+    MenuMobile,
+    OnlineService
   },
   setup() {
     const route = useRoute()

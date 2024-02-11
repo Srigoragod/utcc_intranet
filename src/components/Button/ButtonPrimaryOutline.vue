@@ -1,7 +1,8 @@
 <template>
   <div>
   <div class="btn-blue grid justify-items-center cursor-pointer">
-    <font-awesome-icon class="text-2xl icon-svg" :icon="[`${typeIcon}`, `${icon}`]" />
+    <font-awesome-icon class="text-2xl icon-svg" :icon="[`${typeIcon}`, `${ !icon ? 'sailboat': icon }`]" />
+
     <div class="text-base text-btn block">   {{ textButton }}</div>
   </div>
 </div>
@@ -14,11 +15,9 @@ export default defineComponent({
   props: {
     textButton: { type: String, required: true },
     url: { type: String, required: true },
-    typeIcon: { type: String, required: true },
-    icon: { type: String, required: false },
-    isDisable: { type: Boolean, required: false, default: false },
-    position: { type: String, required: false },
-    classCustom: { type: String, required: false }
+    typeIcon: { type: String, required: false, default: 'fas' },
+    icon: { type: String, required: false, default: 'sailboat' },
+    isDisable: { type: Boolean, required: false, default: false }
   },
   setup(props,ctx){
     const url = ref(props.url)
@@ -46,8 +45,11 @@ export default defineComponent({
 
 .btn-blue{
 
-  .icon-svg {
 
+  .icon-svg {
+  //   @include min-desktop{
+  //   width: 48px;
+  // }
     color: $a-blue-005BC0;
     border: 1px solid $a-blue-005BC0;
     padding: .75rem;
@@ -59,11 +61,15 @@ export default defineComponent({
     @include min-desktop {
       padding: 1.25rem;
       font-size: 1.75rem;
+      width: 30px;
+      height: 30px;
     }
    }
    .text-btn {
     color: $a-blue-005BC0;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    // padding: 0 3rem;
+    text-align: center;
    }
 
   &:hover {

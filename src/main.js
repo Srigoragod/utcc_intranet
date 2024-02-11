@@ -13,9 +13,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faArrowRight, faPhone, faDownload, faCalendar, faLink, faList, faSailboat, faFilePdf, faFileWord, faChevronUp, faAngleRight, faCircleXmark, faFileArrowDown, faCaretDown, faCircleInfo, faGraduationCap, faGlobe, faMagnifyingGlass, faClockRotateLeft, faHashtag, faXmark, faStar, faGlasses } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faPhone, faDownload, faCalendar, faLink, faList, faSailboat, faFilePdf, faFileWord, faChevronUp, faAngleRight, faCircleXmark, faFileArrowDown, faCaretDown, faCircleInfo, faGraduationCap, faGlobe, faMagnifyingGlass, faClockRotateLeft, faHashtag, faXmark, faStar, faGlasses, faFileLines, faMagnifyingGlassChart, faSignature, faPlane, faBahtSign, faFileInvoiceDollar, faPersonRunning, faChessKnight, faTags, faBox, faHouseLock, faRankingStar, faScaleBalanced, faSackDollar, faHandHoldingDollar, faHouse, faChampagneGlasses, faCalendarDays, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons'
 import { faWindows} from '@fortawesome/free-brands-svg-icons'
-library.add(faArrowRight,faPhone,faDownload,faCalendar,faLink,faList,faSailboat,faFilePdf, faFileWord,faChevronUp,faAngleRight,faCircleXmark,faFileArrowDown,faCaretDown,faCircleInfo,faGraduationCap,faGlobe,faMagnifyingGlass,faWindows, faClockRotateLeft,faHashtag,faXmark,faStar,faGlasses)
+library.add(faArrowRight,faPhone,faDownload,faCalendar,faLink,faList,faSailboat,faFilePdf, faFileWord,faChevronUp,faAngleRight,faCircleXmark,faFileArrowDown,faCaretDown,faCircleInfo,faGraduationCap,faGlobe,faMagnifyingGlass,faWindows, faClockRotateLeft,faHashtag,faXmark,faStar,faGlasses, faFileLines, faMagnifyingGlassChart,faSignature,faPlane, faBahtSign, faFileInvoiceDollar,faPersonRunning, faChessKnight, faTags, faBox,faHouseLock,faRankingStar, faScaleBalanced,faSackDollar,faHandHoldingDollar, faHouse, faChampagneGlasses, faCalendarDays, faChalkboardTeacher)
 
 const app = createApp(App)
 

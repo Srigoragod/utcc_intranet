@@ -2,12 +2,12 @@
 <div>
   <div
     @click="onClick(item.url)"
-    class="is-desktop flex justify-self-start w-full bg-white bg-opacity-70 drop-shadow p-4 rounded-xl items-center cursor-pointer hover:drop-shadow-xl hover:text-a-blue-005BC0 hover:bg-opacity-80"
+    class="is-desktop flex justify-self-start w-full bg-white bg-opacity-70 drop-shadow py-4 px-4 rounded-xl items-center cursor-pointer hover:drop-shadow-xl hover:text-a-blue-005BC0 hover:bg-opacity-80"
   >
     <div
-      class="icon-faculty h-16 w-16 bg-white rounded-full flex items-center justify-center p-4"
+      class="icon-faculty h-[48px] w-[48px] bg-white rounded-full flex items-center justify-center p-4"
     >
-      <span class="uppercase font-black text-4xl" :class="[`${item.color}`]">{{
+      <span class="uppercase font-black text-3xl" :class="[`${item.color}`]">{{
         item.icon
       }}</span>
     </div>
@@ -15,7 +15,7 @@
       <h5>
         {{ item.name }}
       </h5>
-      <p class="text-lg text-desc">
+      <p class="text-desc">
         {{ item.description }}
       </p>
     </div>
@@ -76,6 +76,10 @@ export default {
   @include mobile {
       display: none;
   }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
 
   h5 {
     font-size: 1.25rem;
@@ -83,34 +87,36 @@ export default {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 150px;
 
+    color: $a-blue-005BC0;
     @include min-desktop{
-      font-size: 1.5rem;
-      width: 100%;
+      font-size: 1.5rem; 
+      width: 220px;
+      text-align: center;
     }
 
   }
   .text-desc {
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 150px;
-
-    @include min-desktop{
-      width: 100%;
+    text-align: center;
+    opacity: .8;
+    @include min-desktop {
+      width: 200px;
     }
   }
 
 
 
   .icon-name{
-    @include tablet{
-     padding-left: 0.5rem;
-     padding-right: 0.5rem;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5rem;
+
   }
 
 

@@ -6,7 +6,7 @@
       "isActive": true,
       "items": [
         {
-          "textName": "เมนูที่ใช้งานบ่อย",
+          "textName": "เมนูยอดนิยม",
           "url": "shortcut",
           "type": "ref",
           "subitems": [
@@ -257,7 +257,7 @@
           "url": "http://hr.utcc/webtime/default1.aspx",
           "type":"link",
           "typeIcon": "fas",
-          "icon": "person-running"
+          "icon": "plane"
         },
         {
           "textName": "Slip Online",

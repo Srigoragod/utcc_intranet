@@ -6,6 +6,9 @@
           <!-- <el-image :src="item.image"> </el-image> -->
           <h4 class="smallTop" v-html="item.smallTop"></h4>
           <h2 class="text-description w-full" v-html="item.description"></h2>
+          <p class="text-[20px] -mt-4 hidden lg:block">
+            แพลตฟอร์มนี้ถูกสร้างขึ้นเพื่อให้ความสะดวกในการเข้าถึงไฟล์เอกสารที่เกี่ยวข้องกับการทำงาน รวดเร็วและมีประสิทธิภาพ <br/>มาร่วมสร้างประสบการณ์การทำงานรูปแบบใหม่ด้วยกัน
+          </p>
         </div>
       </SplideSlide>
     </Splide>
@@ -73,12 +76,16 @@ export default {
         font-size:  2.25rem;
         padding-top: 2rem;
         margin-bottom: -1rem;
+    
     @include mobile {
         padding-top: 1.75rem;
         margin-bottom: 1.5rem;
         font-size: 1.5rem;
         margin: 0 2rem;
        }
+    @include min-desktop {
+      padding-top: 0;
+    }
   }
 
   .text-description{

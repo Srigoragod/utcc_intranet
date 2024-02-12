@@ -1,10 +1,19 @@
 <template>
   <div>
-    <TextUnderline :text="'Online Service'" :desc="''"></TextUnderline>
+    <div class="flex justify-between items-center">
+      <TextUnderline :text="'Online Service'" :desc="''"></TextUnderline>
+      <a
+        class="link link-primary link-seemore"
+        @click="clickShowMore(isShowMore)"
+      >
+        {{ textShow }}</a
+      >
+    </div>
 
-    <div class="container-onlineservice grid grid-cols-6">
-
-      <ButtonPrimaryOutline v-for="(item, index) in itemList" :key="index"        
+    <div class="container-onlineservice grid grid-cols-12">
+      <ButtonPrimaryOutline
+        v-for="(item, index) in itemList"
+        :key="index"
         :textButton="item.textName"
         @click="clikShortCut(item.url)"
         :url="item.url"
@@ -12,8 +21,18 @@
         :icon="item.icon"
         :position="item.position"
         :isDisable="item.isDisable"
-        :classCustom="item.class"></ButtonPrimaryOutline>
+        :classCustom="item.class"
+      ></ButtonPrimaryOutline>
     </div>
+  </div>
+
+  <div class="text-center block lg:hidden">
+    <a
+      class="link link-primary link-seemore"
+      @click="clickShowMore(isShowMore)"
+    >
+      {{ textShow }}</a
+    >
   </div>
 </template>
 
@@ -31,19 +50,24 @@ export default {
   components: {
     ButtonService,
     TextUnderline,
-    ButtonPrimaryOutline
+    ButtonPrimaryOutline,
   },
   setup(props) {
     const itemList = ref("");
     const jsonData = ref(menudata);
+    const isShowMore = ref(false);
+    const textShow = ref("View More");
+    const filteredData = ref(null);
+    const sortedData = ref(null);
+
     const initialData = () => {
-      const filteredData = jsonData.value.filter(
+      filteredData.value = jsonData.value.filter(
         (item) => item.url === "service"
       );
-     
-      const sortedIndexes = filteredData[0].items.slice().sort().reverse();
-   
-      itemList.value = sortedIndexes;
+      let limitationList = 12;
+      //   const sortedIndexes = filteredData[0].items.slice().sort().reverse();
+      sortedData.value = filteredData.value[0].items.slice(0, limitationList);
+      itemList.value = sortedData.value;
     };
     const handleIcon = (icon) => {
       if (icon) {
@@ -51,18 +75,38 @@ export default {
       } else {
         return "sailboat";
       }
-      console.log("icon", icon);
+    };
+    const clickShowMore = (val) => {
+      if (!val) {
+        itemList.value = filteredData.value[0].items;
+        isShowMore.value = true;
+        textShow.value = "View More";
+      } else {
+        itemList.value = sortedData.value;
+        isShowMore.value = false;
+        textShow.value = "View Less";
+      }
     };
     initialData();
     return {
       itemList,
       handleIcon,
+      textShow,
+      clickShowMore,
+      isShowMore,
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
+@import "../style/base.scss";
+.link-seemore {
+  font-size: 1.25rem;
+  @include mobile {
+    display: none;
+  }
+}
 svg {
   //   border: 1px solid #005bc0;
   background-color: #e5f1fb;
@@ -74,7 +118,13 @@ svg {
   font-size: 1.75rem;
 }
 .container-onlineservice {
-  gap: 2rem;
+  gap: 1rem;
   padding: 1rem;
+  @include mobile {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @include tablet {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
 </style>

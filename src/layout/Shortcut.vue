@@ -1,7 +1,7 @@
 <template>
   <div class="py-2 sm:px-4 md:px-0">
     <!-- <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4> -->
-    <TextUnderline class="my-8" :text="'เมนูที่ใช้งานบ่อย'"></TextUnderline>
+    <TextUnderline class="my-8" :text="'เมนูยอดนิยม'"></TextUnderline>
     <div class="show-menu">
       <!-- <ButtonBlue class="mr-8"  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :icon="item.icon" :isDisable="item.isDisable"></ButtonBlue> -->
       <ButtonPrimaryOutline
@@ -15,6 +15,7 @@
         :isDisable="item.isDisable"
       ></ButtonPrimaryOutline>
     </div>
+   
   </div>
 </template>
 
@@ -79,6 +80,10 @@ export default defineComponent({
   // justify-content: start;
   @include mobile{
     padding: 1rem 1rem;
+  }
+  @include min-desktop{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 </style>

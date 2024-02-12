@@ -66,10 +66,14 @@ export default defineComponent({
     }
    }
    .text-btn {
-    color: $a-blue-005BC0;
-    font-size: 1.125rem;
+    color: $a-gray-64748b;
     // padding: 0 3rem;
     text-align: center;
+    font-size: 1.125rem;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+    // max-width: 70px;
    }
 
   &:hover {
@@ -83,7 +87,8 @@ export default defineComponent({
 
   }
   .text-btn {
-      transform: scale(1.25);
+    color: $a-blue-005BC0;
+      // transform: scale(1.25);
    }
   }
   @include mobile {

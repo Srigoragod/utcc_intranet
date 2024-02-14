@@ -107,8 +107,7 @@ export default {
   }
   @include min-desktop{
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    justify-content: left;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 

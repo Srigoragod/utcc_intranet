@@ -3,11 +3,11 @@
     <div class="btm-nav">
 
   <button class="text-primary">
-    <font-awesome-icon class="h-5 w-5 text-xl" :icon="['fas', 'house']" />
+    <font-awesome-icon class="h-5 w-5 text-xl menu-icon" :icon="['fas', 'house']" />
     <span class="btm-nav-label">Home</span>
   </button>
   <button class="text-primary">
-    <font-awesome-icon class="h-5 w-5 text-xl"  :icon="['fas', 'address-book']" />
+    <font-awesome-icon class="h-5 w-5 text-xl menu-icon"  :icon="['fas', 'address-book']" />
     <span class="btm-nav-label">เบอร์โทรภายใน</span>
   </button>
   <!-- <button  class="text-primary">
@@ -29,7 +29,7 @@
     av-label">Menu</span>
   </button> -->
   <button  class="text-primary">
-    <font-awesome-icon class="h-5 w-5 text-xl" :icon="['fas', 'magnifying-glass']" />
+    <font-awesome-icon class="h-5 w-5 text-xl menu-icon" :icon="['fas', 'magnifying-glass']" />
     <span class="btm-nav-label">Search</span>
   </button>
 </div>
@@ -41,7 +41,17 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../../style/base.scss";
 .btm-nav-labe{
   font-size: 1.5rem;
+}
+.menu-icon {
+  background-color: $a-blue-E5F1FB;
+  padding: .75rem;
+  border-radius: 50%;
+  &.active{
+    background-color: $a-blue-005BC0;
+    color: #fff;
+  }
 }
 </style>

@@ -2,7 +2,6 @@
   <div>
   <div class="btn-blue grid justify-items-center cursor-pointer">
     <font-awesome-icon class="text-2xl icon-svg" :icon="[`${typeIcon}`, `${ !icon ? 'sailboat': icon }`]" />
-
     <div class="text-base text-btn block">   {{ textButton }}</div>
   </div>
 </div>
@@ -46,12 +45,14 @@ export default defineComponent({
 .btn-blue{
 
 
+
   .icon-svg {
   //   @include min-desktop{
   //   width: 48px;
   // }
     color: $a-blue-005BC0;
     border: 1px solid $a-blue-005BC0;
+    background-color: #fff;
     padding: .75rem;
     border-radius: 0.5rem;
     display: flex;
@@ -91,12 +92,12 @@ export default defineComponent({
       // transform: scale(1.25);
    }
   }
-  @include mobile {
-    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-  }
-  @include tablet {
-    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-  }
+  // @include mobile {
+  //   filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  // }
+  // @include tablet {
+  //   filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  // }
 
 }
 

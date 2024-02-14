@@ -21,6 +21,7 @@ export default {
         "a-gray-64748b": "#64748b",
         "a-gray-8b8d94": "#8b8d94",
         "a-gray-efeff4": "#efeff4",
+        "a-gray-DEE0F5": "#DEE0F5",
 
         //  Faclty Color
         "a-ca-0A408A": "#0A408A",

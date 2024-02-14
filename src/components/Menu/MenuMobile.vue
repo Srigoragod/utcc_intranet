@@ -2,11 +2,11 @@
   <div class="menubar bg-white lg:hidden z-40">
     <div class="btm-nav">
 
-  <button class="text-primary active">
+  <button class="text-primary">
     <font-awesome-icon class="h-5 w-5 text-xl" :icon="['fas', 'house']" />
     <span class="btm-nav-label">Home</span>
   </button>
-  <button class="text-primary active">
+  <button class="text-primary">
     <font-awesome-icon class="h-5 w-5 text-xl"  :icon="['fas', 'address-book']" />
     <span class="btm-nav-label">เบอร์โทรภายใน</span>
   </button>

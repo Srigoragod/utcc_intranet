@@ -65,7 +65,7 @@ export default {
         (item) => item.url === "service"
       );
       let limitationList = 12;
-      //   const sortedIndexes = filteredData[0].items.slice().sort().reverse();
+    //   const sortedIndexes = filteredData.value[0].items.slice().sort().reverse();
       sortedData.value = filteredData.value[0].items.slice(0, limitationList);
       itemList.value = sortedData.value;
     };

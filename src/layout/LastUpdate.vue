@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-8">
+    <div class="mt-8 ">
     <div class="text-title">
          <!-- <h4 class="font-bold text-topic-name">ไฟล์อัพเดทล่าสุด</h4> -->
          <!-- รายการเอกสารที่มีการอัพเดทล่าสุดทั้งหมด -->
@@ -7,7 +7,7 @@
          <a class="link link-primary link-seemore text-[20px] hidden" @click="clickShowMore(isShowMore)"> {{textShow}}</a>
     </div>
  
-    <div class="show-menu">
+    <div class="show-menu ">
         <ButtonPrimaryOutline
         v-for="(item, index) in itemList"
         :key="index"
@@ -19,7 +19,6 @@
         :isDisable="item.isDisable"
         >
         </ButtonPrimaryOutline>
-       
     </div>
     <!-- <div v-show="isNoData" class="noData w-full h-[40px]">
             <p class="text-a-gray-787878 text-center pt-1 text-lg">No Data</p>
@@ -108,7 +107,8 @@ export default {
   }
   @include min-desktop{
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    justify-content: left;
   }
 }
 

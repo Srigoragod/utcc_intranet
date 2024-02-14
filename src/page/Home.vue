@@ -9,17 +9,18 @@ DateMeeting<template>
         <div class="bg-hero">
           <Slider class="container mx-auto "></Slider>
         </div>
-          <section id="shortcut" class="container mx-auto" :class="[pageActive == 'shortcut' ? 'bg-blue-100' : '']">
+          <section id="shortcut" class="container mx-auto grid grid-cols-2 gap-4 " :class="[pageActive == 'shortcut' ? 'bg-blue-100' : '']">
             <Shortcut id="test" ></Shortcut>
+            <LastUpdate ref="lastupdate" class="my-2"></LastUpdate>
           </section>
-  
+
         <section id="meeting" class="container mx-auto">
           <UniversityMeeting ref="meeting" ></UniversityMeeting>
         </section>
-
+<!-- 
         <section id="lastupdate" class="container mx-auto ">
           <LastUpdate ref="lastupdate" class="my-2"></LastUpdate>
-        </section>
+        </section> -->
 
         <section id="onlineservice" class="container mx-auto ">
           <OnlineService ref="onlineservice" class="my-2"></OnlineService>
@@ -139,6 +140,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../style/base.scss";
+#shortcut {
+  @include mobile {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
 
 #footer {
   @include mini-mobile{

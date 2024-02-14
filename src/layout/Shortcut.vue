@@ -2,7 +2,7 @@
   <div class="py-2 sm:px-4 md:px-0">
     <!-- <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4> -->
     <TextUnderline class="my-8" :text="'เมนูยอดนิยม'"></TextUnderline>
-    <div class="show-menu">
+    <div class="show-menu-sc">
       <!-- <ButtonBlue class="mr-8"  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :icon="item.icon" :isDisable="item.isDisable"></ButtonBlue> -->
       <ButtonPrimaryOutline
         v-for="(item, index) in items"
@@ -72,9 +72,11 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../style/base.scss";
 
-.show-menu {
+.show-menu-sc{
   gap: 2rem;
   padding: 2rem 1rem;
+  // display: grid;
+  // grid-template-columns: repeat(1, minmax(0, 1fr));
   display: flex;
   flex-flow: row wrap;
   // justify-content: start;
@@ -83,7 +85,7 @@ export default defineComponent({
   }
   @include min-desktop{
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 </style>

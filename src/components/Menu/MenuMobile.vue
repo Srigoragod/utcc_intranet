@@ -1,5 +1,5 @@
 <template>
-  <div class="menubar bg-white lg:hidden z-40">
+  <div class="menubar w-screen bg-white lg:hidden z-40">
     <div class="btm-nav">
 
   <button class="text-primary">

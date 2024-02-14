@@ -2,24 +2,26 @@
   <div >
     <div class="flex justify-between items-center rounded-full lg:border border-slate-300 hover:border-indigo-300 px-4 bg-white" @click="clickSearch()" >
       <font-awesome-icon
-          class="text-base is-desktop"
+          class="text-base "
           :icon="['fas', 'magnifying-glass']"
         />
       <input
         type="text"
         placeholder="Search "
-        class="text-input input-sm text-xl w-full is-desktop"
+        class="text-input input-sm text-xl w-full "
  
       />
 
 
     </div>
-    <span class="btn btn-ghost lg:hidden " @click="clickSearch()">
+    <!-- <span class="btn btn-ghost lg:hidden " @click="clickSearch()">
       <font-awesome-icon
     class="h-5 w-5 is-mobile lg:hidden"
     :icon="['fas', 'magnifying-glass']"
   />
-    </span>
+    </span> -->
+
+  </div>
 
     <!-- Dialog -->
     <dialog id="search_modal" class="modal ghost">
@@ -89,7 +91,6 @@
       </div>
     </dialog>
     <!-- End Dialog -->
-  </div>
 </template>
 
 <script>

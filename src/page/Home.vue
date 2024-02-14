@@ -50,11 +50,12 @@ DateMeeting<template>
           <DividerRisk></DividerRisk>
         </section> -->
 
-        <MenuMobile></MenuMobile>
+      
         <ScrollToTopButton class="hidden md:block "></ScrollToTopButton>
       </div>
     </template>
     <template #footer>
+      <MenuMobile></MenuMobile>
       <Footer id="footer" ></Footer>
     </template>
   </MainPage>

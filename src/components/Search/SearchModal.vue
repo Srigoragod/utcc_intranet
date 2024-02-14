@@ -29,13 +29,13 @@
         </form>
      -->
         <div class="content-search">
-          <div class="top-bar">
+          <div class="top-bar my2">
               <input
                 type="text"
                 v-model="keyword"
                 @keyup="handleKeyPress"
                 placeholder="Search ..."
-                class="input input-bordered input-info w-full text-[22px]"
+                class="input input-sm input-bordered input-info w-full text-[22px]"
               />
             <!-- <button
                 @click="resetFormSearch()"

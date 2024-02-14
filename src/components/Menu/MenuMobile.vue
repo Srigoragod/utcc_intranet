@@ -45,13 +45,5 @@ export default {};
 .btm-nav-labe{
   font-size: 1.5rem;
 }
-.menu-icon {
-  background-color: $a-blue-E5F1FB;
-  padding: .75rem;
-  border-radius: 50%;
-  &.active{
-    background-color: $a-blue-005BC0;
-    color: #fff;
-  }
-}
+
 </style>

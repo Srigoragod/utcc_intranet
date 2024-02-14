@@ -290,9 +290,9 @@ export default defineComponent({
   @include mobile {
     .navbar {
       padding: 0;
-      .navbar-end {
-        display: none;
-      }
+      // .navbar-end {
+      //   display: none;
+      // }
     }
     position: relative;
     padding: 0;

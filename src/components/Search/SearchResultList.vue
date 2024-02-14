@@ -50,9 +50,9 @@
       >
           <div class="grid justify-items-stretch">
             <div class="justify-self-center">
-            <img src="../../assets/image/NoData-searchModal.png" class="w-[230px] justify-self-auto " alt="No Data"/>
+            <img src="../../assets/image/NoData-searchModal.png" class="w-[150px]" alt="No Data"/>
             <div class="text-center -mt-8">
-            <h3 class="text-a-gray-787878  mb-0 w-full opacity-70"> Sorry ... </h3>
+            <h4 class="text-a-gray-787878  my-2 w-full opacity-70"> Sorry ... </h4>
             <h6 class="text-a-gray-8b8d94 text-[24px] -mt-4 w-full">Your Search Not Found</h6>
             </div>
             </div>

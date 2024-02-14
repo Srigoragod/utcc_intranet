@@ -14,45 +14,38 @@
 
 
     </div>
-    <span class="px-4 md:hidden" @click="clickSearch()">
+    <span class="btn btn-ghost lg:hidden " @click="clickSearch()">
       <font-awesome-icon
-    class="text-2xl text-a-blue-005BC0 is-mobile lg:hidden"
+    class="h-5 w-5 is-mobile lg:hidden"
     :icon="['fas', 'magnifying-glass']"
   />
     </span>
 
     <!-- Dialog -->
     <dialog id="search_modal" class="modal ghost">
-      <div class="modal-box w-11/12 max-w-3xl">
+      <div class="modal-box">
+        <!-- <form method="dialog">
+         <button class="btn  btn-circle btn-ghost absolute right-2 top-2">✕</button>
+        </form>
+     -->
         <div class="content-search">
-          <div class="top-bar flex justify-between items-center">
-            <div class="flex justify-start items-center">
+          <div class="top-bar">
               <input
                 type="text"
                 v-model="keyword"
                 @keyup="handleKeyPress"
                 placeholder="Search ..."
-                class="text-input border input-sm  w-[35rem] rounded-full bg-opacity-40 mx-2"
+                class="input input-bordered input-info w-full text-[22px]"
               />
-              <button
+            <!-- <button
                 @click="resetFormSearch()"
-                class="btn btn-sm btn-circle btn-primary opacity-20 hover:opacity-100"
+                class="ml-2 btn btn-sm btn-circle btn-ghost  opacity-20 hover:opacity-100"
               >
                 <font-awesome-icon
                   class="text-base"
                   :icon="['fas', 'xmark']"
                 />
-              </button>
-            </div>
-            <div class="modal-action mt-0">
-              <form method="dialog">
-                <button
-                  class="btn btn-sm text-[20px] opacity-50 hover:opacity-100"
-                >
-                  ESC
-                </button>
-              </form>
-            </div>
+              </button> -->
           </div>
           <div>
             <SearchResultList
@@ -76,9 +69,23 @@
             ></SearchFavorite>
           </div>
         </div>
-        <div class="px-4 pt-8 mx-auto text-right text-base text-gray-400">
+        <div class="modal-action mt-4">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm btn-secondary mr-4 text-[18px] btn-ghost"
+                >
+                   Reset
+                </button>
+                <button
+                  class="btn btn-sm btn-primary text-[18px] opacity-50 hover:opacity-100"
+                >
+                   Close
+                </button>
+              </form>
+            </div>
+        <!-- <div class="px-4 pt-8 mx-auto text-right text-base text-gray-400">
           Search by Web Developer UTCC
-        </div>
+        </div> -->
       </div>
     </dialog>
     <!-- End Dialog -->
@@ -328,7 +335,6 @@ export default defineComponent({
 .text-input {
   @include tablet {
     font-size: 1.12rem;
-    
   }
 }
 </style>

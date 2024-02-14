@@ -45,7 +45,7 @@ export default defineComponent({
         text: "เบอร์โทรภายใน",
         url: "http://utcc2.utcc.ac.th/utccphone/",
         typeIcon: "fas",
-        icon: "phone",
+        icon: "address-book",
         isDisable: false,
       },
       {

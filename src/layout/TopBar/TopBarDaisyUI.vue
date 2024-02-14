@@ -251,20 +251,27 @@ export default defineComponent({
 .main-logo {
   width: calc(40% - 0px);
   height: auto;
+  @include mobile {
+    width: 150px;
+    margin-left: 0;
+  }
   @include tablet {
     width: 150px;
     margin-left: 0;
   }
 }
-// #topbar2 {
-//   width: 100%;
-//   @include mini-mobile {
-//     display: none;
-//   }
-//   @include mobile {
-//     display: none;
-//   }
-// }
+#topbar2 {
+  @include mobile {
+    .navbar {
+        padding: 0;
+        .navbar-end{
+          display: none;
+        }
+    }
+    position: relative;
+    padding: 0;
+  }
+}
 
 .is-desktop {
   @include mobile {

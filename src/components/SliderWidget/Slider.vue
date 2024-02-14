@@ -119,16 +119,16 @@ export default {
       border-radius: 0;
       padding: 0;
       border-radius: 1.5rem;
-      min-height: 200px;
+      min-height: 250px;
     }
 
 
 }
 
 #dashboard-slide {
-  @include mobile {
-    margin-top:4rem;
-  }
+  // @include mobile {
+  //   margin-top:4rem;
+  // }
 .splide__pagination {
 
     li  {

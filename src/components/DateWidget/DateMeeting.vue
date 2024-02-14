@@ -238,6 +238,7 @@ export default defineComponent({
     width: 80px;
     background-color: #e5f1fb;
     color: #2e3191;
+    border: 1px solid #2e3191;
     position: relative;
     text-align: center;
     top: 0;

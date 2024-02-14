@@ -1,9 +1,32 @@
 <template>
   <div>
-
     <div id="topbar2" class="glass w-full fixed top-0 z-30 pb-2 items-center">
       <div class="navbar container lg:mx-auto items-center">
         <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li class="menu-text text-a-blue-2E3191" v-for="(item,index) in menuItems"  :key="index"><a>{{ item.textName }}</a></li>
+            </ul>
+          </div>
           <a href="" class="text-xl" @click="handleGotoPage()">
             <img
               src="../../assets/logo/UTCC_Logo.png"
@@ -22,7 +45,7 @@
             {{ item.textName }}</label
           >
         </div>
-        <div class="navbar-end ">
+        <div class="navbar-end">
           <SearchModal></SearchModal>
         </div>
 
@@ -189,6 +212,7 @@ export default defineComponent({
       item.items.sort((a, b) => a.textName.localeCompare(b.textName, "th"));
 
       let data = await dividedArray(item.items);
+
       divMenu.value = data;
     };
     const dividedArray = (items) => {
@@ -240,10 +264,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
-
+.menu{
+  font-size: 1.5rem;
+}
 .menu-text {
   font-size: 1.25rem;
-  @include tablet{
+  @include tablet {
     font-size: 1.125rem;
   }
 }
@@ -263,10 +289,10 @@ export default defineComponent({
 #topbar2 {
   @include mobile {
     .navbar {
-        padding: 0;
-        .navbar-end{
-          display: none;
-        }
+      padding: 0;
+      .navbar-end {
+        display: none;
+      }
     }
     position: relative;
     padding: 0;

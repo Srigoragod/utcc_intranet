@@ -42,7 +42,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../style/base.scss";
 .collapse-title{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: normal;
     width: 95%;
 }

@@ -163,8 +163,8 @@ export default defineComponent({
     width: 100%;
 
     @include mobile {
-       padding: 0;
-       background-image: none;
+      //  padding: 0;
+      //  background-image: none;
     }
 }
 

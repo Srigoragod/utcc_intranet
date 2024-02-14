@@ -126,6 +126,9 @@ export default {
 }
 
 #dashboard-slide {
+  @include mobile {
+    margin-top:4rem;
+  }
 .splide__pagination {
 
     li  {

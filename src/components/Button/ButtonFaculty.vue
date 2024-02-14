@@ -15,7 +15,7 @@
       <h5>
         {{ item.name }}
       </h5>
-      <p class="text-desc">
+      <p class="text-desc hidden">
         {{ item.description }}
       </p>
     </div>
@@ -88,7 +88,7 @@ export default {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    color: $a-blue-005BC0;
+    color: #64748b;
     @include min-desktop{
       font-size: 1.5rem; 
       width: 220px;
@@ -138,11 +138,13 @@ export default {
       font-size: 1rem;
       line-height: normal;
       padding-top: 0.25rem;
-      color: $a-blue-005BC0;
     }
   }
 
   @include min-desktop {
+    display: none;
+  }
+  @include tablet {
     display: none;
   }
 }

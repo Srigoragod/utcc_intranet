@@ -4,7 +4,7 @@
          <!-- <h4 class="font-bold text-topic-name">ไฟล์อัพเดทล่าสุด</h4> -->
          <!-- รายการเอกสารที่มีการอัพเดทล่าสุดทั้งหมด -->
          <TextUnderline :text="'Latest Update'" :desc="''"></TextUnderline>
-         <a class="link link-primary link-seemore text-[20px]" @click="clickShowMore(isShowMore)"> {{textShow}}</a>
+         <a class="link link-primary link-seemore text-[20px] hidden" @click="clickShowMore(isShowMore)"> {{textShow}}</a>
     </div>
  
     <div class="show-menu">

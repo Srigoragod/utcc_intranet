@@ -45,14 +45,15 @@
           </div>
         </div>
         <div class="modal-action mt-4">
-              <form method="dialog">
-                <button
-                  class="btn btn-sm btn-secondary mr-4 text-[18px] btn-ghost"
+              <button
+                  class="btn btn-sm btn-secondary mr-4 text-[18px] btn-ghost opacity-50 hover:opacity-100"
+                  @click="resetFormSearch()"
                 >
                    Reset
-                </button>
+               </button>
+              <form method="dialog">
                 <button
-                  class="btn btn-sm btn-primary text-[18px] opacity-50 hover:opacity-100"
+                  class="btn btn-sm btn-primary text-[18px] "
                 >
                    Close
                 </button>

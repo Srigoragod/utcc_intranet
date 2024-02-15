@@ -28,16 +28,32 @@
     <span class="btm-n
     av-label">Menu</span>
   </button> -->
-  <button  class="text-primary">
-    <font-awesome-icon class="h-5 w-5 text-xl menu-icon" :icon="['fas', 'magnifying-glass']" />
-    <span class="btm-nav-label">Search</span>
+  <button  class="text-primary" @click="clickMenu()">
+    <font-awesome-icon class="h-5 w-5 text-xl menu-icon" :icon="['fas', 'fa-bars']" />
+    <span class="btm-nav-label">เมนู</span>
   </button>
 </div>
   </div>
 </template>
 
 <script>
-export default {};
+
+export default {
+  name:"MenuMobile",
+  setup(props, ctx){
+    const clickMenu= () =>{
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    }
+    return {
+      clickMenu
+    }
+
+  }
+};
 </script>
 
 <style lang="scss" scoped>

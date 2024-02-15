@@ -9,8 +9,8 @@
         <div class="item-news px-8 static hover:shadow-lg">
           <div class="centered-div">
             <font-awesome-icon class="text-4xl icon-svg pb-2" :icon="['fas', 'people-roof']"/>
-            <h5 class="text-title ">อบรม/สัมมนา</h5>
-            <p class="text-desc ">หมวดเอกสารที่เกี่ยวช้องกับการอบรม /สัมมนา</p>
+            <h5 class="text-title text-1-line">อบรม/สัมมนา</h5>
+            <p class="text-desc text-1-line">หมวดเอกสารที่เกี่ยวช้องกับการอบรม /สัมมนา</p>
           </div>
         </div>
       </a>
@@ -18,8 +18,8 @@
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
             <font-awesome-icon class="text-4xl icon-svg pb-2" :icon="['fas', 'user-graduate']"/>
-            <h5 class="text-title">ประชุมวิชาการ /เสนอผลงานวิชาการ</h5>
-            <p class="text-desc ">หมวดเอกสารประชุมวิชาการ / เสนอผลงานทางวิชาการ</p>
+            <h5 class="text-title text-1-line">ประชุมวิชาการ /เสนอผลงานวิชาการ</h5>
+            <p class="text-desc text-1-line">หมวดเอกสารประชุมวิชาการ / เสนอผลงานทางวิชาการ</p>
           </div>
         </div>
       </a>
@@ -28,8 +28,8 @@
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
             <font-awesome-icon class="text-4xl icon-svg pb-2" :icon="['fas', 'award']"/>
-            <h5 class="text-title">ข้อเสนอบริการวิชาการ และงานวิจัย</h5>
-            <p class="text-desc ">ขออภัย เว็บไซต์อยู๋ในระหว่างปรับปรุง</p>
+            <h5 class="text-title text-1-line">ข้อเสนอบริการวิชาการ และงานวิจัย</h5>
+            <p class="text-desc text-1-line">ขออภัย เว็บไซต์อยู๋ในระหว่างปรับปรุง</p>
           </div>
         </div>
       </span>
@@ -69,15 +69,17 @@ export default {
     padding: 0 1rem;
   }
 
-  @include min-desktop{
-    .text-title {
-    color: $a-blue-005BC0;
-    font-size: 2rem;
-  }
-  .text-desc {
-    font-size: 1.125rem;
-  }
-  }
+  // @include min-desktop{
+  //   .text-title {
+  //   color: $a-blue-005BC0;
+  //   font-size: 2rem;
+  //  }
+  // .text-desc {
+  //   font-size: 1.125rem;
+  // }
+  // }
+
+
 
   .item-img-news {
     width: 100%;
@@ -108,7 +110,7 @@ export default {
 
     @include mobile {
       height: auto;
-      padding: .5rem 0;
+      padding: 1rem ;
       // border: 1px solid transparent;
     }
     .centered-div {
@@ -126,17 +128,18 @@ export default {
         line-height: normal;
         font-size: 1.75rem;
         @include mobile {
-          font-size:  1rem;
+          font-size:  1.25rem;
         }
       }
       .text-desc{
+        font-size:  1.125rem;
         @include mobile {
-          display: none;
+          font-size:  0.75rem;
         }
       }
       .icon-svg{
         color: $a-gray-64748b;
-        margin-bottom: 1rem;
+        margin: .25rem auto;
         @include mobile{
           font-size: 1.5rem;
 

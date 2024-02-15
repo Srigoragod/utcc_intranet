@@ -26,9 +26,9 @@ DateMeeting<template>
           <News ref="news"></News>
         </section>
 
-        <!-- <section id="show_file" class="container mx-auto my-12" >
+        <section id="show_file" class="container mx-auto my-12" >
           <ShowFile ref="showfile" :items="homeList" :gridCols="'grid-cols-2'"></ShowFile>
-        </section> -->
+        </section>
 
         <section id="faculty">
           <FacultyAll></FacultyAll>

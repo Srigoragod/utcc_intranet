@@ -178,8 +178,8 @@ export default defineComponent({
     padding: 1rem;
     span{
       h5 {
-      font-size: 1.5rem !important;
-      width: 259px;
+      font-size: 1.375rem !important;
+      // width: 259px;
       }
     }
   }

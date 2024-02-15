@@ -42,10 +42,13 @@ export default {
 <style lang="scss" scoped>
 @import "../../style/base.scss";
 .collapse-title{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: normal;
     @include mobile {
           width: 95%;
+    }
+    @include mini-mobile {
+          width: 200px;
     }
     // width: 95%;
 }

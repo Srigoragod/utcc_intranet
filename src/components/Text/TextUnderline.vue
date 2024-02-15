@@ -22,7 +22,7 @@ export default {
   .text {
     font-size: 2.25rem; 
     @include mobile {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     @media tablet {
       font-size: 1.875rem;

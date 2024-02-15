@@ -1,0 +1,28 @@
+.not-scroll {
+    overflow: hidden;
+}
+.hide-scroll {
+    &::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+    }
+}
+
+@mixin tiny-scrollbar ($color: #666666, $bg: #d9d9d9) {
+    scrollbar-width: thin;
+    scrollbar-color: $bg;
+
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $bg;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color;
+        border-radius: 20px;
+    }
+}

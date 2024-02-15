@@ -1,6 +1,6 @@
 <template>
 <div tabindex="0" class="collapse collapse-arrow border border-a-blue-E5F1FB bg-white">
-  <div class="collapse-title text-a-gray-343443 custom-overflow">
+  <div class="collapse-title text-2-line text-a-gray-343443 custom-overflow">
     {{topicName}}
   </div>
   <div class="collapse-content">
@@ -44,7 +44,10 @@ export default {
 .collapse-title{
     font-size: 1.25rem;
     line-height: normal;
-    width: 95%;
+    @include mobile {
+          width: 95%;
+    }
+    // width: 95%;
 }
 // .custom-overflow{
 //     white-space: nowrap;

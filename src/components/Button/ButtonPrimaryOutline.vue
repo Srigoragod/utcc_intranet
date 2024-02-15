@@ -2,7 +2,7 @@
   <div>
   <div class="btn-blue grid justify-items-center cursor-pointer">
     <font-awesome-icon class="text-2xl icon-svg" :icon="[`${typeIcon}`, `${ !icon ? 'sailboat': icon }`]" />
-    <div class="text-base text-btn block">   {{ textButton }}</div>
+    <div class="text-base text-btn text-2-line sm:text-1-line block">   {{ textButton }}</div>
   </div>
 </div>
 </template>

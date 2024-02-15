@@ -363,4 +363,12 @@ export default defineComponent({
     text-decoration: underline;
   }
 }
+
+
+</style>
+<style scoped>
+.modal-box {
+  background-color: red;
+  max-width: 60rem;
+}
 </style>

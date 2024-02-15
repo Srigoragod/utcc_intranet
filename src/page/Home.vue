@@ -9,30 +9,26 @@ DateMeeting<template>
         <div class="bg-hero">
           <Slider class="container mx-auto "></Slider>
         </div>
-          <section id="shortcut" class="container mx-auto grid grid-cols-2 gap-4 " :class="[pageActive == 'shortcut' ? 'bg-blue-100' : '']">
-            <Shortcut id="test" ></Shortcut>
-            <LastUpdate ref="lastupdate" class="my-2"></LastUpdate>
+          <section id="shortcut" class="container mx-auto grid grid-cols-2 gap-4 py-10" :class="[pageActive == 'shortcut' ? 'bg-blue-100' : '']">
+            <Shortcut id="test" data-aos="fade-right"  ></Shortcut>
+            <LastUpdate ref="lastupdate" data-aos="fade-left" ></LastUpdate>
           </section>
 
         <section id="meeting" class="container mx-auto">
           <UniversityMeeting ref="meeting" ></UniversityMeeting>
         </section>
-<!-- 
-        <section id="lastupdate" class="container mx-auto ">
-          <LastUpdate ref="lastupdate" class="my-2"></LastUpdate>
-        </section> -->
 
-        <section id="onlineservice" class="container mx-auto ">
+        <section id="onlineservice" class="container mx-auto my-10">
           <OnlineService ref="onlineservice" class="my-2"></OnlineService>
         </section>
 
-        <section id="news" class="container mx-auto">
-          <News ref="news" class="my-2"></News>
+        <section id="news" class="container mx-auto mb-4 lg:mb-24">
+          <News ref="news"></News>
         </section>
 
-        <section id="show_file" class="container mx-auto my-12" >
+        <!-- <section id="show_file" class="container mx-auto my-12" >
           <ShowFile ref="showfile" :items="homeList" :gridCols="'grid-cols-2'"></ShowFile>
-        </section>
+        </section> -->
 
         <section id="faculty">
           <FacultyAll></FacultyAll>

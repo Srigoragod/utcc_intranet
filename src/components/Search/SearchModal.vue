@@ -1,35 +1,17 @@
 <template>
   <div >
-    <div class="flex justify-between items-center rounded-full lg:border border-slate-300 hover:border-indigo-300 px-4 bg-white" @click="clickSearch()" >
+    <div  class="btn btn-ghost"  @click="clickSearch()" >
       <font-awesome-icon
-          class="text-base "
+          class="h-5 w-5"
           :icon="['fas', 'magnifying-glass']"
         />
-      <input
-        type="text"
-        placeholder="Search "
-        class="text-input input-sm text-xl w-full "
- 
-      />
-
-
     </div>
-    <!-- <span class="btn btn-ghost lg:hidden " @click="clickSearch()">
-      <font-awesome-icon
-    class="h-5 w-5 is-mobile lg:hidden"
-    :icon="['fas', 'magnifying-glass']"
-  />
-    </span> -->
 
   </div>
 
     <!-- Dialog -->
     <dialog id="search_modal" class="modal ghost">
       <div class="modal-box">
-        <!-- <form method="dialog">
-         <button class="btn  btn-circle btn-ghost absolute right-2 top-2">✕</button>
-        </form>
-     -->
         <div class="content-search">
           <div class="top-bar my2">
               <input
@@ -39,17 +21,8 @@
                 placeholder="Search ..."
                 class="input input-sm input-bordered input-info w-full text-[22px]"
               />
-            <!-- <button
-                @click="resetFormSearch()"
-                class="ml-2 btn btn-sm btn-circle btn-ghost  opacity-20 hover:opacity-100"
-              >
-                <font-awesome-icon
-                  class="text-base"
-                  :icon="['fas', 'xmark']"
-                />
-              </button> -->
           </div>
-          <div>
+          <div class="container mx-auto ">
             <SearchResultList
               v-loading="isLoading"
               v-if="isResult"
@@ -85,9 +58,6 @@
                 </button>
               </form>
             </div>
-        <!-- <div class="px-4 pt-8 mx-auto text-right text-base text-gray-400">
-          Search by Web Developer UTCC
-        </div> -->
       </div>
     </dialog>
     <!-- End Dialog -->
@@ -336,6 +306,11 @@ export default defineComponent({
 .text-input {
   @include tablet {
     font-size: 1.12rem;
+  }
+}
+@include min-desktop {
+  .modal-box {
+    max-width: 60rem;
   }
 }
 </style>

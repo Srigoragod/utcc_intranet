@@ -169,6 +169,7 @@ export default defineComponent({
       .div-date {
         // background-color: $a-blue-2E3191;
         background-color: #e5f1fb;
+        border: 1px solid #2e3191;
         color: #2e3191;
         width: 3.25rem;
         height: fit-content;
@@ -176,7 +177,6 @@ export default defineComponent({
         align-items: start;
         padding: 0 0.375rem;
         display: grid;
-        border: 0.5rem;
         border-radius: 0.375rem;
         .text-date {
           font-size: 2.75rem;
@@ -301,6 +301,7 @@ export default defineComponent({
     );
     .div-date {
       background-color: #2e3191;
+      border: 1px solid #2e3191;
       color: #fff;
     }
   }

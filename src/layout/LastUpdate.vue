@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-8 ">
+    <div >
     <div class="text-title">
          <!-- <h4 class="font-bold text-topic-name">ไฟล์อัพเดทล่าสุด</h4> -->
          <!-- รายการเอกสารที่มีการอัพเดทล่าสุดทั้งหมด -->

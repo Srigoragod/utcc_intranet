@@ -1,14 +1,14 @@
 <template>
-  <div class="container-news " >
+  <div class="container-news" >
     <div class="py-2">
       <TextUnderline class="mt-8" :text="'ข่าวสาร'" :desc="'ข่าวสารประชาสัมพันธ์ภายนอก ระบบสารสนเทศสืบค้นหนังสือเวียน'" ></TextUnderline>
     </div>
-    <div class="grid-news">
+    <div class="grid-news px-4">
       <div data-aos="fade-right" class="item-img-news hover:cursor-not-allowed sm:hidden"></div>
       <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_seminar.php" class="">
         <div class="item-news px-8 static hover:shadow-lg">
           <div class="centered-div">
-            <img src="../assets/icon/laptop.svg" alt="" class="pl-2 mx-auto" />
+            <font-awesome-icon class="text-4xl icon-svg pb-2" :icon="['fas', 'people-roof']"/>
             <h5 class="text-title ">อบรม/สัมมนา</h5>
             <p class="text-desc ">หมวดเอกสารที่เกี่ยวช้องกับการอบรม /สัมมนา</p>
           </div>
@@ -17,25 +17,23 @@
       <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_academic.php">
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
-            <img src="../assets/icon/calendar.svg" alt="" class="pl-2 mx-auto" />
+            <font-awesome-icon class="text-4xl icon-svg pb-2" :icon="['fas', 'user-graduate']"/>
             <h5 class="text-title">ประชุมวิชาการ /เสนอผลงานวิชาการ</h5>
             <p class="text-desc ">หมวดเอกสารประชุมวิชาการ / เสนอผลงานทางวิชาการ</p>
           </div>
         </div>
       </a>
-      <!--  href="http://department.utcc.ac.th/admin/index.php/2018-03-06-08-45-13"   target="_blank" -->
+
       <span data-aos="fade-left" class="cursor-not-allowed opacity-50">
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
-            <!-- alt=""  -->
-            <img src="../assets/icon/3News.svg" class="pl-2  m-auto" />
+            <font-awesome-icon class="text-4xl icon-svg pb-2" :icon="['fas', 'award']"/>
             <h5 class="text-title">ข้อเสนอบริการวิชาการ และงานวิจัย</h5>
             <p class="text-desc ">ขออภัย เว็บไซต์อยู๋ในระหว่างปรับปรุง</p>
           </div>
         </div>
       </span>
     </div>
-    
   </div>
 </template>
 
@@ -53,7 +51,7 @@ export default {
 @import "../style/base.scss";
 
 .container-news {
-  padding: 1rem;
+
   .grid-news{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -119,7 +117,6 @@ export default {
         margin: 0.5rem auto;
         padding: 1rem;
         @include mobile {
-   
           // width: 80px;
           // height:80px;
           // background-color: red;
@@ -127,6 +124,7 @@ export default {
       }
       h5 {
         line-height: normal;
+        font-size: 1.75rem;
         @include mobile {
           font-size:  1rem;
         }
@@ -134,6 +132,14 @@ export default {
       .text-desc{
         @include mobile {
           display: none;
+        }
+      }
+      .icon-svg{
+        color: $a-gray-64748b;
+        margin-bottom: 1rem;
+        @include mobile{
+          font-size: 1.5rem;
+
         }
       }
     }

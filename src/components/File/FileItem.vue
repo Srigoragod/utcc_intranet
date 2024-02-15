@@ -43,13 +43,13 @@
               placement="top-start"
             >
               <h5
-                class="file-name text-1-line"
+                class="file-name text-2-line"
                 v-html="name"
                 :alt="name"
               ></h5>
             </el-tooltip>
           </span>
-          <h5 class="file-name  text-1-line" v-else v-html="name"></h5>
+          <h5 class="file-name  text-2-line" v-else v-html="name"></h5>
         </span>
 
         <div class="text-desc" v-html="description"></div>

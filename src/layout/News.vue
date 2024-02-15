@@ -4,7 +4,7 @@
       <TextUnderline class="mt-8" :text="'ข่าวสาร'" :desc="'ข่าวสารประชาสัมพันธ์ภายนอก ระบบสารสนเทศสืบค้นหนังสือเวียน'" ></TextUnderline>
     </div>
     <div class="grid-news px-4">
-      <div data-aos="fade-right" class="item-img-news hover:cursor-not-allowed sm:hidden"></div>
+      <div  class="item-img-news hover:cursor-not-allowed sm:hidden"></div>
       <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_seminar.php" class="">
         <div class="item-news px-8 static hover:shadow-lg">
           <div class="centered-div">
@@ -24,7 +24,7 @@
         </div>
       </a>
 
-      <span data-aos="fade-left" class="cursor-not-allowed opacity-50">
+      <span  class="cursor-not-allowed opacity-50">
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
             <font-awesome-icon class="text-4xl icon-svg pb-2" :icon="['fas', 'award']"/>

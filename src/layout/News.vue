@@ -5,7 +5,7 @@
     </div>
     <div class="grid-news px-4">
       <div  class="item-img-news hover:cursor-not-allowed sm:hidden"></div>
-      <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_seminar.php" class="">
+      <a target="_blank"  href="http://center.utcc/search_result_seminar.php" class="">
         <div class="item-news px-8 static hover:shadow-lg">
           <div class="centered-div">
             <font-awesome-icon class="text-4xl icon-svg pb-2" :icon="['fas', 'people-roof']"/>
@@ -14,7 +14,7 @@
           </div>
         </div>
       </a>
-      <a target="_blank" data-aos="fade-left" href="http://center.utcc/search_result_academic.php">
+      <a target="_blank"  href="http://center.utcc/search_result_academic.php">
         <div class="item-news static hover:shadow-lg">
           <div class="centered-div">
             <font-awesome-icon class="text-4xl icon-svg pb-2" :icon="['fas', 'user-graduate']"/>

@@ -1,6 +1,6 @@
 <template>
   <div class="container-textunderline sm:mb-0 pl-4">
-    <span class="text font-bold mb-4">{{ text }}</span>
+    <span class="text text-3xl font-bold mb-4">{{ text }}</span>
     <br />
     <p class="text-desc text-[22px] text-a-gray-64748b" v-html="desc"></p>
   </div>
@@ -20,9 +20,12 @@ export default {
 @import "../../style/base.scss";
 .container-textunderline {
   .text {
-    font-size: 1.875rem;
+    font-size: 2.25rem; 
     @include mobile {
       font-size: 1.5rem;
+    }
+    @media tablet {
+      font-size: 1.875rem;
     }
   }
 

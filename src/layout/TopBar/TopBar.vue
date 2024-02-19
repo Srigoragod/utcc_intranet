@@ -19,6 +19,7 @@
             class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           >
             <ul
+         
               class="flex flex-col py-4 md:p-0 mt-4 rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
             >
               <li v-for="(item, index) in menuItems" :key="index">

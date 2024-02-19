@@ -47,11 +47,11 @@ DateMeeting<template>
         </section> -->
 
       
-        <ScrollToTopButton class="hidden md:block "></ScrollToTopButton>
+        <ScrollToTopButton ></ScrollToTopButton>
       </div>
     </template>
     <template #footer>
-      <MenuMobile></MenuMobile>
+      <MenuMobile ></MenuMobile>
       <Footer id="footer" ></Footer>
     </template>
   </MainPage>

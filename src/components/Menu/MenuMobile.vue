@@ -1,16 +1,21 @@
 <template>
-  <div class="menubar w-screen bg-white lg:hidden z-40">
+  <div class="menubar w-screen lg:hidden z-40">
     <div class="btm-nav">
-
-  <button class="text-primary">
-    <font-awesome-icon class="h-5 w-5 text-xl menu-icon" :icon="['fas', 'house']" />
-    <span class="btm-nav-label">Home</span>
-  </button>
-  <button class="text-primary">
-    <font-awesome-icon class="h-5 w-5 text-xl menu-icon"  :icon="['fas', 'address-book']" />
-    <span class="btm-nav-label">เบอร์โทรภายใน</span>
-  </button>
-  <!-- <button  class="text-primary">
+      <button class="text-primary" @click="clickLink('home')">
+        <font-awesome-icon
+          class="h-5 w-5 text-xl menu-icon"
+          :icon="['fas', 'house']"
+        />
+        <span class="btm-nav-label">หน้าแรก</span>
+      </button>
+      <button class="text-primary" @click="clickLink('book')">
+        <font-awesome-icon
+          class="h-5 w-5 text-xl menu-icon"
+          :icon="['fas', 'address-book']"
+        />
+        <span class="btm-nav-label">เบอร์โทรภายใน</span>
+      </button>
+      <!-- <button  class="text-primary">
     <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5 text-xl text-a-blue-005BC0"
@@ -28,38 +33,67 @@
     <span class="btm-n
     av-label">Menu</span>
   </button> -->
-  <button  class="text-primary" @click="clickMenu()">
-    <font-awesome-icon class="h-5 w-5 text-xl menu-icon" :icon="['fas', 'fa-bars']" />
-    <span class="btm-nav-label">เมนู</span>
-  </button>
-</div>
+      <button class="text-primary" @click="clickMenu()">
+        <!-- <font-awesome-icon class="h-5 w-5 text-xl menu-icon" :icon="['fas', 'fa-bars']" /> -->
+        <font-awesome-icon
+          class="h-5 w-5 text-xl menu-icon"
+          :icon="['fas', 'magnifying-glass']"
+        />
+        <span class="btm-nav-label">ค้นหา</span>
+      </button>
+    </div>
   </div>
 </template>
 
 <script>
-
+import { useRouter } from "vue-router";
 export default {
-  name:"MenuMobile",
-  setup(props, ctx){
-    const clickMenu= () =>{
+  name: "MenuMobile",
+  setup(props, ctx) {
+    const router = useRouter();
+    const clickMenu = () => {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-
-    }
+    };
+    const clickLink = (link) => {
+      if (link === "home") {
+        router.push("/");
+        clickMenu();
+      } else if (link === "book") {
+        window.open("http://utcc2.utcc.ac.th/utccphone/", "_blank");
+      }
+    };
     return {
-      clickMenu
-    }
-
-  }
+      clickMenu,
+      clickLink,
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
-.btm-nav-labe{
-  font-size: 1.5rem;
-}
+.menubar {
 
+  .btm-nav {
+  background-color: #fff;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: 0 -5px 5px -5px #d1dbe5;
+  }
+  .btm-nav-label {
+    // color: #64748b;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  .menu-icon {
+    // color: #64748b;
+    background-color: #e5f1fb;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 -5px 5px -5px #d1dbe5;
+  }
+}
 </style>

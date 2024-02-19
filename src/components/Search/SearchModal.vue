@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div  class="btn btn-ghost"  @click="clickSearch()" >
+    <div  class="btn btn-ghost is-desktop"  @click="clickSearch()" >
       <font-awesome-icon
           class="h-5 w-5"
           :icon="['fas', 'magnifying-glass']"
@@ -300,6 +300,11 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../../style/base.scss";
 .is-desktop{
+  background: rgb(255 255 255 / 20%);
+  border-radius: 50%;
+  border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
   @include mobile {
     display: none;
   }

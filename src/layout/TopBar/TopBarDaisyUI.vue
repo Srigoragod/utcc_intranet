@@ -22,9 +22,15 @@
             </div>
             <ul
               tabindex="0"
-              class="menu  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li class="menu-text text-a-blue-2E3191" v-for="(item,index) in menuItems"  :key="index"><a>{{ item.textName }}</a></li>
+              <li
+                class="menu-text text-a-blue-2E3191"
+                v-for="(item, index) in menuItems"
+                :key="index"
+              >
+                <a @click="handleGotoPage()">{{ item.textName }}</a>
+              </li>
             </ul>
           </div>
           <a href="" class="text-xl" @click="handleGotoPage()">
@@ -110,6 +116,18 @@
         <!-- End Dialog -->
       </div>
     </div>
+    <ul
+      class="menu w-56 rounded-box drop-shadow-md z-10 bg-white absolute mt-1"
+      v-if="isShowMenu"
+    >
+      <li
+        class="menu-text text-a-blue-2E3191"
+        v-for="(item, index) in menuItems"
+        :key="index"
+      >
+        <a @click="handleGotoPage()">{{ item.textName }}</a>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -133,9 +151,9 @@ export default defineComponent({
     MenuItem,
     SearchModal,
   },
-  // props: {
-  //   dataList: { type: Array, required: false },
-  // },
+  props: {
+    isShowMenu: { type: Boolean, required: false, default: false },
+  },
   setup() {
     const captionList = ref(captiondata);
     const randomItemCaption = ref({
@@ -171,6 +189,7 @@ export default defineComponent({
       resetMenu();
     };
     const handleGotoPage = (url) => {
+      console.log(url);
       dataLayer.push({
         event: "click_top_menu",
         event_category: "top_menu",
@@ -256,7 +275,7 @@ export default defineComponent({
       isShowDialog,
       topicName,
       isLarge,
-      randomItemCaption,
+      randomItemCaption
     };
   },
 });
@@ -264,7 +283,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../../style/base.scss";
-.menu{
+.menu {
   font-size: 1.5rem;
 }
 .menu-text {
@@ -363,12 +382,9 @@ export default defineComponent({
     text-decoration: underline;
   }
 }
-
-
 </style>
 <style scoped>
 .modal-box {
-  background-color: red;
   max-width: 60rem;
 }
 </style>

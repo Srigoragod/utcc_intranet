@@ -99,7 +99,7 @@ export default defineComponent({
 
 
 .container-meeting{
-  padding: 1rem;
+  // padding: 1rem;
   @include min-tablet{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -118,7 +118,7 @@ export default defineComponent({
   }
 }
 .custom-grid{
-   padding: 0 1rem;
+  //  padding: 0 1rem;
    @include mobile{
     padding: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));

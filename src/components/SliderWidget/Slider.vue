@@ -125,33 +125,30 @@ export default {
 
 }
 
-#dashboard-slide {
-  // @include mobile {
-  //   margin-top:4rem;
-  // }
+</style>
+<style lang="scss">
+
 .splide__pagination {
 
-    li  {
-        // background: blue;
-        width: 16px;
-        height: 16px;
-        align-items: center;
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-    bottom: unset;
-    .splide__pagination__page {
-        opacity: unset;
-        width: 8px;
-        height: 8px;
-        background-color: #D9D9D9;
-        &.is-active {
-            width: 8px;
-            height: 8px;
-            background-color: #ffffff;
-        }
-
+li  {
+    // background: blue;
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+bottom: unset;
+.splide__pagination__page {
+    opacity: unset;
+    width: 8px;
+    height: 8px;
+    // background-color: #D9D9D9;
+    &.is-active {
+        width: 6px;
+        height: 6px;
+        background-color: #005BC0;
     }
 
 }

@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div  class="btn btn-ghost is-desktop"  @click="clickSearch()" >
+    <div  class="btn btn-ghost is-desktop "  @click="clickSearch()" >
       <font-awesome-icon
           class="h-5 w-5"
           :icon="['fas', 'magnifying-glass']"

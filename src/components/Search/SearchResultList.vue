@@ -2,7 +2,7 @@
   <div>
     <div
       v-if="result > 0"
-      class="flex justify-between items-center text-a-blue-0874D9 bg-a-blue-E5F1FB mt-4 px-6 rounded-md"
+      class="flex justify-between items-center text-a-blue-0874D9 bg-a-blue-E5F1FB mt-4 px-6 rounded-md skeleton"
     >
       <!-- <font-awesome-icon :icon="['fas', 'clock-rotate-left']" /> -->
       <div class="flex items-center">

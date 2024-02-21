@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex justify-between items-center item-file cursor-pointer hover:shadow-lg"
+    class="flex justify-between items-center item-file cursor-pointer hover:shadow-lg skeleton"
     :class="[
       isDisable
         ? 'cursor-not-allowed disabled:opacity-60 disabled'
@@ -9,6 +9,7 @@
     :disabled="isDisable"
     @click="onClickButton(icon, fileName)"
   >
+
     <div class="flex items-center w-full">
       <div class="icon-item">
         <font-awesome-icon

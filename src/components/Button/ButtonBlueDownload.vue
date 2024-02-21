@@ -65,8 +65,8 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "../../style/base.scss";
 .container-btn-blue-download {
+  background-color: #fff;
   color: #005BC0;
-  // color: #787878;
   border-radius: 10px;
   border: 1px solid #E5F1FB;
   cursor: pointer;

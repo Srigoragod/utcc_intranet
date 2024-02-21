@@ -368,14 +368,14 @@
     },
     {
       "id": 5,
-      "textName": "Risk &Bubget",
+      "textName": "Risk ",
       "url": "risk",
       "isActive": false,
       "items": []
     },
     {
       "id": 6,
-      "textName": "Functional Area",
+      "textName": "Bubget &Functional Area",
       "url": "risk",
       "isActive": false,
       "items": []

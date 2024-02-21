@@ -3,14 +3,14 @@
     <div class="flex justify-between items-center">
       <TextUnderline :text="'Online Service'" :desc="''"></TextUnderline>
       <a
-        class="link link-primary link-seemore"
+        class="link link-primary link-seemore is-desktop"
         @click="clickShowMore(isShowMore)"
       >
         {{ textShow }}</a
       >
     </div>
 
-    <div class="container-onlineservice grid grid-cols-12">
+    <div class="container-onlineservice grid grid-cols-12 is-desktop">
       <ButtonPrimaryOutline
         v-for="(item, index) in itemList"
         :key="index"
@@ -24,6 +24,25 @@
         :classCustom="item.class"
       ></ButtonPrimaryOutline>
     </div>
+
+    <el-carousel indicator-position="outside" class="is-mobile" arrow="nenver"  direction="vertical" :autoplay="false">
+    <el-carousel-item  v-for="(itemX,index) in dataForTablet" :key="index">
+     <div class="container-onlineservice grid grid-cols-6" >
+      <ButtonPrimaryOutline
+        v-for="(item, num) in itemX"
+        :key="num"
+        :textButton="item.textName"
+        @click="clikButton(item.url)"
+        :url="item.url"
+        :typeIcon="item.typeIcon"
+        :icon="item.icon"
+        :position="item.position"
+        :isDisable="item.isDisable"
+        :classCustom="item.class"
+      ></ButtonPrimaryOutline>
+    </div>
+    </el-carousel-item>
+  </el-carousel>
   </div>
 
   <div class="text-center block lg:hidden">
@@ -59,15 +78,25 @@ export default {
     const textShow = ref("View More");
     const filteredData = ref(null);
     const sortedData = ref(null);
+    const dataForTablet = ref([])
 
     const initialData = () => {
       filteredData.value = jsonData.value.filter(
         (item) => item.url === "service"
       );
       let limitationList = 12;
-    //   const sortedIndexes = filteredData.value[0].items.slice().sort().reverse();
       sortedData.value = filteredData.value[0].items.slice(0, limitationList);
       itemList.value = sortedData.value;
+
+      const setSize = 12;
+      // const dataForTablet = [];
+      for (let i = 0; i < filteredData.value[0].items.length; i += setSize) {
+        dataForTablet.value.push(filteredData.value[0].items.slice(i, i + setSize));
+      }
+
+      console.log('dataForTablet ... ');
+      console.log(JSON.stringify(dataForTablet.value,null,4));
+
     };
     const handleIcon = (icon) => {
       if (icon) {
@@ -86,6 +115,7 @@ export default {
         isShowMore.value = false;
         textShow.value = "View Less";
       }
+
     }
 
     const clikButton = (url) => {
@@ -98,7 +128,8 @@ export default {
       textShow,
       clickShowMore,
       isShowMore,
-      clikButton
+      clikButton,
+      dataForTablet
     };
   },
 };
@@ -106,11 +137,28 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/base.scss";
-.link-seemore {
-  font-size: 1.25rem;
-  @include mobile {
+
+.is-mobile {
+  @include min-desktop {
     display: none;
   }
+}
+.is-desktop {
+  @include tablet {
+    display: none;
+  }
+}
+.link-seemore {
+  font-size: 1.25rem;
+  &.is-desktop {
+    @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  }
+
 }
 svg {
   //   border: 1px solid #005bc0;
@@ -130,6 +178,7 @@ svg {
   }
   @include tablet {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 2rem;
   }
 }
 </style>

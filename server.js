@@ -12,4 +12,4 @@ app.get('/', (req, res)=>{
 })
 
 mongoose.set("strictQuery", false)
-mongoose.connect('')
+mongoose.connect('mongodb://[<username>:<password>@]hostname0<:port>[,hostname1:<port1>][,hostname2:<port2>][...][,hostnameN:<portN>]')

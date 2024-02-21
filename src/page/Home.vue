@@ -14,8 +14,8 @@ DateMeeting<template>
             <LastUpdate ref="lastupdate" data-aos="fade-left" ></LastUpdate>
           </section>
 
-        <section id="meeting" class="container mx-auto">
-          <UniversityMeeting ref="meeting" ></UniversityMeeting>
+        <section id="meeting" >
+          <UniversityMeeting ref="meeting"  class="container mx-auto"></UniversityMeeting>
         </section>
 
         <section id="onlineservice" class="container mx-auto my-10">
@@ -164,11 +164,15 @@ export default defineComponent({
     background-position: center;
     padding: 1rem 0;
     width: 100%;
-
+    border-bottom-right-radius: 4rem;
     @include mobile {
       //  padding: 0;
       //  background-image: none;
     }
+}
+
+#meeting {
+  padding: 2rem 0;
 }
 
 

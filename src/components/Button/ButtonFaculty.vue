@@ -82,8 +82,7 @@ export default {
 
 
   h5 {
-    font-size: 1.125rem;
-
+    font-size: 1rem;
     color: #64748b;
     @include min-desktop{
       font-size: 1.5rem; 

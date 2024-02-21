@@ -9,7 +9,7 @@
 
       <br/>
 
-      <TextUnderline class="mt-8" :text="'วิทยาลัย'" :desc="'เว็บไซต์วิทยาลัยทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>
+      <TextUnderline class="my-8" :text="'วิทยาลัย'" :desc="'เว็บไซต์วิทยาลัยทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>
 
       <div class="grid grid-cols-6 gap-2 showFaculty">
         <ButtonFaculty :item="item" v-for="(item,index) in sortListCollege" :key="index" ></ButtonFaculty>

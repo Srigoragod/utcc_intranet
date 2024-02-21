@@ -385,6 +385,6 @@ export default defineComponent({
 </style>
 <style scoped>
 .modal-box {
-  max-width: 60rem;
+  max-width: 75rem;
 }
 </style>

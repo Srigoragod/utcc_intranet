@@ -12,15 +12,15 @@
           "subitems": [
             {
               "textNameSub": "Microsoft 365",
-              "url": ""
+              "url": "http://mail.office365.com"
             },
             {
               "textNameSub": "เบอร์โทรภายใน",
-              "url": ""
+              "url": "http://utcc2.utcc.ac.th/utccphone/"
             },
             {
               "textNameSub": "Logo UTCC",
-              "url": ""
+              "url": "https://www.utcc.ac.th/logo/"
             }
           ]
         },
@@ -268,7 +268,7 @@
         },
         {
           "textName": "ใบขอซื้อออนไลน์",
-          "url": "",
+          "url": "http://pronweb.utcc/Account/Login?ReturnUrl=%2f",
           "type":"link",
           "typeIcon": "fas",
           "icon": "file-invoice-dollar"
@@ -310,7 +310,7 @@
         },
         {
           "textName": "ขอใช้พื้นที่ IDE Center",
-          "url": "",
+          "url": "http://utcc2.utcc.ac.th/idecenter/index2.php",
           "type":"link",
           "typeIcon": "fas",
           "icon": "house-lock"

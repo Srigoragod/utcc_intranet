@@ -11,8 +11,8 @@
         item.icon
       }}</span>
     </div>
-    <div class="icon-name pl-4 leading-none">
-      <h5>
+    <div class="icon-name pl-4 leading-none ">
+      <h5 class="text-1-line">
         {{ item.name }}
       </h5>
       <p class="text-desc hidden">
@@ -82,11 +82,7 @@ export default {
 
 
   h5 {
-    font-size: 1.25rem;
-    line-height: 1;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    font-size: 1.125rem;
 
     color: #64748b;
     @include min-desktop{

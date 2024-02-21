@@ -15,7 +15,7 @@
         v-for="(item, index) in itemList"
         :key="index"
         :textButton="item.textName"
-        @click="clikShortCut(item.url)"
+        @click="clikButton(item.url)"
         :url="item.url"
         :typeIcon="item.typeIcon"
         :icon="item.icon"
@@ -86,7 +86,11 @@ export default {
         isShowMore.value = false;
         textShow.value = "View Less";
       }
-    };
+    }
+
+    const clikButton = (url) => {
+      window.open(url, "_blank");
+    }
     initialData();
     return {
       itemList,
@@ -94,6 +98,7 @@ export default {
       textShow,
       clickShowMore,
       isShowMore,
+      clikButton
     };
   },
 };

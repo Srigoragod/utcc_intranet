@@ -2,14 +2,14 @@
   <div class="bg-section lg:bg-fixed">
     <div class="container mx-auto py-20">
       <!-- <h4 class="text-topic-name font-bold my-4">คณะ</h4> -->
-      <TextUnderline :text="'คณะ'" :desc="'เว็บไซต์คณะทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>
+      <TextUnderline :text="'คณะ'" :desc="'ทางลัดเมนูไปยังเว็บไซต์คณะ'" ></TextUnderline>
       <div  class="grid grid-cols-6 gap-2 showFaculty">
         <ButtonFaculty :item="item" v-for="(item,index) in sortListSchool" :key="index" ></ButtonFaculty>
       </div>
 
       <br/>
 
-      <TextUnderline class="my-8" :text="'วิทยาลัย'" :desc="'เว็บไซต์วิทยาลัยทั้งหมดใน มหาวิทยาลัยหอการค้าไทย'" ></TextUnderline>
+      <TextUnderline class="my-8" :text="'วิทยาลัย'" :desc="'ทางลัดเมนูไปยังเว็บไซต์วิทยาลัย'" ></TextUnderline>
 
       <div class="grid grid-cols-6 gap-2 showFaculty">
         <ButtonFaculty :item="item" v-for="(item,index) in sortListCollege" :key="index" ></ButtonFaculty>

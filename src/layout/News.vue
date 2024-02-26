@@ -1,7 +1,7 @@
 <template>
   <div class="container-news" >
     <div class="py-2">
-      <TextUnderline class="mt-8" :text="'ข่าวสาร'" :desc="'ข่าวสารประชาสัมพันธ์ภายนอก ระบบสารสนเทศสืบค้นหนังสือเวียน'" ></TextUnderline>
+      <TextUnderline class="mt-8" :text="'ข่าวสาร'" :desc="''" ></TextUnderline>
     </div>
     <div class="grid-news px-4">
       <div  class="item-img-news hover:cursor-not-allowed sm:hidden"></div>

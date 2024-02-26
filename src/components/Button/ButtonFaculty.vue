@@ -2,7 +2,7 @@
 <div>
   <div
     @click="onClick(item.url)"
-    class="is-desktop flex justify-self-start w-full bg-white bg-opacity-70 drop-shadow py-4 px-4 rounded-xl items-center cursor-pointer hover:drop-shadow-xl hover:text-a-blue-005BC0 hover:bg-opacity-80"
+    class="is-desktop flex justify-self-start w-full bg-white bg-opacity-70 lg:bg-opacity-80 drop-shadow py-4 px-4 rounded-xl items-center cursor-pointer hover:drop-shadow-xl hover:text-a-blue-005BC0 hover:bg-opacity-80"
   >
     <div
       class="icon-faculty h-[48px] w-[48px] bg-white rounded-full flex items-center justify-center p-4"

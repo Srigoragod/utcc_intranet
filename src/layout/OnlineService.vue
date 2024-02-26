@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center">
       <TextUnderline :text="'Online Service'" :desc="''"></TextUnderline>
       <a
-        class="link link-primary link-seemore is-desktop"
+        class="link link-primary link-seemore is-desktop hidden"
         @click="clickShowMore(isShowMore)"
       >
         {{ textShow }}</a
@@ -49,7 +49,7 @@
     </div>
   </div>
 
-  <div class="text-center hidden">
+  <div class="text-center ">
     <a
       class="link link-primary link-seemore"
       @click="clickShowMore(isShowMore)"
@@ -125,11 +125,11 @@ export default {
       if (!val) {
         itemList.value = filteredData.value[0].items;
         isShowMore.value = true;
-        textShow.value = "View More";
+        textShow.value = "View Less";
       } else {
         itemList.value = sortedData.value;
         isShowMore.value = false;
-        textShow.value = "View Less";
+        textShow.value = "View More";
       }
     };
 

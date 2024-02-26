@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex justify-between items-center item-file cursor-pointer hover:shadow-lg skeleton"
+    class="flex justify-between items-center item-file cursor-pointer hover:shadow-lg "
     :class="[
       isDisable
         ? 'cursor-not-allowed disabled:opacity-60 disabled'

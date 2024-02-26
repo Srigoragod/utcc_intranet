@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center">
+  <div class="flex items-center bg-white">
     <font-awesome-icon
       :icon="['fas', 'calendar']"
       class="text-[20px] mr-4 text-a-blue-005BC0"

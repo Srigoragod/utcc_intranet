@@ -1,0 +1,88 @@
+[
+   {
+      "id": 2566,
+      "topicName":"งานบริหารความเสี่ยง ปีการศึกษา 2566",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"/formrisk/2566/utcc_risk66.pdf",
+            "icon":"file",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2566",
+            "description":"Update: 2566",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"/formrisk/2566/utcc_risk66-1.xlsx",
+            "icon":"xlsx",
+            "name":"แผนบริหารความเสี่ยงและแบบติดตามและประเมินผลการบริหารความเสี่ยง",
+            "description":"Update: 2566",
+            "isDisable":false
+         },
+         {
+           "key":3,
+           "url":"/formrisk/2566/utcc_risk66-2.pdf",
+           "icon":"file",
+           "name":"ตารางการดำเนินงานบริหารความเสี่ยง",
+           "description":"Update: 2566",
+           "isDisable":false
+        },
+        {
+           "key":4,
+           "url":"/formrisk/2566/utcc_risk661.docx",
+           "icon":"file",
+           "name":"แบบฟอร์ม 1 แบบระบุความเสี่ยงและปัจจัยเสี่ยง",
+           "description":"Update: 2566",
+           "isDisable":false
+        },
+        {
+         "key":4,
+         "url":"/formrisk/2566/utcc_risk662.docx",
+         "icon":"file",
+         "name":"แบบฟอร์ม 2 การวิเคราะห์ระดับความเสี่ยง",
+         "description":"Update: 2566",
+         "isDisable":false
+        },
+        {
+         "key":4,
+         "url":"/formrisk/2566/utcc_risk663.xlsx",
+         "icon":"file",
+         "name":"แบบฟอร์ม 3 แผบริหารความเสี่ยง-ติดตามประเมินผล",
+         "description":"Update: 2566",
+         "isDisable":false
+      },
+      {
+         "key":4,
+         "url":"/formrisk/2566/utcc_risk661-1.docx",
+         "icon":"file",
+         "name":"ตัวอย่างแบบฟอร์มที่ 1 แบบระบุความเสี่ยงและปัจจัยเสี่ยง",
+         "description":"Update: 2566",
+         "isDisable":false
+      },
+      {
+         "key":4,
+         "url":"/formrisk/2566/utcc_risk662-1.docx",
+         "icon":"file",
+         "name":"ตัวอย่างแบบฟอร์มที่ 2 การวิเคราะห์ระดับความเสี่ยง",
+         "description":"Update: 2566",
+         "isDisable":false
+      },
+      {
+         "key":4,
+         "url":"/formrisk/2565/utcc_risk653-1.xlsx",
+         "icon":"file",
+         "name":"ตัวอย่างแบบฟอร์มที่ 3 แผบริหารความเสี่ยงติดตามประเมินผล",
+         "description":"Update: 2566",
+         "isDisable":false
+      }
+      ]
+   }
+ ]

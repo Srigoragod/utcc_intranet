@@ -2,7 +2,7 @@
   <div >
     <!-- Content -->
     <div class="container-file-list bg-white" :class="[isHeightFull ? 'h-full' : '']" data-aos="fade-up">
-      <h4 class="text-topic-name py-4" >
+      <h4 class="text-topic-name py-4" v-show="isShowTopic" >
         <div class="flex items-center justify-center w-full" v-html="topicName">
         </div>
       </h4>
@@ -63,7 +63,8 @@ export default defineComponent({
     isAlert: {type: Boolean, required: false},
     alertDetail: {type: Object, required: true},
     isNotHome:{tyep: Boolean, required: true, default: false},
-    isSplit:{tyep: Boolean, required: false, default: false}
+    isSplit:{tyep: Boolean, required: false, default: false},
+    isShowTopic:{tyep: Boolean, required: false, default: false},
   },
   setup(props) {
     const dataListX = ref([]);

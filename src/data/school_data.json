@@ -1,0 +1,152 @@
+[
+    {
+        "id":1,
+        "topicName":"คณะวิชา",
+        "itemList":[
+            {
+            "url":"https://ubs.utcc.ac.th/",
+            "icon":"ba",
+            "name":"คณะบริหารธุรกิจ",
+            "description":"School of Business",
+            "isDisable":false,
+            "color":"text-a-ba-FFCA0A"
+         },
+         {
+            "url":"https://accountancy.utcc.ac.th/",
+            "icon":"ac",
+            "name":"คณะบัญชี",
+            "description":"School of Accountancy",
+            "isDisable":false,
+            "color": "text-a-ac-702C90"
+         },
+         {
+           "url":"https://economics.utcc.ac.th/",
+           "icon":"ec",
+           "name":"คณะเศรษฐศาสตร์",
+           "description":"School of Economics",
+           "isDisable":false,
+           "color": "text-a-ec-EF59A0"
+        },
+        {
+           "url":"https://humanities.utcc.ac.th/",
+           "icon":"hm",
+           "name":"คณะมนุษยศาสตร์",
+           "description":"School of Humanities",
+           "isDisable":false,
+           "color": "text-a-hm-ED1923"
+        },
+        {
+         "url":"https://science.utcc.ac.th/",
+         "icon":"st",
+         "name":"คณะวิทยาศาสตร์และเทคโนโลยี",
+         "description":"School of Science & Technology",
+         "isDisable":false,
+         "color": "text-a-st-007947"
+         },
+         {
+            "url":"https://commarts.utcc.ac.th/",
+            "icon":"ca",
+            "name":"คณะนิเทศศาสตร์",
+            "description":"School of Communication Arts",
+            "isDisable":false,
+            "color":"text-a-ca-0A408A"
+         },
+         {
+            "url":"https://eng.utcc.ac.th/",
+            "icon":"en",
+            "name":"คณะวิศวกรรมศาสตร์",
+            "description":"School of Engineering",
+            "isDisable":false,
+            "color":"text-a-en-8D1C34"
+         },
+         {
+            "url":"https://law.utcc.ac.th/",
+            "icon":"lw",
+            "name":"คณะนิติศาสตร์",
+            "description":"School of Law",
+            "isDisable":false,
+            "color":"text-a-lw-818386"
+         },
+         {
+            "url":"https://tourism.utcc.ac.th/",
+            "icon":"ts",
+            "name":"คณะการท่องเที่ยวและอุตสาหกรรมบริการ",
+            "description":"School of Tourism and Services",
+            "isDisable":false,
+            "color": "text-a-st-007947"
+         },
+         {
+            "url":"https://ece.utcc.ac.th/",
+            "icon":"gs",
+            "name":"คณะการศึกษาปฐมวัย",
+            "description":"School of Early Childhood Education",
+            "isDisable":false,
+            "color": "text-a-gs-FF6801"
+         },
+         {
+            "url":"https://digitalart.utcc.ac.th/",
+            "icon":"dad",
+            "name":"คณะศิลปะและการออกแบบดิจิทัล",
+            "description":"School of Digital Arts Design",
+            "isDisable":false,
+            "color":"text-a-dad-53B5E8"
+         },
+         {
+            "url":"https://www.utcconline.com/",
+            "icon":"es",
+            "name":"คณะวิทยพัฒน์",
+            "description":"Extension School",
+            "isDisable":false,
+            "color": "text-a-es-53B5E8"
+         },
+         {
+         "url":"https://gs.utcc.ac.th/",
+         "icon":"gs",
+         "name":"บัณฑิตวิทยาลัย",
+         "description":"Graduate School",
+         "isDisable":false,
+         "color":"text-a-gs-FF6801"
+      },
+      {
+         "url":"https://ce.utcc.ac.th/",
+         "icon":"ce",
+         "name":"วิทยาลัยผู้ประกอบการ",
+         "description":"College of Entrepreneurship",
+         "isDisable":false,
+         "color": "text-a-ce-CB8E16"
+      },
+      {
+         "url":"https://ism.utcc.ac.th/",
+         "icon":"ism",
+         "name":"วิทยาลัยนานาชาติเพื่อการจัดการ",
+         "description":"International School of Management",
+         "isDisable":false,
+         "color":"text-a-ism-FFC80A"
+      },
+      {
+         "url":"https://tcism.utcc.ac.th/",
+         "icon":"tcism",
+         "name":"วิทยาลัยนานาชาติไทยจีนเพื่อการจัดการ",
+         "description":"Thai Chinese International School of Management",
+         "isDisable":false,
+         "color":"text-a-tcism-d19a3b"
+      },
+      {
+         "url":"https://cce.utcc.ac.th/",
+         "icon":"cce",
+         "name":"วิทยาลัยการศึกษาต่อเนื่อง",
+         "description":"College of Continuting Education",
+         "isDisable":false,
+         "color":"text-a-cce-CBD0E3"
+      },
+      {
+         "url":"https://harbour.space/",
+         "icon":"hsu",
+         "name":"Harbour Space",
+         "description":"Harbour.Space University",
+         "isDisable":false,
+         "color":"text-a-hsu-3D237F"
+      }
+         ]
+    }
+]

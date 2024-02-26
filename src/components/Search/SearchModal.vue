@@ -74,6 +74,7 @@ import homedata from "../../data/homedata.json";
 import documentdata from "../../data/documentdata.json";
 import departmentdata from "../../data/documentdata.json";
 import menudata from "../../data/menudata.json";
+import school_data from "../../data/school_data.json";
 
 // component
 import SearchResultList from "./SearchResultList.vue";
@@ -161,7 +162,8 @@ export default defineComponent({
       concatenatedArray.value = filterOnlineService.value.concat(
         homedata,
         documentdata,
-        departmentdata
+        departmentdata,
+        school_data
       );
 
       const newArray = new Array();

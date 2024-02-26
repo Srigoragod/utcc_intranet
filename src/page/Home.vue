@@ -42,9 +42,9 @@ DateMeeting<template>
           <ShowFlexMasonry  :topicName="'Department'" :dataName="'department'"></ShowFlexMasonry>
         </section>
 
-        <!-- <section class="container mx-auto py-20" >
-          <DividerRisk></DividerRisk>
-        </section> -->
+        <section class="container mx-auto py-20" >
+          <Risk></Risk>
+        </section> 
 
       
         <ScrollToTopButton ></ScrollToTopButton>
@@ -85,6 +85,7 @@ import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
 // import DividerRisk from '../layout/DividerRisk.vue';
 import MenuMobile from '../components/Menu/MenuMobile.vue';
 import OnlineService from '../layout/OnlineService.vue';
+import Risk from '../layout/Risk.vue';
 
 
 export default defineComponent({
@@ -106,7 +107,8 @@ export default defineComponent({
     ShowFlexMasonry,
     // DividerRisk,
     MenuMobile,
-    OnlineService
+    OnlineService,
+    Risk
   },
   setup() {
     const route = useRoute()
@@ -164,11 +166,6 @@ export default defineComponent({
     background-position: center;
     padding: 1rem 0;
     width: 100%;
-    border-bottom-right-radius: 4rem;
-    @include mobile {
-      //  padding: 0;
-      //  background-image: none;
-    }
 }
 
 #meeting {

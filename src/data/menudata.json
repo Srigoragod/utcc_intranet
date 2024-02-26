@@ -219,6 +219,20 @@
       ]
     },
     {
+      "id": 5,
+      "textName": "Risk ",
+      "url": "risk",
+      "isActive": false,
+      "items": []
+    },
+    {
+      "id": 6,
+      "textName": "Bubget &Functional Area",
+      "url": "risk",
+      "isActive": false,
+      "items": []
+    },
+    {
       "id": 4,
       "textName": "Online Service",
       "url": "service",
@@ -365,19 +379,5 @@
           "icon": "chalkboard-teacher"
         }
       ]
-    },
-    {
-      "id": 5,
-      "textName": "Risk ",
-      "url": "risk",
-      "isActive": false,
-      "items": []
-    },
-    {
-      "id": 6,
-      "textName": "Bubget &Functional Area",
-      "url": "risk",
-      "isActive": false,
-      "items": []
     }
   ]

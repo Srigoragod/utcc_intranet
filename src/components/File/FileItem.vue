@@ -174,6 +174,7 @@ export default defineComponent({
   // opacity: 0.5;
   text-align: left;
   width: 100%;
+  background-color: #fff;
 
   @include mobile {
     padding: 1rem;

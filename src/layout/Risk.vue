@@ -1,7 +1,8 @@
 <template>
   <div class="mb-4">
+
     <div class="flex justify-between items-center">
-      <div>
+      <div >
         <TextUnderline :text="topicName" :desc="''" />
       </div>
       <div>
@@ -12,8 +13,8 @@
   <div class="relative text-center" v-if="isLoading">
     <span class="loading loading-dots loading-md text-a-blue-0874D9"></span>
   </div>
-  <div v-else data-aos="fade-up" >
-    <div class="is-desktop" v-if="fileData && fileData.length > 0">
+  <div v-else >
+    <div class="is-desktop" data-aos="fade-up"  v-if="fileData && fileData.length > 0">
     <FileList
       v-for="(item, index) in fileData"
       :id="item.id"
@@ -66,7 +67,7 @@ export default defineComponent({
       setTimeout(async () => {
         fileData.value = await risk_data.filter((item) => item.id == val);
         isLoading.value = false;
-      }, 1500);
+      }, 1000);
     };
 
     handleYear();

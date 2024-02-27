@@ -75,6 +75,7 @@ import documentdata from "../../data/documentdata.json";
 import departmentdata from "../../data/documentdata.json";
 import menudata from "../../data/menudata.json";
 import school_data from "../../data/school_data.json";
+import risk_data from "../../data/risk_data.json"
 
 // component
 import SearchResultList from "./SearchResultList.vue";
@@ -163,7 +164,8 @@ export default defineComponent({
         homedata,
         documentdata,
         departmentdata,
-        school_data
+        school_data,
+        risk_data
       );
 
       const newArray = new Array();

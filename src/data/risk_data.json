@@ -200,5 +200,235 @@
             "isDisable":false
          }
       ]
+   },
+   {
+      "id": 2563,
+      "topicName":"งานบริหารความเสี่ยง ปีการศึกษา 2564",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EW4bTBbc9-pDoEv3wSqzbAQBJaqXVbm8_1zP_fXg3oZpxQ?e=o09k9q",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2563",
+            "description":"Update: 2563",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2562,
+      "topicName":"งานบริหารความเสี่ยง ปีการศึกษา 2562",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EUneQT9oCrBFlTTm5oK9f9QBeo_sNDEpLx9mj6rBilWP-Q?e=UePLNd",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EVu_Q6NDuyZHkc4nTufFdfoBr4YUrcMjrH4lJ_4XR-HSyg?e=9sqyjM",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYJEHITpuBxClxGYUoQKzCIBn8nJYJk83WRSAy22n75omQ?e=PvGG2e",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":4,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZ8IXAP7nppEr79gQsdV0rABTRuCxC6fGpAV39jzysOPfQ?e=86EfYB",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":5,
+            "url":"/formrisk/2562/utcc_risk62.pdf",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":6,
+            "url":"/formrisk/2562/utcc_risk62.pdf",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":7,
+            "url":"/formrisk/2562/utcc_risk62.pdf",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":8,
+            "url":"/formrisk/2562/utcc_risk62.pdf",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2561,
+      "topicName":"งานบริหารความเสี่ยง ปีการศึกษา 2561",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZqHEW3CU_tFigsd-5490usBpmdvHgf-wdf0PGftIrDvpw?e=EtTNhF",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2561",
+            "description":"Update: 2561",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EXQty-QiM81OqCFyFXz2w_wBGPtea2cG9v_4a82lGe-VaA?e=jJIu6E",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2561",
+            "description":"Update: 2561",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EWSRhG6T40tCpHDCtk5wOqkBAESd3NgRXORBdFA7CKvauQ?e=pNXT0n",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2561",
+            "description":"Update: 2561",
+            "isDisable":false
+         },
+         {
+            "key":4,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EejtUxeZ0z5NqpvhpjTQJswByo1YiY1HchyZ6MT56dio-g?e=e0pepG",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2561",
+            "description":"Update: 2561",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2560,
+      "topicName":"งานบริหารความเสี่ยง ปีการศึกษา 2560",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ERXq9g0v8F5FiOT9MV-UyPQB9aDD7SMBTEPF2wTh6qTDRQ?e=kzy2YU",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2560",
+            "description":"Update: 2560",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2559,
+      "topicName":"งานบริหารความเสี่ยง ปีการศึกษา 2559",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ERXq9g0v8F5FiOT9MV-UyPQB9aDD7SMBTEPF2wTh6qTDRQ?e=kzy2YU",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2559",
+            "description":"Update: 2559",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EWDlrP03ySBLrKVouxe80FkBjsDzaKDjtiTJ6IUi1d9z6A?e=wNpaqK",
+            "icon":"pdf",
+            "name":"คู่มือการบริหารความเสี่ยง",
+            "description":"Update: 2559",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ETEQEtarw0pJrz_PNp-NNGwBIjgHgSDr4JHrli-EXJ0UWA?e=Mt3Z02",
+            "icon":"pdf",
+            "name":"การบริหารความเสี่ยง มหาวิทยาลัยหอการค้าไทย",
+            "description":"Update: 2559",
+            "isDisable":false
+         },
+         {
+            "key":4,
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EfWE_ZoKYpFGsrg_S81dQP8Bt0vAXaIJBnqM25YVRtFCdQ?e=p6xWkx",
+            "icon":"docx",
+            "name":"ตัวอย่างแผนบริหารความเสี่ยงคณะบริหารธุรกิจ",
+            "description":"Update: 2559",
+            "isDisable":false
+         },
+         {
+            "key":5,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZewZ4Sbno9GgYJnxBnXh7YB81bI16GLDblrymb8wFcMzg?e=K0Rl3l",
+            "icon":"docx",
+            "name":"ตัวอย่างการระบุปัจจัยเสี่ยงและสาเหตุของคณะบริหารธุรกิจ",
+            "description":"Update: 2559",
+            "isDisable":false
+         },
+         {
+            "key":6,
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EV-arcHlxXNAhxlxCUMxsvkBuXHhaaEo3L5DQK9Bw-xRLQ?e=HnwNZA",
+            "icon":"docx",
+            "name":"ตัวอย่างเอกสารประกอบตัวบ่งชี้ความเสี่ยงการรับนักศึกษา",
+            "description":"Update: 2559",
+            "isDisable":false
+         }
+      ]
    }
  ]

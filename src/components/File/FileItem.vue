@@ -13,13 +13,18 @@
     <div class="flex items-center w-full">
       <div class="icon-item">
         <font-awesome-icon
-          v-if="icon == 'file'"
+          v-if="icon == 'pdf'"
           :icon="['fas', 'file-pdf']"
           class="text-[28px]"
         />
         <font-awesome-icon
-          v-else-if="icon == 'word'"
+          v-else-if="icon == 'docx'"
           :icon="['fas', 'file-word']"
+          class="text-[28px]"
+        />
+        <font-awesome-icon
+          v-else-if="icon == 'xlsx'"
+          :icon="['fas', 'file-excel']"
           class="text-[28px]"
         />
         <font-awesome-icon

@@ -13,76 +13,192 @@
       "itemList":[
          {
             "key":1,
-            "url":"/formrisk/2566/utcc_risk66.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EThrETWVh6JEoqxhHGVXiD8BwUBOpgNUClpsiel8WjevsA?e=e46tqj",
+            "icon":"pdf",
             "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2566",
             "description":"Update: 2566",
             "isDisable":false
          },
          {
             "key":2,
-            "url":"/formrisk/2566/utcc_risk66-1.xlsx",
+            "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EdaM3KgsScxOh46XiXoRq4cBVG9-hoDLITgU8nQI1LLOEQ?e=tziElF",
             "icon":"xlsx",
-            "name":"แผนบริหารความเสี่ยงและแบบติดตามและประเมินผลการบริหารความเสี่ยง",
+            "name":"แผนบริหารความเสี่ยงและแบบติดตามและประเมินผลการบริหารความเสี่ยง ปีการศึกษา 2565",
             "description":"Update: 2566",
             "isDisable":false
          },
          {
            "key":3,
-           "url":"/formrisk/2566/utcc_risk66-2.pdf",
-           "icon":"file",
+           "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ES6gj2usfmtOkK7eDYZeuKYBRWPpkfVdEy9w6A8uQReRPQ?e=T0IIfR",
+           "icon":"pdf",
            "name":"ตารางการดำเนินงานบริหารความเสี่ยง",
            "description":"Update: 2566",
            "isDisable":false
         },
         {
            "key":4,
-           "url":"/formrisk/2566/utcc_risk661.docx",
-           "icon":"file",
+           "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EV5_q09Z7aZOnioxckrm1jMBzGW7jupfaMKgeVCnypY1yg?e=h0ayHx",
+           "icon":"docx",
            "name":"แบบฟอร์ม 1 แบบระบุความเสี่ยงและปัจจัยเสี่ยง",
            "description":"Update: 2566",
            "isDisable":false
         },
         {
-         "key":4,
-         "url":"/formrisk/2566/utcc_risk662.docx",
-         "icon":"file",
+         "key":5,
+         "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/ESU2m7qtszFCpJ7zjmPx4FoBwayAnvg5GKOKdkXK6y0SOg?e=25J4cL",
+         "icon":"docx",
          "name":"แบบฟอร์ม 2 การวิเคราะห์ระดับความเสี่ยง",
          "description":"Update: 2566",
          "isDisable":false
         },
         {
-         "key":4,
-         "url":"/formrisk/2566/utcc_risk663.xlsx",
-         "icon":"file",
+         "key":6,
+         "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EeDCTzDtA0NDqQioFW7RFuoBWlaZMewpK8q0bSCvJ61yrA?e=g7bftx",
+         "icon":"xlsx",
          "name":"แบบฟอร์ม 3 แผบริหารความเสี่ยง-ติดตามประเมินผล",
          "description":"Update: 2566",
          "isDisable":false
       },
       {
-         "key":4,
-         "url":"/formrisk/2566/utcc_risk661-1.docx",
-         "icon":"file",
+         "key":7,
+         "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EfpQnTnSs-NLu3b695omWxQBo6VX47zeHtSt20XZ1xTkSw?e=hwkhwI",
+         "icon":"docx",
          "name":"ตัวอย่างแบบฟอร์มที่ 1 แบบระบุความเสี่ยงและปัจจัยเสี่ยง",
          "description":"Update: 2566",
          "isDisable":false
       },
       {
-         "key":4,
-         "url":"/formrisk/2566/utcc_risk662-1.docx",
-         "icon":"file",
+         "key":8,
+         "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EfXSCgxD8z9Ok3pU4xqvN3cBRVxP_MLGBEKkZmHPomgWPg?e=OGZ4qV",
+         "icon":"docx",
          "name":"ตัวอย่างแบบฟอร์มที่ 2 การวิเคราะห์ระดับความเสี่ยง",
          "description":"Update: 2566",
          "isDisable":false
       },
       {
-         "key":4,
-         "url":"/formrisk/2565/utcc_risk653-1.xlsx",
-         "icon":"file",
+         "key":9,
+         "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EeasQC0YygtJsGfpav3T5LsBFNeMZ-xCBliUqqKvp9yFNQ?e=2LiuIg",
+         "icon":"xlsx",
          "name":"ตัวอย่างแบบฟอร์มที่ 3 แผบริหารความเสี่ยงติดตามประเมินผล",
          "description":"Update: 2566",
          "isDisable":false
       }
+      ]
+   },
+   {
+      "id": 2565,
+      "topicName":"งานบริหารความเสี่ยง ปีการศึกษา 2565",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZqV_lkID0ZDrrd1PMe4gHIBf0y6RRJYuUrj8iPqf_OdFg?e=Y97CGU",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2565",
+            "description":"Update: 2565",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EYYw-p8x0mVClptgxnbLz_0BtgXU4s42CdctopTAOKIWpw?e=Y7uGL7",
+            "icon":"xlsx",
+            "name":"แผนบริหารความเสี่ยงและแบบติดตามและประเมินผลการบริหารความเสี่ยง ปีการศึกษา 2564",
+            "description":"Update: 2565",
+            "isDisable":false
+         },
+         {
+           "key":3,
+           "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ea2JZzYa2UVPkbA20PJ78xUBgM1Nwx5tds4A1ibbW1ytMQ?e=KMPWMM",
+           "icon":"pdf",
+           "name":"ตารางการดำเนินงานบริหารความเสี่ยง",
+           "description":"Update: 2565",
+           "isDisable":false
+        },
+        {
+           "key":4,
+           "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EYfG3pgxWMxCs1C8A4IO_bYB4clstKSV176BFre7K2UiYg?e=d5C8LO",
+           "icon":"docx",
+           "name":"แบบฟอร์ม 1 แบบระบุความเสี่ยงและปัจจัยเสี่ยง",
+           "description":"Update: 2565",
+           "isDisable":false
+        },
+        {
+         "key":5,
+         "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/ERmFad8LmEZBmh7m1e_hKRkB9wJ7oK_lQpSxK4FBF1vyiw?e=BDx4HF",
+         "icon":"docx",
+         "name":"แบบฟอร์ม 2 การวิเคราะห์ระดับความเสี่ยง",
+         "description":"Update: 2565",
+         "isDisable":false
+        },
+        {
+         "key":6,
+         "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EXADSgPrJ5RBsiQbALgrt74BuGDrpHEFkhlviaWDEDSmPw?e=BdbsxT",
+         "icon":"xlsx",
+         "name":"แบบฟอร์ม 3 แผบริหารความเสี่ยง-ติดตามประเมินผล",
+         "description":"Update: 2565",
+         "isDisable":false
+      },
+      {
+         "key":7,
+         "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/ETyJWKCD5_xNsUwpPvcDWNsBl3JsnvCiO1dWvIENKkp_Xw?e=7xSvNq",
+         "icon":"docx",
+         "name":"ตัวอย่างแบบฟอร์มที่ 1 แบบระบุความเสี่ยงและปัจจัยเสี่ยง",
+         "description":"Update: 2565",
+         "isDisable":false
+      },
+      {
+         "key":8,
+         "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EWNw_goF0MxCvbF0Y4jKvLcBFaUkFqTbNEMRGQ8C0rpMLA?e=U7LAkh",
+         "icon":"docx",
+         "name":"ตัวอย่างแบบฟอร์มที่ 2 การวิเคราะห์ระดับความเสี่ยง",
+         "description":"Update: 2565",
+         "isDisable":false
+      },
+      {
+         "key":9,
+         "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/Ed5Rizfd4E1MsB9m_Zlb07sBvOFkDGElGDGQd8KyFHAyNw?e=2gteHa",
+         "icon":"xlsx",
+         "name":"ตัวอย่างแบบฟอร์มที่ 3 แผบริหารความเสี่ยงติดตามประเมินผล",
+         "description":"Update: 2565",
+         "isDisable":false
+      }
+      ]
+   },
+   {
+      "id": 2564,
+      "topicName":"งานบริหารความเสี่ยง ปีการศึกษา 2564",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EWqoBcHNan9IvwzPXSPATbMBPpOAgT7VTDyT2p81yiR0EQ?e=INLeOC",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2564",
+            "description":"Update: 2564",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EcbBwnLnQHlNmZCJmU59twYBNu-vo35kVkAzBS3hikZJjQ?e=qMWWwo",
+            "icon":"pdf",
+            "name":"แผนบริหารความเสี่ยงและแบบติดตามและประเมินผลการบริหารความเสี่ยง ปีการศึกษา 2564",
+            "description":"Update: 2565",
+            "isDisable":false
+         }
       ]
    }
  ]

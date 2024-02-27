@@ -32,10 +32,11 @@ export default {
     };
 
     const initialData = () => {
-      selectedYear.value = currentYear + 543;
+      selectedYear.value = currentYear + (543-1);
       for (let year = currentYear; year >= startYear; year--) {
-        years.value.push(year + 543);
+        years.value.push(year +(543-1));
       }
+      ctx.emit("on-chenge", selectedYear.value);
     };
     initialData();
     return {

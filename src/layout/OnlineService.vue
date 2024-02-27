@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center">
       <TextUnderline :text="'Online Service'" :desc="''"></TextUnderline>
       <a
-        class="link link-primary link-seemore is-desktop hidden"
+        class="link link-primary link-seemore is-desktop "
         @click="clickShowMore(isShowMore)"
       >
         {{ textShow }}</a
@@ -49,7 +49,7 @@
     </div>
   </div>
 
-  <div class="text-center ">
+  <div class="text-center hidden">
     <a
       class="link link-primary link-seemore"
       @click="clickShowMore(isShowMore)"

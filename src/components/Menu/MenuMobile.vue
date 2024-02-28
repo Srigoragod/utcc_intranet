@@ -13,7 +13,7 @@
           class="h-5 w-5 text-xl menu-icon"
           :icon="['fas', 'address-book']"
         />
-        <span class="btm-nav-label">เบอร์โทรภายใน</span>
+        <span class="btm-nav-label">เบอร์ภายใน</span>
       </button>
       <!-- <button  class="text-primary">
     <svg
@@ -82,18 +82,14 @@ export default {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   box-shadow: 0 -5px 5px -5px #d1dbe5;
+  padding: 0.25rem auto;
   }
   .btm-nav-label {
-    // color: #64748b;
+    color: #64748b !important;
     font-size: 1.125rem;
-    margin-bottom: 0.5rem;
   }
   .menu-icon {
-    // color: #64748b;
-    background-color: #e5f1fb;
-    padding: 1rem;
-    border-radius: 50%;
-    box-shadow: 0 -5px 5px -5px #d1dbe5;
+    color: #64748b;
   }
 }
 </style>

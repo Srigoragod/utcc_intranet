@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 export default {
   name: "MenuSortByYear",
   emits: ['on-chenge'],
@@ -36,9 +36,13 @@ export default {
       for (let year = currentYear; year >= startYear; year--) {
         years.value.push(year +(543-1));
       }
-      ctx.emit("on-chenge", selectedYear.value);
+
     };
-    initialData();
+    onMounted(() => {
+      initialData();
+      ctx.emit("on-chenge", selectedYear.value);
+    })
+
     return {
       selectedYear,
       years,

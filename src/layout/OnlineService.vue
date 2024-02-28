@@ -110,9 +110,6 @@ export default {
           filteredData.value[0].items.slice(i, i + setSize)
         );
       }
-
-      console.log("dataForTablet ... ");
-      console.log(JSON.stringify(dataForTablet.value, null, 4));
     };
     const handleIcon = (icon) => {
       if (icon) {

@@ -1,48 +1,66 @@
 <template>
   <div class="mb-4">
-
-    <div class="flex justify-between items-center">
-      <div >
-        <TextUnderline :text="topicName" :desc="''" />
-      </div>
-      <div>
-        <MenuSortByYear @on-chenge="handleYear"></MenuSortByYear>
-      </div>
-    </div>
+    <el-tabs class="text-xl" v-model="activeName" @tab-click="handleClick">
+      <el-tab-pane label="งานบริหารความเสี่ยง" name="first">
+        <div class="flex justify-between items-center mb-4">
+            <span class="text-2xl">ประจำปีการศึกษา</span>
+            <MenuSortByYear @on-chenge="handleYear"></MenuSortByYear>
+        </div>
+        <div class="relative text-center" v-if="isLoading">
+          <span
+            class="loading loading-dots loading-md text-a-blue-0874D9"
+          ></span>
+        </div>
+        <div v-else>
+          <div
+            class="is-desktop"
+            data-aos="fade-up"
+            v-if="fileData && fileData.length > 0"
+          >
+            <FileList
+              v-for="(item, index) in fileData"
+              :id="item.id"
+              :key="index"
+              class="break-inside-avoid first:mt-0"
+              :topicName="item.topicName"
+              :isAlert="item.isAlert"
+              :alertDetail="item.alertDetail"
+              :dataList="item.itemList"
+              :isHeightFull="item.isFull"
+              :isShowTopic="false"
+            ></FileList>
+          </div>
+          <div
+            v-else
+            class="p-4 text-xl relative text-center rounded-lg bg-no-data text-a-gray-787878"
+          >
+            No Data
+          </div>
+        </div>
+      </el-tab-pane>
+      <el-tab-pane label="แบบฟอร์มบริหารความเสี่ยง" name="second">
+        <FileList
+              v-for="(item, index) in filedataForm"
+              :id="item.id"
+              :key="index"
+              class="break-inside-avoid first:mt-0"
+              :topicName="item.topicName"
+              :isAlert="item.isAlert"
+              :alertDetail="item.alertDetail"
+              :dataList="item.itemList"
+              :isHeightFull="item.isFull"
+              :isShowTopic="false"
+            ></FileList>
+      </el-tab-pane>
+    </el-tabs>
   </div>
-  <div class="relative text-center" v-if="isLoading">
-    <span class="loading loading-dots loading-md text-a-blue-0874D9"></span>
-  </div>
-  <div v-else >
-    <div class="is-desktop" data-aos="fade-up"  v-if="fileData && fileData.length > 0">
-    <FileList
-      v-for="(item, index) in fileData"
-      :id="item.id"
-      :key="index"
-      class="break-inside-avoid first:mt-0"
-      :topicName="item.topicName"
-      :isAlert="item.isAlert"
-      :alertDetail="item.alertDetail"
-      :dataList="item.itemList"
-      :isHeightFull="item.isFull"
-      :isNotHome="isNotHome"
-      :isShowTopic="true"
-    ></FileList>
-  </div>
-  <div
-    v-else
-    class="p-4 text-xl relative text-center rounded-lg bg-no-data text-a-gray-787878"
-  >
-    No Data
-  </div>
-  </div>
-
 </template>
 <script>
 import { ref, defineComponent } from "vue";
 
 // data
 import risk_data from "../data/risk_data.json";
+import risk_data_form from "../data/risk_data_form.json"
 
 // component
 import TextUnderline from "../components/Text/TextUnderline.vue";
@@ -59,11 +77,14 @@ export default defineComponent({
   setup() {
     const isLoading = ref(true);
     const fileData = ref(risk_data);
+    const filedataForm = ref(risk_data_form)
     const topicName = ref("งานบริหารความเสี่ยง");
     const year = ref(null);
 
+    const activeName = ref("first");
+
     const handleYear = (val) => {
-       isLoading.value = true;
+      isLoading.value = true;
       setTimeout(async () => {
         fileData.value = await risk_data.filter((item) => item.id == val);
         isLoading.value = false;
@@ -72,11 +93,18 @@ export default defineComponent({
 
     handleYear();
 
+    const handleClick = () => {
+      console.log("handleClick .. ", activeName);
+    };
+
     return {
       topicName,
       handleYear,
       fileData,
-      isLoading
+      isLoading,
+      activeName,
+      handleClick,
+      filedataForm
     };
   },
 });
@@ -88,5 +116,20 @@ export default defineComponent({
     rgba(217, 217, 217, 0.2) 5.41%,
     rgba(239, 245, 249, 0.2) 96.08%
   );
+}
+</style>
+<style lang="css">
+.el-tabs__item {
+  font-size: 2rem;
+  color: #64748b;
+}
+.el-tabs__item.is-active{
+ color: #2e3191;
+}
+.el-tabs__item:hover {
+  color: #0874D9;
+}
+.el-tabs__active-bar{
+  background-color: #2e3191;
 }
 </style>

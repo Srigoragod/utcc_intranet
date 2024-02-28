@@ -62,7 +62,7 @@ export default defineComponent({
     isHeightFull: { type: Boolean, required: false },
     isAlert: {type: Boolean, required: false},
     alertDetail: {type: Object, required: true},
-    isNotHome:{tyep: Boolean, required: true, default: false},
+    isNotHome:{tyep: Boolean, required: false, default: false},
     isSplit:{tyep: Boolean, required: false, default: false},
     isShowTopic:{tyep: Boolean, required: false, default: false},
   },

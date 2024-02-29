@@ -16,7 +16,6 @@
         <div v-else>
           <div
             class="is-desktop"
-            data-aos="fade-up"
             v-if="fileData && fileData.length > 0"
           >
             <FileList

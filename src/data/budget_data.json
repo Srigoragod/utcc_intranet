@@ -15,13 +15,13 @@
             "key":1,
             "url":"http://budget.utcc/2023/",
             "icon":"link",
-            "name":"ระบบสารสนเทศจัดการงบประมาณ 2023",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2566",
             "description":"",
             "isDisable":false
          },
          {
             "key":2,
-            "url":"/formbudget/2566/1_strategic.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EXoFJ6-vUNxPl_vxYw4ZxgsBMBA_iimmJxAjyJWL09b-QQ?e=GR5iyy",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์ มกค.ปีการศึกษา 2566",
             "description":"Update: 2566",
@@ -29,7 +29,7 @@
          },
          {
            "key":3,
-           "url":"/formbudget/2566/4_budget.pdf",
+           "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ET39YPW-w8JOqOKLI4eoOYIBsgJpRcDhmrORPnb2a49zUg?e=RD9z6y",
            "icon":"pdf",
            "name":"แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2566",
            "description":"Update: 2566",
@@ -45,7 +45,7 @@
         },
         {
          "key":5,
-         "url":"/formbudget/2566/6_calendar.pdf",
+         "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EWAXgLmS2UBNuc5h7aGc7mgBHzEcvi-KlE52MN5GKKKlUQ?e=qGnS9s",
          "icon":"pdf",
          "name":"ตารางกลั่นกรองงบประมาณ ปีการศึกษา 2566 (update 16 พ.ค. 2566 )",
          "description":"Update: 2566",
@@ -53,7 +53,7 @@
         },
         {
          "key":6,
-         "url":"/formbudget/2566/3_budget.pdf",
+         "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EcRjvp-gR0FCmbC80w3fnloB3Dkxt3rpQTEayh9rlgLtKg?e=QrBXwJ",
          "icon":"pdf",
          "name":"แนวทางในการกลั่นกรองงบประมาณ ปีการศึกษา 2566 (เพิ่มเติม)",
          "description":"Update: 2566",
@@ -61,7 +61,7 @@
       },
       {
          "key":7,
-         "url":"/formbudget/2566/5_budget.pdf",
+         "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EX5vmrjEwIVAlEsTqoY-7F8B55fZk8uqivOvoTqzywy3oQ?e=8HDOLa",
          "icon":"pdf",
          "name":"แนวทางการจัดทำแผนกลยุทธ์และแผนงบประมาณ ปีการศึกษา 2566",
          "description":"Update: 2566",
@@ -69,7 +69,7 @@
       },
       {
          "key":8,
-         "url":"/formbudget/2566/7_budget.pdf",
+         "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EWxjyX9XXelGtp1DVd0gEPwBgi_MncNlVWvGxzwsWsoieg?e=dfqMcN",
          "icon":"pdf",
          "name":"แนวทางการพิจารณางบประมาณปีการศึกษา 2566 (B/C)",
          "description":"Update: 2566",
@@ -77,7 +77,7 @@
       },
       {
          "key":9,
-         "url":"/formbudget/2566/7_form-BC.xlsx",
+         "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EePs0WGi7yFCmRbS1Lr4ShoBd8sOiD_Dn0eQ0RIAbi4JHQ?e=mXFbzl",
          "icon":"xlsx",
          "name":"แบบฟอร์มตัวอย่างการคำนวณหาอัตรา-BC",
          "description":"Update: 2566",
@@ -101,13 +101,13 @@
             "key":1,
             "url":"http://budget.utcc/2022",
             "icon":"link",
-            "name":"ระบบสารสนเทศจัดการงบประมาณ 2022",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2565",
             "description":"",
             "isDisable":false
          },
          {
             "key":2,
-            "url":"formbudget/2565/1_strategic65.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ES0s-nGQZ8hMj3Zvm0lOrWwBWJXpSIxqpwiZN1or7Z13vQ?e=RnoJDz",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์ มกค.ปีการศึกษา 2565",
             "description":"Update: 2565",
@@ -115,7 +115,7 @@
          },
          {
            "key":3,
-           "url":"formbudget/2565/3_budget65.pdf",
+           "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ecsrei5Vgz5Dm5NPsAM296kBvqAiGZIdxz--1Osa0-knpQ?e=11Prdf",
            "icon":"pdf",
            "name":"แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2565",
            "description":"Update: 2565",
@@ -123,7 +123,7 @@
         },
         {
            "key":4,
-           "url":"formbudget/2565/3_calendar65.pdf",
+           "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYM25rMNxsxNoJvGgEveN_UBA4hUkhIBEijaoOW6kZUDbA?e=MdG5yQ",
            "icon":"pdf",
            "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์และแผนงบประมาณ ปีการศึกษา 2565",
            "description":"Update: 2565",
@@ -131,7 +131,7 @@
         },
         {
          "key":5,
-         "url":"formbudget/2565/4_calendar65.pdf",
+         "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ee7ccIUlMqhCukqzLCA8b6kBbGnK_1p5BjkWExpJqG1VSA?e=gVRXww",
          "icon":"pdf",
          "name":"ตารางกลั่นกรองงบประมาณ ปีการศึกษา 2565",
          "description":"Update: 2565",
@@ -139,7 +139,7 @@
         },
         {
          "key":6,
-         "url":"formbudget/2565/6_budget65.pdf",
+         "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ESaXRW7D4vhMkOjERE01OMIB6MmrGfw3EUETWTPs9ZH1oA?e=5lCUgn",
          "icon":"pdf",
          "name":"แนวทางการพิจารณางบประมาณปีการศึกษา 2565 (B/C)",
          "description":"Update: 2565",
@@ -147,7 +147,7 @@
       },
       {
          "key":7,
-         "url":"formbudget/2565/8_budget65.pdf",
+         "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EcHY8aZe-fZDiX7F4SHCg7YBrNV9s7Zay1M-Lef9U4znlw?e=dzmoWd",
          "icon":"pdf",
          "name":"แนวทางในการกลั่นกรองงบประมาณ ปีการศึกษา 2565 (เพิ่มเติม)",
          "description":"Update: 2565",
@@ -155,7 +155,7 @@
       },
       {
          "key":8,
-         "url":"formbudget/2565/7_budget65.pdf",
+         "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EQWm2dUtYM9CiPktZaR-nLUBsSSN-MrGJT2dMIOx72gbQQ?e=mGi2Gz",
          "icon":"pdf",
          "name":"แนวทางการจัดทำแผนกลยุทธ์และแผนงบประมาณ ปีการศึกษา 2565",
          "description":"Update: 2565",
@@ -163,7 +163,7 @@
       },
       {
          "key":9,
-         "url":"formbudget/2565/7_form-BC.xlsx",
+         "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EXsAv8J_639HmGPYZVe4zlQBTQD1aPU5MU4OUWksoFCvpA?e=V0Mzss",
          "icon":"xlsx",
          "name":"แบบฟอร์มตัวอย่างการคำนวณหาอัตรา-BC",
          "description":"Update: 2565",
@@ -171,7 +171,7 @@
       },
       {
          "key":10,
-         "url":"formbudget/2565/0_budget65.pdf",
+         "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ES06WBgIe1lHvv9c6OxzRZcB6XpBc-XxLIuRnVXfBnWGvw?e=l8kWYZ",
          "icon":"pdf",
          "name":"คำสั่งแต่งตั้งคณะกรรมการกลั่นกรอง ปีการศึกษา 2565",
          "description":"Update: 2565",
@@ -201,7 +201,7 @@
          },
          {
             "key":2,
-            "url":"formbudget/2564/1_strategic64.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EfELij8EKRZAjNjhLIfWu1YBqeCN44AR2CgmHauzXMOjdg?e=M97Xcw",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์ มกค.ปีการศึกษา 2564 (ฉบับแก้ไข)",
             "description":"Update: 2564",
@@ -209,7 +209,7 @@
          },
          {
             "key":3,
-            "url":"formbudget/2564/2_strategic64_form.doc",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EXke2FQ6eO1NnYd3W-yuC3cBPGeVqnWLoKzJd3KGgiUkLg?e=LIru1k",
             "icon":"docx",
             "name":"แบบฟอร์มแผนกลยุทธ์และแผนงบประมาณ คณะวิชา/ฝ่าย ปีการศึกษา 2564",
             "description":"Update: 2564",
@@ -217,7 +217,7 @@
          },
          {
             "key":4,
-            "url":"formbudget/2564/3_budget64.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EUz0-Knt2JxBqJ9vDnnobWkB2YDeq00l1TX8eJZlq_sQYQ?e=Gte2IH",
             "icon":"pdf",
             "name":"แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2564",
             "description":"Update: 2564",
@@ -225,7 +225,7 @@
          },
          {
             "key":5,
-            "url":"formbudget/2564/3_calendar64.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EUz0-Knt2JxBqJ9vDnnobWkB2YDeq00l1TX8eJZlq_sQYQ?e=svxLdM",
             "icon":"pdf",
             "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์และแผนงบประมาณ ปีการศึกษา 2564",
             "description":"Update: 2564",
@@ -233,7 +233,7 @@
          },
          {
             "key":6,
-            "url":"formbudget/2564/4_calendar64.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ed4slW-pDgdJggkc3wq4tbUBqrV-TNSdC6KbcK2vnL6NpA?e=HNzaoV",
             "icon":"pdf",
             "name":"ตารางกลั่นกรองงบประมาณ ปีการศึกษา 2564",
             "description":"Update: 2564",
@@ -241,7 +241,7 @@
          },
          {
             "key":7,
-            "url":"formbudget/2564/5_budget64.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZk8o26n5XNNgQ5QIScjRgYB5m8Xd3jFEo7He3lg_hQYbQ?e=05I4Px",
             "icon":"pdf",
             "name":"ชี้แจงการจัดตั้งงบประมาณ ปีการศึกษา 2564",
             "description":"Update: 2564",
@@ -249,7 +249,7 @@
          },
          {
             "key":8,
-            "url":"formbudget/2564/6_budget64.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ESF2cDuI4U5Cs6Ycq2dLYwIB2Cd6of3swUFejqSJXG2N0w?e=helriO",
             "icon":"pdf",
             "name":"แนวทางการพิจารณางบประมาณปีการศึกษา 2564 (แบบใหม่)",
             "description":"Update: 2564",
@@ -257,7 +257,7 @@
          },
          {
             "key":9,
-            "url":"formbudget/2564/7_form-BC.xlsx",
+            "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EXPccVS7DzpPvmDiNZQ6DSYBmR-JrGsIkx3TBffDRstKug?e=BLaJnJ",
             "icon":"xlsx",
             "name":"แบบฟอร์มตัวอย่างการคำนวณหาอัตรา-BC",
             "description":"Update: 2564",
@@ -281,13 +281,13 @@
             "key":1,
             "url":"http://budget.utcc/2020",
             "icon":"link",
-            "name":"ระบบสารสนเทศจัดการงบประมาณ 2020",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2563",
             "description":"Update: 2563",
-            "isDisable":false
+            "isDisable": true
          },
          {
             "key":2,
-            "url":"formbudget/2563/strategic63.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ERSeUIjBq3ZPuh1crbz4PiQB6-y3cWI5pi6dvUP3BcqBVg?e=RRamFD",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์ มกค. ปีการศึกษา 2563 (1 ปี)",
             "description":"Update: 2563",
@@ -295,7 +295,7 @@
          },
          {
             "key":3,
-            "url":"formbudget/2563/strategic63_form.doc",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EUX-3j018mRGgF4G3Qk2yt4BRfRpfT8nO-rwW28uTgkVWA?e=czeIgx",
             "icon":"docx",
             "name":"แบบฟอร์มแผนกลยุทธ์และแผนงบประมาณ คณะวิชา/ฝ่าย ปีการศึกษา 2563",
             "description":"Update: 2563",
@@ -303,7 +303,7 @@
          },
          {
             "key":4,
-            "url":"formbudget/2563/budget63_3.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ETKZvVXpwRZBr3EGYyJxr4oBVLFlojzs_tcIH9HHJ9GYmA?e=83nQfA",
             "icon":"pdf",
             "name":" แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2563",
             "description":"Update: 2563",
@@ -311,7 +311,7 @@
          },
          {
             "key":5,
-            "url":"formbudget/2563/budget63_2.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EVjHA_1ChjNKiEYR65lgWXUBpEcQcsmnCDFN4o40lardbg?e=0alCvS",
             "icon":"pdf",
             "name":"แนวทางการพิจารณาแนวทางที่ปรับใหม่ ปี 2563",
             "description":"Update: 2563",
@@ -319,7 +319,7 @@
          },
          {
             "key":6,
-            "url":"formbudget/2563/form-BC.xlsx",
+            "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/Ecl-GoNfA35CmlaAkcOn_e8BNiEs2tx6HZwNLkJYe9uT6g?e=KPalmu",
             "icon":"xlsx",
             "name":"แบบฟอร์มตัวอย่างการคำนวณหาอัตรา-BC",
             "description":"Update: 2563",
@@ -327,7 +327,7 @@
          },
          {
             "key":7,
-            "url":"formbudget/2563/budget63_1.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZWqjEcgJBFDvlyGtC_zSjoB8UXZUR0DyUrxaJF-L_t2NA?e=Lk4wBJ",
             "icon":"pdf",
             "name":"แนวทางการจัดทำงบประมาณปี 2563",
             "description":"Update: 2563",
@@ -335,7 +335,7 @@
          },
          {
             "key":8,
-            "url":"formbudget/2563/calendar63_1.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ERavSMMbVUtDgCidL4BhrTcB5HHod_fsSBCH1isEidAn4g?e=wlc7tl",
             "icon":"pdf",
             "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์ฯ ปีการศึกษา 2563",
             "description":"Update: 2563",
@@ -343,7 +343,7 @@
          },
          {
             "key":9,
-            "url":"formbudget/2563/calendar63_2.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EVjHA_1ChjNKiEYR65lgWXUBpEcQcsmnCDFN4o40lardbg?e=dKk98g",
             "icon":"pdf",
             "name":"ตารางกลั่นกรองงบประมาณ งปม.01 (KPIs) และรายจ่ายดำเนินงาน งปม.05 ปีการศึกษา 2563",
             "description":"Update: 2563",
@@ -373,7 +373,7 @@
          },
          {
             "key":2,
-            "url":"/formbudget/2562/strategic62.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EY__RS9JxcNDqf399vLtzlkBnwFJm0DjvvZwbJrMt-iHRw?e=mSqLHs",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์ มกค. ปีการศึกษา 2562 (1 ปี)",
             "description":"Update: 2562",
@@ -381,7 +381,7 @@
          },
          {
             "key":3,
-            "url":"/formbudget/2562/strategic60-64.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EdadE_WvcVJJi9YuR2azM6cBgvYVZuXj58SgookJtXmAhw?e=sFwRUR",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์ มกค. ปีการศึกษา 2560-2564 (5 ปี) (ฉบับแก้ไข)",
             "description":"Update: 2562",
@@ -389,7 +389,7 @@
          },
          {
             "key":4,
-            "url":"/formbudget/2562/strategic60-64-sar.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EdadE_WvcVJJi9YuR2azM6cBgvYVZuXj58SgookJtXmAhw?e=A2ZHXZ",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์ มกค. ปีการศึกษา 2560 (ปรับกลางปี)- 2564 (5 ปี) (สำหรับประกันคุณภาพ)",
             "description":"Update: 2562",
@@ -397,7 +397,7 @@
          },
          {
             "key":5,
-            "url":"/formbudget/2562/strategic62_form.doc",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/ERGr2EMgpeBJt6dwzcteG8ABU9k8sb1gWfJgYvUOobIbSg?e=eFzQtd",
             "icon":"docx",
             "name":"แบบฟอร์มแผนกลยุทธ์และแผนงบประมาณ คณะวิชา/ฝ่าย ปีการศึกษา 2562",
             "description":"Update: 2562",
@@ -413,7 +413,7 @@
          },
          {
             "key":7,
-            "url":"/formbudget/2562/budget62_010462.pdf",
+            "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/Edhh7-KwA_BHjlcIcpH5-0YBdPYhU_6fpiAP_ndETYeQyg?e=4gRVOV",
             "icon":"pdf",
             "name":"แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2562",
             "description":"Update: 2562",
@@ -421,7 +421,7 @@
          },
          {
             "key":8,
-            "url":"/formbudget/2562/calendar62_1.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ee6IaswKJwRMmkN7h3E4cnwBltVrOxlcM81lLSVBHU3GhQ?e=IkfJRN",
             "icon":"pdf",
             "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์ฯ ปีการศึกษา 2562",
             "description":"Update: 2562",
@@ -429,7 +429,7 @@
          },
          {
             "key":9,
-            "url":"/formbudget/2562/calendar62_2.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ee00HsV50IFBsBqKkdk-rngBwYsUGsGvy3uatcMQeVGW8g?e=BqiC4X",
             "icon":"pdf",
             "name":"ตารางกลั่นกรองงบประมาณ งปม.01 (KPIs) และรายจ่ายดำเนินงาน งปม.05 ปีการศึกษา 2562",
             "description":"Update: 2562",
@@ -467,7 +467,7 @@
          },
          {
             "key":3,
-            "url":"/formbudget/2561/strategic60-64.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EbpbhXYK_4hBsYrntCrDMNMBKORj6781IDkUJwdme81yFg?e=CLQBBv",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560-2564 (5 ปี)(ฉบับแก้ไข)",
             "description":"Update: 2561",
@@ -475,7 +475,7 @@
          },
          {
             "key":4,
-            "url":"/formbudget/2561/strategic60-64-sar.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EXNEkVONeDFGv0ajA0QABK4BF7H1DV1I0n6NyfhPItIMnQ?e=hM2NUh",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560 (ปรับกลางปี)-2564 (5 ปี) (สำหรับประกันคุณภาพฯ)",
             "description":"Update: 2561",
@@ -483,7 +483,7 @@
          },
          {
             "key":5,
-            "url":"/formbudget/2561/budget61.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYokk2irnEJPmOW59OZbmuUB8EV_Hi6t7NjC2-g2KjQCTQ?e=1JLb1C",
             "icon":"pdf",
             "name":"แนวทางการเบิกจ่ายงบประมาณ (ฉบับแก้ไข)",
             "description":"Update: 2561",
@@ -491,7 +491,7 @@
          },
          {
             "key":6,
-            "url":"file:///formbudget/2561/calendar61_1.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYKCd8AOoqZPj0m8ksHI6l8BCZIb9iRimkch17x1Z_OKQA?e=fQ151h",
             "icon":"pdf",
             "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์และแผนงบประมาณ",
             "description":"Update: 2561",
@@ -499,7 +499,7 @@
          },
          {
             "key":7,
-            "url":"formbudget/2561/calendar61_2.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EaULCClKjYFNp8rG_kGtF0UBcrrVwx0WsgFM81Benbtd2g?e=L7VKqx",
             "icon":"pdf",
             "name":"ตารางการกลั่นกรองงบประมาณ งปม.01(KPIs) และรายจ่ายดำเนินงาน งปม.05 (ฉบับแก้ไข)",
             "description":"Update: 2561",
@@ -529,7 +529,7 @@
          },
          {
             "key":2,
-            "url":"/formbudget/2560/strategic60.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EV4Bq3bCs99IsF4GfsBBmxcB0pQvkXVMLvQ118npeFLF9g?e=igwFJX",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560 (1 ปี)",
             "description":"Update: 2560",
@@ -537,7 +537,7 @@
          },
          {
             "key":3,
-            "url":"formbudget/2560/strategic60_edit.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EV4Bq3bCs99IsF4GfsBBmxcB0pQvkXVMLvQ118npeFLF9g?e=igwFJX",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560 (1 ปี)/(ปรับกลางปี)",
             "description":"Update: 2560",
@@ -545,7 +545,7 @@
          },
          {
             "key":4,
-            "url":"formbudget/2560/strategic60-64.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EU5qenXPS25MnVF6Rsq-9MkBrEU3Is8bxVGCD6JhRmaqeQ?e=3zH5A7",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560-2564 (5 ปี)(ฉบับแก้ไข)",
             "description":"Update: 2560",
@@ -561,7 +561,7 @@
          },
          {
             "key":6,
-            "url":"formbudget/2560/calendar60.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ee4wXfYQm6FKiJxWnF8o-IABvAdNBAE-Q--nC05XSJlYHQ?e=AzV0ZE",
             "icon":"pdf",
             "name":" ปฏิทินการจัดทำแผนยุทธศาสตร์และแผนงบประมาณ",
             "description":"Update: 2560",
@@ -569,7 +569,7 @@
          },
          {
             "key":7,
-            "url":"formbudget/detail_budget.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Eegou8h5xiRBoOmVCgyt9UEBvit2zLh00XIDVb-x2YvTyQ?e=nnflBV",
             "icon":"pdf",
             "name":"คำอธิบายชื่องบประมาณ",
             "description":"Update: 2560",
@@ -599,7 +599,7 @@
          },
          {
             "key":2,
-            "url":"/formbudget/2559/strategic.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ERFN8pS2MY5AsrnuroioAg4Brr98stvVLGn5HOzgdI292w?e=SFvDVD",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2559 – 2563(1)",
             "description":"Update: 2559",
@@ -607,7 +607,7 @@
          },
          {
             "key":3,
-            "url":"/formbudget/2559/strategic_ppt.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EfaJdKBiS3RAie_AkKSkSX8B8bL73ma7iL17tHrnFA9Qhg?e=hKWokc",
             "icon":"pdf",
             "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2559 – 2563(2)",
             "description":"Update: 2559",
@@ -615,7 +615,7 @@
          },
          {
             "key":4,
-            "url":"/formbudget/2559/budget59.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EW2stvJNDEhGh8WA-xXZVy0B4hY0iO2iPVfwhT3WYoIXvg?e=uhyVbY",
             "icon":"docx",
             "name":"แนวทางการเบิกจ่ายงบประมาณ",
             "description":"Update: 2559",
@@ -645,7 +645,7 @@
          },
          {
             "key":2,
-            "url":"/formbudget/2558/schedule58.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYjMSmibpZ5PvFNa4mvOvEEBfVcQv-65vg_k1C0I3o3yHg?e=iRM8Rp",
             "icon":"pdf",
             "name":"ปฎิทินการดำเนินงานการจัดทำงบประมาณ",
             "description":"Update: 2559",
@@ -653,7 +653,7 @@
          },
          {
             "key":3,
-            "url":"/formbudget/2558/budget58.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZEykysimidMl-STqX6c7t0BSQt0BCAf85YpNlTSObt3xQ?e=1VqL1M",
             "icon":"pdf",
             "name":"แนวทางการเบิกจ่ายงบประมาณ",
             "description":"Update: 2559",

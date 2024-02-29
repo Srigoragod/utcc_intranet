@@ -220,7 +220,7 @@
     },
     {
       "id": 5,
-      "textName": "Risk ",
+      "textName": "Risk",
       "url": "risk",
       "isActive": false,
       "items": []
@@ -228,7 +228,7 @@
     {
       "id": 6,
       "textName": "Bubget &Functional Area",
-      "url": "risk",
+      "url": "budget",
       "isActive": false,
       "items": []
     },

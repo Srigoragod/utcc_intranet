@@ -45,7 +45,7 @@
           <label
             v-for="(item, index) in menuItems"
             :key="index"
-            @click="onClickDialog(item)"
+            @click="onClickDialog(item,item.url)"
             class="menu-text text-a-blue-2E3191 hover:text-a-blue-005BC0 mx-3 cursor-pointer"
           >
             {{ item.textName }}</label
@@ -248,7 +248,13 @@ export default defineComponent({
       return dividedArray;
     };
 
-    const onClickDialog = (item) => {
+    const onClickDialog = (item, url) => {
+     
+      if(url == 'risk' || url == 'budget'){
+        let element = document.getElementById(url);
+        element.scrollIntoView({behavior: "smooth", block: "end"});
+          return
+      }
       topicName.value = item.textName;
       handleSubMenuDropdown(item);
       document.getElementById("my_modal_1").showModal();

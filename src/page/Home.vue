@@ -62,12 +62,12 @@ DateMeeting
           ></ShowFlexMasonry>
         </section>
 
-        <section class="container mx-auto py-10">
-          <Risk></Risk>
+        <section class="container mx-auto py-10"  >
+          <Risk id="risk"></Risk>
         </section>
 
-        <section class="container mx-auto py-10">
-          <Budget></Budget>
+        <section class="container mx-auto py-10" >
+          <Budget id="budget"></Budget>
         </section>
 
         <section class="container mx-auto py-10">

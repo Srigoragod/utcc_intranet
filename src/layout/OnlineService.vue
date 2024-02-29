@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex justify-between items-center">
-      <TextUnderline :text="'Online Service'" :desc="''"></TextUnderline>
+      <TextUnderline :text="'Online Service'" :desc="''" ></TextUnderline>
       <a
         class="link link-primary link-seemore is-desktop "
         @click="clickShowMore(isShowMore)"
@@ -10,7 +10,7 @@
       >
     </div>
 
-    <div class="container-onlineservice grid grid-cols-12 is-desktop">
+    <div class="container-onlineservice grid grid-cols-12 is-desktop mt-4">
       <ButtonPrimaryOutline
         v-for="(item, index) in itemList"
         :key="index"
@@ -169,6 +169,12 @@ export default {
 }
 .link-seemore {
   font-size: 1.25rem;
+  text-decoration-line: unset;
+  padding: 0 1rem;
+  border-radius: 20px;
+  &:hover {
+    background-color: #E5F1FB;
+  }
   &.is-desktop {
     @include mobile {
       display: none;

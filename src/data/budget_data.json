@@ -1,0 +1,664 @@
+[
+   {
+      "id": 2566,
+      "topicName":"การจัดทำงบประมาณประจำปี ปีการศึกษา 2566",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://budget.utcc/2023/",
+            "icon":"link",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2023",
+            "description":"",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"/formbudget/2566/1_strategic.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์ มกค.ปีการศึกษา 2566",
+            "description":"Update: 2566",
+            "isDisable":false
+         },
+         {
+           "key":3,
+           "url":"/formbudget/2566/4_budget.pdf",
+           "icon":"pdf",
+           "name":"แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2566",
+           "description":"Update: 2566",
+           "isDisable":false
+        },
+        {
+           "key":4,
+           "url":"/formbudget/2566/2_calendar.pdf",
+           "icon":"pdf",
+           "name":" ปฏิทินการจัดทำแผนยุทธศาสตร์และแผนงบประมาณ ปีการศึกษา 2566",
+           "description":"Update: 2566",
+           "isDisable":false
+        },
+        {
+         "key":5,
+         "url":"/formbudget/2566/6_calendar.pdf",
+         "icon":"pdf",
+         "name":"ตารางกลั่นกรองงบประมาณ ปีการศึกษา 2566 (update 16 พ.ค. 2566 )",
+         "description":"Update: 2566",
+         "isDisable":false
+        },
+        {
+         "key":6,
+         "url":"/formbudget/2566/3_budget.pdf",
+         "icon":"pdf",
+         "name":"แนวทางในการกลั่นกรองงบประมาณ ปีการศึกษา 2566 (เพิ่มเติม)",
+         "description":"Update: 2566",
+         "isDisable":false
+      },
+      {
+         "key":7,
+         "url":"/formbudget/2566/5_budget.pdf",
+         "icon":"pdf",
+         "name":"แนวทางการจัดทำแผนกลยุทธ์และแผนงบประมาณ ปีการศึกษา 2566",
+         "description":"Update: 2566",
+         "isDisable":false
+      },
+      {
+         "key":8,
+         "url":"/formbudget/2566/7_budget.pdf",
+         "icon":"pdf",
+         "name":"แนวทางการพิจารณางบประมาณปีการศึกษา 2566 (B/C)",
+         "description":"Update: 2566",
+         "isDisable":false
+      },
+      {
+         "key":9,
+         "url":"/formbudget/2566/7_form-BC.xlsx",
+         "icon":"xlsx",
+         "name":"แบบฟอร์มตัวอย่างการคำนวณหาอัตรา-BC",
+         "description":"Update: 2566",
+         "isDisable":false
+      }
+      ]
+   },
+   {
+      "id": 2565,
+      "topicName":"การจัดทำงบประมาณประจำปี ปีการศึกษา 2565",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://budget.utcc/2022",
+            "icon":"link",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2022",
+            "description":"",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"formbudget/2565/1_strategic65.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์ มกค.ปีการศึกษา 2565",
+            "description":"Update: 2565",
+            "isDisable":false
+         },
+         {
+           "key":3,
+           "url":"formbudget/2565/3_budget65.pdf",
+           "icon":"pdf",
+           "name":"แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2565",
+           "description":"Update: 2565",
+           "isDisable":false
+        },
+        {
+           "key":4,
+           "url":"formbudget/2565/3_calendar65.pdf",
+           "icon":"pdf",
+           "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์และแผนงบประมาณ ปีการศึกษา 2565",
+           "description":"Update: 2565",
+           "isDisable":false
+        },
+        {
+         "key":5,
+         "url":"formbudget/2565/4_calendar65.pdf",
+         "icon":"pdf",
+         "name":"ตารางกลั่นกรองงบประมาณ ปีการศึกษา 2565",
+         "description":"Update: 2565",
+         "isDisable":false
+        },
+        {
+         "key":6,
+         "url":"formbudget/2565/6_budget65.pdf",
+         "icon":"pdf",
+         "name":"แนวทางการพิจารณางบประมาณปีการศึกษา 2565 (B/C)",
+         "description":"Update: 2565",
+         "isDisable":false
+      },
+      {
+         "key":7,
+         "url":"formbudget/2565/8_budget65.pdf",
+         "icon":"pdf",
+         "name":"แนวทางในการกลั่นกรองงบประมาณ ปีการศึกษา 2565 (เพิ่มเติม)",
+         "description":"Update: 2565",
+         "isDisable":false
+      },
+      {
+         "key":8,
+         "url":"formbudget/2565/7_budget65.pdf",
+         "icon":"pdf",
+         "name":"แนวทางการจัดทำแผนกลยุทธ์และแผนงบประมาณ ปีการศึกษา 2565",
+         "description":"Update: 2565",
+         "isDisable":false
+      },
+      {
+         "key":9,
+         "url":"formbudget/2565/7_form-BC.xlsx",
+         "icon":"xlsx",
+         "name":"แบบฟอร์มตัวอย่างการคำนวณหาอัตรา-BC",
+         "description":"Update: 2565",
+         "isDisable":false
+      },
+      {
+         "key":10,
+         "url":"formbudget/2565/0_budget65.pdf",
+         "icon":"pdf",
+         "name":"คำสั่งแต่งตั้งคณะกรรมการกลั่นกรอง ปีการศึกษา 2565",
+         "description":"Update: 2565",
+         "isDisable":false
+      }
+      ]
+   },
+   {
+      "id": 2564,
+      "topicName":"การจัดทำงบประมาณประจำปี ปีการศึกษา 2564",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://budget.utcc/2021",
+            "icon":"link",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2564",
+            "description":"Update: 2564",
+            "isDisable": true
+         },
+         {
+            "key":2,
+            "url":"formbudget/2564/1_strategic64.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์ มกค.ปีการศึกษา 2564 (ฉบับแก้ไข)",
+            "description":"Update: 2564",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"formbudget/2564/2_strategic64_form.doc",
+            "icon":"docx",
+            "name":"แบบฟอร์มแผนกลยุทธ์และแผนงบประมาณ คณะวิชา/ฝ่าย ปีการศึกษา 2564",
+            "description":"Update: 2564",
+            "isDisable":false
+         },
+         {
+            "key":4,
+            "url":"formbudget/2564/3_budget64.pdf",
+            "icon":"pdf",
+            "name":"แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2564",
+            "description":"Update: 2564",
+            "isDisable":false
+         },
+         {
+            "key":5,
+            "url":"formbudget/2564/3_calendar64.pdf",
+            "icon":"pdf",
+            "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์และแผนงบประมาณ ปีการศึกษา 2564",
+            "description":"Update: 2564",
+            "isDisable":false
+         },
+         {
+            "key":6,
+            "url":"formbudget/2564/4_calendar64.pdf",
+            "icon":"pdf",
+            "name":"ตารางกลั่นกรองงบประมาณ ปีการศึกษา 2564",
+            "description":"Update: 2564",
+            "isDisable":false
+         },
+         {
+            "key":7,
+            "url":"formbudget/2564/5_budget64.pdf",
+            "icon":"pdf",
+            "name":"ชี้แจงการจัดตั้งงบประมาณ ปีการศึกษา 2564",
+            "description":"Update: 2564",
+            "isDisable":false
+         },
+         {
+            "key":8,
+            "url":"formbudget/2564/6_budget64.pdf",
+            "icon":"pdf",
+            "name":"แนวทางการพิจารณางบประมาณปีการศึกษา 2564 (แบบใหม่)",
+            "description":"Update: 2564",
+            "isDisable":false
+         },
+         {
+            "key":9,
+            "url":"formbudget/2564/7_form-BC.xlsx",
+            "icon":"xlsx",
+            "name":"แบบฟอร์มตัวอย่างการคำนวณหาอัตรา-BC",
+            "description":"Update: 2564",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2563,
+      "topicName":"การจัดทำงบประมาณประจำปี ปีการศึกษา 2563",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://budget.utcc/2020",
+            "icon":"link",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2020",
+            "description":"Update: 2563",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"formbudget/2563/strategic63.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์ มกค. ปีการศึกษา 2563 (1 ปี)",
+            "description":"Update: 2563",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"formbudget/2563/strategic63_form.doc",
+            "icon":"docx",
+            "name":"แบบฟอร์มแผนกลยุทธ์และแผนงบประมาณ คณะวิชา/ฝ่าย ปีการศึกษา 2563",
+            "description":"Update: 2563",
+            "isDisable":false
+         },
+         {
+            "key":4,
+            "url":"formbudget/2563/budget63_3.pdf",
+            "icon":"pdf",
+            "name":" แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2563",
+            "description":"Update: 2563",
+            "isDisable":false
+         },
+         {
+            "key":5,
+            "url":"formbudget/2563/budget63_2.pdf",
+            "icon":"pdf",
+            "name":"แนวทางการพิจารณาแนวทางที่ปรับใหม่ ปี 2563",
+            "description":"Update: 2563",
+            "isDisable":false
+         },
+         {
+            "key":6,
+            "url":"formbudget/2563/form-BC.xlsx",
+            "icon":"xlsx",
+            "name":"แบบฟอร์มตัวอย่างการคำนวณหาอัตรา-BC",
+            "description":"Update: 2563",
+            "isDisable":false
+         },
+         {
+            "key":7,
+            "url":"formbudget/2563/budget63_1.pdf",
+            "icon":"pdf",
+            "name":"แนวทางการจัดทำงบประมาณปี 2563",
+            "description":"Update: 2563",
+            "isDisable":false
+         },
+         {
+            "key":8,
+            "url":"formbudget/2563/calendar63_1.pdf",
+            "icon":"pdf",
+            "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์ฯ ปีการศึกษา 2563",
+            "description":"Update: 2563",
+            "isDisable":false
+         },
+         {
+            "key":9,
+            "url":"formbudget/2563/calendar63_2.pdf",
+            "icon":"pdf",
+            "name":"ตารางกลั่นกรองงบประมาณ งปม.01 (KPIs) และรายจ่ายดำเนินงาน งปม.05 ปีการศึกษา 2563",
+            "description":"Update: 2563",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2562,
+      "topicName":"การจัดทำงบประมาณประจำปี ปีการศึกษา 2562",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://budget.utcc/2019",
+            "icon":"link",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2562",
+            "description":"Update: 2562",
+            "isDisable":true
+         },
+         {
+            "key":2,
+            "url":"/formbudget/2562/strategic62.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์ มกค. ปีการศึกษา 2562 (1 ปี)",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"/formbudget/2562/strategic60-64.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์ มกค. ปีการศึกษา 2560-2564 (5 ปี) (ฉบับแก้ไข)",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":4,
+            "url":"/formbudget/2562/strategic60-64-sar.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์ มกค. ปีการศึกษา 2560 (ปรับกลางปี)- 2564 (5 ปี) (สำหรับประกันคุณภาพ)",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":5,
+            "url":"/formbudget/2562/strategic62_form.doc",
+            "icon":"docx",
+            "name":"แบบฟอร์มแผนกลยุทธ์และแผนงบประมาณ คณะวิชา/ฝ่าย ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":6,
+            "url":"/formbudget/2562/plan62_form.xlsx",
+            "icon":"xlsx",
+            "name":"แบบฟอร์มการติดตามแผนการดำเนินงาน ปีการศึกษา 2562 (คณะได้นำเสนอสภาสัญจรปี 2561)",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":7,
+            "url":"/formbudget/2562/budget62_010462.pdf",
+            "icon":"pdf",
+            "name":"แนวทางการเบิกจ่ายงบประมาณ ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":8,
+            "url":"/formbudget/2562/calendar62_1.pdf",
+            "icon":"pdf",
+            "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์ฯ ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         },
+         {
+            "key":9,
+            "url":"/formbudget/2562/calendar62_2.pdf",
+            "icon":"pdf",
+            "name":"ตารางกลั่นกรองงบประมาณ งปม.01 (KPIs) และรายจ่ายดำเนินงาน งปม.05 ปีการศึกษา 2562",
+            "description":"Update: 2562",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2561,
+      "topicName":"การจัดทำงบประมาณประจำปี ปีการศึกษา 2561",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://budget.utcc/2018",
+            "icon":"link",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2561",
+            "description":"Update: 2561",
+            "isDisable":true
+         },
+         {
+            "key":2,
+            "url":"/formbudget/2561/strategic61.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2561 (1 ปี)",
+            "description":"Update: 2561",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"/formbudget/2561/strategic60-64.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560-2564 (5 ปี)(ฉบับแก้ไข)",
+            "description":"Update: 2561",
+            "isDisable":false
+         },
+         {
+            "key":4,
+            "url":"/formbudget/2561/strategic60-64-sar.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560 (ปรับกลางปี)-2564 (5 ปี) (สำหรับประกันคุณภาพฯ)",
+            "description":"Update: 2561",
+            "isDisable":false
+         },
+         {
+            "key":5,
+            "url":"/formbudget/2561/budget61.pdf",
+            "icon":"pdf",
+            "name":"แนวทางการเบิกจ่ายงบประมาณ (ฉบับแก้ไข)",
+            "description":"Update: 2561",
+            "isDisable":false
+         },
+         {
+            "key":6,
+            "url":"file:///formbudget/2561/calendar61_1.pdf",
+            "icon":"pdf",
+            "name":"ปฏิทินการจัดทำแผนยุทธศาสตร์และแผนงบประมาณ",
+            "description":"Update: 2561",
+            "isDisable":false
+         },
+         {
+            "key":7,
+            "url":"formbudget/2561/calendar61_2.pdf",
+            "icon":"pdf",
+            "name":"ตารางการกลั่นกรองงบประมาณ งปม.01(KPIs) และรายจ่ายดำเนินงาน งปม.05 (ฉบับแก้ไข)",
+            "description":"Update: 2561",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2560,
+      "topicName":"การจัดทำงบประมาณประจำปี ปีการศึกษา 2560",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://budget.utcc/2017",
+            "icon":"link",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2560",
+            "description":"Update: 2560",
+            "isDisable":true
+         },
+         {
+            "key":2,
+            "url":"/formbudget/2560/strategic60.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560 (1 ปี)",
+            "description":"Update: 2560",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"formbudget/2560/strategic60_edit.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560 (1 ปี)/(ปรับกลางปี)",
+            "description":"Update: 2560",
+            "isDisable":false
+         },
+         {
+            "key":4,
+            "url":"formbudget/2560/strategic60-64.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2560-2564 (5 ปี)(ฉบับแก้ไข)",
+            "description":"Update: 2560",
+            "isDisable":false
+         },
+         {
+            "key":5,
+            "url":"formbudget/2560/budget60.pdf",
+            "icon":"pdf",
+            "name":"แนวทางการเบิกจ่ายงบประมาณ",
+            "description":"Update: 2560",
+            "isDisable":false
+         },
+         {
+            "key":6,
+            "url":"formbudget/2560/calendar60.pdf",
+            "icon":"pdf",
+            "name":" ปฏิทินการจัดทำแผนยุทธศาสตร์และแผนงบประมาณ",
+            "description":"Update: 2560",
+            "isDisable":false
+         },
+         {
+            "key":7,
+            "url":"formbudget/detail_budget.pdf",
+            "icon":"pdf",
+            "name":"คำอธิบายชื่องบประมาณ",
+            "description":"Update: 2560",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2559,
+      "topicName":"การจัดทำงบประมาณประจำปี ปีการศึกษา 2559",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "icon":"pdf",
+            "url": "http://budget.utcc/2016",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2559",
+            "description":"Update: 2559",
+            "isDisable":true
+         },
+         {
+            "key":2,
+            "url":"/formbudget/2559/strategic.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2559 – 2563(1)",
+            "description":"Update: 2559",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"/formbudget/2559/strategic_ppt.pdf",
+            "icon":"pdf",
+            "name":"แผนยุทธศาสตร์มหาวิทยาลัยหอการค้าไทย ปีการศึกษา 2559 – 2563(2)",
+            "description":"Update: 2559",
+            "isDisable":false
+         },
+         {
+            "key":4,
+            "url":"/formbudget/2559/budget59.pdf",
+            "icon":"docx",
+            "name":"แนวทางการเบิกจ่ายงบประมาณ",
+            "description":"Update: 2559",
+            "isDisable":false
+         }
+      ]
+   },
+   {
+      "id": 2558,
+      "topicName":"การจัดทำงบประมาณประจำปี ปีการศึกษา 2558",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "icon":"link",
+            "url": "http://budget.utcc/2015",
+            "name":"ระบบสารสนเทศจัดการงบประมาณ 2558",
+            "description":"Update: 2559",
+            "isDisable":true
+         },
+         {
+            "key":2,
+            "url":"/formbudget/2558/schedule58.pdf",
+            "icon":"pdf",
+            "name":"ปฎิทินการดำเนินงานการจัดทำงบประมาณ",
+            "description":"Update: 2559",
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"/formbudget/2558/budget58.pdf",
+            "icon":"pdf",
+            "name":"แนวทางการเบิกจ่ายงบประมาณ",
+            "description":"Update: 2559",
+            "isDisable":false
+         } 
+      ]
+   }
+ ]

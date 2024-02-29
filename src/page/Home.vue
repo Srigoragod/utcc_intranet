@@ -1,5 +1,6 @@
-DateMeeting<template>
-  <MainPage >
+DateMeeting
+<template>
+  <MainPage>
     <template #topbar>
       <!-- <TopBar  ></TopBar> -->
       <TopBarDaisyUI></TopBarDaisyUI>
@@ -7,15 +8,24 @@ DateMeeting<template>
     <template #content>
       <div class="pb-20">
         <div class="bg-hero">
-          <Slider class="container mx-auto "></Slider>
+          <Slider class="container mx-auto"></Slider>
         </div>
-          <section id="shortcut" class="container mx-auto grid grid-cols-2 gap-4 py-10" :class="[pageActive == 'shortcut' ? 'bg-blue-100' : '']">
-            <Shortcut id="test" data-aos="fade-right"  ></Shortcut>
-            <LastUpdate ref="lastupdate" data-aos="fade-left" ></LastUpdate>
-          </section>
+        '
 
-        <section id="meeting" >
-          <UniversityMeeting ref="meeting"  class="container mx-auto"></UniversityMeeting>
+        <section id="meeting">
+          <UniversityMeeting
+            ref="meeting"
+            class="container mx-auto"
+          ></UniversityMeeting>
+        </section>
+
+        <section
+          id="shortcut"
+          class="container mx-auto grid grid-cols-2 gap-4 py-10"
+          :class="[pageActive == 'shortcut' ? 'bg-blue-100' : '']"
+        >
+          <Shortcut id="test" data-aos="fade-right"></Shortcut>
+          <LastUpdate ref="lastupdate" data-aos="fade-left"></LastUpdate>
         </section>
 
         <section id="onlineservice" class="container mx-auto my-10">
@@ -26,67 +36,85 @@ DateMeeting<template>
           <News ref="news"></News>
         </section>
 
-        <section id="show_file" class="container mx-auto my-12" >
-          <ShowFile ref="showfile" :items="homeList" :gridCols="'grid-cols-2'"></ShowFile>
+        <section id="show_file" class="container mx-auto my-12">
+          <ShowFile
+            ref="showfile"
+            :items="homeList"
+            :gridCols="'grid-cols-2'"
+          ></ShowFile>
         </section>
 
         <section id="faculty">
           <FacultyAll></FacultyAll>
         </section>
 
-        <section class="container mx-auto py-4 lg:py-20" >
-          <ShowFlexMasonry  :topicName="'Forms &Document'" :dataName="'formdocument'"></ShowFlexMasonry>
+        <section class="container mx-auto py-4 lg:py-20">
+          <ShowFlexMasonry
+            :topicName="'Forms &Document'"
+            :dataName="'formdocument'"
+          ></ShowFlexMasonry>
         </section>
 
-        <section class="container mx-auto py-4 lg:py-20" >
-          <ShowFlexMasonry  :topicName="'Department'" :dataName="'department'"></ShowFlexMasonry>
+        <section class="container mx-auto py-4 lg:py-20">
+          <ShowFlexMasonry
+            :topicName="'Department'"
+            :dataName="'department'"
+          ></ShowFlexMasonry>
         </section>
 
-        <section class="container mx-auto py-20" >
+        <section class="container mx-auto py-10">
           <Risk></Risk>
-        </section> 
+        </section>
 
-      
-        <ScrollToTopButton ></ScrollToTopButton>
+        <section class="container mx-auto py-10">
+          <Budget></Budget>
+        </section>
+
+        <section class="container mx-auto py-10">
+          <FunctionArea></FunctionArea>
+        </section>
+
+        <ScrollToTopButton></ScrollToTopButton>
       </div>
     </template>
     <template #footer>
-      <MenuMobile ></MenuMobile>
-      <Footer id="footer" ></Footer>
+      <MenuMobile></MenuMobile>
+      <Footer id="footer"></Footer>
     </template>
   </MainPage>
 </template>
 
 <script>
-import { useRoute } from 'vue-router'
+import { useRoute } from "vue-router";
 import { ref, defineComponent, watch } from "vue";
 
 // data
 // import menudata from "../data/menudata.json";
 // import homedata from "../data/homedata.json";
-import documentdata from '../data/documentdata.json'
+import documentdata from "../data/documentdata.json";
 
 // components
 import MainPage from "./MainPage.vue";
 // import TopBar from "../layout/TopBar/TopBar.vue";
-import TopBarDaisyUI from '../layout/TopBar/TopBarDaisyUI.vue';
+import TopBarDaisyUI from "../layout/TopBar/TopBarDaisyUI.vue";
 import Slider from "../components/SliderWidget/Slider.vue";
 import Shortcut from "../layout/Shortcut.vue";
 import UniversityMeeting from "../layout/UniversityMeeting.vue";
 import LastUpdate from "../layout/LastUpdate.vue";
 import News from "../layout/News.vue";
-import FacultyAll from '../layout/FacultyAll.vue';
+import FacultyAll from "../layout/FacultyAll.vue";
 import ShowFile from "../layout/ShowFile.vue";
 // import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
 import Footer from "../layout/Footer/Footer.vue";
 import ScrollToTopButton from "../components/Button/ScrollToTopButton.vue";
 import FloatingActionButton from "../components/Button/FloatingActionButton.vue";
-import ShowFlexMasonry from '../layout/ShowFlexMasonry.vue';
+import ShowFlexMasonry from "../layout/ShowFlexMasonry.vue";
 // import DividerRisk from '../layout/DividerRisk.vue';
-import MenuMobile from '../components/Menu/MenuMobile.vue';
-import OnlineService from '../layout/OnlineService.vue';
-import Risk from '../layout/Risk.vue';
-
+import MenuMobile from "../components/Menu/MenuMobile.vue";
+import OnlineService from "../layout/OnlineService.vue";
+import Risk from "../layout/Risk.vue";
+import Budget from "../layout/Budget.vue";
+import FunctionArea from "../layout/FunctionArea.vue"
 
 export default defineComponent({
   name: "Home",
@@ -108,30 +136,32 @@ export default defineComponent({
     // DividerRisk,
     MenuMobile,
     OnlineService,
-    Risk
+    Risk,
+    Budget,
+    FunctionArea
   },
   setup() {
-    const route = useRoute()
-    const pageActive = route.params.id ? route.params.id :''
+    const route = useRoute();
+    const pageActive = route.params.id ? route.params.id : "";
 
     // const menuList = ref(menudata);
     const homeList = ref(null);
-    const documentList = ref(null)
+    const documentList = ref(null);
     watch(route, () => {
-            console.log('route ... ', pageActive);
-     })
+      console.log("route ... ", pageActive);
+    });
     const initialData = () => {
       // homeList.value = homedata;
-      documentList.value = documentdata
+      documentList.value = documentdata;
     };
 
     initialData();
 
     return {
-    // menuList,
+      // menuList,
       homeList,
       pageActive,
-      documentList
+      documentList,
     };
   },
 });
@@ -146,31 +176,29 @@ export default defineComponent({
 }
 
 #footer {
-  @include mini-mobile{
-    display: none
-  }
-
-  @include mobile{
+  @include mini-mobile {
     display: none;
   }
 
-  @include tablet{
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
     display: none;
   }
 }
 
 .bg-hero {
-    background: url('../assets/image/bg-hero.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 1rem 0;
-    width: 100%;
+  background: url("../assets/image/bg-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 0;
+  width: 100%;
 }
 
 #meeting {
   padding: 2rem 0;
 }
-
-
 </style>

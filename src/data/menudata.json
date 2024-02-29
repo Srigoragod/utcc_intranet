@@ -6,7 +6,7 @@
       "isActive": true,
       "items": [
         {
-          "textName": "เมนูยอดนิยม",
+          "textName": "ยอดนิยม",
           "url": "shortcut",
           "type": "ref",
           "subitems": [

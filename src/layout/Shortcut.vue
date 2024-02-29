@@ -1,7 +1,7 @@
 <template>
   <div class="sm:px-4 md:px-0">
     <!-- <h4 class="font-bold text-topic-name pb-2">เมนูที่ใช้งานบ่อย</h4> -->
-    <TextUnderline  :text="'เมนูยอดนิยม'"></TextUnderline>
+    <TextUnderline  :text="'ยอดนิยม'"></TextUnderline>
     <div class="show-menu-sc">
       <!-- <ButtonBlue class="mr-8"  v-for="(item,index) in items" :key="index" :textButton="item.text" :url="item.url" :icon="item.icon" :isDisable="item.isDisable"></ButtonBlue> -->
       <ButtonPrimaryOutline

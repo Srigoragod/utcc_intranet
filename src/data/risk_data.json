@@ -15,7 +15,7 @@
             "key":1,
             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EThrETWVh6JEoqxhHGVXiD8BwUBOpgNUClpsiel8WjevsA?e=e46tqj",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2566",
+            "name":"แผนบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2566",
             "description":"Update: 2566",
             "isDisable":false
          },
@@ -101,7 +101,7 @@
             "key":1,
             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZqV_lkID0ZDrrd1PMe4gHIBf0y6RRJYuUrj8iPqf_OdFg?e=Y97CGU",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2565",
+            "name":"แผนบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2565",
             "description":"Update: 2565",
             "isDisable":false
          },
@@ -187,7 +187,7 @@
             "key":1,
             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EWqoBcHNan9IvwzPXSPATbMBPpOAgT7VTDyT2p81yiR0EQ?e=INLeOC",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2564",
+            "name":"แผนบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2564",
             "description":"Update: 2564",
             "isDisable":false
          },
@@ -217,7 +217,7 @@
             "key":1,
             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EW4bTBbc9-pDoEv3wSqzbAQBJaqXVbm8_1zP_fXg3oZpxQ?e=o09k9q",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2563",
+            "name":"แผนบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2563",
             "description":"Update: 2563",
             "isDisable":false
          }
@@ -237,65 +237,33 @@
       "itemList":[
          {
             "key":1,
-            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EUneQT9oCrBFlTTm5oK9f9QBeo_sNDEpLx9mj6rBilWP-Q?e=UePLNd",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EUneQT9oCrBFlTTm5oK9f9QBeo_sNDEpLx9mj6rBilWP-Q?e=z9MnYj",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "name":"แผนบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2562",
             "description":"Update: 2562",
             "isDisable":false
          },
          {
             "key":2,
-            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EVu_Q6NDuyZHkc4nTufFdfoBr4YUrcMjrH4lJ_4XR-HSyg?e=9sqyjM",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EVu_Q6NDuyZHkc4nTufFdfoBr4YUrcMjrH4lJ_4XR-HSyg?e=kVq7IO",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "name":"แผนบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2562 (ปรับกลางปี)",
             "description":"Update: 2562",
             "isDisable":false
          },
          {
             "key":3,
-            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYJEHITpuBxClxGYUoQKzCIBn8nJYJk83WRSAy22n75omQ?e=PvGG2e",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYJEHITpuBxClxGYUoQKzCIBn8nJYJk83WRSAy22n75omQ?e=EFmA4T",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "name":"ผลการประเมินมาตรการบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2562 (6 เดือน)",
             "description":"Update: 2562",
             "isDisable":false
          },
          {
             "key":4,
-            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZ8IXAP7nppEr79gQsdV0rABTRuCxC6fGpAV39jzysOPfQ?e=86EfYB",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZ8IXAP7nppEr79gQsdV0rABTRuCxC6fGpAV39jzysOPfQ?e=146ghG",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
-            "description":"Update: 2562",
-            "isDisable":false
-         },
-         {
-            "key":5,
-            "url":"/formrisk/2562/utcc_risk62.pdf",
-            "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
-            "description":"Update: 2562",
-            "isDisable":false
-         },
-         {
-            "key":6,
-            "url":"/formrisk/2562/utcc_risk62.pdf",
-            "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
-            "description":"Update: 2562",
-            "isDisable":false
-         },
-         {
-            "key":7,
-            "url":"/formrisk/2562/utcc_risk62.pdf",
-            "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
-            "description":"Update: 2562",
-            "isDisable":false
-         },
-         {
-            "key":8,
-            "url":"/formrisk/2562/utcc_risk62.pdf",
-            "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2562",
+            "name":"ผลการประเมินมาตรการบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2562 (12 เดือน)",
             "description":"Update: 2562",
             "isDisable":false
          }
@@ -315,33 +283,33 @@
       "itemList":[
          {
             "key":1,
-            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZqHEW3CU_tFigsd-5490usBpmdvHgf-wdf0PGftIrDvpw?e=EtTNhF",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZqHEW3CU_tFigsd-5490usBpmdvHgf-wdf0PGftIrDvpw?e=2EGtka",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2561",
+            "name":"แผนบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2561 (ปรับกลางปี)",
             "description":"Update: 2561",
             "isDisable":false
          },
          {
             "key":2,
-            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EXQty-QiM81OqCFyFXz2w_wBGPtea2cG9v_4a82lGe-VaA?e=jJIu6E",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EXQty-QiM81OqCFyFXz2w_wBGPtea2cG9v_4a82lGe-VaA?e=dVJEZj",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2561",
+            "name":"แบบติดตามผลการดำเนินงานฯ ความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2561 (รอบ 12 เดือน)",
             "description":"Update: 2561",
             "isDisable":false
          },
          {
             "key":3,
-            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EWSRhG6T40tCpHDCtk5wOqkBAESd3NgRXORBdFA7CKvauQ?e=pNXT0n",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EWSRhG6T40tCpHDCtk5wOqkBxGQQGD2P6KAjzBW0GN6blw?e=QvMsc8",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2561",
+            "name":"บันทึกชี้แจงแบบฟอร์มบริหารความเสี่ยง ปีการศึกษา 2561",
             "description":"Update: 2561",
             "isDisable":false
          },
          {
             "key":4,
-            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EejtUxeZ0z5NqpvhpjTQJswByo1YiY1HchyZ6MT56dio-g?e=e0pepG",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EejtUxeZ0z5NqpvhpjTQJswByo1YiY1HchyZ6MT56dio-g?e=1YEXsa",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2561",
+            "name":"พระราชบัญญัติสถาบันอุดมศึกษาเอกชน",
             "description":"Update: 2561",
             "isDisable":false
          }
@@ -363,7 +331,7 @@
             "key":1,
             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ERXq9g0v8F5FiOT9MV-UyPQB9aDD7SMBTEPF2wTh6qTDRQ?e=kzy2YU",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2560",
+            "name":"แผนบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2560",
             "description":"Update: 2560",
             "isDisable":false
          }
@@ -385,7 +353,7 @@
             "key":1,
             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ERXq9g0v8F5FiOT9MV-UyPQB9aDD7SMBTEPF2wTh6qTDRQ?e=kzy2YU",
             "icon":"pdf",
-            "name":"แผนบริหารความเสี่ยง มกค.ปีการศึกษา 2559",
+            "name":"แผนบริหารความเสี่ยง มหาวทิยาลยัหอการค้าไทย ปีการศึกษา 2559",
             "description":"Update: 2559",
             "isDisable":false
          },

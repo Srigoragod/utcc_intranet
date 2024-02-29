@@ -160,6 +160,12 @@ export default {
   @include tablet {
     display: none;
   }
+  @include mobile {
+    display: none;
+  }
+  @include mini-mobile {
+    display: none;
+  }
 }
 .link-seemore {
   font-size: 1.25rem;

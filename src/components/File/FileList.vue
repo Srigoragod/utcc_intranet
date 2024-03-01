@@ -64,7 +64,7 @@ export default defineComponent({
     alertDetail: {type: Object, required: true},
     isNotHome:{tyep: Boolean, required: false, default: false},
     isSplit:{tyep: Boolean, required: false, default: false},
-    isShowTopic:{tyep: Boolean, required: false, default: false},
+    isShowTopic:{tyep: Boolean, required: false, default: true},
   },
   setup(props) {
     const dataListX = ref([]);

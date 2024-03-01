@@ -1,7 +1,7 @@
 [
 
    {
-      "id":2,
+      "id":"research",
       "topicName":"ฝ่ายวิจัยและบริการธุรกิจ",
       "icon":"",
       "showColumn":"",
@@ -110,7 +110,7 @@
       ]
    },
    {
-      "id":3,
+      "id":"manage",
       "topicName":"ฝ่ายบริหาร",
       "icon":"",
       "showColumn":"",
@@ -122,7 +122,7 @@
       "itemList":[
          {
             "key":1,
-            "url":"",
+            "url":"administer-office",
             "icon":"link",
             "name":"สำนักอำนวยการ",
             "description":"",
@@ -171,7 +171,7 @@
       ]
    },
    {
-      "id":4,
+      "id":"academic",
       "topicName":"ฝ่ายวิชาการ",
       "icon":"",
       "showColumn":"",
@@ -224,7 +224,7 @@
       ]
    },
    {
-      "id":5,
+      "id": "it",
       "topicName":"ฝ่ายเทคโนโลยีสารสนเทศ",
       "icon":"",
       "showColumn":"",
@@ -261,7 +261,7 @@
       ]
    },
    {
-      "id":6,
+      "id":"student",
       "topicName":"ฝ่ายกิจการนักศึกษา",
       "icon":"",
       "showColumn":"",
@@ -314,7 +314,7 @@
       ]
    },
    {
-      "id":7,
+      "id":"mkt",
       "topicName":"ฝ่ายสื่อสารการตลาด",
       "icon":"",
       "showColumn":"",
@@ -343,7 +343,7 @@
       ]
    },
    {
-      "id":8,
+      "id": "relative",
       "topicName":"ฝ่ายวิเทศสัมพันธ์",
       "icon":"",
       "showColumn":"",
@@ -364,7 +364,7 @@
       ]
    },
    {
-      "id":9,
+      "id":"building",
       "topicName":"ฝ่ายอาคารและสิ่งแวดล้อม",
       "icon":"",
       "showColumn":"",
@@ -381,19 +381,11 @@
             "name":"ฝ่ายอาคารและสิ่งแวดล้อม",
             "description":"",
             "isDisable": false
-         },
-         {
-            "key":2,
-            "url":"http://intranet.utcc/ccd/",
-            "icon":"link",
-            "name":"ฝ่ายอาคารและสิ่งแวดล้อม",
-            "description":"",
-            "isDisable": true
          }
       ]
    },
    {
-      "id":9,
+      "id":"internal",
       "topicName":"สำนักงานตรวจสอบภายใน",
       "icon":"",
       "showColumn":"",
@@ -410,6 +402,27 @@
             "name":"สำนักงานตรวจสอบภายใน",
             "description":"",
             "isDisable": false
+         }
+      ]
+   },
+   {
+      "id":"special-biz",
+      "topicName":"ฝ่ายยุทธศาสตร์และกิจการพิเศษ",
+      "icon":"",
+      "showColumn":"",
+      "isFull": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"https://department.utcc.ac.th/planning/",
+            "icon":"link",
+            "name":"สำนักยุทธศาสตร์และ Data Analytic",
+            "description":"",
+            "isDisable": true
          }
       ]
    }

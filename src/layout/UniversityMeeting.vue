@@ -46,7 +46,7 @@ export default defineComponent({
     const dateMeetingList = ref([
       {
         id: 1,
-        date: "01/12/2024",
+        date: "03/06/2024",
         name: "สภามหาวิทยาลัย",
         description:
           "<div>เวลา 09:00 - 12:00 น.</div><div>ณ หอประชุมสภาฯ อาคาร 24</div>",
@@ -54,7 +54,7 @@ export default defineComponent({
       },
       {
         id: 2,
-        date: "02/19/2024",
+        date: "02/20/2024",
         name: "คณะกรรมการอำนวยการฯ",
         description:
           "<div>เวลา 09:00 - 12:00 น.</div><div>ณ หอประชุมสภาฯ อาคาร 24</div>",

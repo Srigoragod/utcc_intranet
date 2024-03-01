@@ -28,6 +28,12 @@
           class="text-[28px]"
         />
         <font-awesome-icon
+          v-else-if="icon == 'ppt'"
+          :icon="['fas', 'file-powerpoint']"
+          class="text-[28px]"
+        />
+
+        <font-awesome-icon
           v-else-if="icon == 'download'"
           :icon="['fas', 'file-arrow-down']"
           class="text-[28px]"

@@ -44,54 +44,29 @@ export default defineComponent({
   setup(props, ctx) {
     const router = useRouter();
     const scrollToMyEl = (url) => {
-      console.log("url ... run", url);
-      // console.log('scrollToMyEl run ...', url);
-      // smoothScroll({
-      //   scrollTo: myEl.value,
-      //   hash: "#test",
-      // });
       const sectionElement = document.getElementById("test");
       if (sectionElement) {
         sectionElement.scrollIntoView({
           top: 10,
-          behavior: "smooth", // Optional: Add smooth scrolling
+          behavior: "smooth", 
         });
       }
     };
     const onClickMenu = (url, type) => {
-      if (type == "link") {
-        if (props.textUrl) {
-          window.open(props.textUrl, "_blank");
-          ctx.emit("click-menu", "Button clicked!");
-        } else {
-          console.log("page not found");
-          // page not found
-        }
-      } else {
-        console.log("run .. else");
-        router.push("/#test");
-        // window.open('#test', "_self");
-        // location.r
-        // scrollToMyEl(url);
-      }
     };
 
     function onScroll() {
-      if (props.textUrl) {
-        console.log("onScroll ..", props.textUrl);
-        const element = document.getElementById(props.textUrl);
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "end",
-          inline: "nearest",
-        });
-        router.push(props.textUrl);
-        // if ((scrollTop + clientHeight) + 5 >= scrollHeight) {
-        //     isDisabledBtn.value = false
-        // } else {
-        //     isDisabledBtn.value = true
-        // }
+
+      if (props.textUrl && props.type  !== 'link') {
+        let id = props.textUrl;
+        let element = document.getElementById(id);
+        element.scrollIntoView({behavior: "smooth", block: "end"});
       }
+      if(props.type === 'link'){
+        window.open(props.textUrl, "_blank");
+      }
+      console.log(props.type);
+       ctx.emit("click-menu", props.textUrl);
     }
 
     return {

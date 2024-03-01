@@ -1,6 +1,6 @@
 [
    {
-      "id":9,
+      "id":"administer-office",
       "topicName":"สำนักอำนวยการ",
       "icon":"",
       "showColumn":"",
@@ -31,7 +31,7 @@
            "key":3,
            "url":"http://www.mua.go.th/users/he-commission/doc/law/private50.pdf",
            "icon":"file",
-           "name":"แพรบ.สถาบันอุดมศึกษาเอกชน",
+           "name":"พรบ.สถาบันอุดมศึกษาเอกชน",
            "description":"",
            "isDisable":true
         },
@@ -46,7 +46,7 @@
       ]
    },
    {
-      "id":10,
+      "id":"hr-office",
       "topicName":"สำนักบริหารทรัพยากรมนุษย์",
       "icon":"",
       "showColumn":"",
@@ -83,7 +83,7 @@
       ]
    },
    {
-      "id":11,
+      "id": "computer",
       "topicName":"สำนักบริการคอมพิวเตอร์",
       "icon":"",
       "showColumn":"",
@@ -99,7 +99,7 @@
             "url":"http://intranet.utcc/Forms/request_form.pdf",
             "icon":"file",
             "name":"แบบฟอร์มขอเครื่องคอมพิวเตอร์",
-            "description":"Update:  Feb 2023",
+            "description":"Update: Feb 2023",
             "isDisable": false
          },
          {
@@ -107,13 +107,13 @@
             "url":"#",
             "icon":"file",
             "name":"ใบขอส่งซ่อมเครื่องคอมพิวเตอร์",
-            "description":"Update:  Feb 2023",
+            "description":"Update: Feb 2023",
             "isDisable":true
          }
       ]
    },
    {
-      "id":12,
+      "id": "pr",
       "topicName":"กองประชาสัมพันธ์",
       "icon":"",
       "showColumn":"",
@@ -143,7 +143,7 @@
       ]
    },
    {
-      "id":13,
+      "id":"legal-act",
       "topicName":"กองนิติการ",
       "icon":"",
       "showColumn":"",
@@ -206,7 +206,7 @@
       ]
    },
    {
-      "id":14,
+      "id":"foreign",
       "topicName":"กองวิเทศสัมพันธ์",
       "icon":"",
       "showColumn":"",
@@ -252,14 +252,14 @@
       ]
    },
    {
-      "id":15,
-      "topicName":"ฝ่ายวิเทศสัมพันธ์",
+      "id":"relative",
+      "topicName":"กองวิเทศสัมพันธ์",
       "icon":"",
       "showColumn":"",
       "isFull": false,
-      "isAlert": false,
+      "isAlert": true,
       "alertDetail": {
-        "title": "",
+        "title": "กิจกรรมความร่วมมือระหว่างมหาวิทยาลัยหอการค้าไทยและสถาบันต่างประเทศ",
         "description": ""
       },
       "itemList":[

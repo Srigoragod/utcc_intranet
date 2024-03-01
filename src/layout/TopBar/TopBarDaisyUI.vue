@@ -79,8 +79,8 @@
                     :key="index"
                   >
                     <MenuItem
-                      v-for="(subItem, index1) in item"
-                      :key="index1"
+                      v-for="(subItem, row) in item"
+                      :key="row"
                       :textName="subItem.textName"
                       :textUrl="subItem.url"
                       :type="subItem.type"
@@ -184,8 +184,10 @@ export default defineComponent({
     const resetMenu = () => {
       isShow.value = false;
       idActive.value = 1;
+ 
     };
-    const handleClickMenu = () => {
+    const handleClickMenu = (val) => {
+      document.getElementById("my_modal_1").close();
       resetMenu();
     };
     const handleGotoPage = (url) => {
@@ -204,9 +206,7 @@ export default defineComponent({
       isShow.value = false;
     };
     const handleSubMenuDropdown = async (item) => {
-      // router.push(items.url)
 
-      // window.dataLayer = window.dataLayer || [];
       dataLayer.push({
         event: "click_top_menu",
         event_category: "top_menu",
@@ -215,16 +215,12 @@ export default defineComponent({
       });
 
       randomItemCaption.value = randomCaption();
-      console.log(JSON.stringify(randomItemCaption.value, null, 4));
-      // isShow.value = false;
+
       let id = item.id;
-      // if (item.url) {
-      //   router.push(item.url);
-      // }
+
 
       idActive.value = id;
 
-      // console.log('item ... ', JSON.stringify(item,null,4));
       menuActiveName.value = item.textName;
       menuActiveUrl.value = item.url;
 
@@ -249,7 +245,7 @@ export default defineComponent({
     };
 
     const onClickDialog = (item, url) => {
-     
+
       if(url == 'risk' || url == 'budget'){
         let element = document.getElementById(url);
         element.scrollIntoView({behavior: "smooth", block: "end"});
@@ -261,7 +257,6 @@ export default defineComponent({
     };
 
     const onClickCloseMenu = () => {
-      // location.reload()
       isShow.value = false;
     };
 

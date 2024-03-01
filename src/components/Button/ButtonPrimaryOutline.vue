@@ -1,7 +1,7 @@
 <template>
   <div>
   <div class="btn-blue grid justify-items-center cursor-pointer">
-    <font-awesome-icon class="text-2xl icon-svg" :icon="[`${typeIcon}`, `${ !icon ? 'sailboat': icon }`]" />
+    <font-awesome-icon class="text-2xl icon-svg" :icon="[`${typeIcon}`, `${ !icon ? 'link': icon }`]" />
     <div class="text-base text-btn text-2-line sm:text-1-line block">   {{ textButton }}</div>
   </div>
 </div>
@@ -15,7 +15,7 @@ export default defineComponent({
     textButton: { type: String, required: true },
     url: { type: String, required: true },
     typeIcon: { type: String, required: false, default: 'fas' },
-    icon: { type: String, required: false, default: 'sailboat' },
+    icon: { type: String, required: false, default: 'link' },
     isDisable: { type: Boolean, required: false, default: false }
   },
   setup(props,ctx){

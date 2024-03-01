@@ -25,7 +25,7 @@ DateMeeting
           :class="[pageActive == 'shortcut' ? 'bg-blue-100' : '']"
         >
           <Shortcut id="test" data-aos="fade-right"></Shortcut>
-          <LastUpdate ref="lastupdate" data-aos="fade-left"></LastUpdate>
+          <LastUpdate id="lastupdate" data-aos="fade-left"></LastUpdate>
         </section>
 
         <section id="onlineservice" class="container mx-auto my-10">

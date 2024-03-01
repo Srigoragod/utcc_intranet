@@ -8,7 +8,7 @@
         {
           "textName": "ยอดนิยม",
           "url": "shortcut",
-          "type": "ref",
+          "type": "id",
           "subitems": [
             {
               "textNameSub": "Microsoft 365",
@@ -27,7 +27,7 @@
         {
           "textName": "การประชุมมหาวิทยาลัย",
           "url": "meeting",
-          "type": "ref",
+          "type": "id",
           "subitems": [
             {
               "textNameSub": "ปฎิทินการประชุม",
@@ -42,62 +42,61 @@
         {
           "textName": "Latest File",
           "url": "lastupdate",
-          "type":"ref",
+          "type":"id",
           "subitems": []
         },
         {
           "textName": "ข่าวสารประชาสัมพันธ์ภายนอก",
           "url": "news",
-          "type":"ref",
+          "type":"id",
           "subitems": []
         },
         {
-          "textName":
-            "พรบ. กฎ ประกาศ หลักเกณฑ์ และแนวปฏิบัติที่เกี่ยวข้อง...",
-          "url": "1",
-          "type":"ref",
+          "textName":"พรบ. กฎ ประกาศ หลักเกณฑ์ และแนวปฏิบัติที่เกี่ยวข้อง...",
+          "url": "formula",
+          "type":"id",
           "subitems": []
         },
         {
           "textName": "คู่มือการติดตั้ง",
-          "url": "2",
-          "type":"ref",
+          "url": "manual-setting",
+          "type":"id",
           "subitems": []
         },
         {
           "textName": "คู่มือการใช้งานระบบ Less Paper",
-          "url": "3",
-          "type":"ref",
+          "url": "manual-lesspaper",
+          "type":"id",
           "subitems": []
         },
         {
           "textName": "กระบวนการจัดซื้อจัดจ้าง Work Flow",
-          "url": "4",
-          "type":"ref",
+          "url": "work-flow",
+          "type":"id",
           "subitems": []
         },
         {
           "textName": "คู่มือการใช้งานและแนวปฏิบัติแผนกยานพาหนะ",
-          "url": "5",
-          "type":"ref",
+          "url": "plan-car",
+          "type":"id",
           "subitems": []
         },
         {
           "textName": "เกี่ยวกับงานพัสดุ",
-          "url": "6",
-          "type":"ref",
+          "url": "plan-stock",
+          "type":"id",
           "subitems": []
         },
         {
           "textName": "ระบบเอกสารดิจิตอล",
-          "url": "7",
-          "type":"ref",
+          "url": "digital-doc",
+          "type":"id",
           "subitems": []
         },
         {
           "textName": "การพัฒนาและดำเนินงาน KPI อาจารย์",
-          "url": "8",
-          "type":"ref",
+          "url": "kpi-professor",
+          "type":"id",
           "subitems": []
         }
       ]
@@ -110,42 +109,32 @@
       "items": [
         {
           "textName": "สำนักอำนวยการ",
-          "url": "",
+          "url": "administer-office",
           "subitems": []
         },
         {
-          "textName": "สำนักบริหารทรัพยากรมนุษย์",
-          "url": "",
-          "subitems": []
-        },
-        {
-          "textName": "กองบัญชีและควบคุมงบประมาณ",
-          "url": "",
-          "subitems": []
-        },
-        {
-          "textName": "กองพัสดุและจัดการทรัพย์สิน",
-          "url": "",
+          "textName": "สำนักบริหารทรัพากรมนุษย์",
+          "url": "hr-office",
           "subitems": []
         },
         {
           "textName": "กองนิติการ",
-          "url": "https://www.utcc.ac.th/",
+          "url": "legal-act",
           "subitems": []
         },
         {
           "textName": "สำนักบริการคอมพิวเตอร์",
-          "url": "",
+          "url": "computer",
           "subitems": []
         },
         {
           "textName": "กองประชาสัมพันธ์",
-          "url": "",
+          "url": "pr",
           "subitems": []
         },
         {
           "textName": "กองวิเทศสัมพันธ์",
-          "url": "",
+          "url": "foreign",
           "subitems": []
         }
       ]
@@ -163,59 +152,55 @@
         },
         {
           "textName": "ฝ่ายวิจัยและบริการธุรกิจ",
-          "url": "",
+          "url": "research",
           "subitems": []
         },
         {
           "textName": "ฝ่ายบริหาร",
-          "url": "",
+          "url": "manage",
           "subitems": []
         },
         {
           "textName": "ฝ่ายวิชาการ",
-          "url": "",
+          "url": "academic",
           "subitems": []
         },
         {
           "textName": "ฝ่ายเทคโนโลยีสารสนเทศ",
-          "url": "",
+          "url": "it",
           "subitems": []
         },
         {
-          "textName": "ฝ่ายกิจการนักศึกษา",
-          "url": "",
+          "textName": "student",
+          "url": "from-9",
           "subitems": []
         },
         {
           "textName": "ฝ่ายสื่อสารการตลาด",
-          "url": "",
+          "url": "mkt",
           "subitems": []
         },
         {
           "textName": "ฝ่ายวิเทศสัมพันธ์",
-          "url": "",
+          "url": "international",
           "subitems": []
         },
         {
           "textName": "ฝ่ายยุทธศาสตร์และกิจการพิเศษ",
-          "url": "",
+          "url": "special-biz",
           "subitems": []
         },
         {
           "textName": "ฝ่ายอาคารและสิ่งแวดล้อม",
-          "url": "",
+          "url": "building",
           "subitems": []
         },
         {
           "textName": "สำนักงานตรวจสอบภายใน",
-          "url": "",
-          "subitems": []
-        },
-        {
-          "textName": "สถาบันพัฒนาบัณฑิตสู่ความสำเร็จ",
-          "url": "",
+          "url": "internal",
           "subitems": []
         }
+    
       ]
     },
     {
@@ -238,6 +223,20 @@
       "url": "service",
       "isActive": false,
       "items": [
+        {
+          "textName": "มหาวิทยาลัยหอการค้าไทย",
+          "url": "https://www.utcc.ac.th/",
+          "type":"link",
+          "typeIcon": "fas",
+          "icon": "arrow-pointer"
+        },
+        {
+          "textName": "บุคลากร",
+          "url": "https://www.utcc.ac.th/personnel/",
+          "type":"link",
+          "typeIcon": "fas",
+          "icon": "user-group"
+        },
         {
           "textName": "ระบบฐานข้อมูลประกันคุณภาพการศึกษา",
           "url": "http://esar.utcc/",

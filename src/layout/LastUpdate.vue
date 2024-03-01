@@ -3,7 +3,7 @@
     <div class="text-title">
          <!-- <h4 class="font-bold text-topic-name">ไฟล์อัพเดทล่าสุด</h4> -->
          <!-- รายการเอกสารที่มีการอัพเดทล่าสุดทั้งหมด -->
-         <TextUnderline :text="'Latest Update'" :desc="''"></TextUnderline>
+         <TextUnderline :text="'ล่าสุด'" :desc="''"></TextUnderline>
          <a class="link link-primary link-seemore text-[20px] hidden" @click="clickShowMore(isShowMore)"> {{textShow}}</a>
     </div>
  
@@ -97,7 +97,7 @@ export default {
 }
 
 .show-menu {
-  gap: 2rem;
+  gap: 1rem;
   padding: 2rem 1rem;
   display: flex;
   flex-flow: row wrap;
@@ -107,7 +107,7 @@ export default {
   }
   @include min-desktop{
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 

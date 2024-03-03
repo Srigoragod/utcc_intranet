@@ -41,6 +41,14 @@ DateMeeting
             :items="homeList"
             :gridCols="'grid-cols-2'"
           ></ShowFile>
+          <ShowFlexMasonry
+            :topicName="''"
+            :dataName="'home'"
+            :isShow="false"
+            :items="homeFlexMasonry"
+
+          ></ShowFlexMasonry>
+    
         </section>
 
         <section id="faculty">
@@ -87,7 +95,7 @@ DateMeeting
 
 <script>
 import { useRoute } from "vue-router";
-import { ref, defineComponent, watch } from "vue";
+import { ref, defineComponent } from "vue";
 
 // data
 // import menudata from "../data/menudata.json";
@@ -145,24 +153,29 @@ export default defineComponent({
     const route = useRoute();
     const pageActive = route.params.id ? route.params.id : "";
 
-    // const menuList = ref(menudata);
     const homeList = ref(null);
+    const homeFlexMasonry = ref(null);
     const documentList = ref(null);
-    watch(route, () => {
-      console.log("route ... ", pageActive);
-    });
     const initialData = () => {
-      // homeList.value = homedata;
       documentList.value = documentdata;
+      homeFlexMasonry.value = filteredShowColumn();
+
     };
+
+    const filteredShowColumn = ()=> {
+      const filterOnlineService =  documentdata.filter(
+        (item) => item.showColumn != "col-span-2"
+      );
+      return filterOnlineService
+    }
 
     initialData();
 
     return {
-      // menuList,
       homeList,
       pageActive,
       documentList,
+      homeFlexMasonry
     };
   },
 });

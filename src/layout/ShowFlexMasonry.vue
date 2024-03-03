@@ -1,7 +1,7 @@
 <template>
   <div class="">
 
-    <TextUnderline :text="topicName"></TextUnderline>
+    <TextUnderline :text="topicName" v-if="isShow"></TextUnderline>
     <br/>
     <div class="is-desktop gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3" v-if="fileData && fileData.length > 0">
       <FileList
@@ -50,7 +50,8 @@ export default defineComponent({
     items: { type: Array, require: true },
     gridCols: { type: String, require: true, default: "grid-cols-2" },
     topicName: { type: String, require: false, default: "All Files" },
-    dataName: { type: String, require: true }
+    dataName: { type: String, require: true },
+    isShow: { type: Boolean, require: false, default: true},
   },
   components: {
     FileList,
@@ -68,6 +69,8 @@ export default defineComponent({
           fileData.value = documentdata;
         }else if (route.name == 'department' || props.dataName == 'department'){
           fileData.value = departmentdata
+        }else if (props.dataName == 'home'){
+          fileData.value = props.items
         }
 
         fileData.value.sort((a, b) => {

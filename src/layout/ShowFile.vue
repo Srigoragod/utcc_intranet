@@ -63,12 +63,11 @@ export default defineComponent({
     const topicName = ref('All Files')
     const initialData =()=>{
       topicName.value = props.topicName;
-       if(route.name == 'form'){
-        fileData.value = documentdata
-       }else{
-        fileData.value = homedata
-        isNotHome.value = false
-       }
+      isNotHome.value = false
+
+      fileData.value  =  homedata.filter(
+        (item) => item.showColumn === "col-span-2" 
+      );
     }
     initialData()
     return {

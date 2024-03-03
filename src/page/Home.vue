@@ -10,9 +10,8 @@ DateMeeting
         <div class="bg-hero">
           <Slider class="container mx-auto"></Slider>
         </div>
-        '
 
-        <section id="meeting">
+        <section id="meeting" data-aos="fade-up">
           <UniversityMeeting
             ref="meeting"
             class="container mx-auto"
@@ -24,15 +23,15 @@ DateMeeting
           class="container mx-auto grid grid-cols-2 gap-4 py-10"
           :class="[pageActive == 'shortcut' ? 'bg-blue-100' : '']"
         >
-          <Shortcut id="test" data-aos="fade-right"></Shortcut>
+          <Shortcut data-aos="fade-right"></Shortcut>
           <LastUpdate id="lastupdate" data-aos="fade-left"></LastUpdate>
         </section>
 
-        <section id="onlineservice" class="container mx-auto my-10">
-          <OnlineService ref="onlineservice" class="my-2"></OnlineService>
+        <section id="onlineservice" class="container mx-auto my-10" data-aos="fade-up">
+          <OnlineService ref="onlineservice" class="my-2" ></OnlineService>
         </section>
 
-        <section id="news" class="container mx-auto mb-4 lg:mb-24">
+        <section id="news" class="container mx-auto mb-4 lg:mb-24"  data-aos="fade-up">
           <News ref="news"></News>
         </section>
 

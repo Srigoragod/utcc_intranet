@@ -68,8 +68,9 @@
                   <h4 class="text-all-file font-light leading-none block">
                     {{ topicName }}
                   </h4>
-                  <div class="badge badge-accent opacity-50 float-right mr-4">
-                    A-Z
+                  <div class=" opacity-50 float-right mr-4 text-[18px]">
+                    <span>        หากมีคำถามหรือต้องการความช่วยเหลือ 
+โปรดติดต่อ สบค. 6288</span>
                   </div>
                 </div>
                 <div class="flex gap-4">
@@ -98,11 +99,12 @@
                 <Caption
                   :title="randomItemCaption.caption_title"
                   :owner="randomItemCaption.caption_owner"
+                  @click-menu="handleClickMenu()"
                 ></Caption>
               </div>
             </div>
             <div class="modal-action">
-              <form method="dialog">
+              <form method="dialog" >
                 <button
                   class="btn btn-sm text-[20px]"
                   @click="onClickCloseMenu()"

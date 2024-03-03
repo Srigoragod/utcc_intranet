@@ -9,7 +9,7 @@
     <div
       class="flex justify-self-center float-right items-center text-[18px] text-right pt-2 cursor-pointer hover:text-a-blue-0874D9"
     >
-      <span class="pr-2 hover:underline hover:underline-offset-1">
+      <span class="pr-2 hover:underline hover:underline-offset-1" @click="clickForm">
         คลิกเสนอ "แคปชั่นทํางาน"</span
       >
       <font-awesome-icon :icon="['fas', 'arrow-right']" class="text-[14px]" />
@@ -26,10 +26,18 @@ export default defineComponent({
     title: { type: String, required: false, default: ''},
     owner: { type: String, required: false, default: '' }
   },
-  setup(props) {
+  emits: ["click-menu"],
+  setup(props,ctx) {
     const item = ref(props.items)
+    const uri_form = ref('https://forms.office.com/r/iA6bPFZM2m?origin=lprLink')
+
+    const clickForm = () =>{
+      ctx.emit("click-menu", uri_form.value);
+      window.open(uri_form.value, '_blank')
+    }
     return {
-      item
+      item,
+      clickForm
     };
   },
 });

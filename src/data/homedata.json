@@ -14,20 +14,20 @@
        "itemList":[
           {
              "key":1,
-             "url":"http://intranet.utcc/พรบ.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EcYAfZl9PKRCh2-m9CajYCYB_qUl4_KWyU02DqG7_UeMpw?e=9iBpMM",
+             "icon":"pdf",
              "name":"พรบ.สถาบันอุดมศึกษาเอกชน",
              "description":"Update: 2562",
              "isDisable":false
           },
           {
              "key":2,
-             "url":"http://intranet.utcc/Forms/60mua.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EXyF8ADkrhNEss_7cg1nXqkBbO1yjGw3V8HAedh4NtC1hA?e=tDlWmG",
+             "icon":"pdf",
              "name":"รวมกฎกระทรวง ประกาศกระทรวงศึกษาธิการ ประกาศ และมติคณะกรรมการการอุดมศึกษา ที่เกี่ยวกับหลักเกณฑ์/แนวทาง และแนวปฏิบัติที่เกี่ยวข้อง สิงหาคม 2556 - กรกฎาคม 2560",
              "description":"Update:  สิงหาคม 2556 - กรกฎาคม 2560",
              "isDisable":false,
-             "isFull": true
+             "isFull": false
           }
        ]
     },
@@ -49,7 +49,7 @@
       "itemList":[
         {
            "key":1,
-           "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Eal1h1rMpHFFh8iTa_QQlUIBsC23j9iZ_yOt6tY-JPMLDQ?e=6cKSzS",
+           "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Eal1h1rMpHFFh8iTa_QQlUIBsC23j9iZ_yOt6tY-JPMLDQ?e=Ct4g63",
            "icon":"pdf",
            "name":"รายการวัสดุสิ้นเปลืองที่มีให้เบิกในคลังพัสดุ (สโตร์)",
            "description":"Update: 1 Sep 2023",
@@ -61,92 +61,92 @@
             "icon":"docx",
             "name":"พ 1.001 แบบฟอร์มใบสั่งซื้อเงินสด",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":3,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EWlmZVNNcbRMtjmMFnCT1wcByq7zv7ybUHi0krLLtAPFZA?e=EZJ8DN",
+            "icon":"docx",
             "name":"พ 1.002 แบบฟอร์มรับสินค้าด่วน",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":4,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EYfWFUH7tptLkNc7LgPjJLUBjOu3okH4AR6Q65OncTW6Mg?e=5msMaF",
+            "icon":"docx",
             "name":"พ 1.003 แบบฟอร์มคุณลักษณะพัสดุ",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":5,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/Eb0_e04v-KhOqw1CWW2SPpwBWZxpMLaw_EBuqn48osjupQ?e=IvGXDb",
+            "icon":"docx",
             "name":"พ 1.004 แบบฟอร์มคุณลักษณะงานจัดจ้าง",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":6,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/Eel4n0q46YFAm56aigBa-TwBHfQ7WWrYWeD8P8tvyQ_xVw?e=ky5G0l",
+            "icon":"docx",
             "name":"พ 1.005 แบบฟอร์มร่างขอบเขตคุณลักษณะงาน",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":7,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EWMXAcHZ42tBqTFDbNbi0nIBcpveI_TdXZZEFffwI_M1ow?e=V5IMYe",
+            "icon":"docx",
             "name":"พ 1.006 แบบฟอร์มเอกสารส่วนที่ 1 คุณลักษณะ",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":8,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EeAfUQ5PAedBrVUL2ikluWMBdQiIbH1K7nZ1rWR779uSug?e=uz80O7",
+            "icon":"docx",
             "name":"พ 1.007 แบบฟอร์มเอกสารส่วนที่ 2 ใบเสนอราคา",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":9,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/ERFahTcV1K5BiKhbl1eFSg4BH-hpI0b5QGI2Tsil4udvjA?e=72HQwu",
+            "icon":"docx",
             "name":"พ 1.008 แบบฟอร์มแต่งตั้งคณะกรรมการ",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":10,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/ETztC8Ef9dBBi0ptAcHzDlIBmea0fQsf8RRU_AXDxvKUiQ?e=sidgvL",
+            "icon":"docx",
             "name":"พ 1.009 แบบฟอร์มรับซอง (วิธีสอบราคา) , (วิธีพิเศษ)",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":11,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/ESjfa2JeGilGgMNvrjwDQPQBmbI4Cbq_B6daHAp4mACBmQ?e=43rcKV",
+            "icon":"docx",
             "name":"พ 1.010 แบบฟอร์มรับซอง (วิธีประกวดราคา)",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":12,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EXg5XtzWdJFOpNGD59LVvXwB-KK94NNoz-MvT_23UVsLrA?e=NXZP27",
+            "icon":"docx",
             "name":"พ 1.011 แบบฟอร์มใบรับหลักประกันซอง (วิธีประกวดราคา) , (วิธีพิเศษกรณีเกิน 2 ล้านบาท)",
             "description":"Update: 1 Sep 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":13,
-            "url":"http://intranet.utcc/Forms/EX-asset01.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EcRQg2vkJHBOo1xGdebrh3IBrTtQlC0msaq0cXb-VIeQqQ?e=eTTjNZ",
+            "icon":"pdf",
             "name":"แนวปฏิบัติ ขั้นตอน และเงื่อนไขในการส่งคืนพัสดุ/ครุภัณฑ์",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
@@ -161,104 +161,104 @@
          },
          {
             "key":15,
-            "url":"#",
-            "icon":"word",
+            "url":"/Forms/EX-asset12.pdf",
+            "icon":"docx",
             "name":"แบบฟอร์มใบเบิกกระดาษ A4",
             "description":"Update: 1 Sep 2023",
             "isDisable":true
          },
          {
             "key":16,
-            "url":"http://intranet.utcc/Forms/P-2001.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EVWz1yg4dtREvxzprwceIsYBzW7oo-09PwmPQX6pLbm4Xg?e=7AgLmH",
+            "icon":"pdf",
             "name":"พ 2.001 แบบฟอร์มใบเบิกพัสดุ (สโตร์)",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":17,
-            "url":"http://intranet.utcc/Forms/P-2002.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ef72HpolNiBFhtm-WP7uP04BQXrbyQXE3vDzxRzRuLgqMQ?e=2mlZ5h",
+            "icon":"pdf",
             "name":"พ 2.002 แบบฟอร์มใบขอยืมวัสดุ/อุปกรณ์",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":18,
-            "url":"http://intranet.utcc/Forms/P-2003.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ERhx_GHO7oBOhkDDJgTz-GIBZqwqQG_K8qWHSqR6M3mBrA?e=1rsaBk",
+            "icon":"pdf",
             "name":"พ 2.003 แบบฟอร์มขอเลขรหัสสินทรัพย์",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":19,
-            "url":"http://intranet.utcc/Forms/P-2004.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EXwqHVkYex9Dm2TPgIm3tZgBN4YW7LQLUuI4V_MLYuvKEw?e=utGH3d",
+            "icon":"pdf",
             "name":"พ 2.004 แบบฟอร์มรายงานผลการใช้งาน",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":21,
-            "url":"http://intranet.utcc/Forms/P-2005.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZv-ohIiz51Ai2YvnmiiTxkBXTkIQ4cnek3ddNXVn_aSQw?e=KerKH9",
+            "icon":"pdf",
             "name":"พ 2.005 แบบฟอร์มใบตรวจรับงานกรรมการ",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":22,
-            "url":"http://intranet.utcc/Forms/P-2006.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EUK3V0mpHVpCmsJ69B_NvnUB3xj0KLmlyM__NLoaEpcT6w?e=Xr0ddw",
+            "icon":"pdf",
             "name":"พ 2.006 แบบฟอร์มใบโอนย้ายสินทรัพย์",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":23,
-            "url":"http://intranet.utcc/Forms/P-2007.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EXczCXse5edJmTtXx2VEbAUB2q-uoW4jEQXjeEz2xeqZEA?e=0ocUzM",
+            "icon":"pdf",
             "name":"พ 2.007 แบบฟอร์มใบส่งคืนพัสดุ/ครุภัณฑ์",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":24,
-            "url":"http://intranet.utcc/Forms/P-2008.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ESeZ9aNfUStKmogQoAooKw8BH-n9_XVCwLwaZM_sJ-A6gg?e=IAHYfD",
+            "icon":"pdf",
             "name":"พ 2.008 แบบฟอร์มบันทึกข้อมูลรายละเอียดสินทรัพย์",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":25,
-            "url":"http://intranet.utcc/Forms/P-2009.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EUsNBho1nSRFkndtKAok7doB2qMGZ0OGXkf3fSmNxHkvPg?e=WPighc",
+            "icon":"pdf",
             "name":"พ 2.009 แบบฟอร์มใบขอเบิกครุภัณฑ์เก่าไปใช้งาน",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":26,
-            "url":"http://intranet.utcc/Forms/P-2010.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYv8RuKH_I1PkLcGP2oYNfMBHwMaCstUKvoP_1bwz5ei5g?e=I8ZM3q",
+            "icon":"pdf",
             "name":"พ 2.010 แบบฟอร์มแจ้งรายการสินทรัพย์ที่ได้รับ",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":27,
-            "url":"http://intranet.utcc/Forms/P-2011.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ET-4q5-FxNREk0ufrnSDouYBliPmmgOZJONsV2QRkIaDWA?e=3GDaJr",
+            "icon":"pdf",
             "name":"พ 2.011 แบบฟอร์มขอเลขรหัสซ่อมสินทรัพย์",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
          },
          {
             "key":28,
-            "url":"http://intranet.utcc/Forms/P-2012.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EdL8uJbKzDZFuIfDY1qn0ocBi68ny7iuuIipolKRIx5LqA?e=Wf9h8X",
+            "icon":"pdf",
             "name":"พ 2.012  แบบฟอร์มใบเบิกกระดาษ A4",
             "description":"Update: 1 Sep 2023",
             "isDisable":false
@@ -280,17 +280,17 @@
           {
              "key":1,
              "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ETS1UrP8sZxFpj9zaGCumr4B9HWIceHrmUT3806f6OUdNQ?e=w8QskM",
-             "icon":"file",
+             "icon":"pdf",
              "name":"Adobe",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":2,
-             "url":"https://www.utcc.ac.th/download/ip-phone.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZXqaM5fo0lEkvmffEAcZ0YBJCzMl1n8Gc816eqGU_ceIQ?e=bTh3mW",
+             "icon":"pdf",
              "name":"IP-Phone",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable": false
           },
           {
@@ -311,10 +311,10 @@
           },
           {
              "key":5,
-             "url":"http://intranet.utcc/Setup_UTCC_SPSS.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EbdJdVPgBopJlSO9A0sCKmABlJ93_9rZmuSB2prY-Ma_yg?e=ox3TNa",
+             "icon":"pdf",
              "name":"UTCC-SPSS",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           }
        ]
@@ -333,42 +333,42 @@
        "itemList":[
           {
              "key":1,
-             "url":"http://intranet.utcc/Forms/LessPaperlOfficerManual%20V1.7.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYO0py71relHiedTr5oWfZABF_sqcjup3UTikqOAth6owA?e=8TeVIA",
+             "icon":"pdf",
              "name":"สำหรับเจ้าหน้าที่",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":2,
-             "url":"http://intranet.utcc/Forms/LessPaperlManual-GeneralUser-V1.7.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EWHrCX-RVhtKiYYEu-EmZkYBtTuMGtlcDYYCf3YB12e4Sw?e=yGKiJ2",
+             "icon":"pdf",
              "name":"สำหรับบุคคลทั่วไป",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":3,
-             "url":"http://intranet.utcc/Forms/LessPaperDeptAdmin-V1.7.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZE5rQagCnZNiovjxS9OjrcBhgtcQ27jlbp7B8o4-9pV4Q?e=CXpReR",
+             "icon":"pdf",
              "name":"สำหรับผู้ดูแลระบบระดับหน่วยงาน",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":4,
-             "url":"http://intranet.utcc/Forms/LessPaperCenterAdmin-V1.7.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EQhygxO8Nh5JrjE1rVd1x3YBu-t_zS_jzEpdhv5vU4n2cw?e=ONdhK1",
+             "icon":"pdf",
              "name":"สำหรับผู้ดูแลระบบส่วนกลาง",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":5,
-             "url":"http://intranet.utcc/Forms/LPTouchManual-Manager-V1.7.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ee4Wu7O9_HhJiKcIH3GTFCcB66pPTeR3Ni_RTp7Yv9tzYw?e=dDKbLV",
+             "icon":"pdf",
              "name":"LPTouch",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           }
        ]
@@ -387,66 +387,66 @@
        "itemList":[
          {
             "key": 0,
-            "url":"http://intranet.utcc/Forms/PROnWeb.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EbgQvwfUSvhKppOX_44Hd5MBGpJqTsn0y3J1scANXIt1xA?e=5NcL7G",
             "icon":"pdf",
             "name":"คู่มือการจัดทำ PR on Web",
-            "description":"Update:  Latest version",
+            "description":"Update: Latest version",
             "isDisable":false
          },
           {
              "key":1,
-             "url":"http://intranet.utcc/Forms/P-11.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EeQUKVjon5NGvTBYk2KMwpcBaE6qcb0024BN4vLUY5Lpjw?e=e9li6q",
+             "icon":"pdf",
              "name":"วิธีตกลงราคา",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":2,
-             "url":"http://intranet.utcc/Forms/P-12.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EbMfbkjmpqpHuIPufUImDEcBKjkiGr1qeINcH9DTZIFq9A?e=2ORAJg",
+             "icon":"pdf",
              "name":"วิธีตกลงราคา เร่งด่วน",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":3,
-             "url":"http://intranet.utcc/Forms/P-13.pdf",
-             "icon":"file",
-             "name":"<span >งานกรรมการ <u>ไม่เกิน</u></span> 400.000 บาท",
-             "description":"Update:  Latest version",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ETmN1huCQY1PqtquDjXk1WoBCLbAHSmTYjie_5Z4oat2Tg?e=yPqT6O",
+             "icon":"pdf",
+             "name":"<span >งานกรรมการ <u>ไม่เกิน</u></span> 4 แสนบาท",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":4,
-             "url":"http://intranet.utcc/Forms/P-14.pdf",
-             "icon":"file",
-             "name":"<span>งานกรรมการ <u>มากกว่า</u></span> 400.000 บาท",
-             "description":"Update:  Latest version",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ea9h5p_qUJFLgEocnDLVNb0BdrXWyJu6Vkue9NvnGBiMvA?e=dwOdeA",
+             "icon":"pdf",
+             "name":"<span>งานกรรมการ <u>มากกว่า</u></span> 4 แสนบาท",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":5,
-             "url":"http://intranet.utcc/Forms/P-15.pdf",
-             "icon":"file",
-             "name":"<span>วิธีพิเศษ <u>ไม่เกิน</u></span> 400.000 บาท",
-             "description":"Update:  Latest version",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ESuZ56X31wJCkVYHTsJDyGABDF0JdwShQvBEAG7CRkDJGA?e=tx6yk6",
+             "icon":"pdf",
+             "name":"<span>วิธีพิเศษ <u>ไม่เกิน</u></span> 4 แสนบาท",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":6,
-             "url":"#",
-             "icon":"file",
-             "name":"<span>วิธีพิเศษ <u>มากกว่า</u></span> 400.000 บาท",
-             "description":"Update:  Latest version",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ESReH7IyxAtCq00YazjzvqwB5aV7THeV-kHu5o9k4lEC5Q?e=L3adg7",
+             "icon":"pdf",
+             "name":"<span>วิธีพิเศษ <u>มากกว่า</u></span> 4 แสนบาท",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":7,
-             "url":"http://intranet.utcc/Forms/P-17.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYM9Heu3TORNmPiAix9DKoQBJGf84-RwwP6SlvorCF4Rmw?e=5xxmGG",
+             "icon":"pdf",
              "name":"วิธี e-Action",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           }
        ]
@@ -473,42 +473,42 @@
           },
           {
              "key":2,
-             "url":"http://intranet.utcc/Forms/EX-Document11.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EQBZLs2sL61BjGDSZGAdif4BZugp8EC5NPiBvNu3pChXwQ?e=6K73JK",
+             "icon":"pdf",
              "name":"แบบการขอใช้รถยนต์ในกิจกรรมมหาวิทยาลัย",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":3,
-             "url":"http://intranet.utcc/Forms/EX-Document12.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EceSrnLZ_3xIuO_PgTj9RZkB28-VuY3bU9IWFFP-k8ud7Q?e=Kfm2Tu",
+             "icon":"pdf",
              "name":"แนวปฎิบัติการขอใช้บริการรถยนต์มหาวิทยาลัย",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":4,
-             "url":"http://intranet.utcc/carbooking_online.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EZM4YVbOG5xKvrLbBJZdqAUBiRpwoXWjbvil7Yi4CQr3CQ?e=qMXUJf",
+             "icon":"pdf",
              "name":"คู่มือการเข้าระบบจองรถออนไลน์",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":5,
-             "url":"http://intranet.utcc/Forms/EX-Document13.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EbSdl2nav9xBpISPxkoFqfEBMMEg1YOyOt05sW6DDop6tw?e=FXTgMV",
+             "icon":"pdf",
              "name":"ตารางอัตราค่าเช่ารถยนต์ของมหาวิทยาลัยหอการค้าไทย",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":6,
-             "url":"http://intranet.utcc/Forms/EX-Document14.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ES4EYgz-zypCiaiy6eGnu2AB21nWJO6KmDVaIgeLMMcnVQ?e=gRf05L",
+             "icon":"pdf",
              "name":"ประมาณการค่าเช่ารถจากภายนอก",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           }
        ]
@@ -526,43 +526,43 @@
        "itemList":[
           {
              "key":1,
-             "url":"http://intranet.utcc/doc_digital.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EX0xZvU7GJ5BscSmn3iIZawBMTU-hFjtIHzBUtcL3JIdPg?e=XA3hHe",
+             "icon":"pdf",
              "name":"แนวปฏิบัติการใช้งานระบบเอกสารดิจิตอล",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":2,
-             "url":"http://intranet.utcc/Forms/howtoprinter.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EePrZiwNsdhDlTnq4cQxVnYBeKweGUoUyfzSmxvySPB2mQ?e=gKymgr",
+             "icon":"pdf",
              "name":"วิธีการใช้งานโปรแกรม Cashier",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":3,
-             "url":"http://intranet.utcc/Forms/errorprinter.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Edtg1y5WE8xBmnkyLAui_AIB_uGFTPeAn3Pl57H-iBxx_A?e=vn5u7n",
+             "icon":"pdf",
              "name":"วิธีการแก้ไขปัญหากระดาษติด",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":4,
-             "url":"http://intranet.utcc/Forms/P-2012.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EdL8uJbKzDZFuIfDY1qn0ocBi68ny7iuuIipolKRIx5LqA?e=BD9df2",
+             "icon":"pdf",
              "name":"แบบฟอร์มใบเบิกกระดาษ A4",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":5,
-             "url":"http://intranet.utcc/Forms/P-2013.pdf",
-             "icon":"download",
+             "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EYpfzWStvmNCt9IjjU4wB-sBToOkrnxM6Hro1w8oOEqGsg?e=UY7Sgu",
+             "icon":"pdf",
              "name":"แบบฟอร์มบันทึกขอเพิ่มยอดจัดสรรโควต้ากระดาษ",
-             "description":"Update:  Latest version",
-             "isDisable": true,
+             "description":"Update: Latest version",
+             "isDisable": false,
              "fileName": "P-2013.docx",
              "pathFile": "../assets/file/P-2013.docx"
           }
@@ -581,36 +581,36 @@
        "itemList":[
           {
              "key":1,
-             "url":"http://intranet.utcc/Forms/kpi1.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EeOgpQl2h61Mnz0PoZ1oGyQBWHf_1uE-qg5Lw_-gLNFQaw?e=cSJQ7T",
+             "icon":"pdf",
              "name":"หลักเกณฑ์การคิดภาระงานอาจารย์",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":2,
-             "url":"http://intranet.utcc/Forms/hr4.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYH92V58CRJDiZIqWo91Sg0BA72WBeFDYKiyQsi6VwoD2g?e=Mc5hNX",
+             "icon":"pdf",
              "name":"ขั้นตอนการปฏิบัติงานร่วมกับองค์กรเครือข่าย (หอการค้าไทย)",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           },
           {
              "key":3,
-             "url":"#",
-             "icon":"download",
+             "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/ESLfJdqptsREjzYOUrwCzs0BV5wlQsVLiTfrpU4e60dWEg?e=pGDOfl",
+             "icon":"xlsx",
              "name":"แบบบันทึกการปฏิบัติงานร่วมกับคณะกรรมการหอการค้า ปีการศึกษา 2562 (แบบ ปคกห.1)",
-             "description":"Update:  Latest version",
-             "isDisable": true,
+             "description":"Update: Latest version",
+             "isDisable": false,
              "fileName": "",
              "pathFile": ""
           },
           {
              "key":4,
-             "url":"http://intranet.utcc/Forms/hr6.pdf",
-             "icon":"file",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EUzYhPYdMIpPtdbtBFNGUB4BwJJhEYgRMTF68njmsxR3mw?e=vyHPys",
+             "icon":"pdf",
              "name":"แบบฟอร์มใบเบิกเงินค่าตอบแทนการปฏิบัติงานนอกสถานที่ (สบม. 15)",
-             "description":"Update:  Latest version",
+             "description":"Update: Latest version",
              "isDisable":false
           }
        ]

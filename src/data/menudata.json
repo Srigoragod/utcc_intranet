@@ -40,7 +40,7 @@
           ]
         },
         {
-          "textName": "Latest File",
+          "textName": "ล่าสุด",
           "url": "lastupdate",
           "type":"id",
           "subitems": []

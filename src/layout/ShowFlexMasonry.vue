@@ -47,7 +47,7 @@ import TextUnderline from "../components/Text/TextUnderline.vue";
 export default defineComponent({
   name: "ShowFile",
   props: {
-    items: { type: Array, require: true },
+    items: { type: Array, require: false },
     gridCols: { type: String, require: true, default: "grid-cols-2" },
     topicName: { type: String, require: false, default: "All Files" },
     dataName: { type: String, require: true },
@@ -108,7 +108,7 @@ export default defineComponent({
     return {
       fileData,
       isNotHome,
-      topicName,
+      topicName
     };
   },
 });

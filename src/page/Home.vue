@@ -41,6 +41,7 @@ DateMeeting
             :items="homeList"
             :gridCols="'grid-cols-2'"
           ></ShowFile>
+
           <ShowFlexMasonry
             :topicName="''"
             :dataName="'home'"
@@ -98,9 +99,7 @@ import { useRoute } from "vue-router";
 import { ref, defineComponent } from "vue";
 
 // data
-// import menudata from "../data/menudata.json";
-// import homedata from "../data/homedata.json";
-import documentdata from "../data/documentdata.json";
+import homedata from "../data/homedata.json";
 
 // components
 import MainPage from "./MainPage.vue";
@@ -157,13 +156,13 @@ export default defineComponent({
     const homeFlexMasonry = ref(null);
     const documentList = ref(null);
     const initialData = () => {
-      documentList.value = documentdata;
+      documentList.value = homedata;
       homeFlexMasonry.value = filteredShowColumn();
 
     };
 
     const filteredShowColumn = ()=> {
-      const filterOnlineService =  documentdata.filter(
+      const filterOnlineService =  homedata.filter(
         (item) => item.showColumn != "col-span-2"
       );
       return filterOnlineService

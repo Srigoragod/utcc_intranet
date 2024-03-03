@@ -16,7 +16,7 @@
         <ButtonBlueDownload
           v-for="(item, index) in buttonList"
           :key="index"
-          :textButton="item.text"
+          :textButton="item.name"
           :url="item.url"
           :icon="item.icon"
           :isDisable="item.isDisable"
@@ -34,6 +34,11 @@ import DateMeeting from "../components/DateWidget/DateMeeting.vue";
 import ButtonBlueDownload from "../components/Button/ButtonBlueDownload.vue";
 import TextUnderline from "../components/Text/TextUnderline.vue";
 
+//data
+import umeeting_data from '../data/umeeting_data.json';
+import umeeting_date_data from '../data/umeeting_date_data.json';
+
+
 export default defineComponent({
   name: "UniversityMeeting",
   components: {
@@ -43,43 +48,17 @@ export default defineComponent({
     TextUnderline
   },
   setup() {
-    const dateMeetingList = ref([
-      {
-        id: 1,
-        date: "03/06/2024",
-        name: "สภามหาวิทยาลัย",
-        description:
-          "<div>เวลา 09:00 - 12:00 น.</div><div>ณ หอประชุมสภาฯ อาคาร 24</div>",
-        isActive: true,
-      },
-      {
-        id: 2,
-        date: "02/20/2024",
-        name: "คณะกรรมการอำนวยการฯ",
-        description:
-          "<div>เวลา 09:00 - 12:00 น.</div><div>ณ หอประชุมสภาฯ อาคาร 24</div>",
-        isActive: false,
-      },
-    ]);
+    const dateMeetingList = ref(null);
+    const buttonList = ref(null);
 
-    const buttonList = ref([
-      {
-        text: "ปฎิทินการประชุม.pdf",
-        url: "http://center.utcc/2567/calendar.pdf",
-        icon: "file",
-        description: "Update: ประจำปี 2566",
-        isDisable: false,
-      },
-      {
-        text: "มติการประชุมมหาวิทยาลัย",
-        url: "http://center.utcc/conclude/",
-        icon: "link",
-        description: "สภามหาวิทยาลัย, กอม., กบม.",
-        isDisable: false,
-      },
-    ]);
+    const initialMeetingList =() => {
+      let date_data = umeeting_date_data;
+      dateMeetingList.value = date_data;
+      let data = umeeting_data;
+      buttonList.value = data[0].itemList
+    }
 
-
+    initialMeetingList()
     return {
       dateMeetingList,
       buttonList,

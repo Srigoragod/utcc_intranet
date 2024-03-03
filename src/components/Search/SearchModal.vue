@@ -46,14 +46,14 @@
         </div>
         <div class="modal-action mt-4">
               <button
-                  class="btn btn-sm btn-secondary mr-4 text-[18px] btn-ghost opacity-50 hover:opacity-100"
+                  class="btn  btn-secondary mr-4 text-[18px] btn-ghost opacity-50 hover:opacity-100"
                   @click="resetFormSearch()"
                 >
                    Reset
                </button>
               <form method="dialog">
                 <button
-                  class="btn btn-sm btn-primary text-[18px] "
+                  class="btn  btn-primary text-[18px] "
                 >
                    Close
                 </button>
@@ -76,6 +76,7 @@ import departmentdata from "../../data/documentdata.json";
 import menudata from "../../data/menudata.json";
 import school_data from "../../data/school_data.json";
 import risk_data from "../../data/risk_data.json"
+import umeeting_data from "../../data/umeeting_data.json";
 
 // component
 import SearchResultList from "./SearchResultList.vue";
@@ -165,7 +166,9 @@ export default defineComponent({
         documentdata,
         departmentdata,
         school_data,
-        risk_data
+        risk_data,
+        umeeting_data
+
       );
 
       const newArray = new Array();

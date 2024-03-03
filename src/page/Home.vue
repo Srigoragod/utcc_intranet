@@ -62,13 +62,15 @@ DateMeeting
           ></ShowFlexMasonry>
         </section>
 
-        <section class="container mx-auto py-10"  >
-          <Risk id="risk"></Risk>
-        </section>
+        <section class="container mx-auto py-10 grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4"  >
 
-        <section class="container mx-auto py-10" >
+          <Risk id="risk"></Risk>
           <Budget id="budget"></Budget>
         </section>
+
+        <!-- <section class="container mx-auto py-10" >
+
+        </section> -->
 
         <section class="container mx-auto py-10">
           <FunctionArea></FunctionArea>

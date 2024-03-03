@@ -1,0 +1,32 @@
+[
+   {
+      "id": "meeting",
+      "topicName":"ประชุมมหาวิทยาลัย",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+      "itemList":[
+         {
+            "key":1,
+            "url":"http://center.utcc/2567/calendar.pdf",
+            "icon":"pdf",
+            "name":"ปฎิทินการประชุม",
+            "description":"Update: ประจำปี 2566",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"http://center.utcc/conclude/",
+            "icon":"link",
+            "name":"มติการประชุมมหาวิทยาลัย",
+            "description":"สภามหาวิทยาลัย, กอม., กบม.",
+            "isDisable":false
+         }
+      ]
+   }
+ ]

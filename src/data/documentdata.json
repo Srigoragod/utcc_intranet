@@ -272,5 +272,100 @@
             "isDisable": true
          }
       ]
+   },
+   {
+      "id": "plan-budget",
+      "topicName":"กองบัญชีและควบคุมงบประมาณ",
+      "icon":"",
+      "showColumn":"",
+      "isFull":false,
+      "isAlert": false,
+      "alertDetail": {
+        "title": "",
+        "description": ""
+      },
+     "isDisable":false,
+      "itemList":[
+         {
+            "key":1,
+            "url":"/Forms/budget01.ppt",
+            "icon":"ppt",
+            "name":"ขั้นตอนการเบิกจ่าย",
+            "description":"Update: Latest version",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"http://intranet.utcc/Forms/60mua.pdf",
+            "icon":"pdf",
+            "name":"ขั้นตอนการขอกันงบประมาณ",
+            "description":"Update: Latest version",
+            "isDisable":false,
+            "isFull": true
+         },
+         {
+            "key":3,
+            "url":"/Forms/budget03.doc",
+            "icon":"docx",
+            "name":"ตัวอย่าง : รายงานผลการวิเคราะห์การใช้งบประมาณ",
+            "description":"Update: Latest version",
+            "isDisable":false,
+            "isFull": true
+         },
+         {
+            "key":4,
+            "url":"/Forms/budget04.xls",
+            "icon":"xlsx",
+            "name":"ตัวอย่าง : ตารางสรุปการใช้งบประมาณ",
+            "description":"Update: Latest version",
+            "isDisable":false,
+            "isFull": true
+         },
+         {
+            "key":5,
+            "url":"/Forms/KM.docx",
+            "icon":"docx",
+            "name":"ขึ้นตอนบันทึกการคืนงบประมาณเข้าส่วนกลาง",
+            "description":"Update: Latest version",
+            "isDisable":false,
+            "isFull": true
+         },
+         {
+            "key":6,
+            "url":"/Forms/budget05.xls",
+            "icon":"xlsx",
+            "name":"แบบฟอร์มบันทึกการคืนงบประมาณเข้าส่วนกลาง",
+            "description":"Update: Latest version",
+            "isDisable":false,
+            "isFull": true
+         },
+         {
+            "key":7,
+            "url":"/Forms/budget06.xls",
+            "icon":"xlsx",
+            "name":"ตัวอย่าง : บันทึกการคืนงบประมาณเข้าส่วนกลาง",
+            "description":"Update: Latest version",
+            "isDisable":false,
+            "isFull": true
+         },
+         {
+            "key":8,
+            "url":"/Forms/budget07.pdf",
+            "icon":"pdf",
+            "name":"แบบฟอร์มเบิกเงินสนับสนุนกิจกรรมภายในมหาวิทยาลัย",
+            "description":"Update: Latest version",
+            "isDisable":false,
+            "isFull": true
+         },
+         {
+            "key":9,
+            "url":"/Forms/budget08.pdf",
+            "icon":"pdf",
+            "name":"แบบฟอร์มการขอเลขรหัสโครงการ",
+            "description":"Update: Latest version",
+            "isDisable":false,
+            "isFull": true
+         }
+      ]
    }
  ]

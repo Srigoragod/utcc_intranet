@@ -6,17 +6,16 @@
         <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'link']" class="sm:text-base text-3xl"/>
         <font-awesome-icon v-else :icon="['fas', 'calendar']" class="sm:text-base text-3xl" />
       </div>
-      <div class="button-content w-full pl-4">
-        <div class="text-button text-ellipsis overflow-hidden">
-          <h4 class="text-ellipsis overflow-hidden whitespace-nowrap">{{ textButton }}</h4>
+      <div class="button-content w-full">
+        <div class="text-1-line">
+          <h4 >{{ textButton }}</h4>
         </div>
-        <div class="text-[18px] mt-1" v-html="description"></div>
+        <div  v-html="description"></div>
       </div>
     </div>
     <div class="btn-dowload">
-        <!-- <i  class="el-icon-download"></i> -->
-      <font-awesome-icon class="text-xl" v-if="icon== 'file'"  :icon="['fas', 'download']" />
       <font-awesome-icon v-if="icon== 'link'" :icon="['fas', 'arrow-right']" />
+      <font-awesome-icon class="text-xl" v-else  :icon="['fas', 'download']" />
     </div>
   </div>
   <div class="is-mobile container-btn-blue-download h-full">

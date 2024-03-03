@@ -49,16 +49,16 @@
       "itemList":[
         {
            "key":1,
-           "url":"http://intranet.utcc/Forms/EX-asset11.pdf",
-           "icon":"file",
+           "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Eal1h1rMpHFFh8iTa_QQlUIBsC23j9iZ_yOt6tY-JPMLDQ?e=6cKSzS",
+           "icon":"pdf",
            "name":"รายการวัสดุสิ้นเปลืองที่มีให้เบิกในคลังพัสดุ (สโตร์)",
            "description":"Update: 1 Sep 2023",
            "isDisable": false
         },
          {
             "key":2,
-            "url":"#",
-            "icon":"word",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EYXoDak404dFo98mfA35GLEBnsCVECIgkGIDniWK8NjuWg?e=VkQ6P8",
+            "icon":"docx",
             "name":"พ 1.001 แบบฟอร์มใบสั่งซื้อเงินสด",
             "description":"Update: 1 Sep 2023",
             "isDisable":true
@@ -279,7 +279,7 @@
        "itemList":[
           {
              "key":1,
-             "url":"http://intranet.utcc/Adobe.pdf",
+             "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ETS1UrP8sZxFpj9zaGCumr4B9HWIceHrmUT3806f6OUdNQ?e=w8QskM",
              "icon":"file",
              "name":"Adobe",
              "description":"Update:  Latest version",
@@ -614,100 +614,5 @@
              "isDisable":false
           }
        ]
-    },
-    {
-      "id": "plan-budget",
-      "topicName":"กองบัญชีและควบคุมงบประมาณ",
-      "icon":"",
-      "showColumn":"",
-      "isFull":false,
-      "isAlert": false,
-      "alertDetail": {
-        "title": "",
-        "description": ""
-      },
-     "isDisable":false,
-      "itemList":[
-         {
-            "key":1,
-            "url":"/Forms/budget01.ppt",
-            "icon":"ppt",
-            "name":"ขั้นตอนการเบิกจ่าย",
-            "description":"Update: Latest version",
-            "isDisable":false
-         },
-         {
-            "key":2,
-            "url":"http://intranet.utcc/Forms/60mua.pdf",
-            "icon":"pdf",
-            "name":"ขั้นตอนการขอกันงบประมาณ",
-            "description":"Update: Latest version",
-            "isDisable":false,
-            "isFull": true
-         },
-         {
-            "key":3,
-            "url":"/Forms/budget03.doc",
-            "icon":"docx",
-            "name":"ตัวอย่าง : รายงานผลการวิเคราะห์การใช้งบประมาณ",
-            "description":"Update: Latest version",
-            "isDisable":false,
-            "isFull": true
-         },
-         {
-            "key":4,
-            "url":"/Forms/budget04.xls",
-            "icon":"xlsx",
-            "name":"ตัวอย่าง : ตารางสรุปการใช้งบประมาณ",
-            "description":"Update: Latest version",
-            "isDisable":false,
-            "isFull": true
-         },
-         {
-            "key":5,
-            "url":"/Forms/KM.docx",
-            "icon":"docx",
-            "name":"ขึ้นตอนบันทึกการคืนงบประมาณเข้าส่วนกลาง",
-            "description":"Update: Latest version",
-            "isDisable":false,
-            "isFull": true
-         },
-         {
-            "key":6,
-            "url":"/Forms/budget05.xls",
-            "icon":"xlsx",
-            "name":"แบบฟอร์มบันทึกการคืนงบประมาณเข้าส่วนกลาง",
-            "description":"Update: Latest version",
-            "isDisable":false,
-            "isFull": true
-         },
-         {
-            "key":7,
-            "url":"/Forms/budget06.xls",
-            "icon":"xlsx",
-            "name":"ตัวอย่าง : บันทึกการคืนงบประมาณเข้าส่วนกลาง",
-            "description":"Update: Latest version",
-            "isDisable":false,
-            "isFull": true
-         },
-         {
-            "key":8,
-            "url":"/Forms/budget07.pdf",
-            "icon":"pdf",
-            "name":"แบบฟอร์มเบิกเงินสนับสนุนกิจกรรมภายในมหาวิทยาลัย",
-            "description":"Update: Latest version",
-            "isDisable":false,
-            "isFull": true
-         },
-         {
-            "key":9,
-            "url":"/Forms/budget08.pdf",
-            "icon":"pdf",
-            "name":"แบบฟอร์มการขอเลขรหัสโครงการ",
-            "description":"Update: Latest version",
-            "isDisable":false,
-            "isFull": true
-         }
-      ]
-   }
+    }
  ]

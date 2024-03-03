@@ -123,7 +123,7 @@ export default defineComponent({
 </style>
 <style lang="css">
 .el-tabs__item {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #64748b;
 }
 .el-tabs__item.is-active{

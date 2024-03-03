@@ -171,8 +171,8 @@
           "subitems": []
         },
         {
-          "textName": "student",
-          "url": "from-9",
+          "textName": "ฝ่ายกิจการนักศึกษา",
+          "url": "student",
           "subitems": []
         },
         {
@@ -223,20 +223,6 @@
       "url": "service",
       "isActive": false,
       "items": [
-        {
-          "textName": "มหาวิทยาลัยหอการค้าไทย",
-          "url": "https://www.utcc.ac.th/",
-          "type":"link",
-          "typeIcon": "fas",
-          "icon": "arrow-pointer"
-        },
-        {
-          "textName": "บุคลากร",
-          "url": "https://www.utcc.ac.th/personnel/",
-          "type":"link",
-          "typeIcon": "fas",
-          "icon": "user-group"
-        },
         {
           "textName": "ระบบฐานข้อมูลประกันคุณภาพการศึกษา",
           "url": "http://esar.utcc/",
@@ -369,6 +355,20 @@
           "type":"link",
           "typeIcon": "fas",
           "icon": "calendar-days"
+        },
+        {
+          "textName": "มหาวิทยาลัยหอการค้าไทย",
+          "url": "https://www.utcc.ac.th/",
+          "type":"link",
+          "typeIcon": "fas",
+          "icon": "arrow-pointer"
+        },
+        {
+          "textName": "บุคลากร",
+          "url": "https://www.utcc.ac.th/personnel/",
+          "type":"link",
+          "typeIcon": "fas",
+          "icon": "user-group"
         },
         {
           "textName": "ระบบจองห้อง HYFLEX",

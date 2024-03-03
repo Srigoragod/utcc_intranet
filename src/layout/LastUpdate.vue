@@ -49,8 +49,8 @@ export default {
           "icon": "chalkboard-teacher"
         }
         ]);
-        const clikShortCut = () =>{
-            console.log('clikShortCut ... run');
+        const clikShortCut = (url) =>{
+            window.open(url, '_blank')
         }
         const clickShowMore = () =>{
             console.log('clickShowMore ... run ');

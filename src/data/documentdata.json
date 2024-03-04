@@ -13,8 +13,8 @@
       "itemList":[
          {
             "key":1,
-            "url":"http://intranet.utcc/Forms/document_01.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EQrreLxldixEg7hBfgyCGicB81yAsnlQ_0hdU6e0xt9JoQ?e=QarpsG",
+            "icon":"pdf",
             "name":"คู่มือจัดเก็บเอกสาร",
             "description":"Update:  Latest version",
             "isDisable":false
@@ -22,26 +22,26 @@
          {
             "key":2,
             "url":"https://department.utcc.ac.th/admin/index.php/2013-03-29-02-58-19",
-            "icon":"file",
+            "icon":"link",
             "name":"แบบฟอร์มบันทึกและหนังสือต่างๆ",
             "description":"",
-            "isDisable":true
+            "isDisable":false
          },
          {
            "key":3,
            "url":"http://www.mua.go.th/users/he-commission/doc/law/private50.pdf",
-           "icon":"file",
+           "icon":"link",
            "name":"พรบ.สถาบันอุดมศึกษาเอกชน",
            "description":"",
-           "isDisable":true
+           "isDisable": false
         },
         {
            "key":4,
-           "url":"http://intranet.utcc/Forms/1.5%20protect%20staff.pdf",
-           "icon":"file",
+           "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EeD-ZlionKNFpM2fCT_z8MEBPYDMPAfNrw2BCQHwj_9bLQ?e=kvb1UY",
+           "icon":"pdf",
            "name":"กฎกระทรวง ว่าด้วยการคุ้มครองการทำงาน",
            "description":"",
-           "isDisable":false
+           "isDisable": false
         }
       ]
    },
@@ -58,27 +58,27 @@
       "itemList":[
          {
             "key":1,
-            "url":"http://intranet.utcc/Forms/Mannual-PMS-Form_2566.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EebP_IifOAFHq2DKBPfWDTIBb4pGTDX7ZO6eQQ8QUJfq3A?e=Sw3vB3",
+            "icon":"pdf",
             "name":"คู่มือชี้แจงการจัดทำแบบประเมินผลการปฏิบัติงานประจำปีการศึกษา 2566 (รอบกลางปี)",
             "description":"Update:  Latest version",
             "isDisable":false
          },
          {
             "key":2,
-            "url":"http://intranet.utcc/Forms/PMSForm-Supervisor_Midterm65_final.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EVXVCeqw8xRMg3ShAD0IdUQB1SUISf9jlFFR7csQUs1QPQ?e=vKjbmL",
+            "icon":"pdf",
             "name":"ระดับหัวหน้าหน่วยงาน: แบบประเมินผลการปฏิบัติงานกลางปีงบประมาณ 2565",
             "description":"Update: กุมภาพันธ์ 2566",
             "isDisable": false
          },
          {
             "key":3,
-            "url":"http://intranet.utcc/Forms/PMSForm-Officer_rev_Midterm65_final.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ee5ATFn_YE1EtpoUGF25imsBYEz5zqq1S06HQ22tX13T2w?e=jNzY4A",
+            "icon":"pdf",
             "name":"ระดับเจ้าหน้าที่: แบบประเมินผลการปฏิบัติงานกลางปีงบประมาณ 2565",
             "description":"Update: กุมภาพันธ์ 2566",
-            "isDisable":true
+            "isDisable": false
          }
       ]
    },
@@ -96,19 +96,19 @@
       "itemList":[
          {
             "key":1,
-            "url":"http://intranet.utcc/Forms/request_form.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYyYV8tUqXhHnAkwOWCB7Q4BKtrBOO4KFtKgdsDUqrmnjA?e=Tc1iMd",
+            "icon":"pdf",
             "name":"แบบฟอร์มขอเครื่องคอมพิวเตอร์",
             "description":"Update: Feb 2023",
             "isDisable": false
          },
          {
             "key":2,
-            "url":"#",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/Efr3YYFrUNlOkMZRMfFSHGQBIoWBajI2Xy9gyyl9mI2C2Q?e=fUUMmj",
+            "icon":"pdf",
             "name":"ใบขอส่งซ่อมเครื่องคอมพิวเตอร์",
             "description":"Update: Feb 2023",
-            "isDisable":true
+            "isDisable": false
          }
       ]
    },
@@ -126,19 +126,19 @@
       "itemList":[
          {
             "key":1,
-            "url":"http://intranet.utcc/Forms/request_form.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EVyWn1ZmtPVIiQkoO0abx5UBZ_PzA6KithrrzKZp2-sXdw?e=Zoi7dK",
+            "icon":"pdf",
             "name":"แบบฟอร์มขอใช้บริการ",
             "description":"Update:  Feb 2023",
             "isDisable": false
          },
          {
             "key":2,
-            "url":"http://intranet.utcc/Forms/KM-PR-62.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ERQtNimT7YBEp6Qznacl6OABu7sz7Ya40891NZ7Hkik5kA?e=662Zw4",
+            "icon":"pdf",
             "name":"การจัดการความรู้ (KM)",
             "description":"Update:  Feb 2023",
-            "isDisable":true
+            "isDisable": false
          }
       ]
    },
@@ -157,51 +157,43 @@
  
          {
             "key":1,
-            "url":"#",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EUOxRVdpk81DhbPEiVcRf9YBVIaotl8SPA8aifmdrwn-7Q?e=JW4POS",
+            "icon":"docx",
             "name":"จัดจ้างโดยวิธีพิเศษ (ฉบับลงนาม)",
             "description":"Update:  Feb 2023",
-            "isDisable": true
+            "isDisable": false
          },
          {
             "key":2,
-            "url":"#",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EWod9nX3xO1Etk-3Kh0cZQwBLUipopFFQxsyMf9imyUCYg?e=436067",
+            "icon":"docx",
             "name":"จัดซื้อโดยวิธีพิเศษ (ฉบับลงนาม)",
             "description":"Update:  Feb 2023",
-            "isDisable":true
+            "isDisable":false
+         },
+         {
+            "key":3,
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EbIA_oQ_yO9En_xH2q6fgooBTffF9GoOZWwimDUy6CD3Hw?e=NC5a4d",
+            "icon":"docx",
+            "name":"สอบราคา (ฉบับลงนาม)",
+            "description":"Update:  Feb 2023",
+            "isDisable":false
          },
          {
             "key":4,
-            "url":"#",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EdPsmxWWsLhLjCE0hJ6oInMBbnQHdZz2yrlWwug00z5WLw?e=9GUHX2",
+            "icon":"docx",
             "name":"ประกวดราคา (ฉบับลงนาม)",
             "description":"Update:  Feb 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":5,
-            "url":"#",
-            "icon":"file",
-            "name":"ประกวดราคา (ฉบับลงนาม)",
-            "description":"Update:  Feb 2023",
-            "isDisable":true
-         },
-         {
-            "key":6,
-            "url":"#",
-            "icon":"file",
-            "name":"สอบราคา (ฉบับลงนาม)",
-            "description":"Update:  Feb 2023",
-            "isDisable":true
-         },
-         {
-            "key":6,
-            "url":"#",
-            "icon":"link",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/ERcERoqMLExFrWaz8CxljQ0BN1JRZacT29Xlqob1KBk92Q?e=JfI4Jx",
+            "icon":"docx",
             "name":"e-auction (ฉบับพิจารณา TOR และราคา)",
             "description":"Update:  Latest version",
-            "isDisable":true
+            "isDisable":false
          }
       ]
    },
@@ -219,57 +211,35 @@
       "itemList":[
          {
             "key":1,
-            "url":"http://intranet.utcc/Forms/for_mou1.pdf",
-            "icon":"file",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/Eb1wFHR1p45Mgyr5eXdwh6QBz8WJpvsGHd0Mlc0lCMlXuw?e=578ucq",
+            "icon":"docx",
+            "name":"แบบฟอร์มรายงานความคืบหน้า (MOU)",
+            "description":"Update:  Feb 2023",
+            "isDisable":false
+         },
+         {
+            "key":2,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYgv1u7npb1Fj-PkZbzEhNIB5924suDyAIs3Osgvr4puIA?e=rND3fb",
+            "icon":"pdf",
             "name":"กิจกรรมความร่วมมือ (รายทวีป)",
             "description":"Update:  Feb 2023",
             "isDisable": false
          },
          {
-            "key":2,
-            "url":"http://intranet.utcc/Forms/for_mou2.pdf",
-            "icon":"file",
+            "key":3,
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ES3lETgTVQRJn8Ya6Ih1P2oBZc9I7PVffHb6qR8Dh5b_Ag?e=G2OiEw",
+            "icon":"pdf",
             "name":"กิจกรรมความร่วมมือ (รายประเทศ)",
             "description":"Update:  Feb 2023",
-            "isDisable":true
-         },
-         {
-            "key":3,
-            "url":"http://intranet.utcc/Forms/for_mou3.pdf",
-            "icon":"file",
-            "name":"กิจกรรมความร่วมมือ (รายคณะ)",
-            "description":"Update:  Feb 2023",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":4,
-            "url":"#",
-            "icon":"file",
-            "name":"แบบฟอร์มรายงานความคืบหน้า (MOU)",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EYCX5pKtrrNJqMU9QhV_ersBj3gSm50wK4akhfPyN0VB5w?e=mIKa5r",
+            "icon":"pdf",
+            "name":"กิจกรรมความร่วมมือ (รายคณะ)",
             "description":"Update:  Feb 2023",
-            "isDisable":true
-         }
-      ]
-   },
-   {
-      "id":"relative",
-      "topicName":"กองวิเทศสัมพันธ์",
-      "icon":"",
-      "showColumn":"",
-      "isFull": false,
-      "isAlert": true,
-      "alertDetail": {
-        "title": "กิจกรรมความร่วมมือระหว่างมหาวิทยาลัยหอการค้าไทยและสถาบันต่างประเทศ",
-        "description": ""
-      },
-      "itemList":[
-         {
-            "key":1,
-            "url":"#",
-            "icon":"file",
-            "name":"กองวิเทศสัมพันธ์",
-            "description":"Update:  Feb 2023",
-            "isDisable": true
+            "isDisable":false
          }
       ]
    },
@@ -288,7 +258,7 @@
       "itemList":[
          {
             "key":1,
-            "url":"/Forms/budget01.ppt",
+            "url":"https://live4utccac.sharepoint.com/:p:/s/utcc.ac.th/Eb8M7rzn5WdKvnMkmK583bIBc54rx2CsE30qHnN-ol1dnQ?e=1pf79k",
             "icon":"ppt",
             "name":"ขั้นตอนการเบิกจ่าย",
             "description":"Update: Latest version",
@@ -296,7 +266,7 @@
          },
          {
             "key":2,
-            "url":"http://intranet.utcc/Forms/60mua.pdf",
+            "url":"https://live4utccac.sharepoint.com/:p:/s/utcc.ac.th/EbZfqUj5GgVJm4URbpBaP2YBwZXagFWOnJUpc3eGqkyQPw?e=LDtvbA",
             "icon":"pdf",
             "name":"ขั้นตอนการขอกันงบประมาณ",
             "description":"Update: Latest version",
@@ -305,7 +275,7 @@
          },
          {
             "key":3,
-            "url":"/Forms/budget03.doc",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/EfmDz0w3mXxHtk8KmFOXkr0Bio_3QIWZzao8M_MhM3Lywg?e=iSc8aQ",
             "icon":"docx",
             "name":"ตัวอย่าง : รายงานผลการวิเคราะห์การใช้งบประมาณ",
             "description":"Update: Latest version",
@@ -314,7 +284,7 @@
          },
          {
             "key":4,
-            "url":"/Forms/budget04.xls",
+            "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EaKxM00F6SFFofxpP8ihhlsB8rsngX0rFnMQZtTxkofHGg?e=op4zSg",
             "icon":"xlsx",
             "name":"ตัวอย่าง : ตารางสรุปการใช้งบประมาณ",
             "description":"Update: Latest version",
@@ -323,7 +293,7 @@
          },
          {
             "key":5,
-            "url":"/Forms/KM.docx",
+            "url":"https://live4utccac.sharepoint.com/:w:/s/utcc.ac.th/ES2QEq9ATxRLk17Ub57mimoBuYDvgKUedTTrM9OMV3khwA?e=BZ0ZYf",
             "icon":"docx",
             "name":"ขึ้นตอนบันทึกการคืนงบประมาณเข้าส่วนกลาง",
             "description":"Update: Latest version",
@@ -332,7 +302,7 @@
          },
          {
             "key":6,
-            "url":"/Forms/budget05.xls",
+            "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EQW_gmdkfTNJqMoMbbALiTwB_2vVMEu0haqg3a_50RS_9A?e=u56jsA",
             "icon":"xlsx",
             "name":"แบบฟอร์มบันทึกการคืนงบประมาณเข้าส่วนกลาง",
             "description":"Update: Latest version",
@@ -341,7 +311,7 @@
          },
          {
             "key":7,
-            "url":"/Forms/budget06.xls",
+            "url":"https://live4utccac.sharepoint.com/:x:/s/utcc.ac.th/EZLIFkw9h2FMmBX1qd3eufUBHzZWdPv3cf8fHgN5LEurYQ?e=AJJJ7n",
             "icon":"xlsx",
             "name":"ตัวอย่าง : บันทึกการคืนงบประมาณเข้าส่วนกลาง",
             "description":"Update: Latest version",
@@ -350,7 +320,7 @@
          },
          {
             "key":8,
-            "url":"/Forms/budget07.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/ETSbB36NZApHkCisuMdPaBYBuUaRwyx2UOIs4IFOMWFgIg?e=QjbmIU",
             "icon":"pdf",
             "name":"แบบฟอร์มเบิกเงินสนับสนุนกิจกรรมภายในมหาวิทยาลัย",
             "description":"Update: Latest version",
@@ -359,7 +329,7 @@
          },
          {
             "key":9,
-            "url":"/Forms/budget08.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/EfePrw5DFKZCu5j1grWpgh8Bmi9WqCiAhtHOo8FWXKhMXw?e=JZqyeV",
             "icon":"pdf",
             "name":"แบบฟอร์มการขอเลขรหัสโครงการ",
             "description":"Update: Latest version",

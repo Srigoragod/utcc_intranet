@@ -21,7 +21,7 @@
          },
          {
             "key":2,
-            "url":"http://intranet.utcc/Forms/PMSForm-Supervisor_Midterm65_final.pdf",
+            "url":"https://live4utccac.sharepoint.com/:b:/s/utcc.ac.th/Ee5ATFn_YE1EtpoUGF25imsBYEz5zqq1S06HQ22tX13T2w?e=p8ZhGH",
             "icon":"link",
             "name":"สถาบันยุทธศาสตร์การค้า",
             "description":"",
@@ -61,7 +61,7 @@
          },
          {
             "key":7,
-            "url":"#",
+            "url":"https://www.utcc.ac.th/fbec",
             "icon":"link",
             "name":"ศูนย์ธุรกิจครอบครัว",
             "description":"",
@@ -73,19 +73,19 @@
             "icon":"link",
             "name":"ศูนย์เอสเอ็มอี",
             "description":"",
-            "isDisable": true
+            "isDisable": false
          },
          {
             "key":9,
-            "url":"#",
+            "url":"http://brandthaicenter.utcc.ac.th/",
             "icon":"link",
             "name":"ศูนย์ศึกษาและวิจัยตราสินค้า",
             "description":"",
-            "isDisable": true
+            "isDisable": false
          },
          {
             "key":10,
-            "url":"#",
+            "url":"http://www.amsarthailand.utcc.ac.th/",
             "icon":"link",
             "name":"ศูนย์ศึกษาสื่อและการสื่อสารอาเซียน",
             "description":"",
@@ -93,7 +93,7 @@
          },
          {
             "key":11,
-            "url":"#",
+            "url":"https://www.utcc.ac.th/sealac/",
             "icon":"link",
             "name":"ศูนย์ศึกษาการค้าอาเซียนและลาตินอเมริกา",
             "description":"",
@@ -101,11 +101,11 @@
          },
          {
             "key":12,
-            "url":"#",
+            "url":"http://idecenter.utcc.ac.th/th/",
             "icon":"link",
             "name":"IDE Center",
             "description":"",
-            "isDisable": true
+            "isDisable": false
          }
       ]
    },
@@ -122,7 +122,7 @@
       "itemList":[
          {
             "key":1,
-            "url":"administer-office",
+            "url":"http://department.utcc.ac.th/admin/",
             "icon":"link",
             "name":"สำนักอำนวยการ",
             "description":"",
@@ -138,27 +138,27 @@
          },
          {
             "key":3,
-            "url":"#",
+            "url":"http://department.utcc.ac.th/accounting/",
             "icon":"link",
             "name":"กองบัญชีและควบคุมงบประมาณ",
             "description":"",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":4,
-            "url":"#",
+            "url":"http://department.utcc.ac.th/finance/",
             "icon":"link",
             "name":"กองการเงิน",
             "description":"",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":5,
-            "url":"#",
+            "url":"http://department.utcc.ac.th/pm",
             "icon":"link",
             "name":"กองพัสดุและจัดการทรัพย์สิน",
             "description":"",
-            "isDisable":true
+            "isDisable":false
          },
          {
             "key":6,
@@ -215,7 +215,7 @@
          },
          {
             "key":5,
-            "url":"#",
+            "url":"http://socrates.utcc.ac.th/research/",
             "icon":"link",
             "name":"กองส่งเสริมงานวิจัย",
             "description":"",
@@ -243,8 +243,8 @@
             "isDisable": false
          },
          {
-            "key":1,
-            "url":"#",
+            "key":2,
+            "url":"https://edtech.utcc.ac.th/index.php/en/",
             "icon":"link",
             "name":"ศูนย์ความเป็นเลิศทางการสอน",
             "description":"",
@@ -273,39 +273,39 @@
       "itemList":[
          {
             "key":1,
-            "url":"#",
+            "url":"http://department.utcc.ac.th/stdact/",
             "icon":"link",
             "name":"กองกิจกรรมนักศึกษา",
             "description":"",
-            "isDisable": true
+            "isDisable": false
          },
          {
             "key":2,
-            "url":"#",
+            "url":"http://department.utcc.ac.th/utccswd/",
             "icon":"link",
             "name":"กองสวัสดิการนักศึกษา",
             "description":"",
-            "isDisable": true
+            "isDisable": false
          },
          {
             "key":3,
-            "url":"#",
+            "url":"http://department.utcc.ac.th/counseling/",
             "icon":"link",
             "name":"กองแนะแนวและศิษย์เก่าสัมพันธ์",
             "description":"",
-            "isDisable":true
+            "isDisable": false
          },
          {
             "key":4,
-            "url":"#",
+            "url":"http://department.utcc.ac.th/thaiculture",
             "icon":"link",
             "name":"กองส่งเสริมศิลปและวัฒนธรรมไทย",
             "description":"",
-            "isDisable":true
+            "isDisable": false
          },
          {
             "key":5,
-            "url":"https://athleticoffice.wordpress.com/",
+            "url":"http://athleticoffice.wordpress.com/",
             "icon":"link",
             "name":"กองการกีฬา",
             "description":"",
@@ -355,7 +355,7 @@
       "itemList":[
          {
             "key":1,
-            "url":"#",
+            "url":"http://department.utcc.ac.th/acadaffairs/",
             "icon":"link",
             "name":"กองวิเทศสัมพันธ์",
             "description":"",

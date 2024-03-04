@@ -49,11 +49,6 @@ DateMeeting
             :items="homeFlexMasonry"
 
           ></ShowFlexMasonry>
-    
-        </section>
-
-        <section id="faculty">
-          <FacultyAll></FacultyAll>
         </section>
 
         <section class="container mx-auto py-4 lg:py-20">
@@ -61,6 +56,10 @@ DateMeeting
             :topicName="'Forms &Document'"
             :dataName="'formdocument'"
           ></ShowFlexMasonry>
+        </section>
+
+        <section id="faculty">
+          <FacultyAll></FacultyAll>
         </section>
 
         <section class="container mx-auto py-4 lg:py-20">

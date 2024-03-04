@@ -66,19 +66,19 @@
         </div>
       </div>
       <div v-else class="text-a-gray-8b8d94 mx-auto text-[20px] bg-white">
-        <div class="grid justify-items-stretch">
-          <div class="justify-self-center">
+        <div class="grid justify-items-center">
+          <div >
             <img
               src="../../assets/image/NoData-searchModal.png"
-              class="w-[150px] mt-4"
+              class="w-[150px] my-4 mx-auto"
               alt="No Data"
             />
             <div class="text-center -mt-8">
               <h4 class="text-a-gray-787878 my-2 w-full opacity-70">
-               Oops! ขอโทษ ...
+                Oops Sorry! 
               </h4>
               <h6 class="text-a-gray-8b8d94 text-[24px] -mt-4 w-full">
-                ไม่มีรายการตรงกับที่คุณค้นหา กรุณากดปุ่ม Reset เพื่อเริ่มต้นใหม่
+                ขอโทษที ไม่มีรายการตรงกับที่คุณค้นหา  ...
               </h6>
             </div>
           </div>
@@ -101,7 +101,11 @@ export default {
   emits: ["click-result"],
   setup(props, ctx) {
     const clickItem = (item) => {
+      let uri = item.url;
+      if(uri){
+      window.open(uri, '_blank')
       ctx.emit("click-result", item);
+      }
     };
     return {
       clickItem,

@@ -36,11 +36,13 @@
               :items="recentSearches"
               @remove-recent="removeRecentSearch"
               @add-favorite="addFavorite"
+              @close-modal="clickClose"
             ></SearchRecent>
             <SearchFavorite
               v-if="!isResult && favoriteSearches.length > 0"
               :items="favoriteSearches"
               @remove-favorite="removeFavoriteSearch"
+              @close-modal="clickClose"
             ></SearchFavorite>
           </div>
         </div>
@@ -53,6 +55,7 @@
                </button>
               <form method="dialog">
                 <button
+                @click="clickClose()"
                   class="btn  btn-primary text-[18px] "
                 >
                    Close
@@ -117,8 +120,6 @@ export default defineComponent({
     };
 
     const clickSearch = () => {
-      console.log('@click="clickSearch()" .....');
-      // resetFormSearch();
       document.getElementById("search_modal").showModal();
     };
     const handleKeyPress = (event) => {
@@ -219,6 +220,7 @@ export default defineComponent({
     };
     handleOnlineService();
     const clickResutSearch = (val) => {
+      location.reload();
       addRecentSearch(val);
     };
 
@@ -239,6 +241,7 @@ export default defineComponent({
         );
       }
       document.getElementById("search_modal").close();
+      location.reload();
     };
 
     const removeRecentSearch = (obj) => {
@@ -250,6 +253,7 @@ export default defineComponent({
         keyRecent.value,
         JSON.stringify(recentSearches.value)
       );
+      location.reload();
     };
 
     const addFavorite = (newObj) => {
@@ -269,6 +273,7 @@ export default defineComponent({
           JSON.stringify(favoriteSearches.value)
         );
       }
+      location.reload();
     };
 
     const removeFavoriteSearch = (obj) => {
@@ -280,7 +285,12 @@ export default defineComponent({
         keyFavorite.value,
         JSON.stringify(favoriteSearches.value)
       );
+      location.reload();
     };
+
+    const clickClose = ()=>{
+      location.reload();
+    }
 
     return {
       fullscreenLoading,
@@ -298,7 +308,8 @@ export default defineComponent({
       favoriteSearches,
       removeFavoriteSearch,
       isLoading,
-      resetFormSearch
+      resetFormSearch,
+      clickClose
     };
   },
 });

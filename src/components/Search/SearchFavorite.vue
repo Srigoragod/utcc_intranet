@@ -9,8 +9,22 @@
     <!-- item search  -->
     <div class="max-h-96 overflow-y-auto scrollbar-w-2 scrollbar-track-gray-lighter scrollbar-thumb-rounded scrollbar-thumb-gray scrolling-touch lg:max-h-sm">
     <div v-for="(item,index) in items" :key="index" class="flex justify-between items-center w-full py-1 border-b">
-      <div class="hover:text-a-blue-005BC0 cursor-pointer py-2 px-6">
-        <span class="text-[18px] " v-if="!item.isTopicName" v-html="item.topicName"> </span> 
+      <div  @click="clickItem(item)" class="hover:text-a-blue-005BC0 cursor-pointer py-2 px-6">
+        <div class="flex items-center">
+          <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      class="w-4 h-4 mb-1 stroke-current"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                      ></path>
+                    </svg><span class="text-[18px] ml-2" v-if="!item.isTopicName" v-html="item.topicName"> </span> 
+        </div>
         <h5 class="text-a-blue-2E3191" v-html="item.name"></h5>
       </div>
       <div>
@@ -49,8 +63,16 @@ export default {
     const removeFavorite =(item)=>{
         ctx.emit("remove-favorite",item)
     }
+    const clickItem = (item) => {
+      let uri = item.url;
+      if(uri){
+      window.open(uri, '_blank')
+      ctx.emit("click-result", item);
+      }
+    }
     return{
-      removeFavorite
+      removeFavorite,
+      clickItem
     }
   }
 };

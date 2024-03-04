@@ -13,7 +13,7 @@
     <div class="flex items-center w-full">
       <div v-if="isDisable" class="icon-item" >
         <font-awesome-icon
-          :icon="['fas', 'triangle-exclamation']"
+          :icon="['fas', 'mug-hot']"
           class="text-[24px]"
         />
       </div>

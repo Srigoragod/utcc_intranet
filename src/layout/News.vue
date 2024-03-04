@@ -138,7 +138,7 @@ export default {
         }
       }
       .icon-svg{
-        color: $a-gray-64748b;
+        color: $a-blue-005BC0;
         margin: .25rem auto;
         @include mobile{
           font-size: 1.5rem;

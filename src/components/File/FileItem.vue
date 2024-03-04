@@ -11,7 +11,13 @@
   >
 
     <div class="flex items-center w-full">
-      <div class="icon-item">
+      <div v-if="isDisable" class="icon-item" >
+        <font-awesome-icon
+          :icon="['fas', 'triangle-exclamation']"
+          class="text-[24px]"
+        />
+      </div>
+      <div v-else class="icon-item">
         <font-awesome-icon
           v-if="icon == 'pdf'"
           :icon="['fas', 'file-pdf']"
@@ -38,8 +44,7 @@
           :icon="['fas', 'file-arrow-down']"
           class="text-[28px]"
         />
-        <font-awesome-icon v-else-if="icon == 'school'" :icon="['fas', 'graduation-cap']" class="text-[28px]" />
-        <font-awesome-icon v-else :icon="['fas', 'link']" class="text-[28px]" />
+        <font-awesome-icon v-else-if="icon == 'link'" :icon="['fas', 'link']" class="text-[28px]" />
       </div>
       <div class="leading-none pl-4">
         <span v-if="isFull">

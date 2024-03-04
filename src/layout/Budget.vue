@@ -1,11 +1,11 @@
 <template>
-  <div class="mb-4">
+  <div class="mb-4 container-content-budget">
     <TextUnderline :text="'Bubget'" :desc="''"></TextUnderline>
 
     <el-tabs class="text-xl mt-4" v-model="activeName" @tab-click="handleClick">
       <el-tab-pane label="การจัดทำงบประมาณประจำปี" name="first">
         <div class="flex justify-between items-center mb-4">
-            <span class="text-2xl">ประจำปีการศึกษา</span>
+            <span class="text-2xl"> </span>
             <MenuSortByYear @on-chenge="handleYear"></MenuSortByYear>
         </div>
         <div class="relative text-center" v-if="isLoading">
@@ -113,12 +113,17 @@ export default defineComponent({
 });
 </script>
 <style lang="scss" scoped>
+@import '../style/base.scss';
+
 .bg-no-data {
   background: linear-gradient(
     90deg,
     rgba(217, 217, 217, 0.2) 5.41%,
     rgba(239, 245, 249, 0.2) 96.08%
   );
+}
+.container-content-budget{
+  padding: 0 1rem;
 }
 </style>
 <style lang="css">

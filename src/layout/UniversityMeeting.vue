@@ -91,6 +91,7 @@ export default defineComponent({
   }
   @include mobile{
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 0 1rem;
   }
   @include mini-mobile{
     grid-template-columns: repeat(1, minmax(0, 1fr));

@@ -1,9 +1,14 @@
 <template>
   <div class="">
-
-    <TextUnderline :text="topicName" v-if="isShow"></TextUnderline>
-    <br/>
-    <div class="is-desktop gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3" v-if="fileData && fileData.length > 0">
+    <div class="flex justify-between items-center" v-if="isShow">
+      <TextUnderline :text="topicName" ></TextUnderline>
+      <div :class="isOrder ?'badge-primary': 'badge-secondary'" class="hidden badge hover:badge-primary cursor-pointer float-right mr-4 text-[20px]" @click="clickOrderByTopicName(isOrder)">ก-ฮ</div>
+    </div>
+    <br />
+    <div
+      class="is-desktop gap-4 space-y-3 lg:gap-8 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3"
+      v-if="fileData && fileData.length > 0"
+    >
       <FileList
         v-for="(item, index) in fileData"
         :id="item.id"
@@ -25,9 +30,7 @@
         :topicName="item.topicName"
         :dataList="item.itemList"
       >
-
       </FileListMobile>
-
     </div>
   </div>
 </template>
@@ -38,7 +41,7 @@ import { ref, defineComponent } from "vue";
 
 // data
 import documentdata from "../data/documentdata.json";
-import departmentdata from "../data/departmentdata.json"
+import departmentdata from "../data/departmentdata.json";
 // components
 import FileList from "../components/File/FileList.vue";
 import FileListMobile from "../components/File/FileListMobile.vue";
@@ -51,39 +54,48 @@ export default defineComponent({
     gridCols: { type: String, require: true, default: "grid-cols-2" },
     topicName: { type: String, require: false, default: "All Files" },
     dataName: { type: String, require: true },
-    isShow: { type: Boolean, require: false, default: true},
+    isShow: { type: Boolean, require: false, default: true },
   },
   components: {
     FileList,
     TextUnderline,
-    FileListMobile
+    FileListMobile,
   },
   setup(props) {
     const route = useRoute();
     const fileData = ref(null);
     const isNotHome = ref(true);
     const topicName = ref("All Files");
-    const initialData =  () => {
-        topicName.value = props.topicName;
-        if(route.name == 'formdocument' || props.dataName =='formdocument'){
-          fileData.value = documentdata;
-        }else if (route.name == 'department' || props.dataName == 'department'){
-          fileData.value = departmentdata
-        }else if (props.dataName == 'home'){
-          fileData.value = props.items
-        }
+    const isOrder = ref(false);
 
+    const initialData = () => {
+      topicName.value = props.topicName;
+      if (route.name == "formdocument" || props.dataName == "formdocument") {
+        fileData.value = documentdata;
+      } else if (route.name == "department" || props.dataName == "department") {
+        fileData.value = departmentdata;
+      } else if (props.dataName == "home") {
+        fileData.value = props.items;
+      }
+      isNotHome.value = false;
+      isOrder.value = false;
+    };
+
+    const clickOrderByTopicName = (val) => {
+      console.log('run ..', val);
+      if(val){
+        initialData();
+      }else{
         fileData.value.sort((a, b) => {
         a.topicName.localeCompare(b.topicName, "th");
         const topicComparison = a.topicName.localeCompare(b.topicName, "th");
         return topicComparison !== 0 ? topicComparison : a.length - b.length;
       });
-
-        isNotHome.value = false;
-        // dividedArray()
-
-
-    };
+      isOrder.value = true;
+      }
+  
+    }
+    
 
     const dividedArray = () => {
       let items = fileData.value;
@@ -100,7 +112,7 @@ export default defineComponent({
 
       fileData.value = dividedArray;
 
-      console.log(route.name,'...',JSON.stringify(fileData.value,null,4));
+      console.log(route.name, "...", JSON.stringify(fileData.value, null, 4));
       return dividedArray;
     };
 
@@ -108,7 +120,9 @@ export default defineComponent({
     return {
       fileData,
       isNotHome,
-      topicName
+      topicName,
+      clickOrderByTopicName,
+      isOrder
     };
   },
 });
@@ -116,18 +130,18 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "../style/base.scss";
-.is-mobile{
-  @include min-desktop{
+.is-mobile {
+  @include min-desktop {
     display: none;
   }
 }
 .is-desktop {
   @include tablet {
     display: none;
-   }
-   @include mobile {
+  }
+  @include mobile {
     display: none;
-   }
+  }
 }
 
 .text-all-file {

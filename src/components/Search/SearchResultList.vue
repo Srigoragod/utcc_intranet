@@ -70,15 +70,15 @@
           <div class="justify-self-center">
             <img
               src="../../assets/image/NoData-searchModal.png"
-              class="w-[150px]"
+              class="w-[150px] mt-4"
               alt="No Data"
             />
             <div class="text-center -mt-8">
               <h4 class="text-a-gray-787878 my-2 w-full opacity-70">
-                Sorry ...
+               Oops! ขอโทษ ...
               </h4>
               <h6 class="text-a-gray-8b8d94 text-[24px] -mt-4 w-full">
-                Your Search Not Found
+                ไม่มีรายการตรงกับที่คุณค้นหา กรุณากดปุ่ม Reset เพื่อเริ่มต้นใหม่
               </h6>
             </div>
           </div>

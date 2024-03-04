@@ -1,6 +1,6 @@
 <template>
-  <div class="container-textunderline sm:mb-0 ">
-    <span class="text text-3xl font-bold mb-4">{{ text }}</span>
+  <div class="container-textunderline sm:mb-0">
+    <span class="text text-3xl font-bold mb-4 ">{{ text }}</span>
     <br />
     <p class="text-desc text-[22px] text-a-gray-64748b" v-html="desc"></p>
   </div>
@@ -23,6 +23,7 @@ export default {
     font-size: 2.25rem; 
     @include mobile {
       font-size: 2rem;
+      padding-left: 1rem;
     }
     @media tablet {
       font-size: 1.875rem;

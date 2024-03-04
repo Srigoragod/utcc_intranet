@@ -1,8 +1,8 @@
 <template>
-  <div class="mb-4">
+  <div class="mb-4 container-content-function">
     <TextUnderline :text="'Functional Area'" :desc="''"></TextUnderline>
     <div class="flex justify-between items-center mb-4">
-      <span class="text-2xl">ประจำปีการศึกษา</span>
+      <span class="text-2xl"> </span>
       <MenuSortByYear @on-chenge="handleYear"></MenuSortByYear>
     </div>
     <div class="relative text-center" v-if="isLoading">
@@ -89,6 +89,7 @@ export default defineComponent({
 });
 </script>
 <style lang="scss" scoped>
+@import '../style/base.scss';
 .bg-no-data {
   background: linear-gradient(
     90deg,
@@ -96,10 +97,15 @@ export default defineComponent({
     rgba(239, 245, 249, 0.2) 96.08%
   );
 }
+.container-content-function{
+  @include mobile {
+     padding: 0 1rem;
+  }
+}
 </style>
 <style lang="css">
 .el-tabs__item {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #64748b;
 }
 .el-tabs__item.is-active {

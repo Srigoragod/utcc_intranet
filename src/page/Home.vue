@@ -70,7 +70,7 @@ DateMeeting
           ></ShowFlexMasonry>
         </section>
 
-        <section class="container mx-auto py-10 grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4"  >
+        <section class="container mx-auto px-0 sm:px-4 py-10 grid grid-cols-1 lg:grid-cols-2  gap-4"  >
 
           <Risk id="risk"></Risk>
           <Budget id="budget"></Budget>

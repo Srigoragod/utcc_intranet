@@ -59,21 +59,32 @@
         <dialog id="my_modal_1" class="modal">
           <div
             class="modal-box w-11/12"
-            :class="[isLarge ? 'max-w-6xl' : 'max-w-2xl']"
+            :class="[isLarge ? 'max-w-4xl' : 'max-w-2xl']"
           >
-            <div class="flex justify-between">
-              <!-- Menu  -->
+            <div class="flex justify-between gap-8">
+              <div >
+                <h5 class="text-all-file font-light leading-none py-2 ">
+                  แคปชั่นทำงาน
+                </h5>
+                <Caption
+                  :title="randomItemCaption.caption_title"
+                  :owner="randomItemCaption.caption_owner"
+                  @click-menu="handleClickMenu()"
+                ></Caption>
+                <div class=" opacity-50 float-right mr-4 text-base">
+                  <span>ต้องการความช่วยเหลือ หรือแจ้งปัญหาการใช้งาน โทร. 6288 </span>
+                  </div>
+              </div>
               <div class="w-full">
                 <div class="flex justify-between items-center py-2">
                   <h4 class="text-all-file font-light leading-none block">
                     {{ topicName }}
                   </h4>
-                  <div class=" opacity-50 float-right mr-4 text-[18px]">
-                    <span>        หากมีคำถามหรือต้องการความช่วยเหลือ 
-โปรดติดต่อ สบค. 6288</span>
+                  <div class="badge badge-accent opacity-50 float-right mr-8">
+                     ก-ฮ
                   </div>
                 </div>
-                <div class="flex gap-4">
+                <div  :class="[isLarge ? 'grid-cols-2' : 'grid-cols-1']" class="grid gap-4 grid-cols-1  max-h-96 overflow-y-auto scrollbar-w-2 scrollbar-track-gray-lighter scrollbar-thumb-rounded scrollbar-thumb-gray scrolling-touch lg:max-h-sm" >
                   <div
                     class="py-4"
                     v-for="(item, index) in divMenu"
@@ -85,28 +96,19 @@
                       :textName="subItem.textName"
                       :textUrl="subItem.url"
                       :type="subItem.type"
-                      class="text-xl"
+                      class="text-[1.25rem]"
                       @click-menu="handleClickMenu()"
                     >
                     </MenuItem>
                   </div>
                 </div>
               </div>
-              <div class="pl-8 border-l">
-                <h5 class="text-all-file font-light leading-none py-2">
-                  แคปชั่นทำงาน
-                </h5>
-                <Caption
-                  :title="randomItemCaption.caption_title"
-                  :owner="randomItemCaption.caption_owner"
-                  @click-menu="handleClickMenu()"
-                ></Caption>
-              </div>
+      
             </div>
             <div class="modal-action">
               <form method="dialog" >
                 <button
-                  class="btn btn-sm text-[20px]"
+                  class="w-full btn btn-sm text-[20px]"
                   @click="onClickCloseMenu()"
                 >
                   Close
@@ -233,7 +235,7 @@ export default defineComponent({
       divMenu.value = data;
     };
     const dividedArray = (items) => {
-      const setSize = 8;
+      const setSize = 12;
       const dividedArray = [];
       for (let i = 0; i < items.length; i += setSize) {
         dividedArray.push(items.slice(i, i + setSize));

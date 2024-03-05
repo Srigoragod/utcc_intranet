@@ -61,7 +61,7 @@
             class="modal-box w-11/12"
             :class="[isLarge ? 'max-w-4xl' : 'max-w-2xl']"
           >
-            <div class="flex justify-between gap-8">
+            <div class="grid grid-cols-2  gap-8">
               <div >
                 <h5 class="text-all-file font-light leading-none py-2 ">
                   แคปชั่นทำงาน
@@ -108,7 +108,7 @@
             <div class="modal-action">
               <form method="dialog" >
                 <button
-                  class="w-full btn btn-sm text-[20px]"
+                  class="btn btn-active btn-ghost text-[20px]"
                   @click="onClickCloseMenu()"
                 >
                   Close

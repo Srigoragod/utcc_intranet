@@ -1,29 +1,18 @@
 <template>
-  <!-- @click="onClickMenu(textUrl, type)" -->
-  <div @click="onScroll()">
-    <!-- <h4 class="font-bold text-a-blue-2E3191">{{item.textName}}</h4> -->
+  <div @click="onScroll()" class="w-full relative">
     <div
       v-if="!isDark"
       class="flex items-center menu-item hover:underline hover:underline-offset-1"
     >
-      <!-- <div> -->
-      <!-- <img
-          src="../../assets/icon/chevron-right.svg"
-          width="18"
-          height="18"
-        /> -->
-      <!-- <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[18px]"/>
-      </div> -->
-      <a class="flex items-center text-a-blue-2E3191  hover:text-a-blue-005BC0  px-2"> <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[10px] pr-1"/> {{ textName }}</a>
+
+      <div class="flex items-center text-a-blue-2E3191  hover:text-a-blue-005BC0  px-2 text-1-line"> <font-awesome-icon :icon="['fas', 'angle-right']" class="text-[10px] pr-1"/> {{ textName }}</div>
     </div>
 
     <div
       v-else
       class="menu-footer text-[18px] text-a-gray-64748b hover:text-white hover:underline hover:underline-offset-1"
     >
-      <!-- <a href="#test" v-smooth-scroll> -->
       {{ textName }}
-      <!-- </a> -->
     </div>
   </div>
 </template>

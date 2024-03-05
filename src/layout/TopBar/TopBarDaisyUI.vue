@@ -61,7 +61,7 @@
             class="modal-box w-11/12"
             :class="[isLarge ? 'max-w-4xl' : 'max-w-2xl']"
           >
-            <div class="grid grid-cols-2  gap-8">
+            <div class="flex justify-between items-center gap-8">
               <div >
                 <h5 class="text-all-file font-light leading-none py-2 ">
                   แคปชั่นทำงาน
@@ -71,22 +71,19 @@
                   :owner="randomItemCaption.caption_owner"
                   @click-menu="handleClickMenu()"
                 ></Caption>
-                <div class=" opacity-50 float-right mr-4 text-base">
-                  <span>ต้องการความช่วยเหลือ หรือแจ้งปัญหาการใช้งาน โทร. 6288 </span>
-                  </div>
               </div>
-              <div class="w-full">
+              <div class="w-full ">
                 <div class="flex justify-between items-center py-2">
-                  <h4 class="text-all-file font-light leading-none block">
+                  <h4 class="text-all-file font-light leading-none block pl-4">
                     {{ topicName }}
                   </h4>
                   <div class="badge badge-accent opacity-50 float-right mr-8">
                      ก-ฮ
                   </div>
                 </div>
-                <div  :class="[isLarge ? 'grid-cols-2' : 'grid-cols-1']" class="grid gap-4 grid-cols-1  max-h-96 overflow-y-auto scrollbar-w-2 scrollbar-track-gray-lighter scrollbar-thumb-rounded scrollbar-thumb-gray scrolling-touch lg:max-h-sm" >
+                <div  :class="[isLarge ? 'grid-cols-2' : 'grid-cols-1']" class="grid gap-4 grid-cols-1 border-l max-h-96 overflow-y-auto scrollbar-w-2 scrollbar-track-gray-lighter scrollbar-thumb-rounded scrollbar-thumb-gray scrolling-touch lg:max-h-sm" >
                   <div
-                    class="py-4"
+                    class="p-4"
                     v-for="(item, index) in divMenu"
                     :key="index"
                   >
@@ -108,7 +105,7 @@
             <div class="modal-action">
               <form method="dialog" >
                 <button
-                  class="btn btn-active btn-ghost text-[20px]"
+                  class="btn btn-ghost text-[20px]"
                   @click="onClickCloseMenu()"
                 >
                   Close

@@ -10,6 +10,10 @@
             />
           </a>
           จัดทำโดย สำนักบริการคอมพิวเตอร์ มหาวิทยาลัยหอการค้าไทย <br />
+          <div class=" opacity-50 float-right mr-4 text-base">
+                  <span>ต้องการความช่วยเหลือ หรือแจ้งปัญหาการใช้งาน โทร. 6288 </span>
+          </div>
+          <br/>
           © 2023 - UTCC All Right Reserved
         </div>
       </div>
